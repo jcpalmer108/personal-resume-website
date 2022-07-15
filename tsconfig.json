@@ -18,9 +18,15 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "baseUrl": "src",
+    "paths": {
+      "components": ["components"],
+      "images":["assets/images"]
+    }
   },
   "include": [
-    "src"
+    "src",
+    "src/custom.d.ts"
   ]
 }

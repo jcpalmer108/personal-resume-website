@@ -1,5 +1,5 @@
-import React from "react";
-// import line from ''
+import React, { ReactNode } from "react";
+// import line from 'images/label-line.svg';
 
 type SectionProps = {
   label?: string,
@@ -8,7 +8,7 @@ type SectionProps = {
   light?: boolean,
   thin?: boolean,
   center?: boolean,
-  children?: object
+  children?: ReactNode
 }
 
 export default function Section({
@@ -31,13 +31,19 @@ export default function Section({
             label && (
               <div className={'label'.concat(center ? ' centered' : '')} data-testid="label">
                 <div className="label-inner">
-                  {/* <img src='' alt="line" /> */}
+                  {/* <img src={line} alt="line" /> */}
                   {label.toUpperCase()}
                 </div>
               </div>
             )
           }
-
+          {
+            children && (
+              <div className="children" data-testid="children">
+                {children}
+              </div>  
+            )
+          }
         </div>
       </div>
     </div>
