@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`when given params it should render as expected 1`] = `
+<div
+  class="section test-class"
+  data-testid="section"
+>
+  <div
+    class="section-inner border light thin"
+  >
+    <div
+      class="content"
+    >
+      <div
+        class="label centered"
+        data-testid="label"
+      >
+        <div
+          class="label-inner"
+        >
+          TEST
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`when not given params it should render as expected 1`] = `
+<div
+  class="section"
+  data-testid="section"
+>
+  <div
+    class="section-inner border dark regular"
+  >
+    <div
+      class="content padded"
+    />
+  </div>
+</div>
+`;
