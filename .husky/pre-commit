@@ -3,4 +3,4 @@
 
 npm run build
 git add .
-npm test -- --watchAll=false
+# npm test -- --watchAll=false
