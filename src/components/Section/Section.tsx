@@ -1,5 +1,6 @@
 import React, { ReactNode } from "react";
-import { ReactComponent as Line} from '../../assets/images/label-line.svg';
+import { ReactComponent as Line} from '@/assets/images/label-line.svg';
+// import './Section.scss';
 
 type SectionProps = {
   label?: string,
@@ -10,6 +11,7 @@ type SectionProps = {
   center?: boolean,
   children?: ReactNode
 }
+
 
 export default function Section({
   label, 
