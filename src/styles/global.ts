@@ -7,7 +7,7 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     background: teal;
-    font-family: Gilroy-Regular;
+    font-family: 'Gilroy-Regular';
     font-size: 72px;
   }
   `
