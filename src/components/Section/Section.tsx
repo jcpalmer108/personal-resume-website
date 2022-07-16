@@ -1,5 +1,5 @@
 import React, { ReactNode } from "react";
-// import { ReactComponent as LabelLine } from 'images/label-line.svg'
+import { ReactComponent as Line} from '../../assets/images/label-line.svg';
 
 type SectionProps = {
   label?: string,
@@ -31,7 +31,7 @@ export default function Section({
             label && (
               <div className={'label'.concat(center ? ' centered' : '')} data-testid="label">
                 <div className="label-inner">
-                  {/* <LabelLine /> */}
+                  <Line />
                   {label.toUpperCase()}
                 </div>
               </div>
