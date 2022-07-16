@@ -27,15 +27,6 @@
       "react-app/jest"
     ]
   },
-  "jest": {
-    "moduleDirectories": [
-      ".",
-      "node_modules"
-    ],
-    "moduleNameMapper": {
-      "^components/(.*)$": "/src/components/$1"
-    }  
-  },
   "browserslist": {
     "production": [
       ">0.2%",
