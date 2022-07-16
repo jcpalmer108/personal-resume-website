@@ -1,14 +1,45 @@
 import { createGlobalStyle } from 'styled-components';
-// import GilroyRegular from '@/assets/fonts/Gilroy-Regular.ttf'
+import GilroyBold from "./fonts/Gilroy-Bold.ttf";
+import GilroyMedium from "./fonts/Gilroy-Medium.ttf";
+import GilroyRegular from "./fonts/Gilroy-Regular.ttf";
+import GilroyRegularItalic from "./fonts/Gilroy-RegularItalic.ttf";
+import Butler from "./fonts/Butler.woff2";
+import ButlerMedium from "./fonts/Butler-Medium.woff";
  
 const GlobalStyle = createGlobalStyle`
+  @font-face {
+    font-family: 'Gilroy-Bold';
+    src: url(${GilroyBold}) format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Gilroy-Medium';
+    src: url(${GilroyMedium}) format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Gilroy-Regular';
+    src: url(${GilroyRegular}) format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Gilroy-RegularItalic';
+    src: url(${GilroyRegularItalic}) format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Butler-Regular';
+    src: url(${Butler}) format('woff2');
+  }
+
+  @font-face {
+    font-family: 'Butler-Medium';
+    src: url(${ButlerMedium}) format('woff');
+  }
 
   body {
     margin: 0;
     padding: 0;
-    background: teal;
-    font-family: 'Gilroy-Regular';
-    font-size: 72px;
   }
   `
  
