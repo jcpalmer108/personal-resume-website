@@ -1,0 +1,211 @@
+{
+  "landing": {
+    "title": "Great skill in Javascript Developer",
+    "description": "Magna voluptate Lorem adipisicing esse culpa Lorem elit occaecat officia exercitation dolor excepteur esse aliquip. Anim velit nisi laboris in reprehenderit excepteur officia Lorem dolore."
+  },
+  "sections": {
+    "about": {
+      "key": "about",
+      "label": "About Me",
+      "title": "Who am I?",
+      "description": "Magna voluptate Lorem adipisicing esse culpa Lorem elit occaecat officia exercitation dolor excepteur esse aliquip. Anim velit nisi laboris in reprehenderit excepteur officia Lorem dolore. Labore aliqua aliquip amet laboris dolor adipisicing ea tempor minim magna est.\n\nMagna voluptate Lorem adipisicing esse culpa Lorem elit occaecat officia exercitation dolor excepteur esse aliquip. Anim velit nisi laboris in reprehenderit excepteur officia Lorem dolore.",
+      "sub-section": {
+        "title": "Education",
+        "content": [
+          {
+            "key": "Cambridge Science School",
+            "degree": "11th & 12th Science",
+            "start": 2015,
+            "end": 2016
+          },
+          {
+            "key": "Webster University",
+            "degree": "Bachelors of Science in Computer Science",
+            "start": 2014,
+            "end": 2017
+          }
+        ]
+      }
+    },
+    "skills": {
+      "key": "skills",
+      "label": "My Skills",
+      "title": "Here are my skills & frameworks",
+      "description": "Magna voluptate Lorem adipisicing esse culpa Lorem elit occaecat officia exercitation dolor excepteur esse aliquip. Anim velit nisi laboris in reprehenderit excepteur officia Lorem dolore.",
+      "sub-section": {
+        "content": [
+          {
+            "key": "docker",
+            "label": "Docker",
+            "url": "https://www.docker.com"
+          },
+          {
+            "key": "airflow",
+            "label": "Apache Airflow",
+            "url": "https://airflow.apache.org/"
+          },
+          {
+            "key": "aws",
+            "label": "Amazon Web Services",
+            "url": "https://aws.amazon.com/"
+          },
+          {
+            "key": "typescript",
+            "label": "Typescript",
+            "url": "https://www.typescriptlang.org/"
+          },
+          {
+            "key": "kubernetes",
+            "label": "Kubernetes",
+            "url": "https://kubernetes.io/"
+          },
+          {
+            "key": "mui",
+            "label": "Material UI",
+            "url": "https://mui.com/"
+          },
+          {
+            "key": "node",
+            "label": "Node.js",
+            "url": "https://nodejs.org/en/about/resources/"
+          },
+          {
+            "key": "react",
+            "label": "React.js",
+            "url": "https://reactjs.org/"
+          },
+          {
+            "key": "vue",
+            "label": "Vue.js",
+            "url": "https://vuejs.org/"
+          }
+        ]
+      }
+    },
+    "testimonials": {
+      "key": "testimonials",
+      "label": "Testimonials",
+      "title": "Testimonials",
+      "sub-section": {
+        "content": [
+          {
+            "quote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dolor sit amet consectetur adipiscing elit ut aliquam purus.",
+            "person": "John Doe",
+            "title": "Manager at Slalom Consulting LLC"
+          },
+          {
+            "quote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas sed sed risus pretium quam vulputate dignissim suspendisse in. Et ligula ullamcorper malesuada proin libero nunc.",
+            "person": "Jane Doe",
+            "title": "Co-worker at Nike World Headquarters"
+          }
+        ]
+      }
+    },
+    "experience": {
+      "key": "experience",
+      "label": "Experience",
+      "title": "Checkout my work experience",
+      "description": "Magna voluptate Lorem adipisicing esse culpa Lorem elit occaecat officia exercitation dolor excepteur esse aliquip. Anim velit nisi laboris in reprehenderit excepteur officia Lorem dolore.",
+      "sub-section": {
+        "content": [
+          {
+            "title": "Senior Software Engineer",
+            "employer": "Alaska Airlines",
+            "team": "Create Reservation",
+            "org": "E-Commerce",
+            "location": "Portland, OR",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor purus.",
+            "start": "Feb 2022",
+            "end": "Current",
+            "icon": "alaska"
+          },
+          {
+            "title": "Software Engineer II",
+            "employer": "Nike World Headquarters",
+            "team": "Managed Airflow Platform",
+            "org": "Engineered Platforms",
+            "location": "Beaverton, OR",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor purus.",
+            "start": "Nov 2020",
+            "end": "Feb 2022",
+            "icon": "nike"
+          },
+          {
+            "title": "Technology Enablement Consultant",
+            "employer": "Slalom Consulting LLC",
+            "location": "Portland OR, OR",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor purus.",
+            "start": "Jan 2020",
+            "end": "Feb 2022",
+            "icon": "slalom",
+            "projects": [
+              {
+                "industry": "Software as a Service (SASS)",
+                "sow": "Upgrade Application Servers to Ubuntu 16",
+                "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor purus.",
+                "icon": "key"
+              },
+              {
+                "industry": "Healthcare",
+                "sow": "Designed a security architecture model for an internal, Tableau-based reporting system that allowd the client to stop out-sourcing their needs to other companies",
+                "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor purus.",
+                "icon": "healthcare"
+              }
+            ]
+          },
+          {
+            "title": "Software Engineer II",
+            "employer": "Nike World Headquarters",
+            "team": "Login & Registration",
+            "org": "Nike Digital",
+            "location": "Beaverton, OR",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor purus.",
+            "start": "Nov 2020",
+            "end": "Feb 2022"
+          },
+          {
+            "title": "Technology Enablement Consultant",
+            "employer": "Slalom Consulting LLC",
+            "location": "Portland OR, OR",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor purus.",
+            "start": "Jan 2020",
+            "end": "Feb 2022",
+            "icon": "slalom",
+            "projects": [
+              {
+                "industry": "Agriculture",
+                "sow": "Develop mobile application to help clients use pesticide in the appropriate weather",
+                "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor purus.",
+                "icon": "mobile"
+              },
+              {
+                "industry": "Agriculture",
+                "sow": "Designed reusable components for use on the branded websites inside their AEM-based environment",
+                "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor purus.",
+                "icon": "website"
+              },
+              {
+                "industry": "Telecommunications",
+                "sow": "Created dashboard to enable Executive Leadership to understand the current status of their hubs across the country",
+                "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor purus.",
+                "icon": "maps"
+              },
+              {
+                "industry": "Internal",
+                "sow": "Participated in Slalom's personal Start Haus program",
+                "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor purus.",
+                "icon": "terminal"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "contact": {
+      "key": "experience",
+      "label": "Experience",
+      "title": "Checkout my work experience",
+      "description": "Magna voluptate Lorem adipisicing esse culpa Lorem elit occaecat officia exercitation dolor excepteur esse aliquip. Anim velit nisi laboris in reprehenderit excepteur officia Lorem dolore.",
+    }
+  }
+}
