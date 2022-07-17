@@ -1,6 +1,7 @@
 import React from 'react';
-import Wrapper from '@/styles/App';
+import { Wrapper, LandingWrapper } from '@/styles/App';
 import Section from './components/Section';
+import NavBar from './components/NavBar';
 import GlobalStyle from './styles/global';
 
 export default function App() {
@@ -8,8 +9,11 @@ export default function App() {
     <>
       <GlobalStyle />
       <Wrapper>
+        <LandingWrapper>
+          <NavBar />
+        </LandingWrapper>
         <Section label="my section">
-          <p>Children exist</p>
+          <div>Children exist</div>
         </Section>
       </Wrapper>
     </>
