@@ -20,7 +20,7 @@ export default function App() {
           </Section>
         </Test1>
         <Test2>
-          <Section>
+        <Section>
             this is my content
           </Section>
           <Section>
