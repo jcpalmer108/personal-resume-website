@@ -1,33 +1,49 @@
 import styled from "styled-components";
-import { desktopBreakpoint, contentWidth } from "../variables";
+import { 
+  desktopBreakpoint,
+  contentWidth,
+  silver_polish
+} from "../variables";
 
 type WrapperProps = {
   light?: boolean,
-  thin? : boolean
+  thin? : boolean,
 }
 
 type HeaderProps = {
   center?: boolean,
 }
 
+type ChildrenProps = {
+  padded?: boolean
+}
+
 export const Wrapper = styled.div<WrapperProps>`
   max-width: ${contentWidth}px;
-  background: pink;
   margin: auto;
-  border: solid;
-  border-color: ${props => props.light ? "white" : "black"};
-  border-width: ${props => props.thin ? 0.5 : 1}px;
+  border-left: solid;
+  border-right: solid;
+  border-color: transparent;
+  transition: all ease 1s;
+  border-width: 0px;
+
+  @media (min-width: ${contentWidth}px) {
+    border-color: ${props => props.light ? "white" : silver_polish};
+    border-width: ${props => props.thin ? 0.5 : 1}px;
+    transition: all ease 1s;
+  }
+
 `
 
 export const Header = styled.div<HeaderProps>`
   width: fit-content;
-  padding-bottom: 10px;
-  padding-top: 30px;
   margin: ${props => props.center ? "auto" : "0px"};
+  padding-top: 0px;
   transition: all ease 1s;
 
-  @media (min-width: ${desktopBreakpoint}) {
-    padding-top: 50px;
+  @media (min-width: ${desktopBreakpoint}px) {
+    margin: 0px;
+    padding-top: 15px;
     transition: all ease 1s;
   }
 `
@@ -42,7 +58,7 @@ export const Label = styled.div`
   transition: all ease 1s;
   padding-left: 20px;
   padding-bottom: 0px;
-  padding-top: 30px;
+  padding-top: 50px;
 
   @media (min-width: ${desktopBreakpoint}px) {
     height: 16px;
@@ -65,4 +81,8 @@ export const Title = styled.span`
     font-size: 16px;
     transition: all ease 1s;
   }
+`
+
+export const Children = styled.div<ChildrenProps>`
+  padding: ${props => props.padded ? 20 : 0}px;
 `

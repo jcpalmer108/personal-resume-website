@@ -1,6 +1,12 @@
 import { ReactNode } from 'react'
-import { Wrapper, Header, Line, Label, Title } from '@/styles/components/Section'
-import line from '@/assets/images/label-line.svg';
+import { 
+  Wrapper, 
+  Header, 
+  Line, 
+  Label, 
+  Title, 
+  Children} from '../styles/components/Section'
+import line from '../assets/images/label-line.svg';
 
 type SectionProps = {
   children: ReactNode,
@@ -19,18 +25,17 @@ export default function Section({
   wide,
   center
 }: SectionProps) {
-  console.log(light, thin, wide, center)
   return (
-    <Wrapper light={light}>
+    <Wrapper light={light} thin={thin} data-testid="Wrapper">
       {label && (
-        <Header center={center}>
-          <Label>
-            <Line src={line} alt="test" />
+        <Header data-testid="Header" center={center} >
+          <Label data-testid="Label">
+            <Line src={line} alt="test"/>
             <Title>{label.toUpperCase()}</Title>
           </Label>
         </Header>
       )}
-      {children}
+      <Children padded={!wide} data-testid="Children">{children}</Children>
     </Wrapper>
   )
 }
