@@ -3,16 +3,27 @@ import { Wrapper, Header, Line, Label, Title } from '@/styles/components/Section
 import line from '@/assets/images/label-line.svg';
 
 type SectionProps = {
-  label?: string,
   children: ReactNode,
+  label?: string,
+  light?: boolean,
+  thin?: boolean,
+  wide?: boolean,
+  center?: boolean
 }
 
-export default function Section({ label, children }: SectionProps) {
-  console.log()
+export default function Section({ 
+  label,
+  children,
+  light,
+  thin,
+  wide,
+  center
+}: SectionProps) {
+  console.log(light, thin, wide, center)
   return (
-    <Wrapper>
+    <Wrapper light={light}>
       {label && (
-        <Header>
+        <Header center={center}>
           <Label>
             <Line src={line} alt="test" />
             <Title>{label.toUpperCase()}</Title>
