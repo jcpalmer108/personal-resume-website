@@ -1,11 +1,17 @@
 import React from "react";
 import Section from "./Section";
-// import landing from "../assets/images/landing.jpg";
+import { Image, Menu, Wrapper } from "@/styles/components/Navbar";
+import logo from "../assets/images/jennapalmer-dark.svg";
 
 export default function NavBar() {
   return (
     <Section wide light>
-      <div>test content</div>
+      <Wrapper>
+        <Image src={logo} alt="logo" />
+        <Menu>
+          <div>blah</div>
+        </Menu>
+      </Wrapper>
     </Section>
   )
 }
