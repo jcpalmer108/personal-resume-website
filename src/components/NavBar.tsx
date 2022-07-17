@@ -20,7 +20,7 @@ type Link = {
   url: string,
 }
 
-export default function NavBar() {
+export default function Navbar() {
   const [isOpen, setIsOpen] = useState(true)
   const [isDesktop, setIsDesktop] = useState(window.innerWidth >= menuBreakpoint)
 

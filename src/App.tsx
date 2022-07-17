@@ -3,8 +3,12 @@ import { Wrapper, LandingWrapper } from '@/styles/App';
 import Section from './components/Section';
 import Navbar from './components/Navbar';
 import GlobalStyle from './styles/global';
+import content from './assets/content/content.json'
+import generateMenu from './utils/generateMenu';
 
 export default function App() {
+  console.log(generateMenu(content))
+
   return (
     <>
       <GlobalStyle />
