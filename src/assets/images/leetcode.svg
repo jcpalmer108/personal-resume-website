@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26" height="24" viewBox="0 0 26 24">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_18" data-name="Rectangle 18" width="26" height="24" transform="translate(-0.381 0.03)" fill="#b56576"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_8" data-name="Mask Group 8" transform="translate(0.381 -0.03)" clip-path="url(#clip-path)">
+    <g id="Page-1" transform="translate(2.394 0.239)">
+      <g id="branding_-resource">
+        <g id="_1_black" data-name="1_black">
+          <path id="path_3" d="M14.656,20.773a1.385,1.385,0,0,1,1.954,1.964l-2.4,2.4a5.8,5.8,0,0,1-8.09.074l-4.33-4.246a5.6,5.6,0,0,1-.35-7.84L5.3,8.986a6.247,6.247,0,0,1,8.206-.542l3.512,2.84a1.386,1.386,0,0,1-1.739,2.158L11.771,10.6a3.493,3.493,0,0,0-4.446.279L3.458,15.021a2.833,2.833,0,0,0,.264,3.963l4.31,4.226a3.032,3.032,0,0,0,4.22-.037Z" transform="translate(0 -2.74)" fill="#b56576"/>
+          <path id="path_2" d="M13.42,23.6a1.386,1.386,0,0,1,0-2.773H23.628a1.386,1.386,0,0,1,0,2.773Z" transform="translate(-4.604 -7.967)" fill="#b56576" fill-rule="evenodd"/>
+          <path id="path_1" d="M10.727.439a1.385,1.385,0,1,1,2.021,1.894L3.458,12.282a2.833,2.833,0,0,0,.264,3.963l4.291,4.207a1.385,1.385,0,0,1-1.936,1.982L1.786,18.227a5.6,5.6,0,0,1-.349-7.839Z" transform="translate(0 0)" fill="#b56576" fill-rule="evenodd"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
