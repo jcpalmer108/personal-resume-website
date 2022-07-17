@@ -1,9 +1,16 @@
 import React, { useEffect, useState } from "react";
 import Section from "./Section";
-import { Image, Menu, Wrapper, menuBreakpoint } from "@/styles/components/Navbar";
+import { Image, Menu, TopBar, menuBreakpoint, MobileMenu } from "@/styles/components/Navbar";
 import logo from "../assets/images/jennapalmer-dark.svg";
 import { redstone } from "@/styles/variables";
-import { Turn as Hamburger } from 'hamburger-react'
+import { Turn as Hamburger } from 'hamburger-react';
+import socials from '../assets/content/socials.json';
+
+type Link = {
+  key: string,
+  label: string,
+  url: string,
+}
 
 export default function NavBar() {
   const [isOpen, setIsOpen] = useState(true)
@@ -30,7 +37,7 @@ export default function NavBar() {
 
   return (
     <Section wide light>
-      <Wrapper>
+      <TopBar>
         <Image src={logo} alt="logo" />
         <Menu>
           {
@@ -46,9 +53,17 @@ export default function NavBar() {
               />
             )
           }
-          
         </Menu>
-      </Wrapper>
+      </TopBar>
+      <MobileMenu>
+        {
+          socials.links && socials.links.map((link: Link) => (
+            <a href={link.url} key={link.key}>
+              <img src={require("../assets/images/" + link.key + ".svg")} alt={link.key} />
+            </a>
+          ))
+        }
+      </MobileMenu>
     </Section>
   )
 }

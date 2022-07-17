@@ -1,0 +1,29 @@
+{
+  "links": [
+    {
+      "key": "github",
+      "label": "Github",
+      "url": "https://www.github.com/jcpalmer108/"
+    },
+    {
+      "key": "leetcode",
+      "label": "Leetcode",
+      "url": "https://leetcode.com/darthToaster/"
+    },
+    {
+      "key": "linkedin",
+      "label": "LinkedIn",
+      "url": "https://www.linkedin.com/in/jenna-palmer/"
+    },
+    {
+      "key": "twitter",
+      "label": "Twitter",
+      "url": "https://twitter.com/jpalmerproject/"
+    },
+    {
+      "key": "email",
+      "label": "Email",
+      "url": "mailto:jenna@jennapalmer.info"
+    }
+  ]
+}

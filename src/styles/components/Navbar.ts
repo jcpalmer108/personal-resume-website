@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { redstone } from "../variables";
 
-export const menuBreakpoint = 700;
+export const menuBreakpoint = 400;
 
 export const Image = styled.img`
   height: 40px;
@@ -35,7 +35,7 @@ export const Menu = styled.div`
 
   `
 
-export const Wrapper = styled.div`
+export const TopBar = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -48,4 +48,8 @@ export const Wrapper = styled.div`
     transition: all ease 1s;
   }
 
+  `
+
+  export const MobileMenu = styled.div`
+    background: blue;
   `
