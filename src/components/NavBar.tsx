@@ -1,6 +1,14 @@
 import React, { useEffect, useState } from "react";
 import Section from "./Section";
-import { Image, Menu, TopBar, menuBreakpoint, MobileMenu } from "@/styles/components/Navbar";
+import { 
+  Image, 
+  Menu, 
+  TopBar, 
+  menuBreakpoint, 
+  MobileMenu,
+  Socials,
+  Icon
+} from "@/styles/components/Navbar";
 import logo from "../assets/images/jennapalmer-dark.svg";
 import { redstone } from "@/styles/variables";
 import { Turn as Hamburger } from 'hamburger-react';
@@ -56,13 +64,11 @@ export default function NavBar() {
         </Menu>
       </TopBar>
       <MobileMenu>
-        {
-          socials.links && socials.links.map((link: Link) => (
-            <a href={link.url} key={link.key}>
-              <img src={require("../assets/images/" + link.key + ".svg")} alt={link.key} />
-            </a>
-          ))
-        }
+        {socials.links && socials.links.map((link: Link) => (
+          <Socials href={link.url} key={link.key}>
+            <Icon src={require("../assets/images/" + link.key + ".svg")} alt={link.key} />
+          </Socials>
+        ))}
       </MobileMenu>
     </Section>
   )

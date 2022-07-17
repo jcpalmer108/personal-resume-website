@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { redstone } from "../variables";
+import { redstone, silver_polish } from "../variables";
 
 export const menuBreakpoint = 400;
 
@@ -51,5 +51,25 @@ export const TopBar = styled.div`
   `
 
   export const MobileMenu = styled.div`
-    background: blue;
+    background: white;
+    justify-content: space-around;
+    display: flex;
+    height: 60px;
+  `
+
+  export const Socials = styled.a`
+    border-left: 1px solid ${silver_polish};
+    border-bottom: 1px solid ${silver_polish};
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:first-child {
+      border-left: none;
+   }
+  `
+
+  export const Icon = styled.img`
+  height: 26px;
   `
