@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import { redstone } from "../variables";
 
-const menuBreakpoint = 700;
+export const menuBreakpoint = 700;
 
 export const Image = styled.img`
   height: 40px;
@@ -18,12 +19,26 @@ export const Menu = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  background: blue;
-`
+  height: 40px;
+  width: 40px;
+  border: 1px solid ${redstone};
+
+  .hamburger-react {
+    max-height: 40px;
+    top: -4px;
+    left: -4px
+  }
+
+  @media (min-width: ${menuBreakpoint}px) {
+    border: none;
+  }
+
+  `
 
 export const Wrapper = styled.div`
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-between;
   padding: 30px 20px 20px 20px;
   transition: all ease 1s;
