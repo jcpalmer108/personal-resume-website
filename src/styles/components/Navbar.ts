@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { redstone, silver_polish } from "../variables";
 
-export const menuBreakpoint = 400;
+export const menuBreakpoint = 700;
 
 export const Image = styled.img`
   height: 40px;
