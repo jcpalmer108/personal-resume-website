@@ -7,14 +7,14 @@ import content from './assets/content/content.json'
 import generateMenu from './utils/generateMenu';
 
 export default function App() {
-  console.log(generateMenu(content.sections))
+  const menu = generateMenu(content.sections)
 
   return (
     <>
       <GlobalStyle />
       <Wrapper>
         <LandingWrapper>
-          <Navbar />
+          <Navbar menu={menu} />
         </LandingWrapper>
         <Section label="my section">
           <div>Children exist</div>

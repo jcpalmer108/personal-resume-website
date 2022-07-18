@@ -1,22 +1,6 @@
 import styled from "styled-components";
-import { 
-  desktopBreakpoint,
-  contentWidth,
-  silver_polish
-} from "../variables";
-
-type WrapperProps = {
-  light?: boolean,
-  thin? : boolean,
-}
-
-type HeaderProps = {
-  center?: boolean,
-}
-
-type ChildrenProps = {
-  padded?: boolean
-}
+import { desktopBreakpoint, contentWidth, silver_polish } from "../variables";
+import { WrapperProps, HeaderProps, ChildrenProps } from "../../types/Section"
 
 export const Wrapper = styled.div<WrapperProps>`
   max-width: ${contentWidth}px;
@@ -32,7 +16,6 @@ export const Wrapper = styled.div<WrapperProps>`
     border-width: ${props => props.thin ? 0.5 : 1}px;
     transition: all ease 1s;
   }
-
 `
 
 export const Header = styled.div<HeaderProps>`
@@ -68,7 +51,7 @@ export const Label = styled.div`
     padding-bottom: calc(100% - 16px);
     padding-left: 0px;
   }
-`;
+`
 
 export const Line = styled.img`
   width: 25px;

@@ -13,14 +13,9 @@ import logo from "../assets/images/jennapalmer-dark.svg";
 import { redstone } from "@/styles/variables";
 import { Turn as Hamburger } from 'hamburger-react';
 import socials from '../assets/content/socials.json';
+import { Link, NavbarProps } from '../types/Navbar'
 
-type Link = {
-  key: string,
-  label: string,
-  url: string,
-}
-
-export default function Navbar() {
+export default function Navbar({ menu }: NavbarProps) {
   const [isOpen, setIsOpen] = useState(true)
   const [isDesktop, setIsDesktop] = useState(window.innerWidth >= menuBreakpoint)
 
