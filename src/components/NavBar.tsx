@@ -22,18 +22,17 @@ import { animated, useSpring } from "react-spring";
 
 export default function Navbar({ menu }: NavbarProps) {
   const [isOpen, setIsOpen] = useState(false)
-  const [isDesktop, setIsDesktop] = useState(window.innerWidth >= menuBreakpoint)
+  const [isDesktopView, setIsDesktop] = useState(window.innerWidth >= menuBreakpoint)
 
   // closes mobile menu on desktop view
   const updateMedia = () => {
-    const isWider = window.innerWidth >= menuBreakpoint;
+    const widerThanMenuBreakpoint = window.innerWidth >= menuBreakpoint;
 
-    if(isDesktop !== isWider) {
-      setIsDesktop(isWider)
-      console.log(isWider)
-    }
+    // captures is hamburger menu or desktop menu should render
+    if(isDesktopView !== widerThanMenuBreakpoint) setIsDesktop(widerThanMenuBreakpoint)
 
-    if(isOpen === true && isWider) {
+    // captures if menu is open and desktop menu should render
+    if(isOpen === true && widerThanMenuBreakpoint) {
       setIsOpen(false)
     }
   }
@@ -43,15 +42,16 @@ export default function Navbar({ menu }: NavbarProps) {
     return () => window.removeEventListener('resize', updateMedia)
   })
 
+
   const openAnimation = useSpring<object>({
     from: {
       opacity: '0',
-      maxHeight: '25px',
+      maxHeight: '95px',
       overflow: 'hidden'
     },
     to: {
       opacity: '1',
-      maxHeight: isOpen ? `${window.innerHeight + 110}px` : '110px',
+      maxHeight: isOpen ? `${window.innerHeight + 95}px` : '100px',
     },
     config: { duration: '300' }
   })
@@ -62,7 +62,9 @@ export default function Navbar({ menu }: NavbarProps) {
         <UpperMenu>
           <Logo src={logo} alt="logo" />
           {
-            isDesktop ? (
+            // if its desktop view... 
+            isDesktopView ? (
+              // render desktop menu
               <DesktopMenu>
                 {menu.map((link) => (
                   <DesktopPages href={`#${link.key}`} key={link.key}>
@@ -71,6 +73,7 @@ export default function Navbar({ menu }: NavbarProps) {
                 ))}
               </DesktopMenu>
             ) : (
+              // else render hamburger menu
               <Hamburger
                 toggle={() => setIsOpen(!isOpen)}
                 toggled={isOpen}
