@@ -4,7 +4,7 @@ export const Wrapper = styled.section`
   width: 100%;
   font-family: Gilroy-Regular;
   min-width: 320px;
-`;
+`
 
 export const LandingWrapper = styled.div`
   background: rgb(255,209,184);

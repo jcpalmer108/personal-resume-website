@@ -5,8 +5,9 @@ import {
   Line, 
   Label, 
   Title, 
-  Children} from '../styles/components/Section'
-import line from '../assets/images/label-line.svg';
+  Children
+} from "../styles/components/Section";
+import line from "../assets/images/label-line.svg";
 
 type SectionProps = {
   children: ReactNode,
