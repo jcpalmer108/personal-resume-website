@@ -7,7 +7,7 @@ import content from './assets/content/content.json'
 import generateMenu from './utils/generateMenu';
 
 export default function App() {
-  console.log(generateMenu(content))
+  console.log(generateMenu(content.sections))
 
   return (
     <>
