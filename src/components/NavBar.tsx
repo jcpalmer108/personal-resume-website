@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react";
 import Section from "./Section";
 import { 
-  Image, 
-  TopNav, 
-  TopBar, 
+  Logo, 
+  UpperMenu, 
   menuBreakpoint, 
   SocialsWrapper,
-  MobileMenu,
+  DesktopPages,
+  DesktopMenu,
+  LowerMenu,
   Pages,
   PagesWrapper,
   Socials,
@@ -20,7 +21,7 @@ import { Link, NavbarProps } from '../types/Navbar';
 import { animated, useSpring } from "react-spring";
 
 export default function Navbar({ menu }: NavbarProps) {
-  const [isOpen, setIsOpen] = useState(true)
+  const [isOpen, setIsOpen] = useState(false)
   const [isDesktop, setIsDesktop] = useState(window.innerWidth >= menuBreakpoint)
 
   // closes mobile menu on desktop view
@@ -58,38 +59,42 @@ export default function Navbar({ menu }: NavbarProps) {
   return (
     <Section wide light>
       <animated.div style={openAnimation}>
-        <TopBar>
-          <Image src={logo} alt="logo" />
-          <TopNav>
-            {
-              isDesktop ? (
-                <div>blah</div>
-              ) : (
-                <Hamburger
-                  toggle={() => setIsOpen(!isOpen)}
-                  toggled={isOpen}
-                  size={20}
-                  color={redstone}
-                  duration={0.5}
-                />
-              )
-            }
-          </TopNav>
-        </TopBar>
-        <MobileMenu>
+        <UpperMenu>
+          <Logo src={logo} alt="logo" />
+          {
+            isDesktop ? (
+              <DesktopMenu>
+                {menu.map((link) => (
+                  <DesktopPages href={`#${link.key}`} key={link.key}>
+                    {link.label.toUpperCase()}
+                  </DesktopPages>
+                ))}
+              </DesktopMenu>
+            ) : (
+              <Hamburger
+                toggle={() => setIsOpen(!isOpen)}
+                toggled={isOpen}
+                size={20}
+                color={redstone}
+                duration={0.5}
+              />
+            )
+          }
+        </UpperMenu>
+        <LowerMenu>
           <PagesWrapper>
             {menu.map((link) => (
-              <Pages href={`#${link.key}`}>{link.label}</Pages>
+              <Pages href={`#${link.key}`} key={link.key}>{link.label}</Pages>
             ))}
           </PagesWrapper>
           <SocialsWrapper>
-            {socials.links && socials.links.map((link: Link) => (
+            {socials.links.map((link: Link) => (
               <Socials href={link.url} key={link.key}>
                 <Icon src={require("../assets/images/" + link.key + ".svg")} alt={link.key} />
               </Socials>
             ))}
           </SocialsWrapper>
-        </MobileMenu>
+        </LowerMenu>
       </animated.div>
     </Section>
   )
