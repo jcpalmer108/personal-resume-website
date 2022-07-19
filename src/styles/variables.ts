@@ -1,4 +1,5 @@
-export const desktopBreakpoint = 600;
+export const desktopBreakpoint = 1024;
+export const tabletBreakpoint = 480
 export const contentWidth = 1155;
 export const silver_polish = "#c6c6c6";
 export const redstone = "#e56b6f";

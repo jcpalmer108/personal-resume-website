@@ -10,7 +10,7 @@ type ButtonProps = {
 export default function Button({ label, url }: ButtonProps ) {
   return (
     <Link href={url}>
-      <span>{label}</span>
+      <span>{label.toUpperCase()}</span>
       <ArrowRight src={arrow} alt="arrow" />
     </Link>
   )
