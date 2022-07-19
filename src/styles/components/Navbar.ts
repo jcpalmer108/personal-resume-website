@@ -1,16 +1,17 @@
 import styled from "styled-components";
-import { redstone, silver_polish } from "../variables";
+import { desktopBreakpoint, redstone, silver_polish } from "../variables";
 
 export const menuBreakpoint = 900;
 
 export const Logo = styled.img`
-  height: 50px;
+  height: 40px;
   transition: all ease 1s;
 
-  @media (min-width: ${menuBreakpoint}px) {
+  @media (min-width: ${desktopBreakpoint}px) {
     height: 55px;
     transition: all ease 1s;
   }
+
 `
 
 export const UpperMenu = styled.div`
@@ -25,7 +26,7 @@ export const UpperMenu = styled.div`
     border: 1px solid ${redstone};
   }
 
-  @media (min-width: ${menuBreakpoint}px) {
+  @media (min-width: ${desktopBreakpoint}px) {
     padding: 20px 60px;
     transition: all ease 1s;
     display: flex;
