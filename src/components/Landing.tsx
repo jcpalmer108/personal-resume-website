@@ -1,15 +1,24 @@
 import React from "react";
 import { LandingProps } from "../types/Landing";
-import { Wrapper, Title, Content , Description, MobilePhoto, DesktopPhoto} from "../styles/components/Landing";
+import { 
+  Title, 
+  Content, 
+  Description, 
+  MobilePhoto, 
+  DesktopPhoto, 
+  DiscoverMore, 
+  UpperLanding, 
+} from "../styles/components/Landing";
 import Section from "./Section";
 import Button from "./Button";
+import SeparatingLine from "./SeparatingLine"
 import landing from "../assets/images/pexels-ekaterina-bolovtsova-4049791.jpg";
+import scroll from "../assets/images/scroll.svg"
 
 export default function Landing({ content }: LandingProps) {
-  console.log('test: ', content)
   return (
     <Section light wide>
-      <Wrapper>
+      <UpperLanding>
         <Content>
           <Title>{content?.title}</Title>
           <MobilePhoto src={landing} alt="landing"/>
@@ -20,7 +29,12 @@ export default function Landing({ content }: LandingProps) {
           />
         </Content>
         <DesktopPhoto src={landing} alt="landing"/>
-      </Wrapper>
+      </UpperLanding>
+      <SeparatingLine light />
+      <DiscoverMore>
+        <img src={scroll} alt="scroll" />
+        <span>Discover More</span>
+      </DiscoverMore>
     </Section>
   )
 }

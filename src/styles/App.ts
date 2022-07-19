@@ -1,9 +1,10 @@
 import styled from "styled-components";
+import { mobileBreakpoint } from "./variables";
 
 export const Wrapper = styled.section`
   width: 100%;
   font-family: Gilroy-Regular;
-  min-width: 320px;
+  min-width: ${mobileBreakpoint}px;
 `
 
 export const LandingWrapper = styled.div`

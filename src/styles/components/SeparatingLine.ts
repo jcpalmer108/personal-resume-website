@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { contentWidth, silver_polish, tabletBreakpoint } from "../variables"
+import { silver_polish, tabletBreakpoint } from "../variables"
 import { SeparatingLineProps as LineProps } from '../../types/SeparatingLine'
 
 export const Line = styled.hr<LineProps>`

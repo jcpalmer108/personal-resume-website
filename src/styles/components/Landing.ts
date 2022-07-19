@@ -1,10 +1,8 @@
-import { tab } from "@testing-library/user-event/dist/tab"
 import styled from "styled-components"
 import { desktopBreakpoint, tabletBreakpoint } from "../variables"
 
-export const Wrapper = styled.div`
+export const UpperLanding = styled.div`
   display: flex;
-
 `
 
 export const Title = styled.h1`
@@ -22,8 +20,8 @@ export const Content = styled.div`
   align-items: center;
   text-align: center;
   padding: 0px;
-
-
+  
+  
   @media (min-width: ${tabletBreakpoint}px) {
     text-align: left;
     padding: 20px;
@@ -57,14 +55,13 @@ export const MobilePhoto = styled.img`
 
 export const DesktopPhoto = styled.img`
   height: 563px;
-  width: 100%;
+  width: 367px;
   object-fit: cover;
   display: none;
-  flex-shrink: 2;
+  padding-right: 20px;
 
   @media (min-width: ${tabletBreakpoint}px) {
     display: block;
-    padding-right: 20px;
   }
 
   @media (min-width: ${desktopBreakpoint}px) {
@@ -72,3 +69,19 @@ export const DesktopPhoto = styled.img`
   }
 
 `
+
+export const DiscoverMore = styled.div`
+  height: 40px;
+  visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+
+  @media (min-width: ${tabletBreakpoint}px) {
+    height: 100px;
+    visibility: visible;
+  }
+
+`
+
