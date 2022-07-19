@@ -6,6 +6,10 @@
       "label": "Landing",
       "inMenu": false,
       "title": "Great skill in Javascript Developer",
+      "action": {
+        "text": "Check my work",
+        "link": "#experience"
+      },
       "description": "Magna voluptate Lorem adipisicing esse culpa Lorem elit occaecat officia exercitation dolor excepteur esse aliquip. Anim velit nisi laboris in reprehenderit excepteur officia Lorem dolore."
     },
     {

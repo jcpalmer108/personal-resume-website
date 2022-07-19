@@ -46,6 +46,7 @@ const GlobalStyle = createGlobalStyle`
   p {
     font-size: 12px;
     font-family: Gilroy-Regular;
+    transition: all 1s ease;
   }
 
   h1 {
@@ -53,6 +54,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: Butler-Regular;
     font-weight: normal;
     margin: 0px;
+    transition: all 1s ease;
   }
 
   h2 {
@@ -60,6 +62,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: Butler-Regular;
     font-weight: normal;
     margin: 0px;
+    transition: all 1s ease;
   }
 
   h3 {
@@ -67,23 +70,28 @@ const GlobalStyle = createGlobalStyle`
     font-family: Butler-Regular;
     font-weight: normal;
     margin: 0px;
+    transition: all 1s ease;
   }
 
   @media (min-width: ${desktopBreakpoint}px) {
     p {
       font-size: 16px;
+      transition: all 1s ease;
     }
 
     h1 {
       font-size: 70px;
+      transition: all 1s ease;
     }
 
     h2 {
       font-size: 55px;
+      transition: all 1s ease;
     }
 
     h3 {
       font-size: 25px;
+      transition: all 1s ease;
     }
   }
 

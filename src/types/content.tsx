@@ -2,11 +2,17 @@ export type Content = {
   sections: Sections[],
 }
 
+export type Action = {
+  text: string,
+  link?: string
+}
+
 export type Sections = {
   key: string,
   label: string,
   inMenu: boolean,
   title: string,
+  action?: Action,
   description?: string,
   subSection?: Education[] | Skills[] | Quotes[] | Experience[]
 }
