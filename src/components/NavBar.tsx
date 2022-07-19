@@ -3,7 +3,6 @@ import Section from "./Section";
 import { 
   Logo, 
   UpperMenu, 
-  menuBreakpoint, 
   SocialsWrapper,
   DesktopPages,
   DesktopMenu,
@@ -14,7 +13,7 @@ import {
   Icon
 } from "../styles/components/Navbar";
 import logo from "../assets/images/jennapalmer-dark.svg";
-import { redstone } from "../styles/variables";
+import { redstone, tabletBreakpoint } from "../styles/variables";
 import { Turn as Hamburger } from 'hamburger-react';
 import socials from '../assets/content/socials.json';
 import { Link, NavbarProps } from '../types/Navbar';
@@ -22,10 +21,11 @@ import { animated, useSpring } from "react-spring";
 
 export default function Navbar({ menu }: NavbarProps) {
   const [isOpen, setIsOpen] = useState(false)
-  const [isDesktopView, setIsDesktop] = useState(window.innerWidth >= menuBreakpoint)
+  const [isDesktopView, setIsDesktop] = useState(window.innerWidth >= tabletBreakpoint)
+  
 
   const updateMedia = () => {
-    const widerThanMenuBreakpoint = window.innerWidth >= menuBreakpoint;
+    const widerThanMenuBreakpoint = window.innerWidth >= tabletBreakpoint;
     if(isDesktopView !== widerThanMenuBreakpoint) setIsDesktop(widerThanMenuBreakpoint)
     if(isOpen === true && widerThanMenuBreakpoint) setIsOpen(false)
   }

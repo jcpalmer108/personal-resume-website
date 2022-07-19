@@ -5,7 +5,7 @@ import GilroyRegular from "./fonts/Gilroy-Regular.ttf";
 import GilroyRegularItalic from "./fonts/Gilroy-RegularItalic.ttf";
 import Butler from "./fonts/Butler.woff2";
 import ButlerMedium from "./fonts/Butler-Medium.woff";
-import { desktopBreakpoint } from './variables';
+import { desktopBreakpoint, tabletBreakpoint } from './variables';
  
 const GlobalStyle = createGlobalStyle`
   @font-face {
@@ -46,15 +46,13 @@ const GlobalStyle = createGlobalStyle`
   p {
     font-size: 12px;
     font-family: Gilroy-Regular;
-    transition: all 1s ease;
   }
 
   h1 {
-    font-size: 35px;
+    font-size: 36px;
     font-family: Butler-Regular;
     font-weight: normal;
     margin: 0px;
-    transition: all 1s ease;
   }
 
   h2 {
@@ -62,36 +60,49 @@ const GlobalStyle = createGlobalStyle`
     font-family: Butler-Regular;
     font-weight: normal;
     margin: 0px;
-    transition: all 1s ease;
   }
 
   h3 {
-    font-size: 20px;
+    font-size: 18px;
     font-family: Butler-Regular;
     font-weight: normal;
     margin: 0px;
-    transition: all 1s ease;
   }
+
+  @media (min-width: ${tabletBreakpoint}px) {
+    p {
+      font-size: 14px;
+    }
+
+    h1 {
+      font-size: 48px;
+    }
+
+    h2 {
+      font-size: 36px;
+    }
+
+    h3 {
+      font-size: 24px;
+    }
+  }
+
 
   @media (min-width: ${desktopBreakpoint}px) {
     p {
       font-size: 16px;
-      transition: all 1s ease;
     }
 
     h1 {
-      font-size: 70px;
-      transition: all 1s ease;
+      font-size: 60px;
     }
 
     h2 {
-      font-size: 55px;
-      transition: all 1s ease;
+      font-size: 48px;
     }
 
     h3 {
-      font-size: 25px;
-      transition: all 1s ease;
+      font-size: 30px;
     }
   }
 

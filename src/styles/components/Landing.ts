@@ -1,22 +1,17 @@
+import { tab } from "@testing-library/user-event/dist/tab"
 import styled from "styled-components"
-import { desktopBreakpoint } from "../variables"
+import { desktopBreakpoint, tabletBreakpoint } from "../variables"
 
 export const Wrapper = styled.div`
   display: flex;
 
-  @media (min-width: ${desktopBreakpoint}px) {
-    padding-right: 60px;
-
-  }
 `
 
 export const Title = styled.h1`
   margin: 20px;
-  transition: all 1s ease;
 
-  @media (min-width: ${desktopBreakpoint}px) {
+  @media (min-width: ${tabletBreakpoint}px) {
     margin: 0px;
-    transition: all 1s ease;
   }
 `
 
@@ -27,24 +22,24 @@ export const Content = styled.div`
   align-items: center;
   text-align: center;
   padding: 0px;
-  transition: all 1s ease;
 
+
+  @media (min-width: ${tabletBreakpoint}px) {
+    text-align: left;
+    padding: 20px;
+    align-items: flex-start;
+  }
 
   @media (min-width: ${desktopBreakpoint}px) {
     padding: 20px 60px;
-    text-align: left;
-    align-items: flex-start;
-    transition: all 1s ease;
   }
 `
 
 export const Description = styled.p`
   margin: 30px 20px;
-  transition: all 1s ease;
 
-  @media (min-width: ${desktopBreakpoint}px) {
+  @media (min-width: ${tabletBreakpoint}px) {
     margin: 15px 0px 30px 0px;
-    transition: all 1s ease;
   }
 `
 
@@ -55,7 +50,7 @@ export const MobilePhoto = styled.img`
   object-position: 0px 92%;
   display: block;
 
-  @media (min-width: ${desktopBreakpoint}px) {
+  @media (min-width: ${tabletBreakpoint}px) {
     display: none;
   }
 `
@@ -67,7 +62,13 @@ export const DesktopPhoto = styled.img`
   display: none;
   flex-shrink: 2;
 
-  @media (min-width: ${desktopBreakpoint}px) {
+  @media (min-width: ${tabletBreakpoint}px) {
     display: block;
+    padding-right: 20px;
   }
+
+  @media (min-width: ${desktopBreakpoint}px) {
+    padding-right: 60px;
+  }
+
 `

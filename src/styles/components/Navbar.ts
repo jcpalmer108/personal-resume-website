@@ -1,15 +1,11 @@
 import styled from "styled-components";
-import { desktopBreakpoint, redstone, silver_polish } from "../variables";
-
-export const menuBreakpoint = 900;
+import { tabletBreakpoint, redstone, silver_polish, desktopBreakpoint } from "../variables";
 
 export const Logo = styled.img`
-  height: 40px;
-  transition: all ease 1s;
+  height: 50px;
 
-  @media (min-width: ${desktopBreakpoint}px) {
+  @media (min-width: ${tabletBreakpoint}px) {
     height: 55px;
-    transition: all ease 1s;
   }
 
 `
@@ -20,7 +16,6 @@ export const UpperMenu = styled.div`
   align-items: center;
   justify-content: space-between;
   padding: 30px 20px 20px 20px;
-  transition: all ease 1s;
 
   .hamburger-react {
     border: 1px solid ${redstone};
@@ -28,7 +23,6 @@ export const UpperMenu = styled.div`
 
   @media (min-width: ${desktopBreakpoint}px) {
     padding: 20px 60px;
-    transition: all ease 1s;
     display: flex;
   }
 
@@ -48,6 +42,7 @@ export const PagesWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
 `
 
 export const Pages = styled.a`
@@ -90,7 +85,13 @@ export const DesktopMenu = styled.div`
 export const DesktopPages = styled.a`
   text-decoration: none;
   color: black;
-  padding: 0px 20px;
-  font-size: 14px;
+  padding: 0px 12px;
   font-family: Gilroy-Medium;
+  font-size: 14px;
+  wrap: no-wrap;
+
+  @media (min-width: ${desktopBreakpoint}px) {
+    padding: 0px 20px;
+  }
+
 `

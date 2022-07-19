@@ -14,13 +14,11 @@ export const Link = styled.a`
   color: white;
   font-family: Gilroy-Medium;
   font-size: 12px;
-  transition: all 1s ease;
 
   @media (min-width: ${desktopBreakpoint}px) {
     width: 218px;
     height: 64px;
     font-size: 14px;
-    transition: all 1s ease;
   }
 `
 
