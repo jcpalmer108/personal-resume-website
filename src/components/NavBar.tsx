@@ -14,7 +14,7 @@ import {
   Icon
 } from "../styles/components/Navbar";
 import logo from "../assets/images/jennapalmer-dark.svg";
-import { redstone } from "@/styles/variables";
+import { redstone } from "../styles/variables";
 import { Turn as Hamburger } from 'hamburger-react';
 import socials from '../assets/content/socials.json';
 import { Link, NavbarProps } from '../types/Navbar';
@@ -57,7 +57,7 @@ export default function Navbar({ menu }: NavbarProps) {
   })
 
   return (
-    <Section wide light>
+    <Section wide light bottom>
       <animated.div style={openAnimation}>
         <UpperMenu>
           <Logo src={logo} alt="logo" />

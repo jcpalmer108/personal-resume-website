@@ -15,7 +15,8 @@ type SectionProps = {
   light?: boolean,
   thin?: boolean,
   wide?: boolean,
-  center?: boolean
+  center?: boolean,
+  bottom?: boolean
 }
 
 export default function Section({ 
@@ -24,10 +25,11 @@ export default function Section({
   light,
   thin,
   wide,
-  center
+  center,
+  bottom
 }: SectionProps) {
   return (
-    <Wrapper light={light} thin={thin} data-testid="Wrapper">
+    <Wrapper light={light} thin={thin} bottom={bottom} data-testid="Wrapper">
       {label && (
         <Header data-testid="Header" center={center} >
           <Label data-testid="Label">

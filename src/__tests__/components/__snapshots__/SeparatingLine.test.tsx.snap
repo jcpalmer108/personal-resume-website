@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SeparatingLine Happy Path 1`] = `
+<hr
+  class="sc-bczRLJ eSYHdw"
+  data-testid="Line"
+/>
+`;
+
+exports[`SeparatingLine Un-Happy Path 1`] = `
+<hr
+  class="sc-bczRLJ djNeBT"
+  data-testid="Line"
+/>
+`;
