@@ -24,17 +24,10 @@ export default function Navbar({ menu }: NavbarProps) {
   const [isOpen, setIsOpen] = useState(false)
   const [isDesktopView, setIsDesktop] = useState(window.innerWidth >= menuBreakpoint)
 
-  // closes mobile menu on desktop view
   const updateMedia = () => {
     const widerThanMenuBreakpoint = window.innerWidth >= menuBreakpoint;
-
-    // captures is hamburger menu or desktop menu should render
     if(isDesktopView !== widerThanMenuBreakpoint) setIsDesktop(widerThanMenuBreakpoint)
-
-    // captures if menu is open and desktop menu should render
-    if(isOpen === true && widerThanMenuBreakpoint) {
-      setIsOpen(false)
-    }
+    if(isOpen === true && widerThanMenuBreakpoint) setIsOpen(false)
   }
 
   useEffect(() => {
@@ -61,28 +54,23 @@ export default function Navbar({ menu }: NavbarProps) {
       <animated.div style={openAnimation}>
         <UpperMenu>
           <Logo src={logo} alt="logo" />
-          {
-            // if its desktop view... 
-            isDesktopView ? (
-              // render desktop menu
-              <DesktopMenu>
-                {menu.map((link) => (
-                  <DesktopPages href={`#${link.key}`} key={link.key}>
-                    {link.label.toUpperCase()}
-                  </DesktopPages>
-                ))}
-              </DesktopMenu>
-            ) : (
-              // else render hamburger menu
-              <Hamburger
-                toggle={() => setIsOpen(!isOpen)}
-                toggled={isOpen}
-                size={20}
-                color={redstone}
-                duration={0.5}
-              />
-            )
-          }
+          {isDesktopView ? (
+            <DesktopMenu>
+              {menu.map((link) => (
+                <DesktopPages href={`#${link.key}`} key={link.key}>
+                  {link.label.toUpperCase()}
+                </DesktopPages>
+              ))}
+            </DesktopMenu>
+          ) : (
+            <Hamburger
+              toggle={() => setIsOpen(!isOpen)}
+              toggled={isOpen}
+              size={20}
+              color={redstone}
+              duration={0.5}
+            />
+          )}
         </UpperMenu>
         <LowerMenu>
           <PagesWrapper>

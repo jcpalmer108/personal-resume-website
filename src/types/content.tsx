@@ -11,31 +11,31 @@ export type Sections = {
   subSection?: Education[] | Skills[] | Quotes[] | Experience[]
 }
 
-export type Education = {
+type Education = {
   key: string,
   school: string,
   degree: string,
   timeline: Timeline
 }
 
-export type Skills = {
+type Skills = {
   key: string,
   label: string,
   url: string
 }
 
-export type Timeline = {
+type Timeline = {
   start: string,
   end: string,
 }
 
-export type Quotes = {
+type Quotes = {
   quote: string,
   person: string,
   title: string
 }
 
-export type Experience = {
+type Experience = {
   title: string,
   employer: string,
   location: string,
@@ -47,7 +47,7 @@ export type Experience = {
   projects?: Project[]
 }
 
-export type Project = {
+type Project = {
   industry: string,
   title: string,
   description: string,

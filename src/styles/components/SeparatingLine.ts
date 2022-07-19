@@ -1,10 +1,7 @@
 import styled from "styled-components"
 import { contentWidth, silver_polish } from "../variables"
+import { SeparatingLineProps as LineProps } from '../../types/SeparatingLine'
 
-type LineProps = {
-  thin?: boolean,
-  light?: boolean
-}
 export const Line = styled.hr<LineProps>`
   width: 100%;
   border-color: transparent;
