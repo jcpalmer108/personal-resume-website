@@ -7,8 +7,8 @@ import {
   DesktopPages,
   DesktopMenu,
   LowerMenu,
-  Pages,
-  PagesWrapper,
+  MobilePages,
+  MobileMenu,
   Socials,
   Icon,
   Hamburger
@@ -55,14 +55,14 @@ export default function Navbar({ menu }: NavbarProps) {
       <animated.div style={openAnimation} data-testid="Navbar">
         <UpperMenu>
           <Logo src={logo} alt="logo" />
-          <DesktopMenu>
+          <DesktopMenu data-testid="Desktop Menu">
             {menu.map((link) => (
               <DesktopPages href={`#${link.key}`} key={link.key}>
                 {link.label.toUpperCase()}
               </DesktopPages>
             ))}
           </DesktopMenu>
-          <Hamburger>
+          <Hamburger data-testid="Hamburger">
             <Turn
               toggle={() => setIsOpen(!isOpen)}
               toggled={isOpen}
@@ -73,12 +73,12 @@ export default function Navbar({ menu }: NavbarProps) {
           </Hamburger>
         </UpperMenu>
         <LowerMenu>
-          <PagesWrapper>
+          <MobileMenu data-testid="Mobile Menu">
             {menu.map((link) => (
-              <Pages href={`#${link.key}`} key={link.key}>{link.label}</Pages>
+              <MobilePages href={`#${link.key}`} key={link.key}>{link.label}</MobilePages>
             ))}
-          </PagesWrapper>
-          <SocialsWrapper>
+          </MobileMenu>
+          <SocialsWrapper data-testid="Socials">
             {socials.links.map((link: Link) => (
               <Socials href={link.url} key={link.key}>
                 <Icon src={require("../assets/images/" + link.key + ".svg")} alt={link.key} />

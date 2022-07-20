@@ -42,7 +42,7 @@ export const LowerMenu = styled.div`
   flex-direction: column;
 `
 
-export const PagesWrapper = styled.div`
+export const MobileMenu = styled.div`
   flex-grow: 1;
   display: flex;
   padding: 40px 0px;
@@ -52,7 +52,7 @@ export const PagesWrapper = styled.div`
 
 `
 
-export const Pages = styled.a`
+export const MobilePages = styled.a`
   height: 100%;
   display: flex;
   align-items: center;
