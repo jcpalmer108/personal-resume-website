@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import { desktopBreakpoint, tabletBreakpoint } from "../variables"
 
-export const UpperLanding = styled.div`
+export const Main = styled.div`
   display: flex;
 `
 

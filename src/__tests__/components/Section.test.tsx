@@ -7,34 +7,30 @@ const params = {
   childText: "Child 1"
 }
   
-test('Section - Happy Path', async () => {
-  render(
-    <Section label={params.label} light thin wide center>
-      <p>{params.childText}</p>
-    </Section>
-  )
+describe('Section', () => {
+  test('renders if required and optional params are passed in', () => {
+    render(
+      <Section label={params.label} light thin wide center>
+        <p>{params.childText}</p>
+      </Section>
+    )
+  
+    expect(screen.getByTestId('Wrapper')).toMatchSnapshot()
+    expect(screen.getByTestId('Wrapper').childElementCount).toEqual(2)
+    expect(screen.getByTestId('Label')).toHaveTextContent(params.label.toUpperCase())
+    expect(screen.getByTestId('Children')).toHaveTextContent(params.childText)  
+  })
 
-  expect(screen.getByTestId('Wrapper')).toMatchSnapshot()
-  expect(screen.getByTestId('Wrapper').childElementCount).toEqual(2)
-  expect(screen.getByTestId('Label')).toHaveTextContent(
-    params.label.toUpperCase()
-  )
-  expect(screen.getByTestId('Children')).toHaveTextContent(
-    params.childText
-  )
-})
-
-test('Section - Unhappy Path', async () => {
-  render(
-    <Section>
-      <p>{params.childText}</p>
-    </Section>
-  )
-
-  expect(screen.getByTestId('Wrapper')).toMatchSnapshot()
-  expect(screen.getByTestId('Wrapper').childElementCount).toEqual(1)
-  expect(screen.queryAllByTestId('Label')).toHaveLength(0)
-  expect(screen.getByTestId('Children')).toHaveTextContent(
-    params.childText
-  )
+  test('renders if only required params are passed in', () => {
+    render(
+      <Section>
+        <p>{params.childText}</p>
+      </Section>
+    )
+  
+    expect(screen.getByTestId('Wrapper')).toMatchSnapshot()
+    expect(screen.getByTestId('Wrapper').childElementCount).toEqual(1)
+    expect(screen.queryAllByTestId('Label')).toHaveLength(0)
+    expect(screen.getByTestId('Children')).toHaveTextContent(params.childText)
+  })
 })

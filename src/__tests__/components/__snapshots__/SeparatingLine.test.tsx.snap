@@ -1,15 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`SeparatingLine Happy Path 1`] = `
+exports[`SeparatingLine renders if optional params are not passed in 1`] = `
 <hr
-  class="sc-bczRLJ eSYHdw"
+  class="sc-bczRLJ Rnrfi"
   data-testid="Line"
 />
 `;
 
-exports[`SeparatingLine Un-Happy Path 1`] = `
+exports[`SeparatingLine renders if optional params are passed in 1`] = `
 <hr
-  class="sc-bczRLJ djNeBT"
+  class="sc-bczRLJ cmKAyx"
   data-testid="Line"
 />
 `;

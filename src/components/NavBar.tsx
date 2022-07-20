@@ -10,14 +10,15 @@ import {
   Pages,
   PagesWrapper,
   Socials,
-  Icon
+  Icon,
+  Hamburger
 } from "../styles/components/Navbar";
 import logo from "../assets/images/jennapalmer-dark.svg";
 import { redstone, tabletBreakpoint } from "../styles/variables";
-import { Turn as Hamburger } from 'hamburger-react';
 import socials from '../assets/content/socials.json';
 import { Link, NavbarProps } from '../types/Navbar';
 import { animated, useSpring } from "react-spring";
+import { Turn } from 'hamburger-react';
 
 export default function Navbar({ menu }: NavbarProps) {
   const [isOpen, setIsOpen] = useState(false)
@@ -39,38 +40,37 @@ export default function Navbar({ menu }: NavbarProps) {
   const openAnimation = useSpring<object>({
     from: {
       opacity: '0',
-      maxHeight: '95px',
+      maxHeight: '105px',
       overflow: 'hidden'
     },
     to: {
       opacity: '1',
-      maxHeight: isOpen ? `${window.innerHeight + 95}px` : '100px',
+      maxHeight: isOpen ? `${window.innerHeight + 110}px` : '105px',
     },
     config: { duration: '300' }
   })
 
   return (
     <Section wide light bottom>
-      <animated.div style={openAnimation}>
+      <animated.div style={openAnimation} data-testid="Navbar">
         <UpperMenu>
           <Logo src={logo} alt="logo" />
-          {isDesktopView ? (
-            <DesktopMenu>
-              {menu.map((link) => (
-                <DesktopPages href={`#${link.key}`} key={link.key}>
-                  {link.label.toUpperCase()}
-                </DesktopPages>
-              ))}
-            </DesktopMenu>
-          ) : (
-            <Hamburger
+          <DesktopMenu>
+            {menu.map((link) => (
+              <DesktopPages href={`#${link.key}`} key={link.key}>
+                {link.label.toUpperCase()}
+              </DesktopPages>
+            ))}
+          </DesktopMenu>
+          <Hamburger>
+            <Turn
               toggle={() => setIsOpen(!isOpen)}
               toggled={isOpen}
               size={20}
               color={redstone}
               duration={0.5}
             />
-          )}
+          </Hamburger>
         </UpperMenu>
         <LowerMenu>
           <PagesWrapper>

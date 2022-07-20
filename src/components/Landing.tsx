@@ -7,33 +7,40 @@ import {
   MobilePhoto, 
   DesktopPhoto, 
   DiscoverMore, 
-  UpperLanding, 
+  Main, 
 } from "../styles/components/Landing";
 import Section from "./Section";
 import Button from "./Button";
 import SeparatingLine from "./SeparatingLine"
-import landing from "../assets/images/pexels-ekaterina-bolovtsova-4049791.jpg";
 import scroll from "../assets/images/scroll.svg"
 
 export default function Landing({ content }: LandingProps) {
+  const defaultImage = "pexels-ekaterina-bolovtsova-4049791.jpg"
+
   return (
-    <Section light wide>
-      <UpperLanding>
+    <Section light wide >
+      <Main data-testid="Main">
         <Content>
           <Title>{content?.title}</Title>
-          <MobilePhoto src={landing} alt="landing"/>
+          <MobilePhoto 
+            src={require("../assets/images/" + (content?.image || defaultImage))}
+            alt="landing mobile"
+          />
           <Description>{content?.description}</Description>
           <Button 
             label={content?.action?.text || 'click me'} 
             url={content?.action?.link || '#contact'}
           />
         </Content>
-        <DesktopPhoto src={landing} alt="landing"/>
-      </UpperLanding>
+        <DesktopPhoto 
+          src={require("../assets/images/" + (content?.image || defaultImage))}
+          alt="landing desktop"
+        />
+      </Main>
       <SeparatingLine light />
-      <DiscoverMore>
+      <DiscoverMore data-testid="DiscoverMore">
         <img src={scroll} alt="scroll" />
-        <span>Discover More</span>
+        <p>Discover More</p>
       </DiscoverMore>
     </Section>
   )

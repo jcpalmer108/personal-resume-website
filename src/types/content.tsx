@@ -12,6 +12,7 @@ export type Sections = {
   label: string,
   inMenu: boolean,
   title: string,
+  image?: string,
   action?: Action,
   description?: string,
   subSection?: Education[] | Skills[] | Quotes[] | Experience[]

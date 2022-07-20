@@ -10,20 +10,27 @@ export const Logo = styled.img`
 
 `
 
+export const Hamburger = styled.div`
+  border: 1px solid ${redstone};
+  display: flex;
+
+  @media (min-width: ${tabletBreakpoint}px) {
+    background: blue;
+    display: none;
+  }
+
+`
+
 export const UpperMenu = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
+  height: 105px;
   justify-content: space-between;
-  padding: 30px 20px 20px 20px;
-
-  .hamburger-react {
-    border: 1px solid ${redstone};
-  }
+  padding: 0px 20px;
 
   @media (min-width: ${desktopBreakpoint}px) {
-    padding: 20px 60px;
-    display: flex;
+    padding: 0px 60px;
   }
 
 `
@@ -77,21 +84,31 @@ export const Icon = styled.img`
   height: 26px;
 `
 
-export const DesktopMenu = styled.div`
-  display: flex;
-  justify-content: space-between;
+export const DesktopMenu = styled.div`  
+  display: none;
+
+  @media (min-width: ${tabletBreakpoint}px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+  
+  }
+
 `
 
 export const DesktopPages = styled.a`
   text-decoration: none;
   color: black;
-  padding: 0px 12px;
+  padding-left: 25px;
   font-family: Gilroy-Medium;
   font-size: 14px;
-  wrap: no-wrap;
+
+  &:first-child {
+    padding-left: none;
+  }
 
   @media (min-width: ${desktopBreakpoint}px) {
-    padding: 0px 20px;
+    padding-left: 40px;
   }
 
 `
