@@ -7,10 +7,10 @@ export const Main = styled.div`
 
 export const Title = styled.h1`
   margin: 20px;
-  max-width: 274px;
+  width: 274px;
 
   @media (min-width: ${tabletBreakpoint}px) {
-    max-width: 95%;
+    width: 100%;
     margin: 0px;
   }
 
