@@ -1,6 +1,7 @@
 export type WrapperProps = {
   light?: boolean,
   thin? : boolean,
+  bottom?: boolean
 }
 
 export type HeaderProps = {

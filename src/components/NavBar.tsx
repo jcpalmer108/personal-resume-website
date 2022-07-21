@@ -3,38 +3,32 @@ import Section from "./Section";
 import { 
   Logo, 
   UpperMenu, 
-  menuBreakpoint, 
   SocialsWrapper,
   DesktopPages,
   DesktopMenu,
   LowerMenu,
-  Pages,
-  PagesWrapper,
+  MobilePages,
+  MobileMenu,
   Socials,
-  Icon
+  Icon,
+  Hamburger
 } from "../styles/components/Navbar";
 import logo from "../assets/images/jennapalmer-dark.svg";
-import { redstone } from "@/styles/variables";
-import { Turn as Hamburger } from 'hamburger-react';
+import { redstone, tabletBreakpoint } from "../styles/variables";
 import socials from '../assets/content/socials.json';
 import { Link, NavbarProps } from '../types/Navbar';
 import { animated, useSpring } from "react-spring";
+import { Turn } from 'hamburger-react';
 
 export default function Navbar({ menu }: NavbarProps) {
   const [isOpen, setIsOpen] = useState(false)
-  const [isDesktopView, setIsDesktop] = useState(window.innerWidth >= menuBreakpoint)
+  const [isDesktopView, setIsDesktop] = useState(window.innerWidth >= tabletBreakpoint)
+  
 
-  // closes mobile menu on desktop view
   const updateMedia = () => {
-    const widerThanMenuBreakpoint = window.innerWidth >= menuBreakpoint;
-
-    // captures is hamburger menu or desktop menu should render
+    const widerThanMenuBreakpoint = window.innerWidth >= tabletBreakpoint;
     if(isDesktopView !== widerThanMenuBreakpoint) setIsDesktop(widerThanMenuBreakpoint)
-
-    // captures if menu is open and desktop menu should render
-    if(isOpen === true && widerThanMenuBreakpoint) {
-      setIsOpen(false)
-    }
+    if(isOpen === true && widerThanMenuBreakpoint) setIsOpen(false)
   }
 
   useEffect(() => {
@@ -46,51 +40,45 @@ export default function Navbar({ menu }: NavbarProps) {
   const openAnimation = useSpring<object>({
     from: {
       opacity: '0',
-      maxHeight: '95px',
+      maxHeight: '105px',
       overflow: 'hidden'
     },
     to: {
       opacity: '1',
-      maxHeight: isOpen ? `${window.innerHeight + 95}px` : '100px',
+      maxHeight: isOpen ? `${window.innerHeight + 110}px` : '105px',
     },
     config: { duration: '300' }
   })
 
   return (
-    <Section wide light>
-      <animated.div style={openAnimation}>
+    <Section wide light bottom>
+      <animated.div style={openAnimation} data-testid="Navbar">
         <UpperMenu>
           <Logo src={logo} alt="logo" />
-          {
-            // if its desktop view... 
-            isDesktopView ? (
-              // render desktop menu
-              <DesktopMenu>
-                {menu.map((link) => (
-                  <DesktopPages href={`#${link.key}`} key={link.key}>
-                    {link.label.toUpperCase()}
-                  </DesktopPages>
-                ))}
-              </DesktopMenu>
-            ) : (
-              // else render hamburger menu
-              <Hamburger
-                toggle={() => setIsOpen(!isOpen)}
-                toggled={isOpen}
-                size={20}
-                color={redstone}
-                duration={0.5}
-              />
-            )
-          }
+          <DesktopMenu data-testid="Desktop Menu">
+            {menu.map((link) => (
+              <DesktopPages href={`#${link.key}`} key={link.key}>
+                {link.label.toUpperCase()}
+              </DesktopPages>
+            ))}
+          </DesktopMenu>
+          <Hamburger data-testid="Hamburger">
+            <Turn
+              toggle={() => setIsOpen(!isOpen)}
+              toggled={isOpen}
+              size={20}
+              color={redstone}
+              duration={0.5}
+            />
+          </Hamburger>
         </UpperMenu>
         <LowerMenu>
-          <PagesWrapper>
+          <MobileMenu data-testid="Mobile Menu">
             {menu.map((link) => (
-              <Pages href={`#${link.key}`} key={link.key}>{link.label}</Pages>
+              <MobilePages href={`#${link.key}`} key={link.key}>{link.label}</MobilePages>
             ))}
-          </PagesWrapper>
-          <SocialsWrapper>
+          </MobileMenu>
+          <SocialsWrapper data-testid="Socials">
             {socials.links.map((link: Link) => (
               <Socials href={link.url} key={link.key}>
                 <Icon src={require("../assets/images/" + link.key + ".svg")} alt={link.key} />

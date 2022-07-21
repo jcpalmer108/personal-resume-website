@@ -1,34 +1,36 @@
 import styled from "styled-components";
-import { redstone, silver_polish } from "../variables";
-
-export const menuBreakpoint = 900;
+import { tabletBreakpoint, redstone, silver_polish, desktopBreakpoint } from "../variables";
 
 export const Logo = styled.img`
   height: 50px;
-  transition: all ease 1s;
 
-  @media (min-width: ${menuBreakpoint}px) {
+  @media (min-width: ${tabletBreakpoint}px) {
     height: 55px;
-    transition: all ease 1s;
   }
+
+`
+
+export const Hamburger = styled.div`
+  border: 1px solid ${redstone};
+  display: flex;
+
+  @media (min-width: ${tabletBreakpoint}px) {
+    background: blue;
+    display: none;
+  }
+
 `
 
 export const UpperMenu = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
+  height: 105px;
   justify-content: space-between;
-  padding: 30px 20px 20px 20px;
-  transition: all ease 1s;
+  padding: 0px 20px;
 
-  .hamburger-react {
-    border: 1px solid ${redstone};
-  }
-
-  @media (min-width: ${menuBreakpoint}px) {
-    padding: 20px 60px;
-    transition: all ease 1s;
-    display: flex;
+  @media (min-width: ${desktopBreakpoint}px) {
+    padding: 0px 60px;
   }
 
 `
@@ -40,16 +42,17 @@ export const LowerMenu = styled.div`
   flex-direction: column;
 `
 
-export const PagesWrapper = styled.div`
+export const MobileMenu = styled.div`
   flex-grow: 1;
   display: flex;
   padding: 40px 0px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
 `
 
-export const Pages = styled.a`
+export const MobilePages = styled.a`
   height: 100%;
   display: flex;
   align-items: center;
@@ -81,15 +84,31 @@ export const Icon = styled.img`
   height: 26px;
 `
 
-export const DesktopMenu = styled.div`
-  display: flex;
-  justify-content: space-between;
+export const DesktopMenu = styled.div`  
+  display: none;
+
+  @media (min-width: ${tabletBreakpoint}px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+  
+  }
+
 `
 
 export const DesktopPages = styled.a`
   text-decoration: none;
   color: black;
-  padding: 0px 20px;
-  font-size: 14px;
+  padding-left: 25px;
   font-family: Gilroy-Medium;
+  font-size: 14px;
+
+  &:first-child {
+    padding-left: none;
+  }
+
+  @media (min-width: ${desktopBreakpoint}px) {
+    padding-left: 40px;
+  }
+
 `

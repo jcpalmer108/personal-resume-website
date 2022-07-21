@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button renders if only required params are passed in 1`] = `
+<a
+  class="sc-bczRLJ diUpuP"
+  data-testid="Button"
+  href="https://www.google.com"
+>
+  <span>
+    TEST
+  </span>
+  <img
+    alt="arrow"
+    class="sc-gsnTZi gbyMYH"
+    src="arrow-right.svg"
+  />
+</a>
+`;

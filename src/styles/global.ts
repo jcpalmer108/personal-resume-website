@@ -5,6 +5,7 @@ import GilroyRegular from "./fonts/Gilroy-Regular.ttf";
 import GilroyRegularItalic from "./fonts/Gilroy-RegularItalic.ttf";
 import Butler from "./fonts/Butler.woff2";
 import ButlerMedium from "./fonts/Butler-Medium.woff";
+import { desktopBreakpoint, tabletBreakpoint } from './variables';
  
 const GlobalStyle = createGlobalStyle`
   @font-face {
@@ -39,8 +40,73 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     margin: 0;
-    padding: 0;
+    padding: 0;  
   }
+
+  p {
+    font-size: 12px;
+    font-family: Gilroy-Regular;
+  }
+
+  h1 {
+    font-size: 36px;
+    font-family: Butler-Regular;
+    font-weight: normal;
+    margin: 0px;
+  }
+
+  h2 {
+    font-size: 30px;
+    font-family: Butler-Regular;
+    font-weight: normal;
+    margin: 0px;
+  }
+
+  h3 {
+    font-size: 18px;
+    font-family: Butler-Regular;
+    font-weight: normal;
+    margin: 0px;
+  }
+
+  @media (min-width: ${tabletBreakpoint}px) {
+    p {
+      font-size: 14px;
+    }
+
+    h1 {
+      font-size: 48px;
+    }
+
+    h2 {
+      font-size: 36px;
+    }
+
+    h3 {
+      font-size: 24px;
+    }
+  }
+
+
+  @media (min-width: ${desktopBreakpoint}px) {
+    p {
+      font-size: 16px;
+    }
+
+    h1 {
+      font-size: 60px;
+    }
+
+    h2 {
+      font-size: 48px;
+    }
+
+    h3 {
+      font-size: 30px;
+    }
+  }
+
+
   `
  
 export default GlobalStyle;
