@@ -7,10 +7,13 @@ export const Main = styled.div`
 
 export const Title = styled.h1`
   margin: 20px;
+  max-width: 274px;
 
   @media (min-width: ${tabletBreakpoint}px) {
+    max-width: 95%;
     margin: 0px;
   }
+
 `
 
 export const Content = styled.div`
@@ -20,13 +23,15 @@ export const Content = styled.div`
   align-items: center;
   text-align: center;
   padding: 0px;
+
   
   
   @media (min-width: ${tabletBreakpoint}px) {
     text-align: left;
-    padding: 20px;
+    padding: 25px;
     align-items: flex-start;
   }
+
 
   @media (min-width: ${desktopBreakpoint}px) {
     padding: 20px 60px;
@@ -35,10 +40,13 @@ export const Content = styled.div`
 
 export const Description = styled.p`
   margin: 30px 20px;
+  line-height: 20px;
 
   @media (min-width: ${tabletBreakpoint}px) {
-    margin: 15px 0px 30px 0px;
+    margin: 15px 0px 40px 0px;
+    line-height: 27px;
   }
+
 `
 
 export const MobilePhoto = styled.img`
@@ -62,6 +70,7 @@ export const DesktopPhoto = styled.img`
 
   @media (min-width: ${tabletBreakpoint}px) {
     display: block;
+    padding-right: 25px;
   }
 
   @media (min-width: ${desktopBreakpoint}px) {
@@ -78,7 +87,7 @@ export const DiscoverMore = styled.div`
   justify-content: center;
   column-gap: 10px;
 
-  @media (min-width: ${tabletBreakpoint}px) {
+  @media (min-width: ${desktopBreakpoint}px) {
     height: 100px;
     visibility: visible;
   }

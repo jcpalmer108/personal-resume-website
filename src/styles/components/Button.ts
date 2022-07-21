@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { desktopBreakpoint, redstone } from "../variables"
+import { desktopBreakpoint, redstone, tabletBreakpoint } from "../variables"
 
 export const Link = styled.a`
   width: 186px;
@@ -15,10 +15,15 @@ export const Link = styled.a`
   font-family: Gilroy-Medium;
   font-size: 12px;
 
+  @media (min-width: ${tabletBreakpoint}px) {
+    width: 214px;
+    height: 60px;
+    font-size: 14px;
+  }
+
   @media (min-width: ${desktopBreakpoint}px) {
     width: 218px;
     height: 64px;
-    font-size: 14px;
   }
 `
 

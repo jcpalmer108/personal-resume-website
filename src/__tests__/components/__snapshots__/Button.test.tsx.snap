@@ -2,7 +2,7 @@
 
 exports[`Button renders if only required params are passed in 1`] = `
 <a
-  class="sc-bczRLJ diUpuP"
+  class="sc-bczRLJ iNjNxX"
   data-testid="Button"
   href="https://www.google.com"
 >

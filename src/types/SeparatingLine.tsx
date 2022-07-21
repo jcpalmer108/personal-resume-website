@@ -1,4 +1,5 @@
 export type SeparatingLineProps = {
   thin?: boolean,
-  light?: boolean
+  light?: boolean,
+  always?: boolean
 }

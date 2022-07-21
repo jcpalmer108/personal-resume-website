@@ -15,7 +15,7 @@
     },
     {
       "key": "about",
-      "label": "About Me",
+      "label": "About",
       "title": "Who am I?",
       "inMenu": true,
       "description": "Magna voluptate Lorem adipisicing esse culpa Lorem elit occaecat officia exercitation dolor excepteur esse aliquip. Anim velit nisi laboris in reprehenderit excepteur officia Lorem dolore. Labore aliqua aliquip amet laboris dolor adipisicing ea tempor minim magna est. Magna voluptate Lorem adipisicing esse culpa Lorem elit occaecat officia exercitation dolor excepteur esse aliquip. Anim velit nisi laboris in reprehenderit excepteur officia Lorem dolore.",
@@ -42,7 +42,7 @@
     },
     {
       "key": "skills",
-      "label": "My Skills",
+      "label": "Skills",
       "title": "Here are my skills and frameworks",
       "description": "Magna voluptate Lorem adipisicing esse culpa Lorem elit occaecat officia exercitation dolor excepteur esse aliquip. Anim velit nisi laboris in reprehenderit excepteur officia Lorem dolore.",
       "inMenu": true,
@@ -115,7 +115,7 @@
     },
     {
       "key": "experience",
-      "label": "Experience",
+      "label": "Work Experience",
       "inMenu": true,
       "title": "Checkout my work experience",
       "description": "Magna voluptate Lorem adipisicing esse culpa Lorem elit occaecat officia exercitation dolor excepteur esse aliquip. Anim velit nisi laboris in reprehenderit excepteur officia Lorem dolore.",
@@ -225,7 +225,7 @@
     },
     {
       "key": "contact",
-      "label": "Contact",
+      "label": "Contact Me",
       "title": "Stay in contact with me",
       "inMenu": true,
       "description": "Magna voluptate Lorem adipisicing esse culpa Lorem elit occaecat officia exercitation dolor excepteur esse aliquip. Anim velit nisi laboris in reprehenderit excepteur officia Lorem dolore."

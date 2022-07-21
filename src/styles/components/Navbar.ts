@@ -2,9 +2,9 @@ import styled from "styled-components";
 import { tabletBreakpoint, redstone, silver_polish, desktopBreakpoint } from "../variables";
 
 export const Logo = styled.img`
-  height: 50px;
+  height: 40px;
 
-  @media (min-width: ${tabletBreakpoint}px) {
+  @media (min-width: ${desktopBreakpoint}px) {
     height: 55px;
   }
 
@@ -12,10 +12,16 @@ export const Logo = styled.img`
 
 export const Hamburger = styled.div`
   border: 1px solid ${redstone};
+  height: 40px;
+  width: 40px;
   display: flex;
 
+  .hamburger-react {
+    top: -3.5px;
+    left: -3.5px;
+  }
+
   @media (min-width: ${tabletBreakpoint}px) {
-    background: blue;
     display: none;
   }
 
@@ -25,12 +31,17 @@ export const UpperMenu = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  height: 105px;
+  height: 100px;
   justify-content: space-between;
   padding: 0px 20px;
 
+  @media (min-width: ${tabletBreakpoint}px) {
+    padding: 0px 25px;
+  }
+
   @media (min-width: ${desktopBreakpoint}px) {
     padding: 0px 60px;
+    height: 105px;
   }
 
 `
@@ -86,12 +97,12 @@ export const Icon = styled.img`
 
 export const DesktopMenu = styled.div`  
   display: none;
+  line-spacing: 3px;
 
   @media (min-width: ${tabletBreakpoint}px) {
     display: flex;
     justify-content: space-between;
     align-items: right;
-  
   }
 
 `
@@ -99,15 +110,16 @@ export const DesktopMenu = styled.div`
 export const DesktopPages = styled.a`
   text-decoration: none;
   color: black;
-  padding-left: 25px;
+  padding-left: 24px;
   font-family: Gilroy-Medium;
-  font-size: 14px;
+  font-size: 12px;
 
   &:first-child {
     padding-left: none;
   }
 
   @media (min-width: ${desktopBreakpoint}px) {
+    font-size: 14px;
     padding-left: 40px;
   }
 

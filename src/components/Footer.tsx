@@ -14,12 +14,11 @@ import SeparatingLine from './SeparatingLine';
 
 export default function Footer({ menu }: FooterProps) {
   return (
-
     <>
-      <Section thin wide>
-        <Wrapper>
+      <Section thin wide >
+        <Wrapper data-testid="Footer">
           <Logo src={logo}/>
-          <FooterMenu>
+          <FooterMenu data-testid="Footer Menu">
             {menu.map((link: MenuItem) => (
               <FooterPages href={`#${link.key}`} key={link.key}>
                 {link.label.toUpperCase()}
@@ -28,11 +27,10 @@ export default function Footer({ menu }: FooterProps) {
           </FooterMenu>
         </Wrapper>
       </Section>
-      <SeparatingLine thin/>
+      <SeparatingLine thin always />
       <Section thin>
-        <Copyright>COPYRIGHT &copy; ALL RIGHTS RESERVED BY <Name>JENNA PALMER</Name></Copyright>
+        <Copyright data-testid="Copyright">COPYRIGHT &copy; ALL RIGHTS RESERVED BY <Name>JENNA PALMER</Name></Copyright>
       </Section>    
     </>
-
   )
 }
