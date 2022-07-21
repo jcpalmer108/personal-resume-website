@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer renders if only required params are passed in 1`] = `
+<div
+  class="sc-bczRLJ ggSMEg"
+  data-testid="Footer"
+>
+  <img
+    class="sc-gsnTZi cWKKaQ"
+    src="jennapalmer-light.svg"
+  />
+  <div
+    class="sc-dkzDqf diyymw"
+    data-testid="Footer Menu"
+  >
+    <a
+      class="sc-hKMtZM hNKKYy"
+      href="#one"
+    >
+      ONE
+    </a>
+    <a
+      class="sc-hKMtZM hNKKYy"
+      href="#two"
+    >
+      TWO
+    </a>
+  </div>
+</div>
+`;

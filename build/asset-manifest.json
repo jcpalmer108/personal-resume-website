@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.e6c13ad2.css",
-    "main.js": "/static/js/main.f0b8f14b.js",
+    "main.js": "/static/js/main.335f7559.js",
     "static/js/787.f9a73e8d.chunk.js": "/static/js/787.f9a73e8d.chunk.js",
     "static/media/pexels-ekaterina-bolovtsova-4049876.jpg": "/static/media/pexels-ekaterina-bolovtsova-4049876.a9eba608b55c1983bd47.jpg",
     "static/media/pexels-ekaterina-bolovtsova-4049791.jpg": "/static/media/pexels-ekaterina-bolovtsova-4049791.a4b1c144f02e2acc0a01.jpg",
@@ -23,7 +23,7 @@
     "static/media/jennapalmer-dark.svg": "/static/media/jennapalmer-dark.37dc3601aa4b0096062d0d82f8d2ec76.svg",
     "static/media/airflow.svg": "/static/media/airflow.8754e79bd8bd880ac56e.svg",
     "static/media/mui.svg": "/static/media/mui.f3f5e01eac0b4881cee3.svg",
-    "static/media/jennapalmer-light.svg": "/static/media/jennapalmer-light.72e4be32b9722ade1e39.svg",
+    "static/media/jennapalmer-light.svg": "/static/media/jennapalmer-light.72e4be32b9722ade1e39def0fa1b91a4.svg",
     "static/media/Butler-Medium.woff": "/static/media/Butler-Medium.88165e78b22b1910a690.woff",
     "static/media/Butler.woff2": "/static/media/Butler.99c7b1a6053c62da9427.woff2",
     "static/media/email.svg": "/static/media/email.4f885c90cc4197b047f8.svg",
@@ -36,11 +36,11 @@
     "static/media/arrow-right.svg": "/static/media/arrow-right.14451155ff28d46082c6781024629771.svg",
     "static/media/label-line.svg": "/static/media/label-line.5c33572d6ec0db6067eba43cf78df291.svg",
     "main.e6c13ad2.css.map": "/static/css/main.e6c13ad2.css.map",
-    "main.f0b8f14b.js.map": "/static/js/main.f0b8f14b.js.map",
+    "main.335f7559.js.map": "/static/js/main.335f7559.js.map",
     "787.f9a73e8d.chunk.js.map": "/static/js/787.f9a73e8d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.f0b8f14b.js"
+    "static/js/main.335f7559.js"
   ]
 }

@@ -46,13 +46,15 @@ const GlobalStyle = createGlobalStyle`
   p {
     font-size: 12px;
     font-family: Gilroy-Regular;
+    line-spacing: 3px;
   }
 
   h1 {
-    font-size: 36px;
+    font-size: 30px;
     font-family: Butler-Regular;
     font-weight: normal;
     margin: 0px;
+
   }
 
   h2 {
@@ -75,7 +77,7 @@ const GlobalStyle = createGlobalStyle`
     }
 
     h1 {
-      font-size: 48px;
+      font-size: 45px;
     }
 
     h2 {

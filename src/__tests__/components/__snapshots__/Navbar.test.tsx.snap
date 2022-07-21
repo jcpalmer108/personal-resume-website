@@ -6,32 +6,32 @@ exports[`Navbar renders if only required params are passed in 1`] = `
   style="opacity: 0; max-height: 105px; overflow: hidden;"
 >
   <div
-    class="sc-ftvSup gQVkXZ"
+    class="sc-ftvSup fqXeAh"
   >
     <img
       alt="logo"
-      class="sc-gKXOVf ecVFBn"
+      class="sc-gKXOVf bgZQNE"
       src="jennapalmer-dark.svg"
     />
     <div
-      class="sc-breuTD gtIiOF"
+      class="sc-breuTD bQjhPd"
       data-testid="Desktop Menu"
     >
       <a
-        class="sc-ksZaOG jUbHge"
+        class="sc-ksZaOG hPOIwE"
         href="#one"
       >
         ONE
       </a>
       <a
-        class="sc-ksZaOG jUbHge"
+        class="sc-ksZaOG hPOIwE"
         href="#two"
       >
         TWO
       </a>
     </div>
     <div
-      class="sc-iBkjds kFuOzR"
+      class="sc-iBkjds cMkmwA"
       data-testid="Hamburger"
     >
       <div
@@ -64,13 +64,13 @@ exports[`Navbar renders if only required params are passed in 1`] = `
         class="sc-kDDrLX doDXhI"
         href="#one"
       >
-        One
+        ONE
       </a>
       <a
         class="sc-kDDrLX doDXhI"
         href="#two"
       >
-        Two
+        TWO
       </a>
     </div>
     <div

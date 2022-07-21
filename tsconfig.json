@@ -22,7 +22,8 @@
   },
   "include": [
     "src",
-    "fonts.d.ts", "src/styles",
+    "fonts.d.ts", 
+    "src/styles"
   ],
   "extends": "./tsconfig.paths.json",
 }

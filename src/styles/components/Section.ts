@@ -12,7 +12,7 @@ export const Wrapper = styled.div<WrapperProps>`
 
   @media (min-width: ${contentWidth}px) {
     border-color: ${props => props.light ? "white" : silver_polish};
-    border-width: ${props => props.thin ? 0.5 : 1}px;
+    border-width: ${props => props.thin ? 0.2 : 1}px;
   }
 `
 
@@ -40,6 +40,10 @@ export const Label = styled.div`
   padding-top: 50px;
 
   @media (min-width: ${tabletBreakpoint}px) {
+    transform: rotate(-90deg) translate(0px, 100%);
+    transform-origin: bottom left;
+    padding-bottom: calc(100% - 16px);
+    padding-left: 0px;
     height: 14px;
     font-size: 14
   }
@@ -47,10 +51,6 @@ export const Label = styled.div`
   @media (min-width: ${desktopBreakpoint}px) {
     height: 16px;
     font-size: 16;
-    transform: rotate(-90deg) translate(0px, 100%);
-    transform-origin: bottom left;
-    padding-bottom: calc(100% - 16px);
-    padding-left: 0px;
   }
 
 `
