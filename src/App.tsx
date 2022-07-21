@@ -6,8 +6,8 @@ import GlobalStyle from './styles/global';
 import content from './assets/content/content.json'
 import generateMenu from './utils/generateMenu';
 import SeparatingLine from './components/SeparatingLine';
-import Landing from './components/Landing';
 import Navbar from './components/Navbar';
+import Landing from './components/Landing';
 
 export default function App() {
   const menu = generateMenu(content.sections)
