@@ -12,7 +12,7 @@ export const Wrapper = styled.div<WrapperProps>`
 
   @media (min-width: ${contentWidth}px) {
     border-color: ${props => props.light ? "white" : silver_polish};
-    border-width: ${props => props.thin ? 0.5 : 1}px;
+    border-width: ${props => props.thin ? 0.2 : 1}px;
   }
 `
 

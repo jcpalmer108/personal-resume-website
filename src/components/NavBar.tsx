@@ -19,6 +19,7 @@ import socials from '../assets/content/socials.json';
 import { Link, NavbarProps } from '../types/Navbar';
 import { animated, useSpring } from "react-spring";
 import { Turn } from 'hamburger-react';
+import { MenuItem } from "../types/global";
 
 export default function Navbar({ menu }: NavbarProps) {
   const [isOpen, setIsOpen] = useState(false)
@@ -56,7 +57,7 @@ export default function Navbar({ menu }: NavbarProps) {
         <UpperMenu>
           <Logo src={logo} alt="logo" />
           <DesktopMenu data-testid="Desktop Menu">
-            {menu.map((link) => (
+            {menu.map((link: MenuItem) => (
               <DesktopPages href={`#${link.key}`} key={link.key}>
                 {link.label.toUpperCase()}
               </DesktopPages>

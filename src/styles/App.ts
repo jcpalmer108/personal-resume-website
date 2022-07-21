@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { mobileBreakpoint } from "./variables";
+import { mobileBreakpoint, off_black } from "./variables";
 
 export const Wrapper = styled.section`
   width: 100%;
@@ -14,3 +14,7 @@ export const LandingWrapper = styled.div`
   background: linear-gradient(0deg, rgba(255,209,184,1) 0%, rgba(255,237,227,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffd1b8",endColorstr="#ffede3",GradientType=1);
   `
+
+export const FooterWrapper = styled.div`
+  background: ${off_black}
+`

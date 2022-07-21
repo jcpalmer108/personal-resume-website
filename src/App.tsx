@@ -1,12 +1,13 @@
 import React from 'react';
-import { Wrapper, LandingWrapper } from './styles/App';
+import { Wrapper, LandingWrapper, FooterWrapper } from './styles/App';
 import Section from './components/Section';
-import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import GlobalStyle from './styles/global';
 import content from './assets/content/content.json'
 import generateMenu from './utils/generateMenu';
 import SeparatingLine from './components/SeparatingLine';
 import Landing from './components/Landing';
+import Navbar from './components/Navbar';
 
 export default function App() {
   const menu = generateMenu(content.sections)
@@ -24,6 +25,9 @@ export default function App() {
         <Section label="my section">
           <div>Children exist</div>
         </Section>
+        <FooterWrapper>
+          <Footer menu={menu} />
+        </FooterWrapper>
       </Wrapper>
     </>
   );
