@@ -8,10 +8,13 @@ import generateMenu from './utils/generateMenu';
 import SeparatingLine from './components/SeparatingLine';
 import Navbar from './components/Navbar';
 import Landing from './components/Landing';
+import About from './components/About';
 
 export default function App() {
   const menu = generateMenu(content.sections)
   const landing = content.sections.find((section) => section.key === "landing")
+  const about = content.sections.find((section) => section.key === "about")
+
 
   return (
     <>
@@ -22,6 +25,7 @@ export default function App() {
           <SeparatingLine light />
           <Landing content={landing}/>
         </LandingWrapper>
+        <About content={about} />
         <Section label="my section">
           <div>Children exist</div>
         </Section>

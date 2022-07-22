@@ -15,10 +15,17 @@ export type Sections = {
   image?: string,
   action?: Action,
   description?: string,
-  subSection?: Education[] | Skills[] | Quotes[] | Experience[]
+  subSection?: SubSections
 }
 
-type Education = {
+type SubSections = {
+  education?: Education[],
+  skills?: Skills[],
+  quotes?: Quotes[],
+  experience?: Experience[]
+}
+
+export type Education = {
   key: string,
   school: string,
   degree: string,

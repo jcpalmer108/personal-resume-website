@@ -19,45 +19,53 @@ export const Wrapper = styled.div<WrapperProps>`
 export const Header = styled.div<HeaderProps>`
   width: fit-content;
   margin: ${props => props.center ? "auto" : "0px"};
-  padding-top: 0px;
+  padding-top: 50px; 
+  padding-left: 16px;
+  
+  @media (min-width: ${tabletBreakpoint}px) {
+    padding-left: 25px;
+    padding-top: 80px;
+  }
+
 
   @media (min-width: ${desktopBreakpoint}px) {
-    margin: 0px;
-    padding-top: 15px;
+    padding-left: 60px;
+    padding-top: 85px;
   }
 `
 
 export const Label = styled.div`
-  height: 12px;
-  font-size: 12;
-  width: fit-content;
-  column-gap: 10px;
   display: flex;
-  align-items: center;
-  justify-content: left;
-  padding-left: 20px;
-  padding-bottom: 0px;
-  padding-top: 50px;
+  column-gap: 10px;
+  font-size: 11px;
+  font-family: Gilroy-Regular;
 
   @media (min-width: ${tabletBreakpoint}px) {
-    transform: rotate(-90deg) translate(0px, 100%);
-    transform-origin: bottom left;
-    padding-bottom: calc(100% - 16px);
-    padding-left: 0px;
-    height: 14px;
-    font-size: 14
+    transform: rotate(-90deg);
+    padding-bottom: calc(100% - 15px);
+    font-size: 14px;
   }
 
   @media (min-width: ${desktopBreakpoint}px) {
-    height: 16px;
-    font-size: 16;
+    padding-bottom: calc(100% - 17px);
+    font-size: 16px;
   }
 
 `
 
-export const Line = styled.img`
-  width: 25px;
+export const Children = styled.div<ChildrenProps>`
+  padding: ${props => props.padded ? "20px 15px" : "0px"};
+
+  @media (min-width: ${tabletBreakpoint}px) {
+    padding: ${props => props.padded ? "40px 25px" : "0px"};
+  }
+
+  @media (min-width: ${desktopBreakpoint}px) {
+    padding: ${props => props.padded ? "50px 60px" : "0px"};
+  }
 `
+
+
 export const Title = styled.span`
   font-size: 12px;
 
@@ -71,6 +79,7 @@ export const Title = styled.span`
 
 `
 
-export const Children = styled.div<ChildrenProps>`
-  padding: ${props => props.padded ? 20 : 0}px;
+export const Line = styled.img`
+  width: 25px;
 `
+
