@@ -27,7 +27,6 @@ export const Header = styled.div<HeaderProps>`
     padding-top: 80px;
   }
 
-
   @media (min-width: ${desktopBreakpoint}px) {
     padding-left: 60px;
     padding-top: 85px;

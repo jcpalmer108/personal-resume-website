@@ -9,7 +9,8 @@ import {
   Link, 
   Icon, 
   Label,
-  ActionWrapper
+  ActionWrapper,
+  Degree
 } from "../styles/components/About"
 import { Education } from "../types/content"
 import { SocialLink } from "../types/socials"
@@ -21,17 +22,17 @@ export default function About({ content }: AboutProps) {
   return (
     <>
       <Section label={content?.label}>
+        <h2>{content?.title}</h2>
         <AboutWrapper>
           <Content>
-            <h2>{content?.title}</h2>
-            <p>{content?.description}</p>
+            {content?.description && content.description.map((paragraph) => <p>{paragraph}</p>)}
           </Content>
           <Schooling>
             <h3>Education</h3>
             {content?.subSection && content.subSection.education?.map((item: Education) => 
               <School>
                 <h4>{item.school}</h4>
-                <span>{item.degree} - {item.timeline.start}-{item.timeline.end}</span>
+                <Degree>{item.degree} - {item.timeline.start}-{item.timeline.end}</Degree>
               </School>
             )}
           </Schooling>

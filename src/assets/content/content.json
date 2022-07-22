@@ -11,14 +11,19 @@
         "link": "#experience"
       },
       "image": "pexels-ekaterina-bolovtsova-4049791.jpg",
-      "description": "Magna voluptate Lorem adipisicing esse culpa Lorem elit occaecat officia exercitation dolor excepteur esse aliquip. Anim velit nisi laboris in reprehenderit excepteur officia Lorem dolore."
+      "description": [
+        "Magna voluptate Lorem adipisicing esse culpa Lorem elit occaecat officia exercitation dolor excepteur esse aliquip. Anim velit nisi laboris in reprehenderit excepteur officia Lorem dolore."
+      ]
     },
     {
       "key": "about",
       "label": "About",
       "title": "Who am I?",
       "inMenu": true,
-      "description": "Magna voluptate Lorem adipisicing esse culpa Lorem elit occaecat officia exercitation dolor excepteur esse aliquip. Anim velit nisi laboris in reprehenderit excepteur officia Lorem dolore. Labore aliqua aliquip amet laboris dolor adipisicing ea tempor minim magna est. Magna voluptate Lorem adipisicing esse culpa Lorem elit occaecat officia exercitation dolor excepteur esse aliquip. Anim velit nisi laboris in reprehenderit excepteur officia Lorem dolore.",
+      "description": [
+        "Magna voluptate Lorem adipisicing esse culpa Lorem elit occaecat officia exercitation dolor excepteur esse aliquip. Anim velit nisi laboris in reprehenderit excepteur officia Lorem dolore. Labore aliqua aliquip amet laboris dolor adipisicing ea tempor minim magna est.", 
+        "Magna voluptate Lorem adipisicing esse culpa Lorem elit occaecat officia exercitation dolor excepteur esse aliquip. Anim velit nisi laboris in reprehenderit excepteur officia Lorem dolore."
+      ],
       "subSection": {
         "education": [
           {
@@ -46,7 +51,9 @@
       "key": "skills",
       "label": "Skills",
       "title": "Here are my skills and frameworks",
-      "description": "Magna voluptate Lorem adipisicing esse culpa Lorem elit occaecat officia exercitation dolor excepteur esse aliquip. Anim velit nisi laboris in reprehenderit excepteur officia Lorem dolore.",
+      "description": [
+        "Magna voluptate Lorem adipisicing esse culpa Lorem elit occaecat officia exercitation dolor excepteur esse aliquip. Anim velit nisi laboris in reprehenderit excepteur officia Lorem dolore."
+      ],
       "inMenu": true,
       "subSection": {
         "skills": [
@@ -103,7 +110,9 @@
       "label": "Testimonials",
       "title": "Testimonials",
       "inMenu": true,
-      "description":"Magna voluptate Lorem adipisicing esse culpa Lorem elit occaecat officia exercitation dolor excepteur esse aliquip. Anim velit nisi laboris in reprehenderit excepteur officia Lorem dolore.",
+      "description": [
+        "Magna voluptate Lorem adipisicing esse culpa Lorem elit occaecat officia exercitation dolor excepteur esse aliquip. Anim velit nisi laboris in reprehenderit excepteur officia Lorem dolore."
+      ],
       "subSection": {
         "quotes": [
           {
@@ -124,7 +133,9 @@
       "label": "Work Experience",
       "inMenu": true,
       "title": "Checkout my work experience",
-      "description": "Magna voluptate Lorem adipisicing esse culpa Lorem elit occaecat officia exercitation dolor excepteur esse aliquip. Anim velit nisi laboris in reprehenderit excepteur officia Lorem dolore.",
+      "description": [
+        "Magna voluptate Lorem adipisicing esse culpa Lorem elit occaecat officia exercitation dolor excepteur esse aliquip. Anim velit nisi laboris in reprehenderit excepteur officia Lorem dolore."
+      ],
       "subSection": {
         "experience": [
           {
@@ -133,7 +144,9 @@
             "team": "Create Reservation",
             "organization": "E-Commerce",
             "location": "Portland, OR",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor purus.",
+            "description": [
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor purus."
+            ],
             "icon": "alaska",
             "timeline": {
               "start": "Feb 2022",
@@ -146,7 +159,9 @@
             "team": "Managed Airflow Platform",
             "organization": "Engineered Platforms",
             "location": "Beaverton, OR",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor purus.",
+            "description": [
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor purus."
+            ],
             "icon": "nike",
             "timeline": {
               "start": "Feb 2022",
@@ -157,7 +172,9 @@
             "title": "Technology Enablement Consultant",
             "employer": "Slalom Consulting LLC",
             "location": "Portland OR, OR",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor purus.",
+            "description": [
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor purus."
+            ],
             "icon": "slalom",
             "timeline": {
               "start": "Feb 2022",
@@ -167,13 +184,17 @@
               {
                 "industry": "Software as a Service (SASS)",
                 "title": "Upgrade Application Servers to Ubuntu 16",
-                "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor purus.",
+                "description":[
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor purus."
+                ],
                 "icon": "key"
               },
               {
                 "industry": "Healthcare",
                 "title": "Designed a security architecture model for an internal, Tableau-based reporting system that allowd the client to stop out-sourcing their needs to other companies",
-                "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor purus.",
+                "description":[
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor purus."
+                ],
                 "icon": "healthcare"
               }
             ]
@@ -182,7 +203,9 @@
             "title": "Software Engineer II",
             "employer": "Nike World Headquarters",
             "location": "Beaverton, OR",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor purus.",
+            "description": [
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor purus."
+            ],
             "team": "Login & Registration",
             "icon": "nike",
             "organization": "Nike Digital",
@@ -195,7 +218,9 @@
             "title": "Technology Enablement Consultant",
             "employer": "Slalom Consulting LLC",
             "location": "St. Louis, MO",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor purus.",
+            "description": [
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor purus."
+            ],
             "icon": "slalom",
             "timeline": {
               "start": "Feb 2022",
@@ -205,25 +230,33 @@
               {
                 "industry": "Agriculture",
                 "title": "Develop mobile application to help clients use pesticide in the appropriate weather",
-                "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor purus.",
+                "description": [
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor purus."
+                ],
                 "icon": "mobile"
               },
               {
                 "industry": "Agriculture",
                 "title": "Designed reusable components for use on the branded websites inside their AEM-based environment",
-                "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor purus.",
+                "description":[
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor purus."
+                ],
                 "icon": "website"
               },
               {
                 "industry": "Telecommunications",
                 "title": "Created dashboard to enable Executive Leadership to understand the current status of their hubs across the country",
-                "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor purus.",
+                "description": [
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor purus."
+                ],
                 "icon": "maps"
               },
               {
                 "industry": "Internal",
                 "title": "Participated in Slalom's personal Start Haus program",
-                "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor purus.",
+                "description": [
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor purus."
+                ],
                 "icon": "terminal"
               }
             ]
@@ -236,7 +269,9 @@
       "label": "Contact Me",
       "title": "Stay in contact with me",
       "inMenu": true,
-      "description": "Magna voluptate Lorem adipisicing esse culpa Lorem elit occaecat officia exercitation dolor excepteur esse aliquip. Anim velit nisi laboris in reprehenderit excepteur officia Lorem dolore."
+      "description": [
+        "Magna voluptate Lorem adipisicing esse culpa Lorem elit occaecat officia exercitation dolor excepteur esse aliquip. Anim velit nisi laboris in reprehenderit excepteur officia Lorem dolore."
+      ]
     }
   ]
 }

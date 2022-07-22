@@ -26,7 +26,7 @@ export default function Landing({ content }: LandingProps) {
             src={require("../assets/images/" + (content?.image || defaultImage))}
             alt="landing mobile"
           />
-          <Description>{content?.description}</Description>
+          {content?.description && content.description.map((paragraph) => <Description>{paragraph}</Description> )}
           <Button 
             label={content?.action?.text || 'click me'} 
             url={content?.action?.link || '#contact'}

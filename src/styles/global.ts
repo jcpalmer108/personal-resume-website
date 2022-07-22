@@ -46,7 +46,7 @@ const GlobalStyle = createGlobalStyle`
   p {
     font-size: 12px;
     font-family: Gilroy-Regular;
-    line-spacing: 3px;
+    line-height: 27px;
   }
 
   h1 {
@@ -65,10 +65,18 @@ const GlobalStyle = createGlobalStyle`
   }
 
   h3 {
-    font-size: 18px;
+    font-size: 20px;
     font-family: Butler-Regular;
     font-weight: normal;
     margin: 0px;
+  }
+
+  h4 {
+    font-size: 16px;
+    font-family: Gilroy-Bold;
+    font-weight: normal;
+    margin: 0px;
+    letter-spacing: 0.5px;
   }
 
   @media (min-width: ${tabletBreakpoint}px) {
@@ -85,7 +93,11 @@ const GlobalStyle = createGlobalStyle`
     }
 
     h3 {
-      font-size: 24px;
+      font-size: 25px;
+    }
+
+    h4 {
+      font-size: 20px;
     }
   }
 
@@ -103,8 +115,8 @@ const GlobalStyle = createGlobalStyle`
       font-size: 48px;
     }
 
-    h3 {
-      font-size: 30px;
+    h4 {
+      font-size: 22px;
     }
   }
 

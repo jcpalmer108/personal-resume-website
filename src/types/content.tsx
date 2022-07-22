@@ -14,7 +14,7 @@ export type Sections = {
   title: string,
   image?: string,
   action?: Action,
-  description?: string,
+  description?: string[],
   subSection?: SubSections
 }
 
@@ -53,7 +53,7 @@ type Experience = {
   title: string,
   employer: string,
   location: string,
-  description: string,
+  description: string[],
   icon: string,
   timeline: Timeline
   team?: string,
@@ -64,6 +64,6 @@ type Experience = {
 type Project = {
   industry: string,
   title: string,
-  description: string,
+  description: string[],
   icon: string
 }
