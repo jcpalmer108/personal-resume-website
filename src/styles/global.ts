@@ -112,7 +112,7 @@ const GlobalStyle = createGlobalStyle`
     }
 
     h2 {
-      font-size: 48px;
+      font-size: 55px;
     }
 
     h4 {

@@ -55,24 +55,26 @@ export const School = styled.div`
   padding-top: 25px;
   display: flex;
   flex-direction: column;
-  font-size: 12px;
   align-items: left; 
   justify-content: center;
 
   @media(min-width: ${tabletBreakpoint}px) {
     padding-top: 35px;
-    font-size: 14px;
   }
-
 `
 
 export const Degree = styled.span`
   padding-top: 12px;
 
-  @media (min-width: ${desktopBreakpoint}px) {
-    padding-top: 10px;
+  @media (min-width: ${tabletBreakpoint}px) {
     font-size: 14px;
   }
+
+  @media (min-width: ${desktopBreakpoint}px) {
+    font-size: 16px;
+    padding-top: 10px;
+  }
+
 
 `
 
@@ -96,9 +98,15 @@ export const Connect = styled.div`
   padding: 25px 15px;
 
   @media (min-width: ${tabletBreakpoint}px) {
-    height: 70px;
+    height: 80px;
     padding: 40px;
   }
+
+  @media (min-width: ${desktopBreakpoint}px) {
+    height: 75px;
+    padding: 50px;
+  }
+
 `
 
 export const SocialLabel = styled.span`
@@ -143,6 +151,11 @@ export const Link = styled.a`
     height: fit-content;
     justify-content: center;
   }
+
+  @media (min-width: ${desktopBreakpoint}px) {
+    width: 20%;
+    justify-content: left;
+  }
 `
 
 export const Icon = styled.img`
@@ -153,6 +166,12 @@ export const Icon = styled.img`
     height: 19px;
     width: 19px;
   }
+
+  @media (min-width: ${tabletBreakpoint}px) {
+    height: 22px;
+    width: 22px;
+  }
+
 `
 
 export const Label = styled.span`
@@ -160,6 +179,11 @@ export const Label = styled.span`
 
   @media (min-width: ${tabletBreakpoint}px) {
     font-size: 16px;
+    padding-top: 4px;
+  }
+
+  @media (min-width: ${desktopBreakpoint}px) {
+    font-size: 19px;
     padding-top: 4px;
   }
 `
@@ -180,6 +204,13 @@ export const Prompt = styled.div`
     height: 90px;
     padding: 30px;
   }
+
+  @media (min-width: ${tabletBreakpoint}px) {
+    width: 148px;
+    height: 90px;
+    padding: 43px;
+  }
+
 `
 
 export const Question = styled.span`
