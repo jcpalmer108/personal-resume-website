@@ -15,7 +15,9 @@ import {
   Socials,
   SocialLabel,
   StartProject,
-  Question
+  Question,
+  Description,
+  Title
 } from "../styles/components/About"
 import { Education } from "../types/content"
 import { SocialLink } from "../types/socials"
@@ -27,10 +29,10 @@ export default function About({ content }: AboutProps) {
   return (
     <>
       <Section label={content?.label}>
-        <h2>{content?.title}</h2>
+        <Title>{content?.title}</Title>
         <AboutWrapper>
           <Content>
-            {content?.description && content.description.map((paragraph) => <p>{paragraph}</p>)}
+            {content?.description && content.description.map((paragraph) => <Description>{paragraph}</Description>)}
           </Content>
           <Schooling>
             <h3>Education</h3>

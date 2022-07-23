@@ -19,13 +19,27 @@ export const Content = styled.div`
 
 `
 
+export const Title = styled.h2`
+  padding-bottom: 20px;
+`
+
+export const Description = styled.p`
+  margin: 0px;
+  padding-bottom: 20px;
+
+  &:last-child {
+    padding-bottom: 0px;
+  }
+
+`
+
 export const Schooling = styled.div`
   display: flex;
   flex-direction: column;
   padding-bottom: 15px;
 
   @media(min-width: ${tabletBreakpoint}px) {
-    min-width: 40%;
+    min-width: fit-content;
     padding-left: 70px;
     padding-bottom: 0px;
   }
@@ -41,11 +55,13 @@ export const School = styled.div`
   padding-top: 25px;
   display: flex;
   flex-direction: column;
+  font-size: 12px;
   align-items: left; 
   justify-content: center;
 
   @media(min-width: ${tabletBreakpoint}px) {
-    padding-top: 40px;
+    padding-top: 35px;
+    font-size: 14px;
   }
 
 `
@@ -58,6 +74,17 @@ export const Degree = styled.span`
     font-size: 14px;
   }
 
+`
+
+export const Action = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding: 0px 15px 20px 15px;
+
+  @media (min-width: ${tabletBreakpoint}px) {
+    flex-direction: row;
+    padding: 0px;
+  }
 `
 
 export const Connect = styled.div`
@@ -106,7 +133,7 @@ export const Link = styled.a`
   flex-direction: row;
   font-size: 16px;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
   column-gap: 10px;
   width: 33%;
   font-family: Gilroy-Medium;
@@ -114,6 +141,7 @@ export const Link = styled.a`
   @media (min-width: ${tabletBreakpoint}px) {
     width: fit-content;
     height: fit-content;
+    justify-content: center;
   }
 `
 
@@ -136,24 +164,13 @@ export const Label = styled.span`
   }
 `
 
-export const Action = styled.div`
-  display: flex;
-  flex-direction: column;
-  padding: 20px 15px;
-
-  @media (min-width: ${tabletBreakpoint}px) {
-    flex-direction: row;
-    padding: 0px;
-  }
-`
-
 export const Prompt = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: white;
-  height: 110px;
+  height: 60px;
   background: ${redstone};
   padding: 20px;
   text-align: center;
