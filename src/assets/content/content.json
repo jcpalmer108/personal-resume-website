@@ -108,12 +108,22 @@
         "quotes": [
           {
             "quote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dolor sit amet consectetur adipiscing elit ut aliquam purus.",
-            "person": "John Doe",
+            "person": "ONE",
             "title": "Manager at Slalom Consulting LLC"
           },
           {
             "quote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas sed sed risus pretium quam vulputate dignissim suspendisse in. Et ligula ullamcorper malesuada proin libero nunc.",
-            "person": "Jane Doe",
+            "person": "TWO",
+            "title": "Co-worker at Nike World Headquarters"
+          },
+          {
+            "quote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dolor sit amet consectetur adipiscing elit ut aliquam purus.",
+            "person": "THREE",
+            "title": "Manager at Slalom Consulting LLC"
+          },
+          {
+            "quote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas sed sed risus pretium quam vulputate dignissim suspendisse in. Et ligula ullamcorper malesuada proin libero nunc.",
+            "person": "FOUR",
             "title": "Co-worker at Nike World Headquarters"
           }
         ]
