@@ -38,28 +38,44 @@ export default function Testimonials({ content }: TestimonialProps) {
   
   return (
     <Section>
-      <Wrapper>
-        <ArrowLeft onClick={decrement} src={arrowLeft} alt="arrow left" desktop />
+      <Wrapper id="testimonials" data-testid="Testimonials">
+        <ArrowLeft 
+          onClick={decrement} 
+          src={arrowLeft} 
+          alt="arrow left"
+          data-testid="arrow left"
+          desktop 
+        />
         <Content>
           <h2>Testimonials</h2>
-          <Quote>{quotes && quotes[selectedIndex].quote}</Quote>
-          <Person>{quotes && quotes[selectedIndex].person}</Person>
-          <Title>{quotes && quotes[selectedIndex].title}</Title>
-          <Dots>
+          <Quote data-testid="Quote">{quotes && quotes[selectedIndex].quote}</Quote>
+          <Person data-testid="Person">{quotes && quotes[selectedIndex].person}</Person>
+          <Title data-testid="Title">{quotes && quotes[selectedIndex].title}</Title>
+          <Dots data-testid="Dots">
             {quotes && quotes.map((item, index) => {
               return (<Dot selected={selectedIndex === index}/>)
             })}
           </Dots>
         </Content>
-        <ArrowRight onClick={increment} src={arrowRight} alt="arrow right" desktop />
+        <ArrowRight 
+          onClick={increment} 
+          src={arrowRight} 
+          alt="arrow right" 
+          data-testid="arrow right"
+          desktop 
+        />
         <Arrows>
           <Option onClick={decrement}>
             <Circle />
-            <ArrowLeft src={arrowLeft} alt="arrow left" />
+            <ArrowLeft 
+              src={arrowLeft} 
+              alt="arrow left" 
+              data-testid="arrow left"
+            />
           </Option>
           <Option onClick={increment}>
             <Circle />
-            <ArrowRight src={arrowRight} alt="arrow right"/>
+            <ArrowRight data-testid="arrow right" src={arrowRight} alt="arrow right"/>
           </Option>
         </Arrows>
       </Wrapper>

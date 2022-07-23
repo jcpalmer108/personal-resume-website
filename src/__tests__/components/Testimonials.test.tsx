@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react'
+import { render, screen, fireEvent } from '@testing-library/react'
 import Testimonials from '../../components/Testimonials.tsx'
 
 const params = {
@@ -27,20 +27,23 @@ const params = {
 
 describe('Testimonials', () => {
   test('renders if only required params are passed in', () => {
-    <Testimonials content={params} />
+    render(<Testimonials content={params} />)
 
     expect(screen.getByTestId('Testimonials')).toMatchSnapshot()
-    expect(screen.getByTestId('Testimonials')).toMatchSnapshot()
-    expect(screen.getByTestId('Marquee').childNodes).toHaveLength(params.subSection.quotes.length)
-
-    params.subSection.quotes.forEach((item, index) => {
-      expect(screen.getByTestId(`Quote ${index + 1}`)).toBeTruthy()
-      expect(screen.getByTestId(`Quote ${index + 1}`).childNodes[0]).toHaveTextContent(item.quote)
-      expect(screen.getByTestId(`Quote ${index + 1}`).childNodes[1]).toHaveTextContent(item.person)
-      expect(screen.getByTestId(`Quote ${index + 1}`).childNodes[0]).toHaveTextContent(item.title)
-    })
-
+    expect(screen.getByTestId('Quote')).toHaveTextContent(params.subSection.quotes[0].quote)
+    expect(screen.getByTestId('Person')).toHaveTextContent(params.subSection.quotes[0].person)
+    expect(screen.getByTestId('Title')).toHaveTextContent(params.subSection.quotes[0].title)
+    expect(screen.getByTestId('Dots').childNodes).toHaveLength(params.subSection.quotes.length)
     expect(screen.getByRole('image', { name: 'arrow left' })).toBeTruthy()
     expect(screen.getByRole('image', { name: 'arrow right' })).toBeTruthy()
+  })
+
+  test('expect arrow left to decrement, and arrow right to increment the selected index', () => {
+    render(<Testimonials content={params} />)
+    expect(screen.getByTestId('Quote')).toHaveTextContent(params.subSection.quotes[0].quote)
+    fireEvent.click(screen.getByTestId('arrow right'))
+    expect(screen.getByTestId('Quote')).toHaveTextContent(params.subSection.quotes[1].quote)
+    fireEvent.click(screen.getByTestId('arrow left'))
+    expect(screen.getByTestId('Quote')).toHaveTextContent(params.subSection.quotes[0].quote)
   })
 })
