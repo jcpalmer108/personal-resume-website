@@ -15,7 +15,10 @@ const params = {
     link: "#contact"
   },
   image: "pexels-ekaterina-bolovtsova-4049791.jpg",
-  description: "test contents"
+  description: [
+    "test content 1",
+    "test content 2"
+  ]
 }
 
 describe('Landing', () => {
@@ -26,7 +29,11 @@ describe('Landing', () => {
   
     expect(screen.getByTestId('Main')).toMatchSnapshot()
     expect(screen.getByTestId('Main')).toHaveTextContent(params.title)
-    expect(screen.getByTestId('Main')).toHaveTextContent(params.description)
+    params.description.forEach((item, index) => {
+      expect(screen.getByTestId(`Description ${index + 1}`)).toBeTruthy()
+      expect(screen.getByTestId(`Description ${index + 1}`)).toHaveTextContent(params.description[index])
+    })
+
     expect(Button).toHaveBeenCalledTimes(1)
     expect(Button).toHaveBeenCalledWith({
       label: params.action.text,

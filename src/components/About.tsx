@@ -29,15 +29,15 @@ export default function About({ content }: AboutProps) {
   return (
     <>
       <Section label={content?.label}>
-        <Title>{content?.title}</Title>
-        <AboutWrapper>
+        <Title data-testid="Title">{content?.title}</Title>
+        <AboutWrapper data-testid="About">
           <Content>
-            {content?.description && content.description.map((paragraph) => <Description>{paragraph}</Description>)}
+            {content?.description && content.description.map((paragraph, index) => <Description data-testid={`Description ${index + 1}`} key={`Description ${index + 1}`}>{paragraph}</Description>)}
           </Content>
-          <Schooling>
+          <Schooling data-testid="Schooling">
             <h3>Education</h3>
-            {content?.subSection && content.subSection.education?.map((item: Education) => 
-              <School>
+            {content?.subSection && content.subSection.education?.map((item: Education, index) => 
+              <School data-testid={`School ${index + 1}`} key={`School ${index + 1}`}>
                 <h4>{item.school}</h4>
                 <Degree>{item.degree} - {item.timeline.start}-{item.timeline.end}</Degree>
               </School>
@@ -47,11 +47,11 @@ export default function About({ content }: AboutProps) {
       </Section>
       <Section wide>
         <Action>
-          <Connect>
+          <Connect data-testid="Connect">
             <SocialLabel>Connect with Me</SocialLabel>
             <Socials>
               {links && links.map(({key, label, url}: SocialLink) => 
-                <Link href={url}>
+                <Link href={url} key={key}>
                   <Icon src={require("../assets/images/" + key + ".svg")} />
                   <Label>{label}</Label>
                 </Link>
@@ -60,7 +60,7 @@ export default function About({ content }: AboutProps) {
           </Connect>
           <Prompt>
             <Question>What are you waiting for?</Question>
-            <StartProject href="#contact">START A PROJECT</StartProject>
+            <StartProject data-testid="Start a Project" href="#contact">START A PROJECT</StartProject>
           </Prompt>
         </Action>
       </Section>

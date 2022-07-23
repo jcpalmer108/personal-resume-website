@@ -112,6 +112,14 @@ exports[`Landing renders if only required params are passed in 1`] = `
 
 }
 
+@media (min-width:720px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
 @media (min-width:1024px) {
 
 }
@@ -135,8 +143,15 @@ exports[`Landing renders if only required params are passed in 1`] = `
     />
     <p
       class="c4"
+      data-testid="Description 1"
     >
-      test contents
+      test content 1
+    </p>
+    <p
+      class="c4"
+      data-testid="Description 2"
+    >
+      test content 2
     </p>
   </div>
   <img
@@ -203,6 +218,14 @@ exports[`Landing renders if only required params are passed in 2`] = `
 }
 
 @media (min-width:1155px) {
+
+}
+
+@media (min-width:720px) {
+
+}
+
+@media (min-width:1024px) {
 
 }
 
