@@ -27,21 +27,12 @@
       "subSection": {
         "education": [
           {
-            "key": "cambridge",
-            "school": "Cambridge Science School",
-            "degree": "11th & 12th Science",
-            "timeline": {
-              "start": "2015",
-              "end": "2016"
-            }
-          },
-          {
             "key": "webster",
             "school": "Webster University",
-            "degree": "Bachelors of Science in Computer Science",
+            "degree": "B.S. in Computer Science",
             "timeline": {
-              "start": "2015",
-              "end": "2016"
+              "start": "2014",
+              "end": "2017"
             }
           }
         ]

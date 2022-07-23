@@ -5,7 +5,7 @@ export const contentWidth = 1155; // width of section between borders
 export const silver_polish = "#c6c6c6";
 export const redstone = "#e56b6f";
 export const fortress_gray = " #b7b7b7";
-export const seashell_peach = "#e56b6f";
+export const seashell_peach = "#FFF7F2";
 export const romantic = "#ffd1b8";
 export const off_black = "#313030";
 

@@ -89,7 +89,7 @@ const GlobalStyle = createGlobalStyle`
     }
 
     h2 {
-      font-size: 36px;
+      font-size: 40px;
     }
 
     h3 {

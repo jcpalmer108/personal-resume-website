@@ -2,15 +2,20 @@ import Section from "./Section"
 import { AboutProps } from "../types/About"
 import { 
   AboutWrapper, 
-  ConnectWrapper, 
+  Action, 
   Content, 
   Schooling, 
   School, 
   Link, 
   Icon, 
   Label,
-  ActionWrapper,
-  Degree
+  Connect,
+  Prompt,
+  Degree, 
+  Socials,
+  SocialLabel,
+  StartProject,
+  Question
 } from "../styles/components/About"
 import { Education } from "../types/content"
 import { SocialLink } from "../types/socials"
@@ -39,19 +44,23 @@ export default function About({ content }: AboutProps) {
         </AboutWrapper>
       </Section>
       <Section wide>
-        <ConnectWrapper>
-          <span>Connect with Me</span>
-          {links && links.map(({key, label, url}: SocialLink) => 
-            <Link href={url}>
-              <Icon src={require("../assets/images/" + key + ".svg")} />
-              <Label>{label}</Label>
-            </Link>
-          )}
-        </ConnectWrapper>
-        <ActionWrapper>
-          <h4>What are you waiting for?</h4>
-          <a href="#contact">Start a project</a>
-        </ActionWrapper>
+        <Action>
+          <Connect>
+            <SocialLabel>Connect with Me</SocialLabel>
+            <Socials>
+              {links && links.map(({key, label, url}: SocialLink) => 
+                <Link href={url}>
+                  <Icon src={require("../assets/images/" + key + ".svg")} />
+                  <Label>{label}</Label>
+                </Link>
+              )}
+            </Socials>
+          </Connect>
+          <Prompt>
+            <Question>What are you waiting for?</Question>
+            <StartProject href="#contact">START A PROJECT</StartProject>
+          </Prompt>
+        </Action>
       </Section>
     </>
   )
