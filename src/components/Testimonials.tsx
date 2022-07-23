@@ -1,13 +1,35 @@
 import { TestimonialProps } from "../types/Testimonials"
-import { Wrapper } from "../styles/components/Testimonials"
+import { 
+  Wrapper, 
+  Quote, 
+  Person, 
+  Title, 
+  Dots, 
+  ArrowLeft, 
+  ArrowRight, 
+  Arrows, 
+  Content 
+} from "../styles/components/Testimonials"
 import Section from "./Section"
 
 export default function Testimonials({ content }: TestimonialProps) {
+  
   return (
-    <Section label={content?.label}>
+    <Section>
       <Wrapper>
-        hi there
-
+        <ArrowLeft />
+        <Content>
+          <h2>Testimonials</h2>
+          <Quote>Test</Quote>
+          <Person>blah</Person>
+          <Title>blah</Title>
+          <Dots>test</Dots>
+        </Content>
+        <ArrowRight />
+        <Arrows>
+          <ArrowLeft />
+          <ArrowRight />
+        </Arrows>
       </Wrapper>
     </Section>
   )
