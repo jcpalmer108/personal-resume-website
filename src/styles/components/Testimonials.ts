@@ -46,8 +46,6 @@ export const Quote = styled.p`
     margin: 60px 0px;
     line-height: 44px;
   }
-
-
 `
 
 export const Person = styled.div`
@@ -64,9 +62,6 @@ export const Person = styled.div`
     font-size: 25px;
     margin-bottom: 11px;
   }
-
-
-
 `
 
 export const Title = styled.div`
@@ -83,9 +78,6 @@ export const Title = styled.div`
     font-size: 25px;
     margin-bottom: 55px;
   }
-
-
-
 `
 
 export const Dots = styled.div`
@@ -150,7 +142,6 @@ export const Circle = styled.div`
   border-radius: 50%;
   z-index: -1;
   position: absolute;
-
 `
 export const Option = styled.div`
   height: 40px;
@@ -158,5 +149,4 @@ export const Option = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-
 `

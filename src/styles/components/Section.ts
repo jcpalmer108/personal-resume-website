@@ -7,10 +7,12 @@ export const Wrapper = styled.div<WrapperProps>`
   margin: auto;
   border-left: solid;
   border-right: solid;
+  border-bottom: solid;
   border-color: transparent;
   border-width: 0px;
 
   @media (min-width: ${contentWidth}px) {
+    border-bottom: ${props => props.bottom ? "soild" : "none" };
     border-color: ${props => props.light ? "white" : silver_polish};
     border-width: ${props => props.thin ? 0.2 : 1}px;
   }
@@ -60,7 +62,7 @@ export const Children = styled.div<ChildrenProps>`
   }
 
   @media (min-width: ${desktopBreakpoint}px) {
-    padding: ${props => props.padded ? "50px 60px" : "0px"};
+    padding: ${props => props.padded ? "85px 60px" : "0px"};
   }
 `
 
