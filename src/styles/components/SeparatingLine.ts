@@ -5,7 +5,6 @@ import { SeparatingLineProps as LineProps } from '../../types/SeparatingLine'
 export const Line = styled.hr<LineProps>`
   width: 100%;
   border-color: ${props => {
-    console.log(props)
     if(props.always && props.light) {
       return 'white'
     } else if(props.always) {

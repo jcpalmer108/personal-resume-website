@@ -51,7 +51,7 @@ export default function Testimonials({ content }: TestimonialProps) {
           <Title data-testid="Title">{quotes && quotes[selectedIndex].title}</Title>
           <Dots data-testid="Dots">
             {quotes && quotes.map((item, index) => {
-              return (<Dot selected={selectedIndex === index}/>)
+              return (<Dot selected={selectedIndex === index} key={`Dots ${index + 1} `} />)
             })}
           </Dots>
         </Content>
