@@ -16,8 +16,7 @@ import {
 import Section from "./Section"
 import arrowLeft from "../assets/images/arrow-left-pink.svg"
 import arrowRight from "../assets/images/arrow-right-pink.svg"
-import { useEffect, useState } from "react"
-// import { animated, useSpring } from "react-spring";
+import { useState } from "react"
 
 export default function Testimonials({ content }: TestimonialProps) {
   let [ selectedIndex, setSelectedIndex ] = useState(0)
@@ -34,9 +33,6 @@ export default function Testimonials({ content }: TestimonialProps) {
       setSelectedIndex(selectedIndex - 1);  
     }
   }
-  // TODO: every 10 seconds, fade (quote, person, title) out, increase the index, then fade back in
-  // TODO: tablet view
-  // TODO: desktop view
   
   return (
     <Section>
@@ -46,19 +42,19 @@ export default function Testimonials({ content }: TestimonialProps) {
           src={arrowLeft} 
           alt="arrow left"
           data-testid="arrow left"
-          desktop 
+          desktop
         />
         <Content>
           <h2>Testimonials</h2>
           <Quote data-testid="Quote">{quotes && quotes[selectedIndex].quote}</Quote>
           <Person data-testid="Person">{quotes && quotes[selectedIndex].person}</Person>
           <Title data-testid="Title">{quotes && quotes[selectedIndex].title}</Title>
-        </Content>
           <Dots data-testid="Dots">
             {quotes && quotes.map((item, index) => {
               return (<Dot selected={selectedIndex === index}/>)
             })}
           </Dots>
+        </Content>
         <ArrowRight 
           onClick={() => { updateIndex(true) }} 
           src={arrowRight} 
