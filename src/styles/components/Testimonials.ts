@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import { desktopBreakpoint, off_black, redstone, silver_polish, tabletBreakpoint } from "../variables"
+import { DotProps, ArrowProps } from "../../types/Testimonials"
 
 export const Wrapper = styled.div`
   display: flex;
@@ -11,24 +12,20 @@ export const Wrapper = styled.div`
     flex-direction: row;
     justify-content: space-between;
   }
-
 `
 
 export const Content = styled.div`
-display: flex;
-flex-direction: column;
-text-align: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 
-@media (min-width: ${tabletBreakpoint}px) {
-  max-width: 523px;
-}
+  @media (min-width: ${tabletBreakpoint}px) {
+    max-width: 523px;
+  }
 
-@media (min-width: ${desktopBreakpoint}px) {
-  max-width: 624px;
-}
-
-
-
+  @media (min-width: ${desktopBreakpoint}px) {
+    max-width: 624px;
+  }
 `
 
 export const Quote = styled.p`
@@ -97,10 +94,6 @@ export const Dots = styled.div`
   justify-content: center;
 `
 
-type DotProps = {
-  selected: boolean
-}
-
 export const Dot = styled.div<DotProps>`
   height: 7px;
   width: 7px;
@@ -128,10 +121,6 @@ export const Arrows = styled.div`
     display: none; 
   }
 `
-
-type ArrowProps = {
-  desktop?: boolean | undefined
-}
 
 export const ArrowLeft = styled.img<ArrowProps>`
   display: ${ props => props.desktop && props.desktop === true ? 'none' : 'block'}; 
