@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { off_black, redstone, silver_polish, tabletBreakpoint } from "../variables"
+import { desktopBreakpoint, off_black, redstone, silver_polish, tabletBreakpoint } from "../variables"
 
 export const Wrapper = styled.div`
   display: flex;
@@ -23,6 +23,10 @@ text-align: center;
   max-width: 523px;
 }
 
+@media (min-width: ${desktopBreakpoint}px) {
+  max-width: 624px;
+}
+
 
 
 `
@@ -38,6 +42,12 @@ export const Quote = styled.p`
     margin: 40px 0px;
   }
 
+  @media (min-width: ${desktopBreakpoint}px) {
+    font-size: 25px;
+    margin: 60px 0px;
+  }
+
+
 `
 
 export const Person = styled.div`
@@ -49,6 +59,12 @@ export const Person = styled.div`
     font-size: 24px;
     margin-bottom: 14px;
   }
+
+  @media (min-width: ${desktopBreakpoint}px) {
+    font-size: 25px;
+    margin-bottom: 11px;
+  }
+
 
 
 `
@@ -62,6 +78,12 @@ export const Title = styled.div`
     font-size: 18px;
     margin-bottom: 30px;
   }
+
+  @media (min-width: ${tabletBreakpoint}px) {
+    font-size: 25px;
+    margin-bottom: 55px;
+  }
+
 
 
 `
