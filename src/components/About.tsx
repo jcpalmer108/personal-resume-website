@@ -25,7 +25,6 @@ import socials from "../assets/content/socials.json"
 
 export default function About({ content }: AboutProps) {
   const { links } = socials;
-  console.log('test', socials)
   return (
     <>
       <Section label={content?.label}>

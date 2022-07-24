@@ -43,7 +43,7 @@ type Timeline = {
   end: string,
 }
 
-type Quotes = {
+export type Quotes = {
   quote: string,
   person: string,
   title: string

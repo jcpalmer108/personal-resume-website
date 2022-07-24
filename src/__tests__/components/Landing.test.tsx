@@ -31,7 +31,7 @@ describe('Landing', () => {
     expect(screen.getByTestId('Main')).toHaveTextContent(params.title)
     params.description.forEach((item, index) => {
       expect(screen.getByTestId(`Description ${index + 1}`)).toBeTruthy()
-      expect(screen.getByTestId(`Description ${index + 1}`)).toHaveTextContent(params.description[index])
+      expect(screen.getByTestId(`Description ${index + 1}`)).toHaveTextContent(item)
     })
 
     expect(Button).toHaveBeenCalledTimes(1)
