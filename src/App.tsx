@@ -9,6 +9,7 @@ import Navbar from './components/Navbar';
 import Landing from './components/Landing';
 import About from './components/About';
 import Testimonials from './components/Testimonials';
+import Experience from './components/Experience';
 
 export default function App() {
   const menu = generateMenu(content.sections)
@@ -28,6 +29,7 @@ export default function App() {
         </LandingWrapper>
         <About content={about} />
         <Testimonials content={testimonials} />
+        <Experience />
         <FooterWrapper>
           <Footer menu={menu} />
         </FooterWrapper>

@@ -36,15 +36,18 @@ export const Quote = styled.p`
   font-size: 15px;
   font-family: Gilroy-Regular;
   height: fit-content; // update to change total height of section
+  line-height: 26px;
 
   @media (min-width: ${tabletBreakpoint}px) {
     font-size: 20px;
     margin: 40px 0px;
+    line-height: 34px;
   }
 
   @media (min-width: ${desktopBreakpoint}px) {
     font-size: 25px;
     margin: 60px 0px;
+    line-height: 44px;
   }
 
 
