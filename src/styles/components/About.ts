@@ -98,7 +98,7 @@ export const Connect = styled.div`
   padding: 25px 15px;
 
   @media (min-width: ${tabletBreakpoint}px) {
-    height: 80px;
+    height: 70px;
     padding: 40px;
   }
 
@@ -205,7 +205,7 @@ export const Prompt = styled.div`
     padding: 30px;
   }
 
-  @media (min-width: ${tabletBreakpoint}px) {
+  @media (min-width: ${desktopBreakpoint}px) {
     width: 148px;
     height: 90px;
     padding: 43px;
