@@ -40,20 +40,21 @@ export const Mosaic = styled.div`
   align-items: center;
   justify-content: center;
   column-gap: 25px;
+  height: fit-content;
+  padding-top: 45px;
 `
 export const Tile = styled.a<TileProps>`
   display: ${props => props.desktop ? 'none' : 'flex'};
   flex-direction: column;
   align-items: center;
-  justify-content: end;
+  justify-content: center;
 
   border: 1px solid ${silver_polish};
   text-decoration: none;
-  color: ${silver_polish};
-  padding-bottom: 24px;
-  margin-top: 45px;
+  max-height: 148px;
   height: 148px;
   width: 175px;
+  color: ${silver_polish};
   row-gap: 35px;
 `
 
