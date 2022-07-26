@@ -1,11 +1,31 @@
 import styled from "styled-components"
-import { silver_polish } from "../variables"
+import { silver_polish, tabletBreakpoint } from "../variables"
 
 export const Wrapper = styled.div`
   text-align: center;
+
+  @media (min-width: ${tabletBreakpoint}px) {
+    text-align: left;
+  }
 `
 
 export const Upper = styled.div`
+
+  @media (min-width: ${tabletBreakpoint}px) {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    justify-content: space-between;
+  }
+
+`
+
+export const Summary = styled.div`
+  @media (min-width: ${tabletBreakpoint}px) {
+    width: 60%;
+    padding-right: 30px;
+  }
+
 
 `
 
@@ -13,6 +33,13 @@ export const Title = styled.h2`
   padding-bottom: 30px;
   width: 75%;
   margin: auto;
+
+  @media (min-width: ${tabletBreakpoint}px) {
+    width: 100%;
+    margin: 0px;
+    padding-bottom: 20px;
+  }
+
 `
 
 export const Description = styled.div`
@@ -29,22 +56,34 @@ export const Paragraph = styled.p`
   &:first-child {
     padding-bottom: 0px;
   }
+
+  @media (min-width: ${tabletBreakpoint}px) {
+    font-size: 14px;
+  }
+
 `
 
-type TileProps = {
+type MosaicProps = {
   desktop?: boolean | undefined
 }
 
-export const Mosaic = styled.div`
-  display: flex;
+export const Mosaic = styled.div<MosaicProps>`
+  display: ${ props => props.desktop ? 'none' : 'flex'};
   align-items: center;
   justify-content: center;
   column-gap: 25px;
   height: fit-content;
   padding-top: 45px;
+
+  @media (min-width: ${tabletBreakpoint}px) {
+    display: ${ props => props.desktop ? 'flex' : 'none'};
+    padding-top: 0px;
+    align-self: flex-end;
+  }
+
 `
-export const Tile = styled.a<TileProps>`
-  display: ${props => props.desktop ? 'none' : 'flex'};
+export const Tile = styled.a`
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -56,6 +95,12 @@ export const Tile = styled.a<TileProps>`
   width: 175px;
   color: ${silver_polish};
   row-gap: 35px;
+
+  @media (min-width: ${tabletBreakpoint}px) {
+    height: 140px;
+    width: 140px
+  }
+
 `
 
 export const Icon = styled.img`
@@ -69,6 +114,10 @@ export const Label = styled.span`
   font-size: 13px;
   text-transform: uppercase;
 
+  @media (min-width: ${tabletBreakpoint}px) {
+    font-size: 14px;
+  }
+
 `
 
 export const Lower = styled.div`
@@ -79,6 +128,13 @@ export const Job = styled.div`
   display: flex;
   flex-direction: column;
   padding-top: 30px;
+
+  @media (min-width: ${tabletBreakpoint}px) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  
+  }
 
 `
 
@@ -99,6 +155,11 @@ export const JobTitle = styled.div`
   font-family: Butler-Regular;
   font-size: 25px;
   line-spacing: 65px;
+
+  @media (min-width: ${tabletBreakpoint}px) {
+    width: 230px;
+  }
+
 `
 
 export const Info = styled.span`
@@ -122,12 +183,14 @@ export const JobParagraph = styled.p`
   &:first-child {
     padding-bottom: 0px;
   }
-
-
-
-
 `
 
 export const DiagonalLine = styled.img`
   display: none;
+
+  @media (min-width: ${tabletBreakpoint}px) {
+    display: block;
+    height: 72px;
+  }
+
 `

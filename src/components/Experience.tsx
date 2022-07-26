@@ -17,7 +17,8 @@ import {
   DiagonalLine,
   JobDescription,
   JobParagraph,
-  Mosaic
+  Mosaic,
+  Summary
 } from "../styles/components/Experience"
 import callMe from "../assets/images/call-me.svg"
 import emailMe from "../assets/images/email-me.svg"
@@ -52,18 +53,22 @@ export default function Experience({ content }: ExperienceProps) {
     <Section center label={content?.label}>
       <Wrapper>
         <Upper>
-          <Title>{content?.title}</Title>
-          <Description>
-            { content?.description && content?.description.map((paragraph, index) => <Paragraph key={`Paragraph ${index + 1}`}>{paragraph}</Paragraph>)}
-          </Description>
-          <Tile href="tel:3142212451" desktop>
-            <Icon src={callMe} alt="call me" />
-            <Label>CALL ME</Label>
-          </Tile>
-          <Tile href="mailto:jenna@jennapalmer.info" desktop>
-            <Icon src={emailMe} alt="email me"/>
-            <Label>EMAIL ME</Label>
-          </Tile>
+          <Summary>
+            <Title>{content?.title}</Title>
+            <Description>
+              { content?.description && content?.description.map((paragraph, index) => <Paragraph key={`Paragraph ${index + 1}`}>{paragraph}</Paragraph>)}
+            </Description>
+          </Summary>
+          <Mosaic desktop>
+            <Tile href="tel:3142212451">
+              <Icon src={callMe} alt="call me" />
+              <Label>CALL ME</Label>
+            </Tile>
+            <Tile href="mailto:jenna@jennapalmer.info">
+              <Icon src={emailMe} alt="email me"/>
+              <Label>EMAIL ME</Label>
+            </Tile>
+          </Mosaic>
         </Upper>
         <Lower>
           {

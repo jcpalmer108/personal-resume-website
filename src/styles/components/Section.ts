@@ -25,6 +25,7 @@ export const Header = styled.div<HeaderProps>`
   padding-left: 16px;
   
   @media (min-width: ${tabletBreakpoint}px) {
+    margin: 0px;
     padding-left: 25px;
     padding-top: 80px;
   }
