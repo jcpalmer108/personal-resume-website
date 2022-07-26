@@ -20,7 +20,7 @@ export const Paragraph = styled.p`
 
 `
 
-export const Tile = styled.img`
+export const Tile = styled.div`
 
 `
 
