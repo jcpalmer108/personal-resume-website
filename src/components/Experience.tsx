@@ -18,7 +18,8 @@ import {
   JobDescription,
   JobParagraph,
   Mosaic,
-  Summary
+  Summary,
+  ModalTrigger
 } from "../styles/components/Experience"
 import callMe from "../assets/images/call-me.svg"
 import emailMe from "../assets/images/email-me.svg"
@@ -49,6 +50,7 @@ import Section from "./Section"
 //     line
 
 export default function Experience({ content }: ExperienceProps) {
+  console.log(content);
   return (
     <Section center label={content?.label}>
       <Wrapper>
@@ -81,7 +83,10 @@ export default function Experience({ content }: ExperienceProps) {
                 </Content>
                 <DiagonalLine src={diagonal} alt="forward slash" />
                 <JobDescription>
-                  {content.description && content?.description.map((paragraph, index) => <JobParagraph key={`Paragraph ${index + 1}`}>{paragraph}</JobParagraph>)}
+                  <JobParagraph key={`Paragraph ${index + 1}`}>
+                    {job.description[0]}
+                    <ModalTrigger href="#">... Read More</ModalTrigger>
+                  </JobParagraph>
                 </JobDescription>
               </Job>
             ))

@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { silver_polish, tabletBreakpoint } from "../variables"
+import { redstone, silver_polish, tabletBreakpoint } from "../variables"
 
 export const Wrapper = styled.div`
   text-align: center;
@@ -133,6 +133,7 @@ export const Job = styled.div`
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    height: fit-content;
   
   }
 
@@ -143,6 +144,12 @@ export const Logo = styled.img`
   width: 100px;
   height: 100px;
   margin: auto;
+
+  @media (min-width: ${tabletBreakpoint}px) {
+    padding: 0px;
+    margin-right: 30px;
+  }
+
 `
 
 export const Content = styled.div`
@@ -157,7 +164,8 @@ export const JobTitle = styled.div`
   line-spacing: 65px;
 
   @media (min-width: ${tabletBreakpoint}px) {
-    width: 230px;
+    min-width: 250px;
+    font-size: 22px;
   }
 
 `
@@ -167,10 +175,21 @@ export const Info = styled.span`
   font-style: italic;
   font-size: 14px;
   padding: 12px 12px 20px 12px;
+
+  @media (min-width: ${tabletBreakpoint}px) {
+    font-size: 12px;
+    padding: 0px;
+  }
+
 `
 
 export const JobDescription = styled.div`
   font-family: Gilroy-Regular;
+
+  @media (min-width: ${tabletBreakpoint}px) {
+    margin-left: 20px;
+  }
+
 
 `
 
@@ -179,10 +198,31 @@ export const JobParagraph = styled.p`
   line-spacing: 26px;
   margin: 0px;
   padding-bottom: 16px;
+  display: flex;
+  flex-direction: column;
 
   &:first-child {
     padding-bottom: 0px;
   }
+
+  @media (min-width: ${tabletBreakpoint}px) {
+    font-size: 13px;
+    display: block;
+  }
+
+`
+
+export const ModalTrigger = styled.a`
+  display: none;
+  text-decoration: none;
+  padding-top: 12px;
+  color: ${redstone};
+
+  @media (min-width: ${tabletBreakpoint}px) {
+    padding-left: 5px;
+    padding-top: 0px;
+  }
+
 `
 
 export const DiagonalLine = styled.img`
