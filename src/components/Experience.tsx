@@ -3,8 +3,8 @@ import { Wrapper } from "../styles/components/Experience"
 import {
   Upper,
   Title,
-  PageDescription,
-  PageParagraph,
+  Description,
+  Paragraph,
   Tile,
   Icon,
   Label,
@@ -16,7 +16,8 @@ import {
   Info,
   DiagonalLine,
   JobDescription,
-  JobParagraph
+  JobParagraph,
+  Mosaic
 } from "../styles/components/Experience"
 import callMe from "../assets/images/call-me.svg"
 import emailMe from "../assets/images/email-me.svg"
@@ -52,9 +53,9 @@ export default function Experience({ content }: ExperienceProps) {
       <Wrapper>
         <Upper>
           <Title>{content?.title}</Title>
-          <PageDescription>
-            { content?.description && content?.description.map((paragraph, index) => <PageParagraph key={`PageParagraph ${index + 1}`}>{paragraph}</PageParagraph>)}
-          </PageDescription>
+          <Description>
+            { content?.description && content?.description.map((paragraph, index) => <Paragraph key={`Paragraph ${index + 1}`}>{paragraph}</Paragraph>)}
+          </Description>
           <Tile href="tel:3142212451" desktop>
             <Icon src={callMe} alt="call me" />
             <Label>CALL ME</Label>
@@ -75,19 +76,21 @@ export default function Experience({ content }: ExperienceProps) {
                 </Content>
                 <DiagonalLine src={diagonal} alt="forward slash" />
                 <JobDescription>
-                  {content.description && content?.description.map((paragraph, index) => <JobParagraph key={`PageParagraph ${index + 1}`}>{paragraph}</JobParagraph>)}
+                  {content.description && content?.description.map((paragraph, index) => <JobParagraph key={`Paragraph ${index + 1}`}>{paragraph}</JobParagraph>)}
                 </JobDescription>
               </Job>
             ))
           }
-          <Tile href="tel:3142212451">
-            <Icon src={callMe} alt="call me" />
-            <Label>CALL ME</Label>
-          </Tile>
-          <Tile href="mailto:jenna@jennapalmer.info">
-            <Icon src={emailMe} alt="email me"/>
-            <Label>EMAIL ME</Label>
-          </Tile>
+          <Mosaic>
+            <Tile href="tel:3142212451">
+              <Icon src={callMe} alt="call me" />
+              <Label>Call Me</Label>
+            </Tile>
+            <Tile href="mailto:jenna@jennapalmer.info">
+              <Icon src={emailMe} alt="email me"/>
+              <Label>Email Me</Label>
+            </Tile>
+          </Mosaic>
         </Lower>
       </Wrapper>
     </Section>
