@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { redstone, silver_polish, tabletBreakpoint } from "../variables"
+import { desktopBreakpoint, redstone, silver_polish, tabletBreakpoint } from "../variables"
 
 export const Wrapper = styled.div`
   text-align: center;
@@ -16,6 +16,10 @@ export const Upper = styled.div`
     flex-direction: row;
     column-gap: 20px;
     justify-content: space-between;
+  }
+
+  @media (min-width: ${desktopBreakpoint}px) {
+    padding-bottom: 45px;
   }
 
 `
@@ -61,6 +65,9 @@ export const Paragraph = styled.p`
     font-size: 14px;
   }
 
+  @media (min-width: ${desktopBreakpoint}px) {
+    font-size: 16px;
+  }
 `
 
 type MosaicProps = {
@@ -101,12 +108,22 @@ export const Tile = styled.a`
     width: 140px
   }
 
+  @media (min-width: ${desktopBreakpoint}px) {
+    height: 180px;
+    width: 212px
+  }
+
+
 `
 
 export const Icon = styled.img`
   height: 45px;
   width: 45px;
 
+  @media (min-width: ${desktopBreakpoint}px) {
+    height: 54px;
+    width: 54px;
+  }
 `
 
 export const Label = styled.span`
@@ -117,6 +134,11 @@ export const Label = styled.span`
   @media (min-width: ${tabletBreakpoint}px) {
     font-size: 14px;
   }
+
+  @media (min-width: ${desktopBreakpoint}px) {
+    font-size: 16px;
+  }
+
 
 `
 
@@ -150,6 +172,11 @@ export const Logo = styled.img`
     margin-right: 30px;
   }
 
+  @media (min-width: ${desktopBreakpoint}px) {
+    width: 104px;
+    height: 104px;
+    margin-right: 35px;
+  }
 `
 
 export const Content = styled.div`
@@ -168,6 +195,12 @@ export const JobTitle = styled.div`
     font-size: 22px;
   }
 
+  @media (min-width: ${desktopBreakpoint}px) {
+    min-width: 350px;
+    font-size: 30px;
+  }
+
+
 `
 
 export const Info = styled.span`
@@ -180,6 +213,12 @@ export const Info = styled.span`
     font-size: 12px;
     padding: 0px;
   }
+
+  @media (min-width: ${desktopBreakpoint}px) {
+    padding-top: 10px;
+    font-size: 16px;
+  }
+
 
 `
 
@@ -209,6 +248,11 @@ export const JobParagraph = styled.p`
     font-size: 13px;
     display: block;
   }
+
+  @media (min-width: ${desktopBreakpoint}px) {
+    font-size: 16px;
+  }
+
 
 `
 
