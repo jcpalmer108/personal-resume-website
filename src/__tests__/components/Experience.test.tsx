@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react"
-import Experience from "../../components/Experience.tsx"
+import Experience from "../../components/Experience"
 
 const params = {
   key: "experience",
@@ -18,7 +18,7 @@ const params = {
         description: [
           "test desc 1"
         ],
-        icon: "test icon 1",
+        icon: "call-me",
         timeline: {
           start: "test start 1",
           end: "test end 1"
@@ -53,7 +53,7 @@ const params = {
         description: [
           "test desc 2"
         ],
-        icon: "test icon 2",
+        icon: "email-me",
         timeline: {
           start: "test start 1",
           end: "test end 2"
@@ -85,10 +85,8 @@ describe("Experience", () => {
 
     params.subSection.experience.forEach((job, index) => {
       expect(screen.getByTestId(`Title ${index + 1}`)).toHaveTextContent(job.title)
-      expect(screen.getByTestId(`Timeline ${index + 1}`)).toHaveTextContent(job.employer + " / " + job.timeline.start + " - " + job.timeline.end)
-      params.description.forEach((paragraph, index) => {
-        expect(screen.getByTestId(`Description ${index + 1}`)).toHaveTextContent(paragraph)
-      })
+      expect(screen.getByTestId(`Info ${index + 1}`)).toHaveTextContent(job.employer + " / " + job.timeline.start + " - " + job.timeline.end)
+      expect(screen.getByTestId(`Details ${index + 1}`)).toHaveTextContent(job.description[0] + "... Read More")
       expect(screen.getByRole('img', { name: job.icon })).toBeTruthy()
     })
 

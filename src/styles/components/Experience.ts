@@ -97,20 +97,20 @@ export const Tile = styled.a`
 
   border: 1px solid ${silver_polish};
   text-decoration: none;
-  max-height: 148px;
-  height: 148px;
-  width: 175px;
+  min-height: 148px;
+  min-width: 175px;
   color: ${silver_polish};
-  row-gap: 35px;
+  row-gap: 20px;
 
   @media (min-width: ${tabletBreakpoint}px) {
-    height: 140px;
-    width: 140px
+    min-height: 140px;
+    min-width: 140px
   }
 
   @media (min-width: ${desktopBreakpoint}px) {
-    height: 180px;
-    width: 212px
+    min-height: 180px;
+    min-width: 212px;
+    // row-gap: 20px;
   }
 
 

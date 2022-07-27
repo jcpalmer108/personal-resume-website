@@ -26,47 +26,23 @@ import emailMe from "../assets/images/email-me.svg"
 import diagonal from "../assets/images/diagonal-line.svg"
 import Section from "./Section"
 
-// TODO: remove contact info to content.json
-// email, phone
-
-// adjust page paragraph padding
-// adjust job description paragraph padding
-// make sure icons, title, and info have all the right spacing
-// format mobile tile buttons
-
-// TABLET & DESKTOP
-// upper
-//   title
-//   page description
-//   tile
-// lower
-//   wrapper
-//   job items
-//     title
-//     info, 
-//     description, 
-//     logo, 
-//     diagonal,
-//     line
-
 export default function Experience({ content }: ExperienceProps) {
-  console.log(content);
   return (
     <Section center label={content?.label}>
-      <Wrapper>
+      <Wrapper data-testid="Experience">
         <Upper>
           <Summary>
-            <Title>{content?.title}</Title>
-            <Description>
+            <Title data-testid="Title">{content?.title}</Title>
+            <Description data-testid="Description">
               { content?.description && content?.description.map((paragraph, index) => <Paragraph key={`Paragraph ${index + 1}`}>{paragraph}</Paragraph>)}
             </Description>
           </Summary>
           <Mosaic desktop>
-            <Tile href="tel:3142212451">
+            <Tile href="tel:3142212451" data-testid="Call">
               <Icon src={callMe} alt="call me" />
               <Label>CALL ME</Label>
             </Tile>
-            <Tile href="mailto:jenna@jennapalmer.info">
+            <Tile href="mailto:jenna@jennapalmer.info" data-testid="Email">
               <Icon src={emailMe} alt="email me"/>
               <Label>EMAIL ME</Label>
             </Tile>
@@ -78,11 +54,11 @@ export default function Experience({ content }: ExperienceProps) {
               <Job key={`Job ${index + 1}`}>
                 <Logo src={require("../assets/images/" + job.icon + ".svg")} alt={job.icon} />
                 <Content>
-                  <JobTitle>{job.title}</JobTitle>
-                  <Info>{job.employer} / {job.timeline.start}-{job.timeline.end}</Info>
+                  <JobTitle data-testid={`Title ${index + 1}`}>{job.title}</JobTitle>
+                  <Info data-testid={`Info ${index + 1}`}>{job.employer} / {job.timeline.start} - {job.timeline.end}</Info>
                 </Content>
                 <DiagonalLine src={diagonal} alt="forward slash" />
-                <JobDescription>
+                <JobDescription data-testid={`Details ${index + 1}`}>
                   <JobParagraph key={`Paragraph ${index + 1}`}>
                     {job.description[0]}
                     <ModalTrigger href="#">... Read More</ModalTrigger>
