@@ -9,13 +9,14 @@ import Navbar from './components/Navbar';
 import Landing from './components/Landing';
 import About from './components/About';
 import Testimonials from './components/Testimonials';
+import Experience from './components/Experience';
 
 export default function App() {
   const menu = generateMenu(content.sections)
   const landing = content.sections.find((section) => section.key === "landing")
   const about = content.sections.find((section) => section.key === "about")
   const testimonials = content.sections.find((section) => section.key === "testimonials")
-
+  const experience = content.sections.find((section) => section.key === "experience")
 
   return (
     <>
@@ -28,6 +29,7 @@ export default function App() {
         </LandingWrapper>
         <About content={about} />
         <Testimonials content={testimonials} />
+        <Experience content={experience} />
         <FooterWrapper>
           <Footer menu={menu} />
         </FooterWrapper>

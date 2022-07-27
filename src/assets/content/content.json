@@ -146,7 +146,8 @@
             "organization": "E-Commerce",
             "location": "Portland, OR",
             "description": [
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor purus."
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Malesuada fames ac turpis egestas integer eget.",
+              "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 150"
             ],
             "icon": "alaska",
             "timeline": {
@@ -156,12 +157,12 @@
           },
           {
             "title": "Software Engineer II",
-            "employer": "Nike World Headquarters",
+            "employer": "Nike",
             "team": "Managed Airflow Platform",
             "organization": "Engineered Platforms",
             "location": "Beaverton, OR",
             "description": [
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor purus."
+              "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 150"
             ],
             "icon": "nike",
             "timeline": {
@@ -170,11 +171,11 @@
             }
           },
           {
-            "title": "Technology Enablement Consultant",
-            "employer": "Slalom Consulting LLC",
+            "title": "Technology Consultant",
+            "employer": "Slalom Consulting",
             "location": "Portland OR, OR",
             "description": [
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor purus."
+              "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 150"
             ],
             "icon": "slalom",
             "timeline": {
@@ -186,7 +187,7 @@
                 "industry": "Software as a Service (SASS)",
                 "title": "Upgrade Application Servers to Ubuntu 16",
                 "description":[
-                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor purus."
+                  "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 150"
                 ],
                 "icon": "key"
               },
@@ -194,7 +195,7 @@
                 "industry": "Healthcare",
                 "title": "Designed a security architecture model for an internal, Tableau-based reporting system that allowd the client to stop out-sourcing their needs to other companies",
                 "description":[
-                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor purus."
+                  "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 150"
                 ],
                 "icon": "healthcare"
               }
@@ -202,10 +203,10 @@
           },
           {
             "title": "Software Engineer II",
-            "employer": "Nike World Headquarters",
+            "employer": "Nike",
             "location": "Beaverton, OR",
             "description": [
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor purus."
+              "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 150"
             ],
             "team": "Login & Registration",
             "icon": "nike",
@@ -216,11 +217,11 @@
             }
           },
           {
-            "title": "Technology Enablement Consultant",
-            "employer": "Slalom Consulting LLC",
+            "title": "Technology Consultant",
+            "employer": "Slalom Consulting",
             "location": "St. Louis, MO",
             "description": [
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor purus."
+              "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 150"
             ],
             "icon": "slalom",
             "timeline": {

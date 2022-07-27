@@ -35,7 +35,7 @@ export default function Testimonials({ content }: TestimonialProps) {
   }
   
   return (
-    <Section>
+    <Section bottom>
       <Wrapper id="testimonials" data-testid="Testimonials">
         <ArrowLeft 
           onClick={() => { updateIndex(false) }} 

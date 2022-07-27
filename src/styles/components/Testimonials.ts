@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import { desktopBreakpoint, off_black, redstone, silver_polish, tabletBreakpoint } from "../variables"
+import { DotProps, ArrowProps } from "../../types/Testimonials"
 
 export const Wrapper = styled.div`
   display: flex;
@@ -11,24 +12,20 @@ export const Wrapper = styled.div`
     flex-direction: row;
     justify-content: space-between;
   }
-
 `
 
 export const Content = styled.div`
-display: flex;
-flex-direction: column;
-text-align: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 
-@media (min-width: ${tabletBreakpoint}px) {
-  max-width: 523px;
-}
+  @media (min-width: ${tabletBreakpoint}px) {
+    max-width: 523px;
+  }
 
-@media (min-width: ${desktopBreakpoint}px) {
-  max-width: 624px;
-}
-
-
-
+  @media (min-width: ${desktopBreakpoint}px) {
+    max-width: 624px;
+  }
 `
 
 export const Quote = styled.p`
@@ -36,18 +33,19 @@ export const Quote = styled.p`
   font-size: 15px;
   font-family: Gilroy-Regular;
   height: fit-content; // update to change total height of section
+  line-height: 26px;
 
   @media (min-width: ${tabletBreakpoint}px) {
     font-size: 20px;
     margin: 40px 0px;
+    line-height: 34px;
   }
 
   @media (min-width: ${desktopBreakpoint}px) {
     font-size: 25px;
     margin: 60px 0px;
+    line-height: 44px;
   }
-
-
 `
 
 export const Person = styled.div`
@@ -64,9 +62,6 @@ export const Person = styled.div`
     font-size: 25px;
     margin-bottom: 11px;
   }
-
-
-
 `
 
 export const Title = styled.div`
@@ -83,9 +78,6 @@ export const Title = styled.div`
     font-size: 25px;
     margin-bottom: 55px;
   }
-
-
-
 `
 
 export const Dots = styled.div`
@@ -93,10 +85,6 @@ export const Dots = styled.div`
   align-items: center;
   justify-content: center;
 `
-
-type DotProps = {
-  selected: boolean
-}
 
 export const Dot = styled.div<DotProps>`
   height: 7px;
@@ -126,10 +114,6 @@ export const Arrows = styled.div`
   }
 `
 
-type ArrowProps = {
-  desktop?: boolean | undefined
-}
-
 export const ArrowLeft = styled.img<ArrowProps>`
   display: ${ props => props.desktop && props.desktop === true ? 'none' : 'block'}; 
   width: 19px;
@@ -158,7 +142,6 @@ export const Circle = styled.div`
   border-radius: 50%;
   z-index: -1;
   position: absolute;
-
 `
 export const Option = styled.div`
   height: 40px;
@@ -166,5 +149,4 @@ export const Option = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-
 `
