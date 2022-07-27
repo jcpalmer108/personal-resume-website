@@ -89,7 +89,5 @@ describe("Experience", () => {
       expect(screen.getByTestId(`Details ${index + 1}`)).toHaveTextContent(job.description[0] + "... Read More")
       expect(screen.getByRole('img', { name: job.icon })).toBeTruthy()
     })
-
   })
-
 })
