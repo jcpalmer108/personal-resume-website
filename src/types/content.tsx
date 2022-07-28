@@ -32,7 +32,7 @@ export type Education = {
   timeline: Timeline
 }
 
-type Skills = {
+export type Skills = {
   key: string,
   label: string,
   url: string
