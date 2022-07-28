@@ -2,15 +2,16 @@ import { SkillsProps, TileProps } from "../types/Skills";
 import { 
   Mobile,
   Desktop,
-  Marquee,
   Title,
   Link,
   Logo,
-  // Row
+  Description,
+  Paragraph
 } from "../styles/components/Skills";
 import Section from "../components/Section"
 import { Skills as SkillsContent } from "../types/content"
-
+import Marquee from "react-fast-marquee";
+import Button from "./Button";
 
 function Tile({ info }: TileProps) {
   const { key, url, label } = info;
@@ -42,7 +43,6 @@ TODO: desktop version
 */
 
 export default function Skills({ content }: SkillsProps) {
-  console.log(content)
 
   const generateTiles = (tiles: SkillsContent[] | undefined, table: boolean = false) => {
     const content = tiles ? tiles : []
@@ -54,15 +54,19 @@ export default function Skills({ content }: SkillsProps) {
       ) : content.map((item, index) => <Tile key={`Tile ${index + 1}`} info={item} />)
   }
 
-
-  
   return (
-    <Section wide label={content?.label}>
+    <Section wide center label={content?.label}>
       <Mobile>
         <Title>{content?.title}</Title>
-        <Marquee>
+        <Marquee loop={0}>
           {generateTiles(content?.subSection?.skills)}
         </Marquee>
+        <Description>
+          {content?.description?.map((paragraph, index) => {
+            return <Paragraph key={`Paragraph ${index + 1}`}>{paragraph}</Paragraph>
+          })}
+        </Description>
+        <Button url="#contact" label="Let's Talk"/>
       </Mobile>
       <Desktop>
 

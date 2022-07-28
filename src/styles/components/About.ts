@@ -81,7 +81,7 @@ export const Degree = styled.span`
 export const Action = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 0px 15px 20px 15px;
+  padding: 0px 15px;
 
   @media (min-width: ${tabletBreakpoint}px) {
     flex-direction: row;

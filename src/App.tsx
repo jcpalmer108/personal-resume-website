@@ -30,9 +30,9 @@ export default function App() {
           <Landing content={landing}/>
         </LandingWrapper>
         <About content={about} />
+        <Skills content={skills}/>
         <Testimonials content={testimonials} />
         <Experience content={experience} />
-        <Skills content={skills}/>
         <FooterWrapper>
           <Footer menu={menu} />
         </FooterWrapper>
