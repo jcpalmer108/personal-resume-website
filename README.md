@@ -1,9 +1,6 @@
 <p align="center">
   <img align="center" height="100" src="./src/assets/images/jennapalmer-dark.svg">
 </p>
-<br>
-<br>
-
 <div align="center">
   <h2>Resume Website</h2>
   <p>
@@ -220,7 +217,7 @@ I'd love to hear any suggestions or feedback you may have too! Thanks for visiti
 
 # Credits
 
-I'd like to credit my designer [hardikgonyada](https://www.fiverr.com/hardikgondhiya) for creating wonderful mocks for me. I found them via the Fiverr platform for freelancers, and would highly recommend Hardik's work to anyone looking for design on a tech-based product. 
+I'd like to credit my designer [hardikgonyada](https://www.fiverr.com/hardikgondhiya) for creating wonderful mocks for me. I found them via Fiverr, the platform for freelance artists, and would highly recommend Hardik's work to anyone looking for design on a tech-based product. 
 
 I would also like to credit the following open-source projects I am utilizing in this application: 
 
