@@ -9,7 +9,7 @@ import {
   Paragraph,
   Mosaic,
   Row,
-  Action
+  Cell
 } from "../styles/components/Skills";
 import Section from "../components/Section"
 import { Skills as SkillsContent } from "../types/content"
@@ -20,9 +20,11 @@ function Tile({ info }: TileProps) {
   const { key, url, label } = info;
 
   return (
-    <Link id={key} href={url}>
-      <Logo src={require("../assets/images/" + key + ".svg")} alt={label} />
-    </Link>
+    <Cell>
+      <Link id={key} href={url}>
+        <Logo src={require("../assets/images/" + key + ".svg")} alt={label} />
+      </Link>
+    </Cell>
   )
 }
 
@@ -69,7 +71,9 @@ export default function Skills({ content }: SkillsProps) {
       <NotMobile>
         <Mosaic>
           <Row>
-            <Title id="title">{content?.title}</Title>
+            <Cell>
+              <Title id="title">{content?.title}</Title>
+            </Cell>
             {generateTiles(content?.subSection?.skills?.slice(0, 2))}
           </Row>
           <Row>
@@ -77,14 +81,14 @@ export default function Skills({ content }: SkillsProps) {
           </Row>
           <Row>
            {generateTiles(content?.subSection?.skills?.slice(7, 9))}
-            <Action id="action">
+            <Cell id="action">
               <Description>
                 {content?.description?.map((paragraph, index) => {
                   return <Paragraph key={`Paragraph ${index + 1}`}>{paragraph}</Paragraph>
                 })}
               </Description>
               <Button url="#contact" label="Let's Talk"/>
-            </Action>
+            </Cell>
           </Row>
         </Mosaic>
       </NotMobile>

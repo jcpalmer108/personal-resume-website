@@ -27,14 +27,9 @@ export const Title = styled.h2`
 `
 
 export const Logo = styled.img`
-  height: 50px;
-  width: 50px;
+  height: 100%;
 
-  @media (min-width: ${tabletBreakpoint}px) {
-    height: 70px;
-    width: 70px;
-  }
-`
+  `
 
 export const Link = styled.a`
   height: 50px;
@@ -44,13 +39,10 @@ export const Link = styled.a`
   margin-right: 13px;
 
   @media (min-width: ${tabletBreakpoint}px) {
-    margin-right: 0px;
-    padding: 0px;
-    min-width: 145px;
-    max-width: 145px;
-    display: flex;
-    align-items: center; 
-    justify-content: center;
+    height: 70px;
+    width: 70px;
+    position: relative;
+    background: lightblue;
   }
 `
 
@@ -80,19 +72,19 @@ export const NotMobile = styled.div`
 
 `
 
-export const Mosaic = styled.div`
+export const Mosaic = styled.table`
 
   @media(min-width: ${tabletBreakpoint}px) {
     display: block;
   }
 `
 
-export const Row = styled.div`
+export const Row = styled.tr`
   display: inline-flex;
   height: 145px;
   overflow: hidden;
 `
 
-export const Action = styled.div`
+export const Cell = styled.td`
 
 `
