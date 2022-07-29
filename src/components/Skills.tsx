@@ -71,7 +71,7 @@ export default function Skills({ content }: SkillsProps) {
       <NotMobile>
         <Mosaic>
           <Row>
-            <Cell>
+            <Cell colSpan={3} first>
               <Title id="title">{content?.title}</Title>
             </Cell>
             {generateTiles(content?.subSection?.skills?.slice(0, 2))}
@@ -81,7 +81,7 @@ export default function Skills({ content }: SkillsProps) {
           </Row>
           <Row>
            {generateTiles(content?.subSection?.skills?.slice(7, 9))}
-            <Cell id="action">
+            <Cell colSpan={3} last>
               <Description>
                 {content?.description?.map((paragraph, index) => {
                   return <Paragraph key={`Paragraph ${index + 1}`}>{paragraph}</Paragraph>

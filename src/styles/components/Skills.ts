@@ -20,14 +20,22 @@ export const Title = styled.h2`
 
   @media (min-width: ${tabletBreakpoint}px) {
     max-width: none;
-    padding: 25px;
-    width: 60%;
+    padding: 0px;
+    position: absolute;
+
   }
 
 `
 
 export const Logo = styled.img`
-  height: 100%;
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+
+  @media (min-width: ${tabletBreakpoint}px) {
+    height: 70px;
+    width: 70px;
+  }
 
   `
 
@@ -39,8 +47,7 @@ export const Link = styled.a`
   margin-right: 13px;
 
   @media (min-width: ${tabletBreakpoint}px) {
-    height: 70px;
-    width: 70px;
+    padding: 0px;
     position: relative;
     background: lightblue;
   }
@@ -50,6 +57,10 @@ export const Description = styled.div`
   padding: 30px 20px 50px 20px;
   font-family: Gilroy-Regular;
 
+  @media (min-width: ${tabletBreakpoint}px) {
+    padding: 0px;
+    position: relative;
+  }
 `
 
 export const Paragraph = styled.p`
@@ -61,6 +72,11 @@ export const Paragraph = styled.p`
   &:last-child {
     margin-bottom: 0px;
   }
+
+  @media (min-width: ${tabletBreakpoint}px) {
+    position: relative;
+  }
+
 `
 
 export const NotMobile = styled.div`
@@ -75,16 +91,40 @@ export const NotMobile = styled.div`
 export const Mosaic = styled.table`
 
   @media(min-width: ${tabletBreakpoint}px) {
-    display: block;
+    width: 100%;
+    border-collapse: collapse;
   }
 `
 
 export const Row = styled.tr`
-  display: inline-flex;
-  height: 145px;
-  overflow: hidden;
-`
 
-export const Cell = styled.td`
+  `
 
+type CellProps = {
+  first?: boolean | undefined,
+  last?: boolean | undefined
+}
+export const Cell = styled.td<CellProps>`
+
+  @media(min-width: ${tabletBreakpoint}px) {
+    width: 20%;
+    position: relative;
+    
+    // border-width: 1px;
+    // border-color: blue;
+    // border-left: ${props => props.first ? 'none' : 'solid'};
+    // border-top: ${props => props.first ? 'none' : 'solid'};
+    // border-bottom: ${props => props.last ? 'none' : 'solid'};
+    // border-right: ${props => props.last ? 'none' : 'solid'};
+
+    &:after {
+      content: '';
+      display: block;
+      margin-top: 100%;    
+    }
+
+    &:first-child {
+      background: green;
+    }
+  }
 `
