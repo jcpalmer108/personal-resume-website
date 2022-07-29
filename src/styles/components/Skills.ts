@@ -48,7 +48,7 @@ export const Link = styled.a`
 
   @media (min-width: ${tabletBreakpoint}px) {
     padding: 0px;
-    position: relative;
+    position: absolute;
     background: lightblue;
   }
 `
@@ -59,7 +59,7 @@ export const Description = styled.div`
 
   @media (min-width: ${tabletBreakpoint}px) {
     padding: 0px;
-    position: relative;
+    position: absolute;
   }
 `
 
@@ -107,24 +107,15 @@ type CellProps = {
 export const Cell = styled.td<CellProps>`
 
   @media(min-width: ${tabletBreakpoint}px) {
+    border-width: 1px;
+    border-color: blue;
+    border-left: ${props => props.first ? 'none' : 'solid'};
+    border-top: ${props => props.first ? 'none' : 'solid'};
+    border-bottom: ${props => props.last ? 'none' : 'solid'};
+    border-right: ${props => props.last ? 'none' : 'solid'};
+
     width: 20%;
-    position: relative;
-    
-    // border-width: 1px;
-    // border-color: blue;
-    // border-left: ${props => props.first ? 'none' : 'solid'};
-    // border-top: ${props => props.first ? 'none' : 'solid'};
-    // border-bottom: ${props => props.last ? 'none' : 'solid'};
-    // border-right: ${props => props.last ? 'none' : 'solid'};
-
-    &:after {
-      content: '';
-      display: block;
-      margin-top: 100%;    
-    }
-
-    &:first-child {
-      background: green;
-    }
+    height: 0px;
+    padding-bottom: 20%;
   }
 `
