@@ -17,10 +17,23 @@ export const Mobile = styled.div`
 export const Title = styled.h2`
   padding: 15px 15px 30px 15px;
   max-width: 250px;
+
+  @media (min-width: ${tabletBreakpoint}px) {
+    max-width: none;
+    padding: 25px;
+    width: 60%;
+  }
+
 `
 
 export const Logo = styled.img`
+  height: 50px;
   width: 50px;
+
+  @media (min-width: ${tabletBreakpoint}px) {
+    height: 70px;
+    width: 70px;
+  }
 `
 
 export const Link = styled.a`
@@ -29,6 +42,16 @@ export const Link = styled.a`
   border: 1px solid ${silver_polish};
   padding: 30px;
   margin-right: 13px;
+
+  @media (min-width: ${tabletBreakpoint}px) {
+    margin-right: 0px;
+    padding: 0px;
+    min-width: 145px;
+    max-width: 145px;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+  }
 `
 
 export const Description = styled.div`
@@ -48,18 +71,28 @@ export const Paragraph = styled.p`
   }
 `
 
-
-export const Row = styled.div`
-
-`
-
-
-
-export const Desktop = styled.div`
+export const NotMobile = styled.div`
   display: none;
   
   @media (min-width: ${tabletBreakpoint}px) {
     display: block;
   }
+
+`
+
+export const Mosaic = styled.div`
+
+  @media(min-width: ${tabletBreakpoint}px) {
+    display: block;
+  }
+`
+
+export const Row = styled.div`
+  display: inline-flex;
+  height: 145px;
+  overflow: hidden;
+`
+
+export const Action = styled.div`
 
 `

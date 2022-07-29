@@ -1,12 +1,15 @@
 import { SkillsProps, TileProps } from "../types/Skills";
 import { 
   Mobile,
-  Desktop,
+  NotMobile,
   Title,
   Link,
   Logo,
   Description,
-  Paragraph
+  Paragraph,
+  Mosaic,
+  Row,
+  Action
 } from "../styles/components/Skills";
 import Section from "../components/Section"
 import { Skills as SkillsContent } from "../types/content"
@@ -46,12 +49,7 @@ export default function Skills({ content }: SkillsProps) {
 
   const generateTiles = (tiles: SkillsContent[] | undefined, table: boolean = false) => {
     const content = tiles ? tiles : []
-    return table ? 
-      content.map((item, index) => 
-        <td>
-          <Tile key={`Tile ${index + 1}`} info={item} />
-        </td>
-      ) : content.map((item, index) => <Tile key={`Tile ${index + 1}`} info={item} />)
+    return content.map((item, index) => <Tile key={`Tile ${index + 1}`} info={item} />)
   }
 
   return (
@@ -68,32 +66,28 @@ export default function Skills({ content }: SkillsProps) {
         </Description>
         <Button url="#contact" label="Let's Talk"/>
       </Mobile>
-      <Desktop>
-
-        {/* <Row>
-          <Title>{content?.title}</Title>
-          {
-            content?.subSection?.skills?.slice(0, 1).map((item, index) => 
-              <Tile key={`Tile ${index + 1}`} info={item} />
-            )
-          }
-        </Row>
-        <Row>
-          {
-            content?.subSection?.skills?.slice(2, 7).map((item, index) =>
-              <Tile key={`Tile ${index + 1}`} info={item} />
-            )
-
-          }
-        </Row>
-        <Row>
-          {
-            content?.subSection?.skills?.slice(2, 7).map((item, index) => 
-              <Tile key={`Tile ${index + 1}`} info={item} />
-            )
-          }
-        </Row> */}
-      </Desktop>
+      <NotMobile>
+        <Mosaic>
+          <Row>
+            <Title id="title">{content?.title}</Title>
+            {generateTiles(content?.subSection?.skills?.slice(0, 2))}
+          </Row>
+          <Row>
+            {generateTiles(content?.subSection?.skills?.slice(2, 7))}
+          </Row>
+          <Row>
+           {generateTiles(content?.subSection?.skills?.slice(7, 9))}
+            <Action id="action">
+              <Description>
+                {content?.description?.map((paragraph, index) => {
+                  return <Paragraph key={`Paragraph ${index + 1}`}>{paragraph}</Paragraph>
+                })}
+              </Description>
+              <Button url="#contact" label="Let's Talk"/>
+            </Action>
+          </Row>
+        </Mosaic>
+      </NotMobile>
     </Section>
   )
 
