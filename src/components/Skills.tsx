@@ -98,6 +98,14 @@ export default function Skills({ content }: SkillsProps) {
             </Cell>
           </Row>
         </Mosaic>
+        <Content>
+          <Description>
+            {content?.description?.map((paragraph, index) => {
+              return <Paragraph key={`Paragraph ${index + 1}`}>{paragraph}</Paragraph>
+            })}
+          </Description>
+          <Button url="#contact" label="Let's Talk"/>
+        </Content>
       </NotMobile>
     </Section>
   )

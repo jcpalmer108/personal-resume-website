@@ -20,12 +20,18 @@ export const Title = styled.h2`
 
   @media (min-width: ${tabletBreakpoint}px) {
     max-width: none;
-    padding: 25px;
+    padding-top: calc(7% - 25px);
+    padding-left: 25px;
     position: absolute;
     width: calc(60% - 50px);
-    max-width: 600px;
+    max-width: 500px;
     overflow: hidden;
+  }
 
+  @media (min-width: ${desktopBreakpoint}px) {
+    padding-top: 30px;
+    padding-left: 60px;
+    width: 600px;
   }
 
 `
@@ -68,7 +74,13 @@ export const Link = styled.a`
     justify-content: center;
     width: 20%;
     padding-top: 7%;
+    max-height: 200px;
   }
+
+  @media (min-width: ${desktopBreakpoint}px) {
+    padding-top: 90px;
+  }
+
 
 `
 
