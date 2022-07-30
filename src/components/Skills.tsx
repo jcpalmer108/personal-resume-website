@@ -9,22 +9,27 @@ import {
   Paragraph,
   Mosaic,
   Row,
-  Cell
+  Cell,
+  Content
 } from "../styles/components/Skills";
 import Section from "../components/Section"
 import { Skills as SkillsContent } from "../types/content"
 import Marquee from "react-fast-marquee";
 import Button from "./Button";
 
-function Tile({ info }: TileProps) {
+function Tile({ info }: TileProps, table: boolean = false) {
   const { key, url, label } = info;
 
-  return (
+  return table ? (
     <Cell>
       <Link id={key} href={url}>
         <Logo src={require("../assets/images/" + key + ".svg")} alt={label} />
       </Link>
     </Cell>
+  ) : (
+    <Link id={key} href={url}>
+      <Logo src={require("../assets/images/" + key + ".svg")} alt={label} />
+    </Link>
   )
 }
 
@@ -82,12 +87,14 @@ export default function Skills({ content }: SkillsProps) {
           <Row>
             {generateTiles(content?.subSection?.skills?.slice(7, 9))}
             <Cell colSpan={3} last>
-              <Description>
-                {content?.description?.map((paragraph, index) => {
-                  return <Paragraph key={`Paragraph ${index + 1}`}>{paragraph}</Paragraph>
-                })}
-              </Description>
-              {/* <Button url="#contact" label="Let's Talk"/> */}
+              <Content desktop>
+                <Description>
+                  {content?.description?.map((paragraph, index) => {
+                    return <Paragraph key={`Paragraph ${index + 1}`}>{paragraph}</Paragraph>
+                  })}
+                </Description>
+                <Button url="#contact" label="Let's Talk"/>
+              </Content>
             </Cell>
           </Row>
         </Mosaic>
