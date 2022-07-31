@@ -21,7 +21,7 @@ function Tile({ info, table }: TileProps) {
 
   return table === true ? (
     <Cell>
-      <Link id={key} href={url}>
+      <Link id={key} href={url} data-testid="Tile">
         <Logo src={require("../assets/images/" + key + ".svg")} alt={label} />
       </Link>
     </Cell>
@@ -33,46 +33,47 @@ function Tile({ info, table }: TileProps) {
 }
 
 export default function Skills({ content }: SkillsProps) {
+  const skillList = content?.subSection?.skills || [];
 
   const generateTiles = (tiles: SkillsContent[] | undefined, table: boolean = true) => {
     const content = tiles ? tiles : []
     return content.map((item, index) => <Tile key={`Tile ${index + 1}`} info={item} table={table} />)
   }
 
+  if( skillList && skillList.length < 9) {
+    return null;
+  }
+
   return (
     <Section wide center label={content?.label}>
-      <Mobile>
-        <Title>{content?.title}</Title>
+      <Mobile data-testid="Mobile">
+        <Title data-testid="Title">{content?.title}</Title>
         <Marquee loop={0}>
           {generateTiles(content?.subSection?.skills, false)}
         </Marquee>
-        <Description>
-          {content?.description?.map((paragraph, index) => {
-            return <Paragraph key={`Paragraph ${index + 1}`}>{paragraph}</Paragraph>
-          })}
+        <Description data-testid="Description">
+          <Paragraph key={"Paragraph"}>{content?.description && content.description[0]}</Paragraph>
         </Description>
         <Button url="#contact" label="Let's Talk"/>
       </Mobile>
-      <NotMobile>
+      <NotMobile data-testid="NotMobile">
         <Mosaic>
           <tbody>
-            <tr>
+            <tr data-testid="Row 1">
               <Cell colSpan={3} first>
-                <Title id="title">{content?.title}</Title>
+                <Title data-testid="Title">{content?.title}</Title>
               </Cell>
-              {generateTiles(content?.subSection?.skills?.slice(0, 2))}
+              {generateTiles(skillList.slice(0, 2))}
             </tr>
-            <tr>
-              {generateTiles(content?.subSection?.skills?.slice(2, 7))}
+            <tr data-testid="Row 2">
+              {generateTiles(skillList.slice(2, 7))}
             </tr>
-            <tr>
-              {generateTiles(content?.subSection?.skills?.slice(7, 9))}
+            <tr data-testid="Row 3">
+              {generateTiles(skillList.slice(7, 9))}
               <Cell colSpan={3} last>
                 <Content desktop>
-                  <Description>
-                    {content?.description?.map((paragraph, index) => {
-                      return <Paragraph key={`Paragraph ${index + 1}`}>{paragraph}</Paragraph>
-                    })}
+                  <Description data-testid="Description">
+                    <Paragraph key={"Paragraph"}>{content?.description && content.description[0]}</Paragraph>
                   </Description>
                   <Button url="#contact" label="Let's Talk"/>
                 </Content>

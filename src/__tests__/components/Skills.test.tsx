@@ -17,15 +17,50 @@ const params = {
   subSection: {
     skills: [
       {
-        key: "testskill1",
+        key: "github",
         label: "Test Skill 1",
         url: "https://test.skill.one/"
       },
       {
-        key: "testskill2",
+        key: "github",
         label: "Test Skill 2",
         url: "https://test.skill.two/"
       },
+      {
+        key: "github",
+        label: "Test Skill 3",
+        url: "https://test.skill.three/"
+      },
+      {
+        key: "github",
+        label: "Test Skill 4",
+        url: "https://test.skill.four/"
+      },
+      {
+        key: "github",
+        label: "Test Skill 5",
+        url: "https://test.skill.five/"
+      },
+      {
+        key: "github",
+        label: "Test Skill 6",
+        url: "https://test.skill.six/"
+      },
+      {
+        key: "github",
+        label: "Test Skill 7",
+        url: "https://test.skill.seven/"
+      },
+      {
+        key: "github",
+        label: "Test Skill 8",
+        url: "https://test.skill.eight/"
+      },
+      {
+        key: "github",
+        label: "Test Skill 9",
+        url: "https://test.skill.nine/"
+      }
     ]
   }
 }
@@ -36,26 +71,62 @@ describe('Skills', () => {
       <Skills content={params} />
     )
   
-    expect(screen.getByTestId('Skills')).toMatchSnapshot()
-    expect(screen.getByTestId('Title')).toHaveTextContent(params.title)
-
-    params.description.forEach((item, index) => {
-      expect(screen.getByTestId(`Description ${index + 1}`)).toHaveTextContent(item)
+    expect(screen.getByTestId('Mobile')).toMatchSnapshot()
+    expect(screen.getByTestId('NotMobile')).toMatchSnapshot()
+    screen.getAllByTestId('Title').forEach((title) => {
+      expect(title).toHaveTextContent(params.title)
+    })
+    screen.getAllByTestId('Description').forEach((desc) => {
+      expect(desc).toHaveTextContent(params.description[0])
     })
 
-    expect(screen.getAllByTestId('Tiles')).toHaveLength(9)
+
+    expect(screen.getAllByTestId('Tile')).toHaveLength(9)
     expect(screen.getByTestId('Row 1').childNodes).toHaveLength(3)
     expect(screen.getByTestId('Row 2').childNodes).toHaveLength(5)
     expect(screen.getByTestId('Row 3').childNodes).toHaveLength(3)
     expect(Button).toHaveBeenCalled()
 
-    params.subSection.skills.forEach((item, index) => {
-      expect(screen.getByRole('link', { name: item.label })).toBeTruthy()
-      expect(screen.getByRole('img', { name: item.label })).toHaveAttribute('href', item.url)
-      expect(screen.getByRole('img', { name: item.label })).toHaveAttribute('alt', item.label)
+    for(let i = 0; i < 9; i++) {
+      const item = params.subSection.skills[i]
+      expect(screen.getAllByRole('link', { name: item.label })).toHaveLength(2)
+      screen.getAllByRole('link', { name: item.label }).forEach(link => {
+        expect(link).toHaveAttribute('href', item.url)
+      })
+      screen.getAllByRole('img', { name: item.label }).forEach(image => {
+        expect(image).toHaveAttribute('alt', item.label)
+      })
+    }
+  })
+  
+  test('does not render if less than 9 skills are entered', () => {
+    const lessThan9Skills = {
+      key: "about",
+      label: "Skills",
+      inMenu: true,
+      title: "test title",
+      description: [
+        "test contents 1",
+        "test contents 2"
+      ],
+      subSection: {
+        skills: [
+          {
+            key: "github",
+            label: "Test Skill 1",
+            url: "https://test.skill.one/"
+          },
+          {
+            key: "github",
+            label: "Test Skill 2",
+            url: "https://test.skill.two/"
+          }
+        ]
+      }
+    }
 
-    })
-
-    expect(screen.getByTestId('Marquee')).toBeTruthy()
+    render(<Skills content={lessThan9Skills} />)
+    expect(screen.queryAllByTestId('Mobile')).toHaveLength(0)
+    expect(screen.queryAllByTestId('NotMobile')).toHaveLength(0)
   })
 })

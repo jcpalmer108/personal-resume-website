@@ -1,0 +1,1002 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Skills renders if only required params are passed in 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.c1 {
+  padding: 15px 15px 30px 15px;
+  max-width: 250px;
+}
+
+.c3 {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #c6c6c6;
+  padding: 30px;
+  margin-right: 13px;
+}
+
+.c4 {
+  padding: 30px 20px 50px 20px;
+  font-family: Gilroy-Regular;
+}
+
+.c5 {
+  margin-bottom: 16px;
+  margin: 0px;
+}
+
+.c5:last-child {
+  margin-bottom: 0px;
+}
+
+@media (min-width:720px) {
+  .c0 {
+    display: none;
+  }
+}
+
+@media (min-width:720px) {
+  .c1 {
+    max-width: none;
+    padding-top: calc(7% - 25px);
+    padding-left: 25px;
+    position: absolute;
+    width: calc(60% - 50px);
+    max-width: 500px;
+    overflow: hidden;
+  }
+}
+
+@media (min-width:1024px) {
+  .c1 {
+    padding-top: 30px;
+    padding-left: 60px;
+    width: 600px;
+  }
+}
+
+@media (min-width:720px) {
+  .c3 {
+    height: 70px;
+    width: 70px;
+  }
+}
+
+@media (min-width:1024px) {
+  .c3 {
+    height: 100px;
+    width: 100px;
+  }
+}
+
+@media (min-width:720px) {
+  .c2 {
+    padding: 0px;
+    position: absolute;
+    border: none;
+    margin-right: 0px;
+    padding-bottom: 0px;
+    max-width: 230px;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 20%;
+    padding-top: 7%;
+    max-height: 200px;
+  }
+}
+
+@media (min-width:1024px) {
+  .c2 {
+    padding-top: 90px;
+  }
+}
+
+@media (min-width:720px) {
+  .c4 {
+    padding: 20px 0px 30px 0px;
+    width: 100%;
+  }
+}
+
+@media (min-width:1024px) {
+  .c4 {
+    padding: 7% 0px 30px 0px;
+    width: 145%;
+  }
+}
+
+@media (min-width:720px) {
+  .c5 {
+    position: relative;
+  }
+}
+
+@media (min-width:720px) {
+
+}
+
+@media (min-width:720px) {
+
+}
+
+@media (min-width:720px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:720px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:720px) {
+
+}
+
+@media (min-width:1155px) {
+
+}
+
+@media (min-width:720px) {
+
+}
+
+@media (min-width:1155px) {
+
+}
+
+@media (min-width:720px) {
+
+}
+
+@media (min-width:1155px) {
+
+}
+
+@media (min-width:1155px) {
+
+}
+
+@media (min-width:720px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:720px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:720px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:720px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+<div
+  class="c0"
+  data-testid="Mobile"
+>
+  <h2
+    class="c1"
+    data-testid="Title"
+  >
+    test title
+  </h2>
+  <div
+    class=" marquee-container"
+    style="--pause-on-hover: running; --pause-on-click: running;"
+  >
+    <div
+      class="overlay"
+      style="--gradient-color: rgba(255, 255, 255, 1), rgba(255, 255, 255, 0); --gradient-width: 200px;"
+    />
+    <div
+      class="marquee"
+      style="--play: running; --direction: normal; --duration: 0s; --delay: 0s; --iteration-count: infinite;"
+    >
+      <a
+        class="c2"
+        href="https://test.skill.one/"
+        id="github"
+      >
+        <img
+          alt="Test Skill 1"
+          class="c3"
+          src="[object Object]"
+        />
+      </a>
+      <a
+        class="c2"
+        href="https://test.skill.two/"
+        id="github"
+      >
+        <img
+          alt="Test Skill 2"
+          class="c3"
+          src="[object Object]"
+        />
+      </a>
+      <a
+        class="c2"
+        href="https://test.skill.three/"
+        id="github"
+      >
+        <img
+          alt="Test Skill 3"
+          class="c3"
+          src="[object Object]"
+        />
+      </a>
+      <a
+        class="c2"
+        href="https://test.skill.four/"
+        id="github"
+      >
+        <img
+          alt="Test Skill 4"
+          class="c3"
+          src="[object Object]"
+        />
+      </a>
+      <a
+        class="c2"
+        href="https://test.skill.five/"
+        id="github"
+      >
+        <img
+          alt="Test Skill 5"
+          class="c3"
+          src="[object Object]"
+        />
+      </a>
+      <a
+        class="c2"
+        href="https://test.skill.six/"
+        id="github"
+      >
+        <img
+          alt="Test Skill 6"
+          class="c3"
+          src="[object Object]"
+        />
+      </a>
+      <a
+        class="c2"
+        href="https://test.skill.seven/"
+        id="github"
+      >
+        <img
+          alt="Test Skill 7"
+          class="c3"
+          src="[object Object]"
+        />
+      </a>
+      <a
+        class="c2"
+        href="https://test.skill.eight/"
+        id="github"
+      >
+        <img
+          alt="Test Skill 8"
+          class="c3"
+          src="[object Object]"
+        />
+      </a>
+      <a
+        class="c2"
+        href="https://test.skill.nine/"
+        id="github"
+      >
+        <img
+          alt="Test Skill 9"
+          class="c3"
+          src="[object Object]"
+        />
+      </a>
+    </div>
+    <div
+      class="marquee"
+      style="--play: running; --direction: normal; --duration: 0s; --delay: 0s; --iteration-count: infinite;"
+    >
+      <a
+        class="c2"
+        href="https://test.skill.one/"
+        id="github"
+      >
+        <img
+          alt="Test Skill 1"
+          class="c3"
+          src="[object Object]"
+        />
+      </a>
+      <a
+        class="c2"
+        href="https://test.skill.two/"
+        id="github"
+      >
+        <img
+          alt="Test Skill 2"
+          class="c3"
+          src="[object Object]"
+        />
+      </a>
+      <a
+        class="c2"
+        href="https://test.skill.three/"
+        id="github"
+      >
+        <img
+          alt="Test Skill 3"
+          class="c3"
+          src="[object Object]"
+        />
+      </a>
+      <a
+        class="c2"
+        href="https://test.skill.four/"
+        id="github"
+      >
+        <img
+          alt="Test Skill 4"
+          class="c3"
+          src="[object Object]"
+        />
+      </a>
+      <a
+        class="c2"
+        href="https://test.skill.five/"
+        id="github"
+      >
+        <img
+          alt="Test Skill 5"
+          class="c3"
+          src="[object Object]"
+        />
+      </a>
+      <a
+        class="c2"
+        href="https://test.skill.six/"
+        id="github"
+      >
+        <img
+          alt="Test Skill 6"
+          class="c3"
+          src="[object Object]"
+        />
+      </a>
+      <a
+        class="c2"
+        href="https://test.skill.seven/"
+        id="github"
+      >
+        <img
+          alt="Test Skill 7"
+          class="c3"
+          src="[object Object]"
+        />
+      </a>
+      <a
+        class="c2"
+        href="https://test.skill.eight/"
+        id="github"
+      >
+        <img
+          alt="Test Skill 8"
+          class="c3"
+          src="[object Object]"
+        />
+      </a>
+      <a
+        class="c2"
+        href="https://test.skill.nine/"
+        id="github"
+      >
+        <img
+          alt="Test Skill 9"
+          class="c3"
+          src="[object Object]"
+        />
+      </a>
+    </div>
+  </div>
+  <div
+    class="c4"
+    data-testid="Description"
+  >
+    <p
+      class="c5"
+    >
+      test contents 1
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Skills renders if only required params are passed in 2`] = `
+.c3 {
+  padding: 15px 15px 30px 15px;
+  max-width: 250px;
+}
+
+.c6 {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #c6c6c6;
+  padding: 30px;
+  margin-right: 13px;
+}
+
+.c9 {
+  padding: 30px 20px 50px 20px;
+  font-family: Gilroy-Regular;
+}
+
+.c10 {
+  margin-bottom: 16px;
+  margin: 0px;
+}
+
+.c10:last-child {
+  margin-bottom: 0px;
+}
+
+.c0 {
+  display: none;
+}
+
+.c8 {
+  height: 0px;
+  width: 60%;
+  max-width: 600px;
+  display: block;
+}
+
+.c11 {
+  height: 0px;
+  width: 60%;
+  max-width: 600px;
+  display: block;
+}
+
+@media (min-width:720px) {
+
+}
+
+@media (min-width:720px) {
+  .c3 {
+    max-width: none;
+    padding-top: calc(7% - 25px);
+    padding-left: 25px;
+    position: absolute;
+    width: calc(60% - 50px);
+    max-width: 500px;
+    overflow: hidden;
+  }
+}
+
+@media (min-width:1024px) {
+  .c3 {
+    padding-top: 30px;
+    padding-left: 60px;
+    width: 600px;
+  }
+}
+
+@media (min-width:720px) {
+  .c6 {
+    height: 70px;
+    width: 70px;
+  }
+}
+
+@media (min-width:1024px) {
+  .c6 {
+    height: 100px;
+    width: 100px;
+  }
+}
+
+@media (min-width:720px) {
+  .c5 {
+    padding: 0px;
+    position: absolute;
+    border: none;
+    margin-right: 0px;
+    padding-bottom: 0px;
+    max-width: 230px;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 20%;
+    padding-top: 7%;
+    max-height: 200px;
+  }
+}
+
+@media (min-width:1024px) {
+  .c5 {
+    padding-top: 90px;
+  }
+}
+
+@media (min-width:720px) {
+  .c9 {
+    padding: 20px 0px 30px 0px;
+    width: 100%;
+  }
+}
+
+@media (min-width:1024px) {
+  .c9 {
+    padding: 7% 0px 30px 0px;
+    width: 145%;
+  }
+}
+
+@media (min-width:720px) {
+  .c10 {
+    position: relative;
+  }
+}
+
+@media (min-width:720px) {
+  .c0 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-top: 25px;
+  }
+}
+
+@media (min-width:720px) {
+  .c1 {
+    width: 100%;
+    border-collapse: collapse;
+  }
+}
+
+@media (min-width:720px) {
+  .c8 {
+    display: none;
+    padding: 25px;
+    height: 100%;
+    max-width: none;
+    width: calc(100% - 50px);
+  }
+}
+
+@media (min-width:1024px) {
+  .c8 {
+    display: block;
+    position: relative;
+    height: 0px;
+    padding: 0px;
+    width: 60%;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+
+@media (min-width:720px) {
+  .c11 {
+    display: block;
+    padding: 25px;
+    height: 100%;
+    max-width: none;
+    width: calc(100% - 50px);
+  }
+}
+
+@media (min-width:1024px) {
+  .c11 {
+    display: none;
+    position: relative;
+    height: 0px;
+    padding: 0px;
+    width: 60%;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+
+@media (min-width:720px) {
+  .c2 {
+    border-width: 1px;
+    border-left: none;
+    border-top: none;
+    border-bottom: solid;
+    border-right: solid;
+    border-color: #c6c6c6;
+    width: 20%;
+    height: 0px;
+    padding-bottom: 20%;
+  }
+}
+
+@media (min-width:1155px) {
+  .c2:first-child {
+    border-left: none;
+  }
+
+  .c2:last-child {
+    border-right: none;
+  }
+}
+
+@media (min-width:720px) {
+  .c4 {
+    border-width: 1px;
+    border-left: solid;
+    border-top: solid;
+    border-bottom: solid;
+    border-right: solid;
+    border-color: #c6c6c6;
+    width: 20%;
+    height: 0px;
+    padding-bottom: 20%;
+  }
+}
+
+@media (min-width:1155px) {
+  .c4:first-child {
+    border-left: none;
+  }
+
+  .c4:last-child {
+    border-right: none;
+  }
+}
+
+@media (min-width:720px) {
+  .c7 {
+    border-width: 1px;
+    border-left: solid;
+    border-top: solid;
+    border-bottom: none;
+    border-right: none;
+    border-color: #c6c6c6;
+    width: 20%;
+    height: 0px;
+    padding-bottom: 20%;
+  }
+}
+
+@media (min-width:1155px) {
+  .c7:first-child {
+    border-left: none;
+  }
+
+  .c7:last-child {
+    border-right: none;
+  }
+}
+
+@media (min-width:1155px) {
+
+}
+
+@media (min-width:720px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:720px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:720px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:720px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+<div
+  class="c0"
+  data-testid="NotMobile"
+>
+  <table
+    class="c1"
+  >
+    <tbody>
+      <tr
+        data-testid="Row 1"
+      >
+        <td
+          class="c2"
+          colspan="3"
+        >
+          <h2
+            class="c3"
+            data-testid="Title"
+          >
+            test title
+          </h2>
+        </td>
+        <td
+          class="c4"
+        >
+          <a
+            class="c5"
+            data-testid="Tile"
+            href="https://test.skill.one/"
+            id="github"
+          >
+            <img
+              alt="Test Skill 1"
+              class="c6"
+              src="[object Object]"
+            />
+          </a>
+        </td>
+        <td
+          class="c4"
+        >
+          <a
+            class="c5"
+            data-testid="Tile"
+            href="https://test.skill.two/"
+            id="github"
+          >
+            <img
+              alt="Test Skill 2"
+              class="c6"
+              src="[object Object]"
+            />
+          </a>
+        </td>
+      </tr>
+      <tr
+        data-testid="Row 2"
+      >
+        <td
+          class="c4"
+        >
+          <a
+            class="c5"
+            data-testid="Tile"
+            href="https://test.skill.three/"
+            id="github"
+          >
+            <img
+              alt="Test Skill 3"
+              class="c6"
+              src="[object Object]"
+            />
+          </a>
+        </td>
+        <td
+          class="c4"
+        >
+          <a
+            class="c5"
+            data-testid="Tile"
+            href="https://test.skill.four/"
+            id="github"
+          >
+            <img
+              alt="Test Skill 4"
+              class="c6"
+              src="[object Object]"
+            />
+          </a>
+        </td>
+        <td
+          class="c4"
+        >
+          <a
+            class="c5"
+            data-testid="Tile"
+            href="https://test.skill.five/"
+            id="github"
+          >
+            <img
+              alt="Test Skill 5"
+              class="c6"
+              src="[object Object]"
+            />
+          </a>
+        </td>
+        <td
+          class="c4"
+        >
+          <a
+            class="c5"
+            data-testid="Tile"
+            href="https://test.skill.six/"
+            id="github"
+          >
+            <img
+              alt="Test Skill 6"
+              class="c6"
+              src="[object Object]"
+            />
+          </a>
+        </td>
+        <td
+          class="c4"
+        >
+          <a
+            class="c5"
+            data-testid="Tile"
+            href="https://test.skill.seven/"
+            id="github"
+          >
+            <img
+              alt="Test Skill 7"
+              class="c6"
+              src="[object Object]"
+            />
+          </a>
+        </td>
+      </tr>
+      <tr
+        data-testid="Row 3"
+      >
+        <td
+          class="c4"
+        >
+          <a
+            class="c5"
+            data-testid="Tile"
+            href="https://test.skill.eight/"
+            id="github"
+          >
+            <img
+              alt="Test Skill 8"
+              class="c6"
+              src="[object Object]"
+            />
+          </a>
+        </td>
+        <td
+          class="c4"
+        >
+          <a
+            class="c5"
+            data-testid="Tile"
+            href="https://test.skill.nine/"
+            id="github"
+          >
+            <img
+              alt="Test Skill 9"
+              class="c6"
+              src="[object Object]"
+            />
+          </a>
+        </td>
+        <td
+          class="c7"
+          colspan="3"
+        >
+          <div
+            class="c8"
+          >
+            <div
+              class="c9"
+              data-testid="Description"
+            >
+              <p
+                class="c10"
+              >
+                test contents 1
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div
+    class="c11"
+  >
+    <div
+      class="c9"
+    >
+      <p
+        class="c10"
+      >
+        test contents 1
+      </p>
+      <p
+        class="c10"
+      >
+        test contents 2
+      </p>
+    </div>
+  </div>
+</div>
+`;
