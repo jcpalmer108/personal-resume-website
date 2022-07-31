@@ -88,17 +88,15 @@ export const Description = styled.div`
   padding: 30px 20px 50px 20px;
   font-family: Gilroy-Regular;
 
-  @media (min-width: ${tabletBreakpoint}px) {
-    padding: 0px;
-    position: absolute;
+  @media (min-width: ${desktopBreakpoint}px) {
+    padding: 50px 0px 30px 0px;
+    width: 145%;
   }
 `
 
 export const Paragraph = styled.p`
   margin-bottom: 16px;
   margin: 0px;
-  font-size: 12px;
-  line-height: 20px;
 
   &:last-child {
     margin-bottom: 0px;
@@ -138,16 +136,20 @@ type ContentProps = {
 
 export const Content = styled.div<ContentProps>`
   height: 0px;
-  position: absolute;
+  position: fixed;
   width: 60%;
   max-width: 600px;
 
   @media (min-width: ${tabletBreakpoint}px) {
-    display: ${ props => props.desktop ? "none" : "block"};
+    display: ${ props => props.desktop ? "none" : "contents"};
+
   }
 
   @media (min-width: ${desktopBreakpoint}px) {
     display: ${ props => props.desktop ? "block" : "none"};
+    position: relative;
+    margin-left: 50px;
+    margin-right: 50px;
   }
   `
 
