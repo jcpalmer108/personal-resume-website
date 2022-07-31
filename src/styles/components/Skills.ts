@@ -88,8 +88,13 @@ export const Description = styled.div`
   padding: 30px 20px 50px 20px;
   font-family: Gilroy-Regular;
 
+  @media (min-width: ${tabletBreakpoint}px) {
+    padding: 20px 0px 30px 0px;
+    width: 100%;
+  }
+
   @media (min-width: ${desktopBreakpoint}px) {
-    padding: 50px 0px 30px 0px;
+    padding: 7% 0px 30px 0px;
     width: 145%;
   }
 `
@@ -112,7 +117,8 @@ export const NotMobile = styled.div`
   display: none;
   
   @media (min-width: ${tabletBreakpoint}px) {
-    display: block;
+    display: flex;
+    flex-direction: column;
     padding-top: 25px;
   }
 
@@ -136,18 +142,24 @@ type ContentProps = {
 
 export const Content = styled.div<ContentProps>`
   height: 0px;
-  position: fixed;
   width: 60%;
   max-width: 600px;
+  display: block;
 
   @media (min-width: ${tabletBreakpoint}px) {
-    display: ${ props => props.desktop ? "none" : "contents"};
-
+    display: ${ props => props.desktop ? "none" : "block"};
+    padding: 25px;
+    height: 100%;
+    max-width: none;
+    width: calc(100% - 50px);
   }
 
   @media (min-width: ${desktopBreakpoint}px) {
     display: ${ props => props.desktop ? "block" : "none"};
     position: relative;
+    height: 0px;
+    padding: 0px;
+    width: 60%;
     margin-left: 50px;
     margin-right: 50px;
   }
