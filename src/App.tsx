@@ -10,6 +10,7 @@ import Landing from './components/Landing';
 import About from './components/About';
 import Testimonials from './components/Testimonials';
 import Experience from './components/Experience';
+import Skills from './components/Skills';
 
 export default function App() {
   const menu = generateMenu(content.sections)
@@ -17,6 +18,7 @@ export default function App() {
   const about = content.sections.find((section) => section.key === "about")
   const testimonials = content.sections.find((section) => section.key === "testimonials")
   const experience = content.sections.find((section) => section.key === "experience")
+  const skills = content.sections.find((section) => section.key === "skills")
 
   return (
     <>
@@ -28,6 +30,7 @@ export default function App() {
           <Landing content={landing}/>
         </LandingWrapper>
         <About content={about} />
+        <Skills content={skills}/>
         <Testimonials content={testimonials} />
         <Experience content={experience} />
         <FooterWrapper>

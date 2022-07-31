@@ -20,8 +20,8 @@ const params = {
         school: "Webster University",
         degree: "Bachelors of Science in Computer Science",
         timeline: {
-          start: 2014,
-          end: 2017
+          start: "2014",
+          end: "2017"
         }
       },
       {
@@ -29,8 +29,8 @@ const params = {
         school: "Harvard University",
         degree: "Bachelors of Smartiness in Computer Science",
         timeline: {
-          start: 2027,
-          end: 2030
+          start: "2027",
+          end: "2030"
         }
       }
     ]
