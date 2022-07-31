@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { desktopBreakpoint, silver_polish, tabletBreakpoint } from "../variables";
+import { contentWidth, desktopBreakpoint, silver_polish, tabletBreakpoint } from "../variables";
 
 export const Mobile = styled.div`
   display: flex;
@@ -132,10 +132,6 @@ export const Mosaic = styled.table`
   }
 `
 
-export const Row = styled.tr`
-
-  `
-
 type ContentProps = {
   desktop?: boolean | undefined
 }
@@ -184,4 +180,14 @@ export const Cell = styled.td<CellProps>`
     height: 0px;
     padding-bottom: 20%;
   }
-`
+
+  @media(min-width: ${contentWidth}px) {
+    &:first-child {
+      border-left: none;
+    }
+
+    &:last-child {
+      border-right: none;
+    }
+  }
+  `

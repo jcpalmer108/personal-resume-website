@@ -6,6 +6,7 @@ export type SkillsProps = {
 }
 
 export type TileProps = {
-  info: Skills
+  info: Skills,
+  table: boolean
 }
 
