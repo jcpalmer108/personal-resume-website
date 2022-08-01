@@ -1,10 +1,11 @@
 import { silver_polish, fortress_gray } from "@/styles/variables"
+import { ChangeEvent } from "react"
 import styled from "styled-components"
 
 type InputProps = {
   label: String,
-  value: String,
-  onChange: Function
+  value?: any,
+  updateForm: Function
 }
 
 const Wrapper = styled.div`
@@ -35,6 +36,13 @@ const Label = styled.label`
   background: white;
   z-index: 2;
 
+  ${TextField}:not(:placeholder-shown) ~ & {
+    top: -7px;
+    padding: 3px 15px;
+    border-radius: 25px;
+    font-size: 10px;
+  }
+
   ${TextField}:focus ~ & {
     top: -7px;
     padding: 3px 15px;
@@ -42,12 +50,14 @@ const Label = styled.label`
     font-size: 10px;
   }
 
+
 `
 
-export default function Input({ label, value, onChange}: InputProps) {
+export default function Input({ label, value, updateForm}: InputProps) {
+  console.log(value)
   return (
     <Wrapper>
-      <TextField/>
+      <TextField placeholder=" " value={value} onChange={(e: ChangeEvent) => updateForm(e)} />
       <Label>{label.toUpperCase()}</Label>
     </Wrapper>
   )
