@@ -11,6 +11,7 @@ import About from './components/About';
 import Testimonials from './components/Testimonials';
 import Experience from './components/Experience';
 import Skills from './components/Skills';
+import Gallery from './components/Gallery';
 
 export default function App() {
   const menu = generateMenu(content.sections)
@@ -33,6 +34,7 @@ export default function App() {
         <Skills content={skills}/>
         <Testimonials content={testimonials} />
         <Experience content={experience} />
+        <Gallery />
         <FooterWrapper>
           <Footer menu={menu} />
         </FooterWrapper>
