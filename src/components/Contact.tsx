@@ -38,7 +38,7 @@ export default function Contact({ content }: ContactProps) {
           <Input label="name" value={formValues.name} updateForm={(e: any) => updateFormValues("name", e)} />
           <Input label="phone" value={formValues.phone} updateForm={(e: any) => updateFormValues("phone", e)} />
           <Input label="email" value={formValues.email} updateForm={(e: any) => updateFormValues("email", e)} />
-          <Input label="message" value={formValues.message} updateForm={(e: any) => updateFormValues("message", e)} />
+          <Input area label="message" value={formValues.message} updateForm={(e: any) => updateFormValues("message", e)} />
         </Form>
       </Mobile>
     </Section>

@@ -9,6 +9,17 @@ export const Wrapper = styled.div`
 
 `
 
+export const TextArea = styled.textarea`
+  padding: 15px 15px;
+  border-radius: 0px;
+  border: 1px solid ${silver_polish};
+  z-index: 2;
+  background: transparent;
+  font-family: Gilroy-Regular;
+  height: 110px;
+  resize: none;
+`
+
 export const TextField = styled.input`
   padding: 0px 15px;
   height: 50px;
@@ -16,6 +27,7 @@ export const TextField = styled.input`
   border: 1px solid ${silver_polish};
   z-index: 2;
   background: transparent;
+  font-family: Gilroy-Regular;
 `
 
 export const Label = styled.label`
@@ -43,4 +55,19 @@ export const Label = styled.label`
     border-radius: 25px;
     font-size: 10px;
   }
+
+  ${TextArea}:not(:placeholder-shown) ~ & {
+    top: 3px;
+    padding: 3px 15px;
+    border-radius: 25px;
+    font-size: 10px;
+  }
+
+  ${TextArea}:focus ~ & {
+    top: 3px;
+    padding: 3px 15px;
+    border-radius: 25px;
+    font-size: 10px;
+  }
+
 `
