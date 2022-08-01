@@ -11,7 +11,7 @@ import About from './components/About';
 import Testimonials from './components/Testimonials';
 import Experience from './components/Experience';
 import Skills from './components/Skills';
-import Gallery from './components/Gallery';
+// import Gallery from './components/Gallery';
 import Contact from './components/Contact';
 
 export default function App() {
@@ -36,7 +36,7 @@ export default function App() {
         <Skills content={skills}/>
         <Testimonials content={testimonials} />
         <Experience content={experience} />
-        <Gallery />
+        {/* <Gallery /> */}
         <Contact content={contact}/>
         <FooterWrapper>
           <Footer menu={menu} />

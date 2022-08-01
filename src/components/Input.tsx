@@ -12,6 +12,7 @@ const Wrapper = styled.div`
   display: flex;
   position: relative;
   flex-direction: column;
+  padding: 10px 0px;
 
 `
 
@@ -31,20 +32,20 @@ const Label = styled.label`
   position: absolute;
   pointer-events: none;
   left: 15px;
-  top: 19px;
+  top: 30px;
   transition: 0.2s ease all;
   background: white;
   z-index: 2;
 
   ${TextField}:not(:placeholder-shown) ~ & {
-    top: -7px;
+    top: 3px;
     padding: 3px 15px;
     border-radius: 25px;
     font-size: 10px;
   }
 
   ${TextField}:focus ~ & {
-    top: -7px;
+    top: 3px;
     padding: 3px 15px;
     border-radius: 25px;
     font-size: 10px;
