@@ -12,6 +12,7 @@ import Testimonials from './components/Testimonials';
 import Experience from './components/Experience';
 import Skills from './components/Skills';
 import Gallery from './components/Gallery';
+import Contact from './components/Contact';
 
 export default function App() {
   const menu = generateMenu(content.sections)
@@ -20,6 +21,7 @@ export default function App() {
   const testimonials = content.sections.find((section) => section.key === "testimonials")
   const experience = content.sections.find((section) => section.key === "experience")
   const skills = content.sections.find((section) => section.key === "skills")
+  const contact = content.sections.find((section) => section.key === "contact")
 
   return (
     <>
@@ -35,6 +37,7 @@ export default function App() {
         <Testimonials content={testimonials} />
         <Experience content={experience} />
         <Gallery />
+        <Contact content={contact}/>
         <FooterWrapper>
           <Footer menu={menu} />
         </FooterWrapper>
