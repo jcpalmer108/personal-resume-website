@@ -1,4 +1,3 @@
-import { ReactNode } from 'react'
 import { 
   Wrapper, 
   Header, 
@@ -8,16 +7,7 @@ import {
   Children
 } from "../styles/components/Section";
 import line from "../assets/images/label-line.svg";
-
-type SectionProps = {
-  children: ReactNode,
-  label?: string,
-  light?: boolean,
-  thin?: boolean,
-  wide?: boolean,
-  center?: boolean,
-  bottom?: boolean
-}
+import { SectionProps } from "../types/Section"
 
 export default function Section({ 
   label,
@@ -26,12 +16,13 @@ export default function Section({
   thin,
   wide,
   center,
-  bottom
+  bottom,
+  noTop
 }: SectionProps) {
   return (
     <Wrapper light={light} thin={thin} bottom={bottom} data-testid="Wrapper">
       {label && (
-        <Header data-testid="Header" center={center} >
+        <Header noTop={noTop} data-testid="Header" center={center} >
           <Label data-testid="Label">
             <Line src={line} alt="test"/>
             <Title>{label.toUpperCase()}</Title>

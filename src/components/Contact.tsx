@@ -3,7 +3,13 @@ import Section from "./Section";
 import { 
   Mobile, 
   Form,
-  Button
+  Button,
+  NotMobile,
+  Left,
+  Right,
+  Title,
+  Description,
+  LeftWrapper
 } from "../styles/components/Contact"
 import Input from "./Input"
 import { useState } from "react";
@@ -66,18 +72,33 @@ export default function Contact({ content, contact }: ContactProps) {
   }
   
   return (
-    <Section label={content?.label} center>
+    <>
       <Mobile>
-        <h2>{content?.title}</h2>
-        <p>{content?.description && content?.description[0]}</p>
-        <Form onSubmit={openMailLink}>
-          <Input label="name" value={formValues.name} updateForm={(e: any) => updateFormValues("name", e)} />
-          <Input label="phone" value={formValues.phone} updateForm={(e: any) => updateFormValues("phone", e)} />
-          <Input label="email" value={formValues.email} updateForm={(e: any) => updateFormValues("email", e)} />
-          <Input area label="message" value={formValues.message} updateForm={(e: any) => updateFormValues("message", e)} />
-          <Button disabled={isDisabled} type="submit" value="SUBMIT" />
-        </Form>
+        <Section label={content?.label} center>
+          <Title>{content?.title}</Title>
+          <Description>{content?.description && content?.description[0]}</Description>
+          <Form onSubmit={openMailLink}>
+            <Input label="name" value={formValues.name} updateForm={(e: any) => updateFormValues("name", e)} />
+            <Input label="phone" value={formValues.phone} updateForm={(e: any) => updateFormValues("phone", e)} />
+            <Input label="email" value={formValues.email} updateForm={(e: any) => updateFormValues("email", e)} />
+            <Input area label="message" value={formValues.message} updateForm={(e: any) => updateFormValues("message", e)} />
+            <Button disabled={isDisabled} type="submit" value="SUBMIT" />
+          </Form>
+        </Section>    
       </Mobile>
-    </Section>
+      <NotMobile>
+        <Left>
+          <Section noTop wide label={content?.label}>
+            <LeftWrapper>
+              <Title>{content?.title}</Title>
+              <Description>{content?.description && content?.description[0]}</Description>
+            </LeftWrapper>
+          </Section>
+        </Left>
+        <Right>
+          right
+        </Right>
+      </NotMobile>
+    </>
   )
 }

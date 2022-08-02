@@ -27,7 +27,7 @@ export const Header = styled.div<HeaderProps>`
   @media (min-width: ${tabletBreakpoint}px) {
     margin: 0px;
     padding-left: 25px;
-    padding-top: 80px;
+    padding-top: ${props => props.noTop ? '25px' : '80px'};
   }
 
   @media (min-width: ${desktopBreakpoint}px) {
