@@ -9,7 +9,8 @@ import {
   Right,
   Title,
   Description,
-  LeftWrapper
+  LeftWrapper,
+  InputWrapper
 } from "../styles/components/Contact"
 import Input from "./Input"
 import { useState } from "react";
@@ -96,7 +97,19 @@ export default function Contact({ content, contact }: ContactProps) {
           </Section>
         </Left>
         <Right>
-          right
+          <InputWrapper>
+            <Input label="name" value={formValues.name} updateForm={(e: any) => updateFormValues("name", e)} />
+          </InputWrapper>
+          <InputWrapper>
+            <Input label="phone" value={formValues.phone} updateForm={(e: any) => updateFormValues("phone", e)} />
+          </InputWrapper>
+          <InputWrapper>
+            <Input label="email" value={formValues.email} updateForm={(e: any) => updateFormValues("email", e)} />
+          </InputWrapper>
+          <InputWrapper>
+            <Input area label="message" value={formValues.message} updateForm={(e: any) => updateFormValues("message", e)} />
+          </InputWrapper>
+
         </Right>
       </NotMobile>
     </>

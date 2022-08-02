@@ -24,6 +24,11 @@ export const Form = styled.form`
 
 `
 
+export const InputWrapper = styled.form`
+
+`
+
+
 export const LeftWrapper = styled.div`
   padding: 35px 25px;
 `
@@ -31,6 +36,9 @@ export const LeftWrapper = styled.div`
 
 export const Title = styled.h2`
 
+  @media (min-width: ${tabletBreakpoint}px) {
+    width: 80%;
+  }
 `
 
 export const Description = styled.p`
@@ -48,6 +56,7 @@ export const Right = styled.div`
   flex-grow: 1;
   border: 1px solid ${silver_polish};
   border-left: none;
+  height: 100%;
 
   `
 
