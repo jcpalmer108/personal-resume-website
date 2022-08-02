@@ -22,6 +22,7 @@ export default function App() {
   const experience = content.sections.find((section) => section.key === "experience")
   const skills = content.sections.find((section) => section.key === "skills")
   const contact = content.sections.find((section) => section.key === "contact")
+  const contactInfo = content.contact;
 
   return (
     <>
@@ -37,7 +38,7 @@ export default function App() {
         <Testimonials content={testimonials} />
         <Experience content={experience} />
         {/* <Gallery /> */}
-        <Contact content={contact}/>
+        <Contact content={contact} contact={contactInfo} />
         <FooterWrapper>
           <Footer menu={menu} />
         </FooterWrapper>

@@ -1,5 +1,6 @@
-import { Sections } from "./content"
+import { Sections, ContactInfo } from "./content"
 
 export type ContactProps = {
-  content: Sections | undefined
+  content: Sections | undefined,
+  contact: ContactInfo
 }

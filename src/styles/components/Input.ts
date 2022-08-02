@@ -18,6 +18,7 @@ export const TextArea = styled.textarea`
   font-family: Gilroy-Regular;
   height: 110px;
   resize: none;
+  width: calc(100% - 30px);
 `
 
 export const TextField = styled.input`
