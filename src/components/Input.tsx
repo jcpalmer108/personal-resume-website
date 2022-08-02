@@ -8,13 +8,13 @@ import {
 import { InputProps } from "../types/Input"
 
 
-export default function Input({ label, value, updateForm, area}: InputProps) {
+export default function Input({ label, value, updateForm, area, noBorder }: InputProps) {
   console.log()
   return (
     <Wrapper>
       {area ? 
-        (<TextArea placeholder=" " value={value} onChange={(e: ChangeEvent) => updateForm(e)} />) : 
-        (<TextField placeholder=" " value={value} onChange={(e: ChangeEvent) => updateForm(e)} />)
+        (<TextArea noBorder={noBorder} placeholder=" " value={value} onChange={(e: ChangeEvent) => updateForm(e)} />) : 
+        (<TextField noBorder={noBorder} placeholder=" " value={value} onChange={(e: ChangeEvent) => updateForm(e)} />)
       }
       <Label>{label.toUpperCase()}</Label>
     </Wrapper>

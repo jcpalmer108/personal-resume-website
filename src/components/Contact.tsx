@@ -2,7 +2,7 @@ import { ContactProps } from "../types/Contact";
 import Section from "./Section";
 import { 
   Mobile, 
-  Form,
+  FormWrapper,
   Button,
   NotMobile,
   Left,
@@ -73,45 +73,51 @@ export default function Contact({ content, contact }: ContactProps) {
   }
   
   return (
-    <>
+    <Section wide>
       <Mobile>
         <Section label={content?.label} center>
           <Title>{content?.title}</Title>
           <Description>{content?.description && content?.description[0]}</Description>
-          <Form onSubmit={openMailLink}>
+          <form onSubmit={openMailLink}>
             <Input label="name" value={formValues.name} updateForm={(e: any) => updateFormValues("name", e)} />
             <Input label="phone" value={formValues.phone} updateForm={(e: any) => updateFormValues("phone", e)} />
             <Input label="email" value={formValues.email} updateForm={(e: any) => updateFormValues("email", e)} />
             <Input area label="message" value={formValues.message} updateForm={(e: any) => updateFormValues("message", e)} />
             <Button disabled={isDisabled} type="submit" value="SUBMIT" />
-          </Form>
+          </form>
         </Section>    
       </Mobile>
       <NotMobile>
-        <Left>
-          <Section noTop wide label={content?.label}>
-            <LeftWrapper>
-              <Title>{content?.title}</Title>
-              <Description>{content?.description && content?.description[0]}</Description>
-            </LeftWrapper>
-          </Section>
-        </Left>
-        <Right>
-          <InputWrapper>
-            <Input label="name" value={formValues.name} updateForm={(e: any) => updateFormValues("name", e)} />
-          </InputWrapper>
-          <InputWrapper>
-            <Input label="phone" value={formValues.phone} updateForm={(e: any) => updateFormValues("phone", e)} />
-          </InputWrapper>
-          <InputWrapper>
-            <Input label="email" value={formValues.email} updateForm={(e: any) => updateFormValues("email", e)} />
-          </InputWrapper>
-          <InputWrapper>
-            <Input area label="message" value={formValues.message} updateForm={(e: any) => updateFormValues("message", e)} />
-          </InputWrapper>
-
-        </Right>
+        <FormWrapper>
+          <Left>
+            <Section noTop wide label={content?.label}>
+              <LeftWrapper>
+                <Title>{content?.title}</Title>
+                <Description>{content?.description && content?.description[0]}</Description>
+              </LeftWrapper>
+            </Section>
+          </Left>
+          <Right>
+            <form>
+              <InputWrapper>
+                <Input noBorder label="name" value={formValues.name} updateForm={(e: any) => updateFormValues("name", e)} />
+              </InputWrapper>
+              <InputWrapper>
+                <Input noBorder label="phone" value={formValues.phone} updateForm={(e: any) => updateFormValues("phone", e)} />
+              </InputWrapper>
+              <InputWrapper>
+                <Input noBorder label="email" value={formValues.email} updateForm={(e: any) => updateFormValues("email", e)} />
+              </InputWrapper>
+              <InputWrapper>
+                <Input noBorder area label="message" value={formValues.message} updateForm={(e: any) => updateFormValues("message", e)} />
+              </InputWrapper>
+            </form>
+          </Right>
+        </FormWrapper>
+        <Section>
+          blah blah blah
+        </Section>
       </NotMobile>
-    </>
+    </Section>
   )
 }

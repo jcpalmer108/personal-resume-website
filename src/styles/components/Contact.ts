@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { redstone, silver_polish, tabletBreakpoint } from "../variables"
+import { desktopBreakpoint, redstone, silver_polish, tabletBreakpoint } from "../variables"
 // import { silver_polish } from "../variables"
 
 export const Mobile = styled.div`
@@ -10,21 +10,33 @@ export const Mobile = styled.div`
   }
 `
 
-export const NotMobile = styled.div`
+export const NotMobile = styled.form`
   display: none;
+
+  @media (min-width: ${tabletBreakpoint}px) {
+    display: block;
+  }
+
+  @media (min-width: ${desktopBreakpoint}px) {
+
+  }
+
+`
+
+export const FormWrapper = styled.form`
 
   @media (min-width: ${tabletBreakpoint}px) {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: stretch;
+    border: 1px solid ${silver_polish};
+
   }
 `
 
-export const Form = styled.form`
-
-`
-
 export const InputWrapper = styled.form`
+  padding-top: 2.5px;
+  border-bottom: 1px solid ${silver_polish};
 
 `
 
@@ -49,13 +61,12 @@ export const Description = styled.p`
 
 export const Left = styled.div`
   width: 55%;
-  border: 1px solid ${silver_polish};
+  border-right: 1px solid ${silver_polish};
+
   `
 
 export const Right = styled.div`
   flex-grow: 1;
-  border: 1px solid ${silver_polish};
-  border-left: none;
   height: 100%;
 
   `
