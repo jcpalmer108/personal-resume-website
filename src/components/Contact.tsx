@@ -12,7 +12,10 @@ import {
   LeftWrapper,
   InputWrapper,
   BottomBar,
-  Socials
+  Socials,
+  Links,
+  BlankSection,
+  Icon
 } from "../styles/components/Contact"
 import Input from "./Input"
 import { useState } from "react";
@@ -90,12 +93,21 @@ export default function Contact({ content, contact }: ContactProps) {
           <Input label="email" value={formValues.email} updateForm={(e: any) => updateFormValues("email", e)} />
           <Input area label="message" value={formValues.message} updateForm={(e: any) => updateFormValues("message", e)} />
           <Button disabled={isDisabled} type="submit" value="SUBMIT" />
+          <Socials>
+            {
+              socials.links.map((item) => (
+              <Links href={item.url}>
+                <Icon src={require("../assets/images/" + item.key + ".svg")} alt={item.label} />
+              </Links>
+              ))
+            }
+          </Socials>
         </Section>    
       </Mobile>
       <NotMobile>
         <FormWrapper>
           <Left>
-            <Section noTop wide label={content?.label}>
+            <Section noBorder noTop wide label={content?.label}>
               <LeftWrapper>
                 <Title>{content?.title}</Title>
                 <Description>{content?.description && content?.description[0]}</Description>
@@ -117,21 +129,20 @@ export default function Contact({ content, contact }: ContactProps) {
             </InputWrapper>
           </Right>
         </FormWrapper>
-        <Section>
-          <BottomBar>
-            <Socials>
-              {
-                socials.links.map((item) => (
-                <a href={item.url}>
-                  <img src={require("../assets/images/" + item.key + ".svg")} alt={item.label} />
-                </a>
-                ))
-              }
-            </Socials>
-            <Button disabled={isDisabled} type="submit" value="SUBMIT" />
-          </BottomBar>
-        </Section>
+        <BottomBar>
+          <Socials>
+            {
+              socials.links.map((item) => (
+              <Links href={item.url}>
+                <Icon src={require("../assets/images/" + item.key + ".svg")} alt={item.label} />
+              </Links>
+              ))
+            }
+          </Socials>
+          <Button disabled={isDisabled} type="submit" value="SUBMIT" />
+        </BottomBar>
       </NotMobile>
+      <BlankSection />
     </Section>
   )
 }

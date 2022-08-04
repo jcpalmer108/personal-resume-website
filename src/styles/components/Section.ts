@@ -12,9 +12,13 @@ export const Wrapper = styled.div<WrapperProps>`
   border-width: 0px;
 
   @media (min-width: ${contentWidth}px) {
-    border-bottom: ${props => props.bottom ? "soild" : "none" };
-    border-color: ${props => props.light ? "white" : silver_polish};
-    border-width: ${props => props.thin ? 0.2 : 1}px;
+    ${props => props.noBorder ? `
+      border: none;
+    ` : `
+      border-bottom: ${props.bottom ? "soild" : "none" };
+      border-color: ${props.light ? "white" : silver_polish};
+      border-width: ${props.thin ? 0.2 : 1}px;    
+    `}
   }
 `
 

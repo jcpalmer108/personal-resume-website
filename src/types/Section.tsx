@@ -9,12 +9,14 @@ export type SectionProps = {
   center?: boolean,
   bottom?: boolean,
   noTop?: boolean,
+  noBorder?: boolean
 }
 
 export type WrapperProps = {
   light?: boolean,
   thin? : boolean,
-  bottom?: boolean
+  bottom?: boolean,
+  noBorder?: boolean
 }
 
 export type HeaderProps = {

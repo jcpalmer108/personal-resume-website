@@ -17,10 +17,11 @@ export default function Section({
   wide,
   center,
   bottom,
-  noTop
+  noTop,
+  noBorder
 }: SectionProps) {
   return (
-    <Wrapper light={light} thin={thin} bottom={bottom} data-testid="Wrapper">
+    <Wrapper noBorder={noBorder} light={light} thin={thin} bottom={bottom} data-testid="Wrapper">
       {label && (
         <Header noTop={noTop} data-testid="Header" center={center} >
           <Label data-testid="Label">

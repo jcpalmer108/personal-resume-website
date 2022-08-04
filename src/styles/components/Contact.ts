@@ -1,6 +1,5 @@
 import styled from "styled-components"
 import { desktopBreakpoint, redstone, silver_polish, tabletBreakpoint } from "../variables"
-// import { silver_polish } from "../variables"
 
 export const Mobile = styled.form`
   text-align: center;
@@ -29,7 +28,9 @@ export const FormWrapper = styled.form`
     display: flex;
     flex-direction: row;
     align-items: stretch;
-    border: 1px solid ${silver_polish};
+    border-top: 1px solid ${silver_polish};
+    border-bottom: 1px solid ${silver_polish};
+
 
   }
 `
@@ -37,6 +38,10 @@ export const FormWrapper = styled.form`
 export const InputWrapper = styled.form`
   padding-top: 2.5px;
   border-bottom: 1px solid ${silver_polish};
+
+  @media (min-width: ${desktopBreakpoint}px) {
+    padding-top: 20px;
+  }
 
 `
 
@@ -80,16 +85,94 @@ export const Button = styled.input`
   font-size: 12px;
   line-spacing: 27px;
   letter-spacing: 2px;
+  border-left: none;
 
   &:disabled {
     opacity: 0.3;
   }
+
+  @media(min-width: ${tabletBreakpoint}px) {
+    width: 45%;
+    border-left: 1px solid ${silver_polish};
+    height: 100%;
+  }
 `
 
 export const BottomBar = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid ${silver_polish};
+  height: 75px;
 
+  @media(min-width: ${tabletBreakpoint}px) {
+    height: 90px;
+  }
 `
 
 export const Socials = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 25px;
+  height: 51px;
+
+  @media(min-width: ${tabletBreakpoint}px) {
+    width: 55%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;  
+    padding-top: 0px;
+
+  }
+`
+
+export const Links = styled.a`
+  border-top: 1px solid ${silver_polish};
+  border-bottom: 1px solid ${silver_polish};
+  border-left: 1px solid ${silver_polish};
+  height: 100%;
+  width: 100%;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+
+  &:last-child {
+    border-right: 1px solid ${silver_polish};
+  }
+
+  @media (min-width: ${tabletBreakpoint}px) {
+    border: none;
+
+    &:last-child {
+      border-right: none;
+    }
+  
+  }
+`
+
+export const BlankSection = styled.div`
+  height: 50px; 
+
+  @media(min-width: ${tabletBreakpoint}px) {
+    height: 80px;
+  }
+
+  @media(min-width: ${desktopBreakpoint}px) {
+    height: 85px;
+  }
+
+`
+
+export const Icon = styled.img`
+  height: 20px;
+
+  @media(min-width: ${tabletBreakpoint}px) {
+    height: 23px;
+  }
+
+  @media(min-width: ${desktopBreakpoint}px) {
+    height: 27px;
+  }
 
 `
