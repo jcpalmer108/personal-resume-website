@@ -10,10 +10,13 @@ import {
   Title,
   Description,
   LeftWrapper,
-  InputWrapper
+  InputWrapper,
+  BottomBar,
+  Socials
 } from "../styles/components/Contact"
 import Input from "./Input"
 import { useState } from "react";
+import socials from "../assets/content/socials.json"
 
 type FormProps = {
   name?: String,
@@ -21,6 +24,10 @@ type FormProps = {
   email?: String,
   message?: String
 }
+
+// todo: make labels not go to the right on open
+// todo: make submit work on tablet view
+// todo: create bottom bar with social links
 
 export default function Contact({ content, contact }: ContactProps) {
   const [ isDisabled, setIsDisabled ] = useState<boolean>(true)
@@ -74,17 +81,15 @@ export default function Contact({ content, contact }: ContactProps) {
   
   return (
     <Section wide>
-      <Mobile>
+      <Mobile onSubmit={openMailLink}>
         <Section label={content?.label} center>
           <Title>{content?.title}</Title>
           <Description>{content?.description && content?.description[0]}</Description>
-          <form onSubmit={openMailLink}>
-            <Input label="name" value={formValues.name} updateForm={(e: any) => updateFormValues("name", e)} />
-            <Input label="phone" value={formValues.phone} updateForm={(e: any) => updateFormValues("phone", e)} />
-            <Input label="email" value={formValues.email} updateForm={(e: any) => updateFormValues("email", e)} />
-            <Input area label="message" value={formValues.message} updateForm={(e: any) => updateFormValues("message", e)} />
-            <Button disabled={isDisabled} type="submit" value="SUBMIT" />
-          </form>
+          <Input label="name" value={formValues.name} updateForm={(e: any) => updateFormValues("name", e)} />
+          <Input label="phone" value={formValues.phone} updateForm={(e: any) => updateFormValues("phone", e)} />
+          <Input label="email" value={formValues.email} updateForm={(e: any) => updateFormValues("email", e)} />
+          <Input area label="message" value={formValues.message} updateForm={(e: any) => updateFormValues("message", e)} />
+          <Button disabled={isDisabled} type="submit" value="SUBMIT" />
         </Section>    
       </Mobile>
       <NotMobile>
@@ -98,24 +103,33 @@ export default function Contact({ content, contact }: ContactProps) {
             </Section>
           </Left>
           <Right>
-            <form>
-              <InputWrapper>
-                <Input noBorder label="name" value={formValues.name} updateForm={(e: any) => updateFormValues("name", e)} />
-              </InputWrapper>
-              <InputWrapper>
-                <Input noBorder label="phone" value={formValues.phone} updateForm={(e: any) => updateFormValues("phone", e)} />
-              </InputWrapper>
-              <InputWrapper>
-                <Input noBorder label="email" value={formValues.email} updateForm={(e: any) => updateFormValues("email", e)} />
-              </InputWrapper>
-              <InputWrapper>
-                <Input noBorder area label="message" value={formValues.message} updateForm={(e: any) => updateFormValues("message", e)} />
-              </InputWrapper>
-            </form>
+            <InputWrapper>
+              <Input noBorder label="name" value={formValues.name} updateForm={(e: any) => updateFormValues("name", e)} />
+            </InputWrapper>
+            <InputWrapper>
+              <Input noBorder label="phone" value={formValues.phone} updateForm={(e: any) => updateFormValues("phone", e)} />
+            </InputWrapper>
+            <InputWrapper>
+              <Input noBorder label="email" value={formValues.email} updateForm={(e: any) => updateFormValues("email", e)} />
+            </InputWrapper>
+            <InputWrapper>
+              <Input noBorder area label="message" value={formValues.message} updateForm={(e: any) => updateFormValues("message", e)} />
+            </InputWrapper>
           </Right>
         </FormWrapper>
         <Section>
-          blah blah blah
+          <BottomBar>
+            <Socials>
+              {
+                socials.links.map((item) => (
+                <a href={item.url}>
+                  <img src={require("../assets/images/" + item.key + ".svg")} alt={item.label} />
+                </a>
+                ))
+              }
+            </Socials>
+            <Button disabled={isDisabled} type="submit" value="SUBMIT" />
+          </BottomBar>
         </Section>
       </NotMobile>
     </Section>

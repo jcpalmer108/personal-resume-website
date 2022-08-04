@@ -1,6 +1,6 @@
 import styled from "styled-components"
-import { silver_polish, fortress_gray } from "../../styles/variables"
-import { NoBorderProps } from "../../types/Input"
+import { silver_polish, fortress_gray, tabletBreakpoint } from "../../styles/variables"
+import { LabelProps, NoBorderProps } from "../../types/Input"
 
 export const Wrapper = styled.div`
   display: flex;
@@ -33,7 +33,7 @@ export const TextField = styled.input<NoBorderProps>`
   font-family: Gilroy-Regular;
   `
 
-export const Label = styled.label`
+export const Label = styled.label<LabelProps>`
   font-family: Gilroy-Medium;
   font-size: 12px;
   color: ${fortress_gray};
@@ -72,4 +72,28 @@ export const Label = styled.label`
     border-radius: 25px;
     font-size: 10px;
   }
+
+  @media(min-width: ${tabletBreakpoint}px) {
+    ${TextField}:not(:placeholder-shown) ~ & {
+      padding: 3px 10px;
+      left: 5px;
+    }
+  
+    ${TextField}:focus ~ & {
+      padding: 3px 10px;
+      left: 5px;
+    }
+  
+    ${TextArea}:not(:placeholder-shown) ~ & {
+      padding: 3px 10px;
+      left: 5px;
+    }
+  
+    ${TextArea}:focus ~ & {
+      padding: 3px 10px;
+      left: 5px;
+    }
+  
+  }
+
   `

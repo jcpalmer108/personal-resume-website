@@ -2,7 +2,7 @@ import styled from "styled-components"
 import { desktopBreakpoint, redstone, silver_polish, tabletBreakpoint } from "../variables"
 // import { silver_polish } from "../variables"
 
-export const Mobile = styled.div`
+export const Mobile = styled.form`
   text-align: center;
 
   @media (min-width: ${tabletBreakpoint}px) {
@@ -57,8 +57,6 @@ export const Description = styled.p`
 
 `
 
-
-
 export const Left = styled.div`
   width: 55%;
   border-right: 1px solid ${silver_polish};
@@ -86,4 +84,12 @@ export const Button = styled.input`
   &:disabled {
     opacity: 0.3;
   }
+`
+
+export const BottomBar = styled.div`
+
+`
+
+export const Socials = styled.div`
+
 `

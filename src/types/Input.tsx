@@ -3,13 +3,13 @@ export type InputProps = {
   value?: any,
   updateForm: Function,
   area?: boolean,
-  noBorder?: boolean
+  noBorder?: boolean,
 }
 
 export type NoBorderProps = {
   noBorder?: boolean 
 }
 
-export type TextFieldProps = {
-  noBorder?: boolean 
+export type LabelProps = {
+  paddedLabel?: boolean 
 }
