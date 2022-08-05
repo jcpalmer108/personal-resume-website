@@ -67,7 +67,7 @@ export const Children = styled.div<ChildrenProps>`
   }
 
   @media (min-width: ${desktopBreakpoint}px) {
-    padding: ${props => props.padded ? "85px 60px" : "0px"};
+    padding: ${props => props.padded ? "45px 60px 55px 60px" : "0px"};
   }
 `
 
