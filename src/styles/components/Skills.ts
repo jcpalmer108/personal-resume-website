@@ -98,7 +98,7 @@ export const Description = styled.div`
   }
 
   @media (min-width: ${desktopBreakpoint}px) {
-    padding: 7% 0px 30px 0px;
+    padding: 55px 0px 30px 0px;
     width: 145%;
   }
 `
