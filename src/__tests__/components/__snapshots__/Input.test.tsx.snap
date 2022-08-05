@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input renders if only required params are passed in 1`] = `
+<div
+  class="sc-bczRLJ gJeuFr"
+  data-testid="Input"
+>
+  <input
+    class="sc-dkzDqf iEcuyD"
+    placeholder=" "
+    value="test value"
+  />
+  <label
+    class="sc-hKMtZM hCQHSZ"
+  >
+    TEST LABEL
+  </label>
+</div>
+`;
+
+exports[`Input renders if optional and required params are passed in 1`] = `
+<div
+  class="sc-bczRLJ gJeuFr"
+  data-testid="Input"
+>
+  <textarea
+    class="sc-gsnTZi bUZEuL"
+    placeholder=" "
+  >
+    test value
+  </textarea>
+  <label
+    class="sc-hKMtZM hCQHSZ"
+  >
+    TEST LABEL
+  </label>
+</div>
+`;
