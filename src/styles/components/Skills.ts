@@ -29,7 +29,7 @@ export const Title = styled.h2`
   }
 
   @media (min-width: ${desktopBreakpoint}px) {
-    padding-top: 30px;
+    padding-top: 45px;
     padding-left: 60px;
     width: 600px;
   }
@@ -77,7 +77,11 @@ export const Link = styled.a`
     max-height: 200px;
   }
 
-  @media (min-width: ${desktopBreakpoint}px) {
+  @media(min-width: ${desktopBreakpoint}px) {
+    padding-top: 8%;
+  }
+
+  @media (min-width: ${contentWidth}px) {
     padding-top: 90px;
   }
 
@@ -119,7 +123,6 @@ export const NotMobile = styled.div`
   @media (min-width: ${tabletBreakpoint}px) {
     display: flex;
     flex-direction: column;
-    padding-top: 25px;
   }
 
 `
