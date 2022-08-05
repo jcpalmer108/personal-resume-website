@@ -22,7 +22,7 @@ export const NotMobile = styled.form`
 
 `
 
-export const FormWrapper = styled.form`
+export const FormWrapper = styled.div`
 
   @media (min-width: ${tabletBreakpoint}px) {
     display: flex;
@@ -35,7 +35,7 @@ export const FormWrapper = styled.form`
   }
 `
 
-export const InputWrapper = styled.form`
+export const InputWrapper = styled.div`
   padding-top: 2.5px;
   border-bottom: 1px solid ${silver_polish};
 
@@ -56,10 +56,6 @@ export const Title = styled.h2`
   @media (min-width: ${tabletBreakpoint}px) {
     width: 80%;
   }
-`
-
-export const Description = styled.p`
-
 `
 
 export const Left = styled.div`

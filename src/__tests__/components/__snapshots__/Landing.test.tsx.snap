@@ -1,0 +1,248 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Landing renders if only required params are passed in 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c2 {
+  margin: 20px;
+  width: 274px;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  padding: 0px;
+}
+
+.c4 {
+  margin: 30px 20px;
+  line-height: 20px;
+}
+
+.c3 {
+  height: 415px;
+  width: 100%;
+  object-fit: cover;
+  object-position: 0px 92%;
+  display: block;
+}
+
+.c5 {
+  height: 563px;
+  width: 367px;
+  object-fit: cover;
+  display: none;
+  padding-right: 20px;
+}
+
+@media (min-width:720px) {
+  .c2 {
+    width: 100%;
+    margin: 0px;
+  }
+}
+
+@media (min-width:720px) {
+  .c1 {
+    text-align: left;
+    padding: 25px;
+    -webkit-align-items: flex-start;
+    -webkit-box-align: flex-start;
+    -ms-flex-align: flex-start;
+    align-items: flex-start;
+  }
+}
+
+@media (min-width:1024px) {
+  .c1 {
+    padding: 20px 60px;
+  }
+}
+
+@media (min-width:720px) {
+  .c4 {
+    margin: 15px 0px 40px 0px;
+    line-height: 27px;
+  }
+}
+
+@media (min-width:720px) {
+  .c3 {
+    display: none;
+  }
+}
+
+@media (min-width:720px) {
+  .c5 {
+    display: block;
+    padding-right: 25px;
+  }
+}
+
+@media (min-width:1024px) {
+  .c5 {
+    padding-right: 60px;
+  }
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:1155px) {
+
+}
+
+@media (min-width:720px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+<div
+  class="c0"
+  data-testid="Main"
+>
+  <div
+    class="c1"
+  >
+    <h1
+      class="c2"
+    >
+      test title
+    </h1>
+    <img
+      alt="landing mobile"
+      class="c3"
+      src="pexels-ekaterina-bolovtsova-4049791.jpg"
+    />
+    <p
+      class="c4"
+      data-testid="Description 1"
+    >
+      test content 1
+    </p>
+    <p
+      class="c4"
+      data-testid="Description 2"
+    >
+      test content 2
+    </p>
+  </div>
+  <img
+    alt="landing desktop"
+    class="c5"
+    src="pexels-ekaterina-bolovtsova-4049791.jpg"
+  />
+</div>
+`;
+
+exports[`Landing renders if only required params are passed in 2`] = `
+.c0 {
+  height: 40px;
+  visibility: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-column-gap: 10px;
+  column-gap: 10px;
+}
+
+@media (min-width:720px) {
+
+}
+
+@media (min-width:720px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:720px) {
+
+}
+
+@media (min-width:720px) {
+
+}
+
+@media (min-width:720px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:1024px) {
+  .c0 {
+    height: 100px;
+    visibility: visible;
+  }
+}
+
+@media (min-width:1155px) {
+
+}
+
+@media (min-width:720px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+<div
+  class="c0"
+  data-testid="DiscoverMore"
+>
+  <img
+    alt="scroll"
+    src="scroll.svg"
+  />
+  <p>
+    Discover More
+  </p>
+</div>
+`;

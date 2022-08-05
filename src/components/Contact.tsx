@@ -8,7 +8,6 @@ import {
   Left,
   Right,
   Title,
-  Description,
   LeftWrapper,
   InputWrapper,
   BottomBar,
@@ -70,7 +69,6 @@ export default function Contact({ content, contact }: ContactProps) {
 
   const openMailLink = (e: any) => {
     e.preventDefault();
-    console.log('hi')
     const emailSubject = encodeURI("NEW: Website Response");
     const url = `mailto:${contact.email}?subject=${emailSubject}&body=${generateBody()}`
     window.open(url, '_blank');
@@ -84,19 +82,19 @@ export default function Contact({ content, contact }: ContactProps) {
   
   return (
     <Section wide>
-      <Mobile onSubmit={openMailLink}>
+      <Mobile data-testid="Mobile" onSubmit={openMailLink}>
         <Section label={content?.label} center>
-          <Title>{content?.title}</Title>
-          <Description>{content?.description && content?.description[0]}</Description>
-          <Input label="name" value={formValues.name} updateForm={(e: any) => updateFormValues("name", e)} />
-          <Input label="phone" value={formValues.phone} updateForm={(e: any) => updateFormValues("phone", e)} />
-          <Input label="email" value={formValues.email} updateForm={(e: any) => updateFormValues("email", e)} />
-          <Input area label="message" value={formValues.message} updateForm={(e: any) => updateFormValues("message", e)} />
-          <Button disabled={isDisabled} type="submit" value="SUBMIT" />
+          <Title data-testid="Title">{content?.title}</Title>
+          <p data-testid="Description">{content?.description && content?.description[0]}</p>
+          <Input label="Name" value={formValues.name} updateForm={(e: any) => updateFormValues("name", e)} />
+          <Input label="Phone" value={formValues.phone} updateForm={(e: any) => updateFormValues("phone", e)} />
+          <Input label="Email" value={formValues.email} updateForm={(e: any) => updateFormValues("email", e)} />
+          <Input area label="Message" value={formValues.message} updateForm={(e: any) => updateFormValues("message", e)} />
+          <Button data-testid="Submit" disabled={isDisabled} type="submit" value="SUBMIT" />
           <Socials>
             {
               socials.links.map((item) => (
-              <Links href={item.url}>
+              <Links data-testid="Links" key={item.key} href={item.url}>
                 <Icon src={require("../assets/images/" + item.key + ".svg")} alt={item.label} />
               </Links>
               ))
@@ -104,42 +102,63 @@ export default function Contact({ content, contact }: ContactProps) {
           </Socials>
         </Section>    
       </Mobile>
-      <NotMobile>
+      <NotMobile data-testid="NotMobile">
         <FormWrapper>
           <Left>
             <Section noBorder noTop wide label={content?.label}>
               <LeftWrapper>
-                <Title>{content?.title}</Title>
-                <Description>{content?.description && content?.description[0]}</Description>
+                <Title data-testid="Title">{content?.title}</Title>
+                <p data-testid="Description">{content?.description && content?.description[0]}</p>
               </LeftWrapper>
             </Section>
           </Left>
           <Right>
             <InputWrapper>
-              <Input noBorder label="name" value={formValues.name} updateForm={(e: any) => updateFormValues("name", e)} />
+              <Input 
+                noBorder 
+                label="Name" 
+                value={formValues.name} 
+                updateForm={(e: any) => updateFormValues("name", e)} 
+              />
             </InputWrapper>
             <InputWrapper>
-              <Input noBorder label="phone" value={formValues.phone} updateForm={(e: any) => updateFormValues("phone", e)} />
+              <Input 
+                noBorder 
+                label="Phone" 
+                value={formValues.phone} 
+                updateForm={(e: any) => updateFormValues("phone", e)} 
+              />
             </InputWrapper>
             <InputWrapper>
-              <Input noBorder label="email" value={formValues.email} updateForm={(e: any) => updateFormValues("email", e)} />
+              <Input 
+                noBorder 
+                label="Email" 
+                value={formValues.email} 
+                updateForm={(e: any) => updateFormValues("email", e)} 
+              />
             </InputWrapper>
             <InputWrapper>
-              <Input noBorder area label="message" value={formValues.message} updateForm={(e: any) => updateFormValues("message", e)} />
+              <Input 
+                noBorder 
+                area 
+                label="Message" 
+                value={formValues.message} 
+                updateForm={(e: any) => updateFormValues("message", e)} 
+              />
             </InputWrapper>
           </Right>
         </FormWrapper>
         <BottomBar>
-          <Socials>
+          <Socials data-testid="Socials">
             {
               socials.links.map((item) => (
-              <Links href={item.url}>
+              <Links key={item.key} href={item.url}>
                 <Icon src={require("../assets/images/" + item.key + ".svg")} alt={item.label} />
               </Links>
               ))
             }
           </Socials>
-          <Button disabled={isDisabled} type="submit" value="SUBMIT" />
+          <Button data-testid="Submit" disabled={isDisabled} type="submit" value="SUBMIT" />
         </BottomBar>
       </NotMobile>
       <BlankSection />

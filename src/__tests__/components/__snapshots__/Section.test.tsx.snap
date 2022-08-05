@@ -1,0 +1,193 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Section renders if only required params are passed in 1`] = `
+.c0 {
+  max-width: 1155px;
+  margin: auto;
+  border-left: solid;
+  border-right: solid;
+  border-bottom: solid;
+  border-color: transparent;
+  border-width: 0px;
+}
+
+.c1 {
+  padding: 20px 15px;
+}
+
+@media (min-width:1155px) {
+  .c0 {
+    border-bottom: none;
+    border-color: #c6c6c6;
+    border-width: 1px;
+  }
+}
+
+@media (min-width:720px) {
+  .c1 {
+    padding: 40px 25px;
+  }
+}
+
+@media (min-width:1024px) {
+  .c1 {
+    padding: 85px 60px;
+  }
+}
+
+<div
+  class="c0"
+  data-testid="Wrapper"
+>
+  <div
+    class="c1"
+    data-testid="Children"
+  >
+    <p>
+      Child 1
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Section renders if required and optional params are passed in 1`] = `
+.c0 {
+  max-width: 1155px;
+  margin: auto;
+  border-left: solid;
+  border-right: solid;
+  border-bottom: solid;
+  border-color: transparent;
+  border-width: 0px;
+}
+
+.c1 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  padding-top: 50px;
+  padding-left: 16px;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 10px;
+  column-gap: 10px;
+  font-size: 11px;
+  font-family: Gilroy-Regular;
+}
+
+.c5 {
+  padding: 0px;
+}
+
+.c4 {
+  font-size: 12px;
+}
+
+.c3 {
+  width: 25px;
+}
+
+@media (min-width:1155px) {
+  .c0 {
+    border-bottom: none;
+    border-color: white;
+    border-width: 0.2px;
+  }
+}
+
+@media (min-width:720px) {
+  .c1 {
+    margin: 0px;
+    padding-left: 25px;
+    padding-top: 80px;
+  }
+}
+
+@media (min-width:1024px) {
+  .c1 {
+    padding-left: 60px;
+    padding-top: 85px;
+  }
+}
+
+@media (min-width:720px) {
+  .c2 {
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    padding-bottom: calc(100% - 15px);
+    font-size: 14px;
+  }
+}
+
+@media (min-width:1024px) {
+  .c2 {
+    padding-bottom: calc(100% - 17px);
+    font-size: 16px;
+  }
+}
+
+@media (min-width:720px) {
+  .c5 {
+    padding: 0px;
+  }
+}
+
+@media (min-width:1024px) {
+  .c5 {
+    padding: 0px;
+  }
+}
+
+@media (min-width:720px) {
+  .c4 {
+    font-size: 14px;
+  }
+}
+
+@media (min-width:1024px) {
+  .c4 {
+    font-size: 16px;
+  }
+}
+
+<div
+  class="c0"
+  data-testid="Wrapper"
+>
+  <div
+    class="c1"
+    data-testid="Header"
+  >
+    <div
+      class="c2"
+      data-testid="Label"
+    >
+      <img
+        alt="test"
+        class="c3"
+        src="label-line.svg"
+      />
+      <span
+        class="c4"
+      >
+        TESTING
+      </span>
+    </div>
+  </div>
+  <div
+    class="c5"
+    data-testid="Children"
+  >
+    <p>
+      Child 1
+    </p>
+  </div>
+</div>
+`;
