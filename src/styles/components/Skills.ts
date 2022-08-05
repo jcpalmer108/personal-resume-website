@@ -159,8 +159,8 @@ export const Content = styled.div<ContentProps>`
     height: 0px;
     padding: 0px;
     width: 60%;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 60px;
+    margin-right: 60px;
   }
   `
 
