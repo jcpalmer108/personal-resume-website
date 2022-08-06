@@ -10,3 +10,15 @@ export type TileProps = {
   table: boolean
 }
 
+export type DescriptionAndActionProps = {
+  description: string
+}
+
+export type TitleProps = {
+  title: string
+}
+
+export type CellProps = {
+  first?: boolean | undefined,
+  last?: boolean | undefined
+}

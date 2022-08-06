@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { contentWidth, desktopBreakpoint, silver_polish, tabletBreakpoint } from "../variables";
+import { CellProps } from "../../types/Skills"
 
 export const Mobile = styled.div`
   display: flex;
@@ -12,7 +13,7 @@ export const Mobile = styled.div`
   @media (min-width: ${tabletBreakpoint}px) {
     display: none;
   }
-`
+  `
 
 export const Title = styled.h2`
   padding: 15px 15px 30px 15px;
@@ -33,8 +34,7 @@ export const Title = styled.h2`
     padding-left: 60px;
     width: 600px;
   }
-
-`
+  `
 
 export const Logo = styled.img`
   height: 50px;
@@ -50,8 +50,6 @@ export const Logo = styled.img`
     height: 100px;
     width: 100px;
   }
-
-
   `
 
 export const Link = styled.a`
@@ -84,38 +82,21 @@ export const Link = styled.a`
   @media (min-width: ${contentWidth}px) {
     padding-top: 90px;
   }
+  `
 
-
-`
-
-export const Description = styled.div`
-  padding: 30px 20px 50px 20px;
+export const Description = styled.p`
   font-family: Gilroy-Regular;
-
-  @media (min-width: ${tabletBreakpoint}px) {
-    padding: 20px 0px 30px 0px;
-    width: 100%;
-  }
-
-  @media (min-width: ${desktopBreakpoint}px) {
-    padding: 55px 0px 30px 0px;
-    width: 145%;
-  }
-`
-
-export const Paragraph = styled.p`
-  margin-bottom: 16px;
   margin: 0px;
-
-  &:last-child {
-    margin-bottom: 0px;
-  }
+  padding: 25px 15px 40px 15px;
 
   @media (min-width: ${tabletBreakpoint}px) {
-    position: relative;
+    padding: 20px 0px 40px 0px;
   }
 
-`
+  @media (min-width: ${contentWidth}px) {
+    padding: 55px 60px 30px 60px;
+  }
+  `
 
 export const NotMobile = styled.div`
   display: none;
@@ -124,8 +105,7 @@ export const NotMobile = styled.div`
     display: flex;
     flex-direction: column;
   }
-
-`
+  `
 
 export const Mosaic = styled.table`
 
@@ -133,7 +113,7 @@ export const Mosaic = styled.table`
     width: 100%;
     border-collapse: collapse;
   }
-`
+  `
 
 type ContentProps = {
   desktop?: boolean | undefined
@@ -153,22 +133,15 @@ export const Content = styled.div<ContentProps>`
     width: calc(100% - 50px);
   }
 
-  @media (min-width: ${desktopBreakpoint}px) {
+  @media (min-width: ${contentWidth}px) {
     display: ${ props => props.desktop ? "block" : "none"};
     position: relative;
     height: 0px;
     padding: 0px;
-    width: 60%;
-    margin-left: 60px;
-    margin-right: 60px;
+    width: 100%;
   }
   `
 
-
-type CellProps = {
-  first?: boolean | undefined,
-  last?: boolean | undefined
-}
 export const Cell = styled.td<CellProps>`
 
   @media(min-width: ${tabletBreakpoint}px) {
@@ -194,3 +167,11 @@ export const Cell = styled.td<CellProps>`
     }
   }
   `
+
+export const ButtonWrapper = styled.div`
+  padding: 0px;
+
+  @media (min-width: ${contentWidth}px) {
+    padding: 0px 60px;
+  }
+`

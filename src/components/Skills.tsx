@@ -1,4 +1,9 @@
-import { SkillsProps, TileProps } from "../types/Skills";
+import { 
+  SkillsProps, 
+  TileProps,
+  DescriptionAndActionProps,
+  TitleProps
+} from "../types/Skills";
 import { 
   Mobile,
   NotMobile,
@@ -6,10 +11,10 @@ import {
   Link,
   Logo,
   Description,
-  Paragraph,
   Mosaic,
   Cell,
-  Content
+  Content,
+  ButtonWrapper
 } from "../styles/components/Skills";
 import Section from "../components/Section"
 import { Skills as SkillsContent } from "../types/content"
@@ -32,8 +37,25 @@ function Tile({ info, table }: TileProps) {
   )
 }
 
+function DescriptionAndAction({ description }: DescriptionAndActionProps) {
+  return (
+    <>
+      <Description key={"Paragraph"}>{description}</Description>
+      <ButtonWrapper>
+        <Button url="#contact" label="Let's Talk"/>
+      </ButtonWrapper>
+    </>
+  )
+}
+
+function TitleLine({ title }: TitleProps) {
+  return <Title data-testid="Title">{title}</Title>
+}
+
 export default function Skills({ content }: SkillsProps) {
   const skillList = content?.subSection?.skills || [];
+  const title = content?.title
+  const description = (content?.description && content?.description[0]) || ''
 
   const generateTiles = (tiles: SkillsContent[] | undefined, table: boolean = true) => {
     const content = tiles ? tiles : []
@@ -47,21 +69,18 @@ export default function Skills({ content }: SkillsProps) {
   return (
     <Section wide center label={content?.label}>
       <Mobile data-testid="Mobile">
-        <Title data-testid="Title">{content?.title}</Title>
+        <TitleLine title={title || ''} />
         <Marquee loop={0}>
-          {generateTiles(content?.subSection?.skills, false)}
+          {generateTiles(skillList, false)}
         </Marquee>
-        <Description data-testid="Description">
-          <Paragraph key={"Paragraph"}>{content?.description && content.description[0]}</Paragraph>
-        </Description>
-        <Button url="#contact" label="Let's Talk"/>
+        <DescriptionAndAction description={description || ''} />
       </Mobile>
       <NotMobile data-testid="NotMobile">
         <Mosaic>
           <tbody>
             <tr data-testid="Row 1">
               <Cell colSpan={3} first>
-                <Title data-testid="Title">{content?.title}</Title>
+                <TitleLine title={content?.title || ''} />
               </Cell>
               {generateTiles(skillList.slice(0, 2))}
             </tr>
@@ -72,22 +91,14 @@ export default function Skills({ content }: SkillsProps) {
               {generateTiles(skillList.slice(7, 9))}
               <Cell colSpan={3} last>
                 <Content desktop>
-                  <Description data-testid="Description">
-                    <Paragraph key={"Paragraph"}>{content?.description && content.description[0]}</Paragraph>
-                  </Description>
-                  <Button url="#contact" label="Let's Talk"/>
+                  <DescriptionAndAction description={description || ''} />
                 </Content>
               </Cell>
             </tr>
           </tbody>
         </Mosaic>
         <Content>
-          <Description>
-            {content?.description?.map((paragraph, index) => {
-              return <Paragraph key={`Paragraph ${index + 1}`}>{paragraph}</Paragraph>
-            })}
-          </Description>
-          <Button url="#contact" label="Let's Talk"/>
+          <DescriptionAndAction description={description || ''} />
         </Content>
       </NotMobile>
     </Section>
