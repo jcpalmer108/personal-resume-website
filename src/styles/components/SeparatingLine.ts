@@ -19,6 +19,7 @@ export const Line = styled.hr<LineProps>`
   
   @media (min-width: ${desktopBreakpoint}px) {
     border-color: ${props => props.light ? "white" : silver_polish};
+    border-width: ${props => props.thin ? 0.5 : 1}px;
     position: absolute;
     left: 0px;
     margin: 0px;

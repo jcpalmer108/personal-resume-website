@@ -7,7 +7,6 @@ export const Wrapper = styled.div<WrapperProps>`
   margin: auto;
   border-left: solid;
   border-right: solid;
-  border-bottom: solid;
   border-color: transparent;
   border-width: 0px;
 
@@ -15,7 +14,6 @@ export const Wrapper = styled.div<WrapperProps>`
     ${props => props.noBorder ? `
       border: none;
     ` : `
-      border-bottom: ${props.bottom ? "soild" : "none" };
       border-color: ${props.light ? "white" : silver_polish};
       border-width: ${props.thin ? 0.2 : 1}px;    
     `}
