@@ -149,11 +149,7 @@ export const Lower = styled.div`
 export const Job = styled.div`
   display: flex;
   flex-direction: column;
-  padding-top: 30px;
-
-  &:first-child {
-    padding-top: 40px;
-  }
+  padding-top: 20px;
 
   @media (min-width: ${tabletBreakpoint}px) {
     flex-direction: row;

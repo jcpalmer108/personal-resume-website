@@ -23,8 +23,6 @@ import {
 import { Education } from "../types/content"
 import { SocialLink } from "../types/socials"
 import socials from "../assets/content/socials.json"
-import SeparatingLine from "./SeparatingLine"
-
 
 export default function About({ content }: AboutProps) {
   const { links } = socials;
@@ -66,10 +64,9 @@ export default function About({ content }: AboutProps) {
           </Prompt>
         </Action>
       </Section>
-      <Section wide>
+      <Section wide bottom>
         <BottomSpacing />
       </Section>
-      <SeparatingLine />
     </>
   )
 }

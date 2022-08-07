@@ -35,49 +35,51 @@ export default function Testimonials({ content }: TestimonialProps) {
   }
   
   return (
-    <Section bottom>
-      <Wrapper id="testimonials" data-testid="Testimonials">
-        <ArrowLeft 
-          onClick={() => { updateIndex(false) }} 
-          src={arrowLeft} 
-          alt="arrow left"
-          data-testid="arrow left"
-          desktop
-        />
-        <Content>
-          <h2>Testimonials</h2>
-          <Quote data-testid="Quote">{quotes && quotes[selectedIndex].quote}</Quote>
-          <Person data-testid="Person">{quotes && quotes[selectedIndex].person}</Person>
-          <Title data-testid="Title">{quotes && quotes[selectedIndex].title}</Title>
-          <Dots data-testid="Dots">
-            {quotes && quotes.map((item, index) => {
-              return (<Dot selected={selectedIndex === index} key={`Dots ${index + 1} `} />)
-            })}
-          </Dots>
-        </Content>
-        <ArrowRight 
-          onClick={() => { updateIndex(true) }} 
-          src={arrowRight} 
-          alt="arrow right" 
-          data-testid="arrow right"
-          desktop 
-        />
-        <Arrows>
-          <Option onClick={() => { updateIndex(false) }} >
-            <Circle />
-            <ArrowLeft 
-              src={arrowLeft} 
-              alt="arrow left" 
-              data-testid="arrow left"
-            />
-          </Option>
-          <Option onClick={() => { updateIndex(true) }}>
-            <Circle />
-            <ArrowRight data-testid="arrow right" src={arrowRight} alt="arrow right"/>
-          </Option>
-        </Arrows>
-      </Wrapper>
-    </Section>
+    <>
+      <Section bottom>
+        <Wrapper id="testimonials" data-testid="Testimonials">
+          <ArrowLeft 
+            onClick={() => { updateIndex(false) }} 
+            src={arrowLeft} 
+            alt="arrow left"
+            data-testid="arrow left"
+            desktop
+          />
+          <Content>
+            <h2>Testimonials</h2>
+            <Quote data-testid="Quote">{quotes && quotes[selectedIndex].quote}</Quote>
+            <Person data-testid="Person">{quotes && quotes[selectedIndex].person}</Person>
+            <Title data-testid="Title">{quotes && quotes[selectedIndex].title}</Title>
+            <Dots data-testid="Dots">
+              {quotes && quotes.map((item, index) => {
+                return (<Dot selected={selectedIndex === index} key={`Dots ${index + 1} `} />)
+              })}
+            </Dots>
+          </Content>
+          <ArrowRight 
+            onClick={() => { updateIndex(true) }} 
+            src={arrowRight} 
+            alt="arrow right" 
+            data-testid="arrow right"
+            desktop 
+          />
+          <Arrows>
+            <Option onClick={() => { updateIndex(false) }} >
+              <Circle />
+              <ArrowLeft 
+                src={arrowLeft} 
+                alt="arrow left" 
+                data-testid="arrow left"
+              />
+            </Option>
+            <Option onClick={() => { updateIndex(true) }}>
+              <Circle />
+              <ArrowRight data-testid="arrow right" src={arrowRight} alt="arrow right"/>
+            </Option>
+          </Arrows>
+        </Wrapper>
+      </Section>
+    </>
   )
   
 }

@@ -18,6 +18,10 @@ export const Wrapper = styled.div<WrapperProps>`
       border-width: ${props.thin ? 0.2 : 1}px;    
     `}
   }
+
+  @media(min-width: ${contentWidth}px) {
+    border-bottom: ${props => props.bottom ? `1px solid ${silver_polish}` : 'none'};
+  }
 `
 
 export const Header = styled.div<HeaderProps>`
