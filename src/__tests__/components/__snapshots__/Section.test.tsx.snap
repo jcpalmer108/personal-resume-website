@@ -6,7 +6,6 @@ exports[`Section renders if only required params are passed in 1`] = `
   margin: auto;
   border-left: solid;
   border-right: solid;
-  border-bottom: solid;
   border-color: transparent;
   border-width: 0px;
 }
@@ -17,9 +16,14 @@ exports[`Section renders if only required params are passed in 1`] = `
 
 @media (min-width:1155px) {
   .c0 {
-    border-bottom: none;
     border-color: #c6c6c6;
     border-width: 1px;
+  }
+}
+
+@media (min-width:1155px) {
+  .c0 {
+    border-bottom: none;
   }
 }
 
@@ -31,7 +35,7 @@ exports[`Section renders if only required params are passed in 1`] = `
 
 @media (min-width:1024px) {
   .c1 {
-    padding: 85px 60px;
+    padding: 45px 60px 55px 60px;
   }
 }
 
@@ -56,7 +60,6 @@ exports[`Section renders if required and optional params are passed in 1`] = `
   margin: auto;
   border-left: solid;
   border-right: solid;
-  border-bottom: solid;
   border-color: transparent;
   border-width: 0px;
 }
@@ -95,9 +98,14 @@ exports[`Section renders if required and optional params are passed in 1`] = `
 
 @media (min-width:1155px) {
   .c0 {
-    border-bottom: none;
     border-color: white;
     border-width: 0.2px;
+  }
+}
+
+@media (min-width:1155px) {
+  .c0 {
+    border-bottom: none;
   }
 }
 

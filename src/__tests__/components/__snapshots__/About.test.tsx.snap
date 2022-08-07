@@ -62,6 +62,18 @@ exports[`About renders if only required params are passed in 1`] = `
 
 }
 
+@media (min-width:1155px) {
+
+}
+
+@media (min-width:1155px) {
+
+}
+
+@media (min-width:1155px) {
+
+}
+
 @media (min-width:720px) {
 
 }
@@ -129,7 +141,7 @@ exports[`About renders if only required params are passed in 1`] = `
 @media (min-width:1024px) {
   .c3 {
     min-width: 290px;
-    padding-left: 60px;
+    padding-left: 125px;
   }
 }
 
@@ -205,6 +217,10 @@ exports[`About renders if only required params are passed in 1`] = `
 }
 
 @media (min-width:720px) {
+
+}
+
+@media (min-width:1024px) {
 
 }
 
@@ -349,6 +365,18 @@ exports[`About renders if only required params are passed in 2`] = `
 
 .c5 {
   font-size: 14px;
+}
+
+@media (min-width:1155px) {
+
+}
+
+@media (min-width:1155px) {
+
+}
+
+@media (min-width:1155px) {
+
 }
 
 @media (min-width:1155px) {
@@ -523,6 +551,10 @@ exports[`About renders if only required params are passed in 2`] = `
 
 }
 
+@media (min-width:1024px) {
+
+}
+
 <div
   class="c0"
   data-testid="Connect"
@@ -619,6 +651,18 @@ exports[`About renders if only required params are passed in 3`] = `
   padding-bottom: 7px;
   color: white;
   border-bottom: 1px solid white;
+}
+
+@media (min-width:1155px) {
+
+}
+
+@media (min-width:1155px) {
+
+}
+
+@media (min-width:1155px) {
+
 }
 
 @media (min-width:1155px) {
@@ -746,6 +790,10 @@ exports[`About renders if only required params are passed in 3`] = `
 }
 
 @media (min-width:720px) {
+
+}
+
+@media (min-width:1024px) {
 
 }
 

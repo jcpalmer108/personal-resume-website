@@ -45,17 +45,13 @@ exports[`Skills renders if only required params are passed in 1`] = `
 }
 
 .c4 {
-  padding: 30px 20px 50px 20px;
   font-family: Gilroy-Regular;
+  margin: 0px;
+  padding: 25px 15px 40px 15px;
 }
 
 .c5 {
-  margin-bottom: 16px;
-  margin: 0px;
-}
-
-.c5:last-child {
-  margin-bottom: 0px;
+  padding: 0px;
 }
 
 @media (min-width:720px) {
@@ -78,7 +74,7 @@ exports[`Skills renders if only required params are passed in 1`] = `
 
 @media (min-width:1024px) {
   .c1 {
-    padding-top: 30px;
+    padding-top: 45px;
     padding-left: 60px;
     width: 600px;
   }
@@ -122,72 +118,80 @@ exports[`Skills renders if only required params are passed in 1`] = `
 
 @media (min-width:1024px) {
   .c2 {
+    padding-top: 8%;
+  }
+}
+
+@media (min-width:1155px) {
+  .c2 {
     padding-top: 90px;
   }
 }
 
 @media (min-width:720px) {
   .c4 {
-    padding: 20px 0px 30px 0px;
-    width: 100%;
+    padding: 20px 0px 40px 0px;
   }
 }
 
-@media (min-width:1024px) {
+@media (min-width:1155px) {
   .c4 {
-    padding: 7% 0px 30px 0px;
-    width: 145%;
+    padding: 55px 60px 30px 60px;
   }
 }
 
 @media (min-width:720px) {
+
+}
+
+@media (min-width:720px) {
+
+}
+
+@media (min-width:720px) {
+
+}
+
+@media (min-width:1155px) {
+
+}
+
+@media (min-width:720px) {
+
+}
+
+@media (min-width:1155px) {
+
+}
+
+@media (min-width:720px) {
+
+}
+
+@media (min-width:1155px) {
+
+}
+
+@media (min-width:720px) {
+
+}
+
+@media (min-width:1155px) {
+
+}
+
+@media (min-width:720px) {
+
+}
+
+@media (min-width:1155px) {
+
+}
+
+@media (min-width:1155px) {
   .c5 {
-    position: relative;
+    padding: 0px 60px;
   }
-}
-
-@media (min-width:720px) {
-
-}
-
-@media (min-width:720px) {
-
-}
-
-@media (min-width:720px) {
-
-}
-
-@media (min-width:1024px) {
-
-}
-
-@media (min-width:720px) {
-
-}
-
-@media (min-width:1024px) {
-
-}
-
-@media (min-width:720px) {
-
-}
-
-@media (min-width:1155px) {
-
-}
-
-@media (min-width:720px) {
-
-}
-
-@media (min-width:1155px) {
-
-}
-
-@media (min-width:720px) {
-
 }
 
 @media (min-width:1155px) {
@@ -457,16 +461,15 @@ exports[`Skills renders if only required params are passed in 1`] = `
       </a>
     </div>
   </div>
-  <div
+  <p
     class="c4"
     data-testid="Description"
   >
-    <p
-      class="c5"
-    >
-      test contents 1
-    </p>
-  </div>
+    test contents 1
+  </p>
+  <div
+    class="c5"
+  />
 </div>
 `;
 
@@ -495,17 +498,9 @@ exports[`Skills renders if only required params are passed in 2`] = `
 }
 
 .c9 {
-  padding: 30px 20px 50px 20px;
   font-family: Gilroy-Regular;
-}
-
-.c10 {
-  margin-bottom: 16px;
   margin: 0px;
-}
-
-.c10:last-child {
-  margin-bottom: 0px;
+  padding: 25px 15px 40px 15px;
 }
 
 .c0 {
@@ -526,6 +521,10 @@ exports[`Skills renders if only required params are passed in 2`] = `
   display: block;
 }
 
+.c10 {
+  padding: 0px;
+}
+
 @media (min-width:720px) {
 
 }
@@ -544,7 +543,7 @@ exports[`Skills renders if only required params are passed in 2`] = `
 
 @media (min-width:1024px) {
   .c3 {
-    padding-top: 30px;
+    padding-top: 45px;
     padding-left: 60px;
     width: 600px;
   }
@@ -588,27 +587,25 @@ exports[`Skills renders if only required params are passed in 2`] = `
 
 @media (min-width:1024px) {
   .c5 {
+    padding-top: 8%;
+  }
+}
+
+@media (min-width:1155px) {
+  .c5 {
     padding-top: 90px;
   }
 }
 
 @media (min-width:720px) {
   .c9 {
-    padding: 20px 0px 30px 0px;
-    width: 100%;
+    padding: 20px 0px 40px 0px;
   }
 }
 
-@media (min-width:1024px) {
+@media (min-width:1155px) {
   .c9 {
-    padding: 7% 0px 30px 0px;
-    width: 145%;
-  }
-}
-
-@media (min-width:720px) {
-  .c10 {
-    position: relative;
+    padding: 55px 60px 30px 60px;
   }
 }
 
@@ -621,7 +618,6 @@ exports[`Skills renders if only required params are passed in 2`] = `
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
-    padding-top: 25px;
   }
 }
 
@@ -642,15 +638,13 @@ exports[`Skills renders if only required params are passed in 2`] = `
   }
 }
 
-@media (min-width:1024px) {
+@media (min-width:1155px) {
   .c8 {
     display: block;
     position: relative;
     height: 0px;
     padding: 0px;
-    width: 60%;
-    margin-left: 50px;
-    margin-right: 50px;
+    width: 100%;
   }
 }
 
@@ -664,15 +658,13 @@ exports[`Skills renders if only required params are passed in 2`] = `
   }
 }
 
-@media (min-width:1024px) {
+@media (min-width:1155px) {
   .c11 {
     display: none;
     position: relative;
     height: 0px;
     padding: 0px;
-    width: 60%;
-    margin-left: 50px;
-    margin-right: 50px;
+    width: 100%;
   }
 }
 
@@ -746,6 +738,16 @@ exports[`Skills renders if only required params are passed in 2`] = `
   .c7:last-child {
     border-right: none;
   }
+}
+
+@media (min-width:1155px) {
+  .c10 {
+    padding: 0px 60px;
+  }
+}
+
+@media (min-width:1155px) {
+
 }
 
 @media (min-width:1155px) {
@@ -965,16 +967,15 @@ exports[`Skills renders if only required params are passed in 2`] = `
           <div
             class="c8"
           >
-            <div
+            <p
               class="c9"
               data-testid="Description"
             >
-              <p
-                class="c10"
-              >
-                test contents 1
-              </p>
-            </div>
+              test contents 1
+            </p>
+            <div
+              class="c10"
+            />
           </div>
         </td>
       </tr>
@@ -983,20 +984,15 @@ exports[`Skills renders if only required params are passed in 2`] = `
   <div
     class="c11"
   >
-    <div
+    <p
       class="c9"
+      data-testid="Description"
     >
-      <p
-        class="c10"
-      >
-        test contents 1
-      </p>
-      <p
-        class="c10"
-      >
-        test contents 2
-      </p>
-    </div>
+      test contents 1
+    </p>
+    <div
+      class="c10"
+    />
   </div>
 </div>
 `;

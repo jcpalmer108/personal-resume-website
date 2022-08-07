@@ -2,9 +2,8 @@
 
 exports[`Testimonials renders if only required params are passed in 1`] = `
 <div
-  class="sc-bczRLJ ItRc"
+  class="sc-bczRLJ cJVwly"
   data-testid="Testimonials"
-  id="testimonials"
 >
   <img
     alt="arrow left"
@@ -13,13 +12,13 @@ exports[`Testimonials renders if only required params are passed in 1`] = `
     src="arrow-left-pink.svg"
   />
   <div
-    class="sc-gsnTZi jEdahB"
+    class="sc-gsnTZi dKyiOK"
   >
     <h2>
       Testimonials
     </h2>
     <p
-      class="sc-dkzDqf jRBzNS"
+      class="sc-dkzDqf hOKucT"
       data-testid="Quote"
     >
       this is a test quote
@@ -31,7 +30,7 @@ exports[`Testimonials renders if only required params are passed in 1`] = `
       Jane Doe
     </div>
     <div
-      class="sc-eCYdqJ iVebiC"
+      class="sc-eCYdqJ hEJBqo"
       data-testid="Title"
     >
       Manager at Slalom Conuslting LLC

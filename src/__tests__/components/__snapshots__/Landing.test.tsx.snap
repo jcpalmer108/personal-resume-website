@@ -104,7 +104,15 @@ exports[`Landing renders if only required params are passed in 1`] = `
   }
 }
 
+@media (min-width:720px) {
+
+}
+
 @media (min-width:1024px) {
+
+}
+
+@media (min-width:1155px) {
 
 }
 
@@ -210,11 +218,21 @@ exports[`Landing renders if only required params are passed in 2`] = `
 
 }
 
+@media (min-width:720px) {
+  .c0 {
+    height: 65px;
+  }
+}
+
 @media (min-width:1024px) {
   .c0 {
     height: 100px;
     visibility: visible;
   }
+}
+
+@media (min-width:1155px) {
+
 }
 
 @media (min-width:1155px) {

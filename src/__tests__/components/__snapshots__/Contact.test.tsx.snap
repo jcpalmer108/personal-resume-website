@@ -6,7 +6,7 @@ exports[`Contact renders if only required params are passed in 1`] = `
   data-testid="Mobile"
 >
   <div
-    class="sc-bczRLJ fboLlS"
+    class="sc-bczRLJ bFyMqT"
     data-testid="Wrapper"
   >
     <div
@@ -30,7 +30,7 @@ exports[`Contact renders if only required params are passed in 1`] = `
       </div>
     </div>
     <div
-      class="sc-hKMtZM eeXIng"
+      class="sc-hKMtZM hovrvm"
       data-testid="Children"
     >
       <h2
@@ -186,7 +186,7 @@ exports[`Contact renders if only required params are passed in 2`] = `
       class="sc-iqcoie laLEKa"
     >
       <div
-        class="sc-bczRLJ gpvTJI"
+        class="sc-bczRLJ gOmQZy"
         data-testid="Wrapper"
       >
         <div

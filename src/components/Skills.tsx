@@ -40,7 +40,7 @@ function Tile({ info, table }: TileProps) {
 function DescriptionAndAction({ description }: DescriptionAndActionProps) {
   return (
     <>
-      <Description key={"Paragraph"}>{description}</Description>
+      <Description data-testid="Description">{description}</Description>
       <ButtonWrapper>
         <Button url="#contact" label="Let's Talk"/>
       </ButtonWrapper>

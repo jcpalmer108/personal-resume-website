@@ -14,13 +14,13 @@ exports[`Footer renders if only required params are passed in 1`] = `
     data-testid="Footer Menu"
   >
     <a
-      class="sc-hKMtZM hNKKYy"
+      class="sc-hKMtZM ghNRUo"
       href="#one"
     >
       ONE
     </a>
     <a
-      class="sc-hKMtZM hNKKYy"
+      class="sc-hKMtZM ghNRUo"
       href="#two"
     >
       TWO
