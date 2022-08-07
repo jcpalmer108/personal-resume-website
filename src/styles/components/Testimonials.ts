@@ -18,33 +18,40 @@ export const Content = styled.div`
   display: flex;
   flex-direction: column;
   text-align: center;
+  padding: 0px;
 
   @media (min-width: ${tabletBreakpoint}px) {
     max-width: 523px;
+    padding-top: 20px;
   }
 
   @media (min-width: ${desktopBreakpoint}px) {
     max-width: 624px;
+    padding-top: 30px;
   }
 `
 
 export const Quote = styled.p`
-  margin: 30px 0px;
+  margin: 0px;
   font-size: 15px;
   font-family: Gilroy-Regular;
-  height: fit-content; // update to change total height of section
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   line-height: 26px;
+
 
   @media (min-width: ${tabletBreakpoint}px) {
     font-size: 20px;
-    margin: 40px 0px;
     line-height: 34px;
+    height: 200px;
   }
 
   @media (min-width: ${desktopBreakpoint}px) {
     font-size: 25px;
-    margin: 60px 0px;
     line-height: 44px;
+    height: 300px;
   }
 `
 
@@ -74,7 +81,7 @@ export const Title = styled.div`
     margin-bottom: 30px;
   }
 
-  @media (min-width: ${tabletBreakpoint}px) {
+  @media (min-width: ${desktopBreakpoint}px) {
     font-size: 25px;
     margin-bottom: 55px;
   }
