@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testimonials renders if only required params are passed in 1`] = `
+<div
+  class="sc-bczRLJ cJVwly"
+  data-testid="Testimonials"
+>
+  <img
+    alt="arrow left"
+    class="sc-ftvSup iGaBgC"
+    data-testid="arrow left"
+    src="arrow-left-pink.svg"
+  />
+  <div
+    class="sc-gsnTZi dKyiOK"
+  >
+    <h2>
+      Testimonials
+    </h2>
+    <p
+      class="sc-dkzDqf hOKucT"
+      data-testid="Quote"
+    >
+      this is a test quote
+    </p>
+    <div
+      class="sc-hKMtZM juqmlw"
+      data-testid="Person"
+    >
+      Jane Doe
+    </div>
+    <div
+      class="sc-eCYdqJ hEJBqo"
+      data-testid="Title"
+    >
+      Manager at Slalom Conuslting LLC
+    </div>
+    <div
+      class="sc-jSMfEi iOloSv"
+      data-testid="Dots"
+    >
+      <div
+        class="sc-gKXOVf kCMRve"
+      />
+      <div
+        class="sc-gKXOVf kJlTwh"
+      />
+    </div>
+  </div>
+  <img
+    alt="arrow right"
+    class="sc-papXJ cxbqPr"
+    data-testid="arrow right"
+    src="arrow-right-pink.svg"
+  />
+  <div
+    class="sc-iBkjds dvtkjr"
+  >
+    <div
+      class="sc-kDDrLX hksPpZ"
+    >
+      <div
+        class="sc-jqUVSM gjlCYy"
+      />
+      <img
+        alt="arrow left"
+        class="sc-ftvSup hzntBy"
+        data-testid="arrow left"
+        src="arrow-left-pink.svg"
+      />
+    </div>
+    <div
+      class="sc-kDDrLX hksPpZ"
+    >
+      <div
+        class="sc-jqUVSM gjlCYy"
+      />
+      <img
+        alt="arrow right"
+        class="sc-papXJ iMvUOL"
+        data-testid="arrow right"
+        src="arrow-right-pink.svg"
+      />
+    </div>
+  </div>
+</div>
+`;

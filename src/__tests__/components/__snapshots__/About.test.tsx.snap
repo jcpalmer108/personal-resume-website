@@ -1,0 +1,807 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`About renders if only required params are passed in 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c1 {
+  padding-bottom: 40px;
+}
+
+.c2 {
+  margin: 0px;
+  padding-bottom: 20px;
+}
+
+.c2:last-child {
+  padding-bottom: 0px;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-bottom: 15px;
+}
+
+.c4 {
+  padding-top: 25px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: left;
+  -webkit-box-align: left;
+  -ms-flex-align: left;
+  align-items: left;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c5 {
+  padding-top: 12px;
+}
+
+@media (min-width:1155px) {
+
+}
+
+@media (min-width:1155px) {
+
+}
+
+@media (min-width:1155px) {
+
+}
+
+@media (min-width:1155px) {
+
+}
+
+@media (min-width:720px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:720px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:720px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:720px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:720px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:720px) {
+  .c0 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media (min-width:720px) {
+  .c1 {
+    padding-bottom: 0px;
+  }
+}
+
+@media (min-width:720px) {
+  .c3 {
+    min-width: -webkit-fit-content;
+    min-width: -moz-fit-content;
+    min-width: fit-content;
+    padding-left: 70px;
+    padding-bottom: 0px;
+  }
+}
+
+@media (min-width:1024px) {
+  .c3 {
+    min-width: 290px;
+    padding-left: 125px;
+  }
+}
+
+@media (min-width:720px) {
+  .c4 {
+    padding-top: 35px;
+  }
+}
+
+@media (min-width:720px) {
+  .c5 {
+    font-size: 14px;
+  }
+}
+
+@media (min-width:1024px) {
+  .c5 {
+    font-size: 16px;
+    padding-top: 10px;
+  }
+}
+
+@media (min-width:720px) {
+
+}
+
+@media (min-width:720px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:720px) {
+
+}
+
+@media (min-width:720px) {
+
+}
+
+@media (min-width:720px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:720px) {
+
+}
+
+@media (min-width:720px) {
+
+}
+
+@media (min-width:720px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:720px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:720px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+<div
+  class="c0"
+  data-testid="About"
+>
+  <div
+    class="c1"
+  >
+    <p
+      class="c2"
+      data-testid="Description 1"
+    >
+      test contents 1
+    </p>
+    <p
+      class="c2"
+      data-testid="Description 2"
+    >
+      test contents 2
+    </p>
+  </div>
+  <div
+    class="c3"
+    data-testid="Schooling"
+  >
+    <h3>
+      Education
+    </h3>
+    <div
+      class="c4"
+      data-testid="School 1"
+    >
+      <h4>
+        Webster University
+      </h4>
+      <span
+        class="c5"
+      >
+        Bachelors of Science in Computer Science
+         - 
+        2014
+        -
+        2017
+      </span>
+    </div>
+    <div
+      class="c4"
+      data-testid="School 2"
+    >
+      <h4>
+        Harvard University
+      </h4>
+      <span
+        class="c5"
+      >
+        Bachelors of Smartiness in Computer Science
+         - 
+        2027
+        -
+        2030
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`About renders if only required params are passed in 2`] = `
+.c0 {
+  -webkit-box-flex: 2;
+  -webkit-flex-grow: 2;
+  -ms-flex-positive: 2;
+  flex-grow: 2;
+  background-color: #FFF7F2;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100px;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 25px 15px;
+}
+
+.c1 {
+  font-size: 20px;
+  font-family: Butler-Regular;
+  padding-bottom: 26px;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  row-gap: 23px;
+}
+
+.c3 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: black;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  font-size: 16px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: left;
+  -webkit-justify-content: left;
+  -ms-flex-pack: left;
+  justify-content: left;
+  -webkit-column-gap: 10px;
+  column-gap: 10px;
+  width: 33%;
+  font-family: Gilroy-Medium;
+}
+
+.c4 {
+  height: 16px;
+  width: 16px;
+}
+
+.c5 {
+  font-size: 14px;
+}
+
+@media (min-width:1155px) {
+
+}
+
+@media (min-width:1155px) {
+
+}
+
+@media (min-width:1155px) {
+
+}
+
+@media (min-width:1155px) {
+
+}
+
+@media (min-width:720px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:720px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:720px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:720px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:720px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:720px) {
+
+}
+
+@media (min-width:720px) {
+
+}
+
+@media (min-width:720px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:720px) {
+
+}
+
+@media (min-width:720px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:720px) {
+
+}
+
+@media (min-width:720px) {
+  .c0 {
+    height: 70px;
+    padding: 40px;
+  }
+}
+
+@media (min-width:1024px) {
+  .c0 {
+    height: 75px;
+    padding: 50px;
+  }
+}
+
+@media (min-width:720px) {
+  .c1 {
+    font-size: 30px;
+    padding-bottom: 20px;
+  }
+}
+
+@media (min-width:720px) {
+  .c2 {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    height: 20px;
+  }
+}
+
+@media (min-width:720px) {
+  .c3 {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+}
+
+@media (min-width:1024px) {
+  .c3 {
+    width: 20%;
+    -webkit-box-pack: left;
+    -webkit-justify-content: left;
+    -ms-flex-pack: left;
+    justify-content: left;
+  }
+}
+
+@media (min-width:720px) {
+  .c4 {
+    height: 19px;
+    width: 19px;
+  }
+}
+
+@media (min-width:720px) {
+  .c4 {
+    height: 22px;
+    width: 22px;
+  }
+}
+
+@media (min-width:720px) {
+  .c5 {
+    font-size: 16px;
+    padding-top: 4px;
+  }
+}
+
+@media (min-width:1024px) {
+  .c5 {
+    font-size: 19px;
+    padding-top: 4px;
+  }
+}
+
+@media (min-width:720px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:720px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+<div
+  class="c0"
+  data-testid="Connect"
+>
+  <span
+    class="c1"
+  >
+    Connect with Me
+  </span>
+  <div
+    class="c2"
+  >
+    <a
+      class="c3"
+      href="https://www.github.com/jcpalmer108/"
+    >
+      <img
+        class="c4"
+        src="[object Object]"
+      />
+      <span
+        class="c5"
+      >
+        Github
+      </span>
+    </a>
+    <a
+      class="c3"
+      href="https://leetcode.com/darthToaster/"
+    >
+      <img
+        class="c4"
+        src="[object Object]"
+      />
+      <span
+        class="c5"
+      >
+        Leetcode
+      </span>
+    </a>
+    <a
+      class="c3"
+      href="https://www.linkedin.com/in/jenna-palmer/"
+    >
+      <img
+        class="c4"
+        src="[object Object]"
+      />
+      <span
+        class="c5"
+      >
+        LinkedIn
+      </span>
+    </a>
+    <a
+      class="c3"
+      href="https://twitter.com/jpalmerproject/"
+    >
+      <img
+        class="c4"
+        src="[object Object]"
+      />
+      <span
+        class="c5"
+      >
+        Twitter
+      </span>
+    </a>
+    <a
+      class="c3"
+      href="mailto:jenna@jennapalmer.info"
+    >
+      <img
+        class="c4"
+        src="[object Object]"
+      />
+      <span
+        class="c5"
+      >
+        Email
+      </span>
+    </a>
+  </div>
+</div>
+`;
+
+exports[`About renders if only required params are passed in 3`] = `
+.c0 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-size: 12px;
+  font-family: Gilroy-Medium;
+  padding-top: 23px;
+  padding-bottom: 7px;
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+@media (min-width:1155px) {
+
+}
+
+@media (min-width:1155px) {
+
+}
+
+@media (min-width:1155px) {
+
+}
+
+@media (min-width:1155px) {
+
+}
+
+@media (min-width:720px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:720px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:720px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:720px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:720px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:720px) {
+
+}
+
+@media (min-width:720px) {
+
+}
+
+@media (min-width:720px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:720px) {
+
+}
+
+@media (min-width:720px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:720px) {
+
+}
+
+@media (min-width:720px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:720px) {
+
+}
+
+@media (min-width:720px) {
+
+}
+
+@media (min-width:720px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:720px) {
+
+}
+
+@media (min-width:720px) {
+
+}
+
+@media (min-width:720px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:720px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:720px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+<a
+  class="c0"
+  data-testid="Start a Project"
+  href="#contact"
+>
+  START A PROJECT
+</a>
+`;

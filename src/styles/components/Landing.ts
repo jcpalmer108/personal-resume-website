@@ -3,7 +3,7 @@ import { desktopBreakpoint, tabletBreakpoint } from "../variables"
 
 export const Main = styled.div`
   display: flex;
-`
+  `
 
 export const Title = styled.h1`
   margin: 20px;
@@ -86,6 +86,10 @@ export const DiscoverMore = styled.div`
   align-items: center;
   justify-content: center;
   column-gap: 10px;
+
+  @media (min-width: ${tabletBreakpoint}px) {
+    height: 65px;
+  }
 
   @media (min-width: ${desktopBreakpoint}px) {
     height: 100px;

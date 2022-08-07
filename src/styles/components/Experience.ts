@@ -149,15 +149,29 @@ export const Lower = styled.div`
 export const Job = styled.div`
   display: flex;
   flex-direction: column;
-  padding-top: 30px;
+  padding-top: 20px;
 
   @media (min-width: ${tabletBreakpoint}px) {
     flex-direction: row;
     align-items: center;
     justify-content: center;
     height: fit-content;
-  
+    padding-top: 25px;
+
+    &:first-child {
+      padding-top: 45px;
+    }
   }
+
+  @media (min-width: ${desktopBreakpoint}px) {
+    padding-top: 55px;
+
+    &:first-child {
+      padding-top: 25px;
+    }
+
+  }
+
 
 `
 
@@ -196,7 +210,7 @@ export const JobTitle = styled.div`
   }
 
   @media (min-width: ${desktopBreakpoint}px) {
-    min-width: 350px;
+    min-width: 312px;
     font-size: 30px;
   }
 

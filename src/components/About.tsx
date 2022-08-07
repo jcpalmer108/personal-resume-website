@@ -17,7 +17,8 @@ import {
   StartProject,
   Question,
   Description,
-  Title
+  Title,
+  BottomSpacing
 } from "../styles/components/About"
 import { Education } from "../types/content"
 import { SocialLink } from "../types/socials"
@@ -26,8 +27,8 @@ import socials from "../assets/content/socials.json"
 export default function About({ content }: AboutProps) {
   const { links } = socials;
   return (
-    <>
-      <Section label={content?.label}>
+    <div id="about">
+      <Section label={content?.label} >
         <Title data-testid="Title">{content?.title}</Title>
         <AboutWrapper data-testid="About">
           <Content>
@@ -63,6 +64,9 @@ export default function About({ content }: AboutProps) {
           </Prompt>
         </Action>
       </Section>
-    </>
+      <Section wide bottom>
+        <BottomSpacing />
+      </Section>
+    </div>
   )
 }

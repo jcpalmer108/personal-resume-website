@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SeparatingLine renders if optional params are not passed in 1`] = `
+<hr
+  class="sc-bczRLJ clPTCz"
+  data-testid="Line"
+/>
+`;
+
+exports[`SeparatingLine renders if optional params are passed in 1`] = `
+<hr
+  class="sc-bczRLJ dDXxS"
+  data-testid="Line"
+/>
+`;

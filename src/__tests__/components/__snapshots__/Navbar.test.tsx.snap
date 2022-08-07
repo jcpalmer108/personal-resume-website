@@ -1,0 +1,133 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navbar renders if only required params are passed in 1`] = `
+<div
+  data-testid="Navbar"
+  style="opacity: 0; max-height: 105px; overflow: hidden;"
+>
+  <div
+    class="sc-ftvSup fqXeAh"
+  >
+    <img
+      alt="logo"
+      class="sc-gKXOVf bgZQNE"
+      src="jennapalmer-dark.svg"
+    />
+    <div
+      class="sc-breuTD bQjhPd"
+      data-testid="Desktop Menu"
+    >
+      <a
+        class="sc-ksZaOG hPOIwE"
+        href="#one"
+      >
+        ONE
+      </a>
+      <a
+        class="sc-ksZaOG hPOIwE"
+        href="#two"
+      >
+        TWO
+      </a>
+    </div>
+    <div
+      class="sc-iBkjds cMkmwA"
+      data-testid="Hamburger"
+    >
+      <div
+        aria-expanded="false"
+        class="hamburger-react"
+        role="button"
+        style="cursor: pointer; height: 48px; position: relative; transition: 0.5s cubic-bezier(0, 0, 0, 1); user-select: none; width: 48px; outline: none;"
+        tabindex="0"
+      >
+        <div
+          style="background: rgb(229, 107, 111); height: 2px; left: 14px; position: absolute; width: 20px; top: 17px; transition: 0.5s cubic-bezier(0, 0, 0, 1); transform: none;"
+        />
+        <div
+          style="background: rgb(229, 107, 111); height: 2px; left: 14px; position: absolute; width: 20px; top: 23px; transition: 0.25s cubic-bezier(0, 0, 0, 1); transform: none;"
+        />
+        <div
+          style="background: rgb(229, 107, 111); height: 2px; left: 14px; position: absolute; width: 20px; top: 29px; transition: 0.5s cubic-bezier(0, 0, 0, 1); transform: none;"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    class="sc-papXJ jmtnqI"
+  >
+    <div
+      class="sc-jqUVSM emVZew"
+      data-testid="Mobile Menu"
+    >
+      <a
+        class="sc-kDDrLX doDXhI"
+        href="#one"
+      >
+        ONE
+      </a>
+      <a
+        class="sc-kDDrLX doDXhI"
+        href="#two"
+      >
+        TWO
+      </a>
+    </div>
+    <div
+      class="sc-iqcoie lihoFq"
+      data-testid="Socials"
+    >
+      <a
+        class="sc-crXcEl gmDjrd"
+        href="https://www.github.com/jcpalmer108/"
+      >
+        <img
+          alt="github"
+          class="sc-evZas leZbCs"
+          src="[object Object]"
+        />
+      </a>
+      <a
+        class="sc-crXcEl gmDjrd"
+        href="https://leetcode.com/darthToaster/"
+      >
+        <img
+          alt="leetcode"
+          class="sc-evZas leZbCs"
+          src="[object Object]"
+        />
+      </a>
+      <a
+        class="sc-crXcEl gmDjrd"
+        href="https://www.linkedin.com/in/jenna-palmer/"
+      >
+        <img
+          alt="linkedin"
+          class="sc-evZas leZbCs"
+          src="[object Object]"
+        />
+      </a>
+      <a
+        class="sc-crXcEl gmDjrd"
+        href="https://twitter.com/jpalmerproject/"
+      >
+        <img
+          alt="twitter"
+          class="sc-evZas leZbCs"
+          src="[object Object]"
+        />
+      </a>
+      <a
+        class="sc-crXcEl gmDjrd"
+        href="mailto:jenna@jennapalmer.info"
+      >
+        <img
+          alt="email"
+          class="sc-evZas leZbCs"
+          src="[object Object]"
+        />
+      </a>
+    </div>
+  </div>
+</div>
+`;

@@ -43,6 +43,13 @@ export const Wrapper = styled.div`
   overflow: hidden;
   padding: 10px 0px;
 
+  @media (min-width: ${tabletBreakpoint}px) {
+    padding-bottom: 80px;
+  }
+
+  @media (min-width: ${desktopBreakpoint}px) {
+    padding-bottom: 85px;
+  }
   `
 
   export const Inner = styled.div`

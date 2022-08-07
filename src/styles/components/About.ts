@@ -46,7 +46,7 @@ export const Schooling = styled.div`
 
   @media(min-width: ${desktopBreakpoint}px) {
     min-width: 290px;
-    padding-left: 60px;
+    padding-left: 125px;
   }
 
 `
@@ -232,6 +232,13 @@ export const StartProject = styled.a`
   color: white;
   border-bottom: 1px solid white;
 
+`
+
+export const BottomSpacing = styled.div`
+  height: 0px;
+
+  @media(min-width: ${desktopBreakpoint}px) {
+    height: 80px;
   }
 
 `

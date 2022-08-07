@@ -1,3 +1,8 @@
+export type ContactInfo = {
+  email: string,
+  cell: string
+}
+
 export type Content = {
   sections: Sections[],
 }

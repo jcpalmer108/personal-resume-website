@@ -7,14 +7,20 @@ export const Wrapper = styled.div<WrapperProps>`
   margin: auto;
   border-left: solid;
   border-right: solid;
-  border-bottom: solid;
   border-color: transparent;
   border-width: 0px;
 
   @media (min-width: ${contentWidth}px) {
-    border-bottom: ${props => props.bottom ? "soild" : "none" };
-    border-color: ${props => props.light ? "white" : silver_polish};
-    border-width: ${props => props.thin ? 0.2 : 1}px;
+    ${props => props.noBorder ? `
+      border: none;
+    ` : `
+      border-color: ${props.light ? "white" : silver_polish};
+      border-width: ${props.thin ? 0.2 : 1}px;    
+    `}
+  }
+
+  @media(min-width: ${contentWidth}px) {
+    border-bottom: ${props => props.bottom ? `1px solid ${silver_polish}` : 'none'};
   }
 `
 
@@ -27,7 +33,7 @@ export const Header = styled.div<HeaderProps>`
   @media (min-width: ${tabletBreakpoint}px) {
     margin: 0px;
     padding-left: 25px;
-    padding-top: 80px;
+    padding-top: ${props => props.noTop ? '25px' : '80px'};
   }
 
   @media (min-width: ${desktopBreakpoint}px) {
@@ -63,7 +69,7 @@ export const Children = styled.div<ChildrenProps>`
   }
 
   @media (min-width: ${desktopBreakpoint}px) {
-    padding: ${props => props.padded ? "85px 60px" : "0px"};
+    padding: ${props => props.padded ? "45px 60px 55px 60px" : "0px"};
   }
 `
 

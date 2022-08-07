@@ -1,4 +1,8 @@
 {
+  "contact": {
+    "email": "jenna@jennapalmer.info",
+    "cell": "3142212451"
+  },
   "sections": [
     {
       "key": "landing",
@@ -139,7 +143,7 @@
       "subSection": {
         "experience": [
           {
-            "title": "Senior Software Engineer",
+            "title": "Sr. Software Engineer",
             "employer": "Alaska Airlines",
             "team": "Create Reservation",
             "organization": "E-Commerce",

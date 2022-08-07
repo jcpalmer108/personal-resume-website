@@ -1,0 +1,381 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Contact renders if only required params are passed in 1`] = `
+<form
+  class="sc-gKXOVf fxTTeq"
+  data-testid="Mobile"
+>
+  <div
+    class="sc-bczRLJ bFyMqT"
+    data-testid="Wrapper"
+  >
+    <div
+      class="sc-gsnTZi dTnswn"
+      data-testid="Header"
+    >
+      <div
+        class="sc-dkzDqf elgUUD"
+        data-testid="Label"
+      >
+        <img
+          alt="test"
+          class="sc-jSMfEi bwHPVr"
+          src="label-line.svg"
+        />
+        <span
+          class="sc-eCYdqJ dPkWBy"
+        >
+          TEST LABEL
+        </span>
+      </div>
+    </div>
+    <div
+      class="sc-hKMtZM hovrvm"
+      data-testid="Children"
+    >
+      <h2
+        class="sc-kDDrLX Lzzuq"
+        data-testid="Title"
+      >
+        test title
+      </h2>
+      <p
+        data-testid="Description"
+      >
+        test description
+      </p>
+      <div
+        class="sc-bjUoiL cKJYiL"
+        data-testid="Input"
+      >
+        <input
+          class="sc-dIouRR eVXPVq"
+          placeholder=" "
+          value=""
+        />
+        <label
+          class="sc-hHLeRK fuCPFs"
+        >
+          NAME
+        </label>
+      </div>
+      <div
+        class="sc-bjUoiL cKJYiL"
+        data-testid="Input"
+      >
+        <input
+          class="sc-dIouRR eVXPVq"
+          placeholder=" "
+          value=""
+        />
+        <label
+          class="sc-hHLeRK fuCPFs"
+        >
+          PHONE
+        </label>
+      </div>
+      <div
+        class="sc-bjUoiL cKJYiL"
+        data-testid="Input"
+      >
+        <input
+          class="sc-dIouRR eVXPVq"
+          placeholder=" "
+          value=""
+        />
+        <label
+          class="sc-hHLeRK fuCPFs"
+        >
+          EMAIL
+        </label>
+      </div>
+      <div
+        class="sc-bjUoiL cKJYiL"
+        data-testid="Input"
+      >
+        <textarea
+          class="sc-idiyUo hSoZrZ"
+          placeholder=" "
+        />
+        <label
+          class="sc-hHLeRK fuCPFs"
+        >
+          MESSAGE
+        </label>
+      </div>
+      <input
+        class="sc-evZas gnwUCa"
+        data-testid="Submit"
+        disabled=""
+        type="submit"
+        value="SUBMIT"
+      />
+      <div
+        class="sc-ksZaOG hZPxQS"
+      >
+        <a
+          class="sc-hAZoDl gNivgj"
+          data-testid="Links"
+          href="https://www.github.com/jcpalmer108/"
+        >
+          <img
+            alt="Github"
+            class="sc-fEOsli iwkGpb"
+            src="[object Object]"
+          />
+        </a>
+        <a
+          class="sc-hAZoDl gNivgj"
+          data-testid="Links"
+          href="https://leetcode.com/darthToaster/"
+        >
+          <img
+            alt="Leetcode"
+            class="sc-fEOsli iwkGpb"
+            src="[object Object]"
+          />
+        </a>
+        <a
+          class="sc-hAZoDl gNivgj"
+          data-testid="Links"
+          href="https://www.linkedin.com/in/jenna-palmer/"
+        >
+          <img
+            alt="LinkedIn"
+            class="sc-fEOsli iwkGpb"
+            src="[object Object]"
+          />
+        </a>
+        <a
+          class="sc-hAZoDl gNivgj"
+          data-testid="Links"
+          href="https://twitter.com/jpalmerproject/"
+        >
+          <img
+            alt="Twitter"
+            class="sc-fEOsli iwkGpb"
+            src="[object Object]"
+          />
+        </a>
+        <a
+          class="sc-hAZoDl gNivgj"
+          data-testid="Links"
+          href="mailto:jenna@jennapalmer.info"
+        >
+          <img
+            alt="Email"
+            class="sc-fEOsli iwkGpb"
+            src="[object Object]"
+          />
+        </a>
+      </div>
+    </div>
+  </div>
+</form>
+`;
+
+exports[`Contact renders if only required params are passed in 2`] = `
+<form
+  class="sc-iBkjds etRKLv"
+  data-testid="NotMobile"
+>
+  <div
+    class="sc-ftvSup jnuaav"
+  >
+    <div
+      class="sc-iqcoie laLEKa"
+    >
+      <div
+        class="sc-bczRLJ gOmQZy"
+        data-testid="Wrapper"
+      >
+        <div
+          class="sc-gsnTZi jocdCD"
+          data-testid="Header"
+        >
+          <div
+            class="sc-dkzDqf elgUUD"
+            data-testid="Label"
+          >
+            <img
+              alt="test"
+              class="sc-jSMfEi bwHPVr"
+              src="label-line.svg"
+            />
+            <span
+              class="sc-eCYdqJ dPkWBy"
+            >
+              TEST LABEL
+            </span>
+          </div>
+        </div>
+        <div
+          class="sc-hKMtZM qVTyS"
+          data-testid="Children"
+        >
+          <div
+            class="sc-jqUVSM fFBytW"
+          >
+            <h2
+              class="sc-kDDrLX Lzzuq"
+              data-testid="Title"
+            >
+              test title
+            </h2>
+            <p
+              data-testid="Description"
+            >
+              test description
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="sc-crXcEl cmxBEn"
+    >
+      <div
+        class="sc-papXJ dBLMZr"
+      >
+        <div
+          class="sc-bjUoiL cKJYiL"
+          data-testid="Input"
+        >
+          <input
+            class="sc-dIouRR jWoODq"
+            placeholder=" "
+            value=""
+          />
+          <label
+            class="sc-hHLeRK fuCPFs"
+          >
+            NAME
+          </label>
+        </div>
+      </div>
+      <div
+        class="sc-papXJ dBLMZr"
+      >
+        <div
+          class="sc-bjUoiL cKJYiL"
+          data-testid="Input"
+        >
+          <input
+            class="sc-dIouRR jWoODq"
+            placeholder=" "
+            value=""
+          />
+          <label
+            class="sc-hHLeRK fuCPFs"
+          >
+            PHONE
+          </label>
+        </div>
+      </div>
+      <div
+        class="sc-papXJ dBLMZr"
+      >
+        <div
+          class="sc-bjUoiL cKJYiL"
+          data-testid="Input"
+        >
+          <input
+            class="sc-dIouRR jWoODq"
+            placeholder=" "
+            value=""
+          />
+          <label
+            class="sc-hHLeRK fuCPFs"
+          >
+            EMAIL
+          </label>
+        </div>
+      </div>
+      <div
+        class="sc-papXJ dBLMZr"
+      >
+        <div
+          class="sc-bjUoiL cKJYiL"
+          data-testid="Input"
+        >
+          <textarea
+            class="sc-idiyUo hRVnB"
+            placeholder=" "
+          />
+          <label
+            class="sc-hHLeRK fuCPFs"
+          >
+            MESSAGE
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="sc-breuTD dZrjTO"
+  >
+    <div
+      class="sc-ksZaOG hZPxQS"
+      data-testid="Socials"
+    >
+      <a
+        class="sc-hAZoDl gNivgj"
+        href="https://www.github.com/jcpalmer108/"
+      >
+        <img
+          alt="Github"
+          class="sc-fEOsli iwkGpb"
+          src="[object Object]"
+        />
+      </a>
+      <a
+        class="sc-hAZoDl gNivgj"
+        href="https://leetcode.com/darthToaster/"
+      >
+        <img
+          alt="Leetcode"
+          class="sc-fEOsli iwkGpb"
+          src="[object Object]"
+        />
+      </a>
+      <a
+        class="sc-hAZoDl gNivgj"
+        href="https://www.linkedin.com/in/jenna-palmer/"
+      >
+        <img
+          alt="LinkedIn"
+          class="sc-fEOsli iwkGpb"
+          src="[object Object]"
+        />
+      </a>
+      <a
+        class="sc-hAZoDl gNivgj"
+        href="https://twitter.com/jpalmerproject/"
+      >
+        <img
+          alt="Twitter"
+          class="sc-fEOsli iwkGpb"
+          src="[object Object]"
+        />
+      </a>
+      <a
+        class="sc-hAZoDl gNivgj"
+        href="mailto:jenna@jennapalmer.info"
+      >
+        <img
+          alt="Email"
+          class="sc-fEOsli iwkGpb"
+          src="[object Object]"
+        />
+      </a>
+    </div>
+    <input
+      class="sc-evZas gnwUCa"
+      data-testid="Submit"
+      disabled=""
+      type="submit"
+      value="SUBMIT"
+    />
+  </div>
+</form>
+`;

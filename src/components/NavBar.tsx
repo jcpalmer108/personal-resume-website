@@ -52,7 +52,7 @@ export default function Navbar({ menu }: NavbarProps) {
   })
 
   return (
-    <Section wide light bottom>
+    <Section wide light>
       <animated.div style={openAnimation} data-testid="Navbar">
         <UpperMenu>
           <Logo src={logo} alt="logo" />
