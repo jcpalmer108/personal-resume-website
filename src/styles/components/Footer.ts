@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { desktopBreakpoint, redstone, tabletBreakpoint } from "../variables";
+import { desktopBreakpoint, redstone, silver_polish, tabletBreakpoint } from "../variables";
 
 export const Wrapper = styled.div`
   padding: 40px;
@@ -45,7 +45,7 @@ export const FooterMenu = styled.div`
 
 export const FooterPages = styled.a`
   text-decoration: none;
-  color: white;
+  color: ${silver_polish};
 
   &:hover {
     color: ${redstone};
@@ -54,7 +54,7 @@ export const FooterPages = styled.a`
 `
 
 export const Copyright = styled.p`
-  color: white;
+  color: ${silver_polish};
   text-align: center;
 `
 
