@@ -27,10 +27,6 @@ type FormProps = {
   message?: String
 }
 
-// todo: make labels not go to the right on open
-// todo: make submit work on tablet view
-// todo: create bottom bar with social links
-
 export default function Contact({ content, contact }: ContactProps) {
   const [ isDisabled, setIsDisabled ] = useState<boolean>(true)
   const [ formValues, setFormValues ] = useState<FormProps>({
@@ -81,87 +77,89 @@ export default function Contact({ content, contact }: ContactProps) {
   }
   
   return (
-    <Section wide>
-      <Mobile data-testid="Mobile" onSubmit={openMailLink}>
-        <Section label={content?.label} center>
-          <Title data-testid="Title">{content?.title}</Title>
-          <p data-testid="Description">{content?.description && content?.description[0]}</p>
-          <Input label="Name" value={formValues.name} updateForm={(e: any) => updateFormValues("name", e)} />
-          <Input label="Phone" value={formValues.phone} updateForm={(e: any) => updateFormValues("phone", e)} />
-          <Input label="Email" value={formValues.email} updateForm={(e: any) => updateFormValues("email", e)} />
-          <Input area label="Message" value={formValues.message} updateForm={(e: any) => updateFormValues("message", e)} />
-          <Button data-testid="Submit" disabled={isDisabled} type="submit" value="SUBMIT" />
-          <Socials>
-            {
-              socials.links.map((item) => (
-              <Links data-testid="Links" key={item.key} href={item.url}>
-                <Icon src={require("../assets/images/" + item.key + ".svg")} alt={item.label} />
-              </Links>
-              ))
-            }
-          </Socials>
-        </Section>    
-      </Mobile>
-      <NotMobile data-testid="NotMobile">
-        <FormWrapper>
-          <Left>
-            <Section noBorder noTop wide label={content?.label}>
-              <LeftWrapper>
-                <Title data-testid="Title">{content?.title}</Title>
-                <p data-testid="Description">{content?.description && content?.description[0]}</p>
-              </LeftWrapper>
-            </Section>
-          </Left>
-          <Right>
-            <InputWrapper>
-              <Input 
-                noBorder 
-                label="Name" 
-                value={formValues.name} 
-                updateForm={(e: any) => updateFormValues("name", e)} 
-              />
-            </InputWrapper>
-            <InputWrapper>
-              <Input 
-                noBorder 
-                label="Phone" 
-                value={formValues.phone} 
-                updateForm={(e: any) => updateFormValues("phone", e)} 
-              />
-            </InputWrapper>
-            <InputWrapper>
-              <Input 
-                noBorder 
-                label="Email" 
-                value={formValues.email} 
-                updateForm={(e: any) => updateFormValues("email", e)} 
-              />
-            </InputWrapper>
-            <InputWrapper>
-              <Input 
-                noBorder 
-                area 
-                label="Message" 
-                value={formValues.message} 
-                updateForm={(e: any) => updateFormValues("message", e)} 
-              />
-            </InputWrapper>
-          </Right>
-        </FormWrapper>
-        <BottomBar>
-          <Socials data-testid="Socials">
-            {
-              socials.links.map((item) => (
-              <Links key={item.key} href={item.url}>
-                <Icon src={require("../assets/images/" + item.key + ".svg")} alt={item.label} />
-              </Links>
-              ))
-            }
-          </Socials>
-          <Button data-testid="Submit" disabled={isDisabled} type="submit" value="SUBMIT" />
-        </BottomBar>
-      </NotMobile>
-      <BlankSection />
-    </Section>
+    <div id="contact">
+      <Section wide>
+        <Mobile data-testid="Mobile" onSubmit={openMailLink}>
+          <Section label={content?.label} center>
+            <Title data-testid="Title">{content?.title}</Title>
+            <p data-testid="Description">{content?.description && content?.description[0]}</p>
+            <Input label="Name" value={formValues.name} updateForm={(e: any) => updateFormValues("name", e)} />
+            <Input label="Phone" value={formValues.phone} updateForm={(e: any) => updateFormValues("phone", e)} />
+            <Input label="Email" value={formValues.email} updateForm={(e: any) => updateFormValues("email", e)} />
+            <Input area label="Message" value={formValues.message} updateForm={(e: any) => updateFormValues("message", e)} />
+            <Button data-testid="Submit" disabled={isDisabled} type="submit" value="SUBMIT" />
+            <Socials>
+              {
+                socials.links.map((item) => (
+                <Links data-testid="Links" key={item.key} href={item.url}>
+                  <Icon src={require("../assets/images/" + item.key + ".svg")} alt={item.label} />
+                </Links>
+                ))
+              }
+            </Socials>
+          </Section>    
+        </Mobile>
+        <NotMobile data-testid="NotMobile">
+          <FormWrapper>
+            <Left>
+              <Section noBorder noTop wide label={content?.label}>
+                <LeftWrapper>
+                  <Title data-testid="Title">{content?.title}</Title>
+                  <p data-testid="Description">{content?.description && content?.description[0]}</p>
+                </LeftWrapper>
+              </Section>
+            </Left>
+            <Right>
+              <InputWrapper>
+                <Input 
+                  noBorder 
+                  label="Name" 
+                  value={formValues.name} 
+                  updateForm={(e: any) => updateFormValues("name", e)} 
+                />
+              </InputWrapper>
+              <InputWrapper>
+                <Input 
+                  noBorder 
+                  label="Phone" 
+                  value={formValues.phone} 
+                  updateForm={(e: any) => updateFormValues("phone", e)} 
+                />
+              </InputWrapper>
+              <InputWrapper>
+                <Input 
+                  noBorder 
+                  label="Email" 
+                  value={formValues.email} 
+                  updateForm={(e: any) => updateFormValues("email", e)} 
+                />
+              </InputWrapper>
+              <InputWrapper>
+                <Input 
+                  noBorder 
+                  area 
+                  label="Message" 
+                  value={formValues.message} 
+                  updateForm={(e: any) => updateFormValues("message", e)} 
+                />
+              </InputWrapper>
+            </Right>
+          </FormWrapper>
+          <BottomBar>
+            <Socials data-testid="Socials">
+              {
+                socials.links.map((item) => (
+                <Links key={item.key} href={item.url}>
+                  <Icon src={require("../assets/images/" + item.key + ".svg")} alt={item.label} />
+                </Links>
+                ))
+              }
+            </Socials>
+            <Button data-testid="Submit" disabled={isDisabled} type="submit" value="SUBMIT" />
+          </BottomBar>
+        </NotMobile>
+        <BlankSection />
+      </Section>
+    </div>
   )
 }

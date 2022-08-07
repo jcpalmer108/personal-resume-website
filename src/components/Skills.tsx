@@ -67,41 +67,43 @@ export default function Skills({ content }: SkillsProps) {
   }
 
   return (
-    <Section wide center label={content?.label}>
-      <Mobile data-testid="Mobile">
-        <TitleLine title={title || ''} />
-        <Marquee loop={0}>
-          {generateTiles(skillList, false)}
-        </Marquee>
-        <DescriptionAndAction description={description || ''} />
-      </Mobile>
-      <NotMobile data-testid="NotMobile">
-        <Mosaic>
-          <tbody>
-            <tr data-testid="Row 1">
-              <Cell colSpan={3} first>
-                <TitleLine title={content?.title || ''} />
-              </Cell>
-              {generateTiles(skillList.slice(0, 2))}
-            </tr>
-            <tr data-testid="Row 2">
-              {generateTiles(skillList.slice(2, 7))}
-            </tr>
-            <tr data-testid="Row 3">
-              {generateTiles(skillList.slice(7, 9))}
-              <Cell colSpan={3} last>
-                <Content desktop>
-                  <DescriptionAndAction description={description || ''} />
-                </Content>
-              </Cell>
-            </tr>
-          </tbody>
-        </Mosaic>
-        <Content>
+    <div id="skills">
+      <Section wide center label={content?.label}>
+        <Mobile data-testid="Mobile">
+          <TitleLine title={title || ''} />
+          <Marquee loop={0}>
+            {generateTiles(skillList, false)}
+          </Marquee>
           <DescriptionAndAction description={description || ''} />
-        </Content>
-      </NotMobile>
-    </Section>
+        </Mobile>
+        <NotMobile data-testid="NotMobile">
+          <Mosaic>
+            <tbody>
+              <tr data-testid="Row 1">
+                <Cell colSpan={3} first>
+                  <TitleLine title={content?.title || ''} />
+                </Cell>
+                {generateTiles(skillList.slice(0, 2))}
+              </tr>
+              <tr data-testid="Row 2">
+                {generateTiles(skillList.slice(2, 7))}
+              </tr>
+              <tr data-testid="Row 3">
+                {generateTiles(skillList.slice(7, 9))}
+                <Cell colSpan={3} last>
+                  <Content desktop>
+                    <DescriptionAndAction description={description || ''} />
+                  </Content>
+                </Cell>
+              </tr>
+            </tbody>
+          </Mosaic>
+          <Content>
+            <DescriptionAndAction description={description || ''} />
+          </Content>
+        </NotMobile>
+      </Section>
+    </div>
   )
 
 }

@@ -27,8 +27,8 @@ import socials from "../assets/content/socials.json"
 export default function About({ content }: AboutProps) {
   const { links } = socials;
   return (
-    <>
-      <Section label={content?.label}>
+    <div id="about">
+      <Section label={content?.label} >
         <Title data-testid="Title">{content?.title}</Title>
         <AboutWrapper data-testid="About">
           <Content>
@@ -67,6 +67,6 @@ export default function About({ content }: AboutProps) {
       <Section wide bottom>
         <BottomSpacing />
       </Section>
-    </>
+    </div>
   )
 }

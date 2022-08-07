@@ -35,9 +35,9 @@ export default function Testimonials({ content }: TestimonialProps) {
   }
   
   return (
-    <>
+    <div id="testimonials">
       <Section bottom>
-        <Wrapper id="testimonials" data-testid="Testimonials">
+        <Wrapper data-testid="Testimonials">
           <ArrowLeft 
             onClick={() => { updateIndex(false) }} 
             src={arrowLeft} 
@@ -79,7 +79,7 @@ export default function Testimonials({ content }: TestimonialProps) {
           </Arrows>
         </Wrapper>
       </Section>
-    </>
+    </div>
   )
   
 }

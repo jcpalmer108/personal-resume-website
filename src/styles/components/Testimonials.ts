@@ -8,7 +8,6 @@ export const Wrapper = styled.div`
   text-align: center;
   width: 100%;
 
-  
   @media (min-width: ${tabletBreakpoint}px) {
     flex-direction: row;
     justify-content: space-between;
