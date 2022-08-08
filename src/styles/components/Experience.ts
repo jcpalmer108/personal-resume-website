@@ -270,8 +270,7 @@ export const JobParagraph = styled.p`
 
 `
 
-export const ModalTrigger = styled.a`
-  display: none;
+export const ModalTrigger = styled.span`
   text-decoration: none;
   padding-top: 12px;
   color: ${redstone};

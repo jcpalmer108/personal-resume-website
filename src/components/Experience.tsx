@@ -25,10 +25,19 @@ import callMe from "../assets/images/call-me.svg"
 import emailMe from "../assets/images/email-me.svg"
 import diagonal from "../assets/images/diagonal-line.svg"
 import Section from "./Section"
+import Modal from "./Modal"
+import { useState } from "react"
 
 export default function Experience({ content }: ExperienceProps) {
+  const [ modalIsOpen, setModalIsOpen ] = useState(false);
+
+  const manageModal = () => {
+    setModalIsOpen(!modalIsOpen)
+  }
+
   return (
     <div id="experience">
+      {modalIsOpen && <Modal manageModal={() => manageModal() } />}
       <Section center label={content?.label}>
         <Wrapper data-testid="Experience">
           <Upper>
@@ -52,7 +61,7 @@ export default function Experience({ content }: ExperienceProps) {
           <Lower>
             {
               content?.subSection?.experience && content?.subSection?.experience.map((job, index) => (
-                <Job key={`Job ${index + 1}`}>
+                <Job key={`Job ${index + 1}`} onClick={() => manageModal()}>
                   <Logo src={require("../assets/images/" + job.icon + ".svg")} alt={job.icon} />
                   <Content>
                     <JobTitle data-testid={`Title ${index + 1}`}>{job.title}</JobTitle>
@@ -62,7 +71,7 @@ export default function Experience({ content }: ExperienceProps) {
                   <JobDescription data-testid={`Details ${index + 1}`}>
                     <JobParagraph key={`Paragraph ${index + 1}`}>
                       {job.description[0]}
-                      <ModalTrigger href="#">... Read More</ModalTrigger>
+                      <ModalTrigger onClick={manageModal}>... Read More</ModalTrigger>
                     </JobParagraph>
                   </JobDescription>
                 </Job>
