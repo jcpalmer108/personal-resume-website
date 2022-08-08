@@ -20,3 +20,5 @@ export const Window = styled.div`
   opacity: 1;
   z-index: 999;
 `
+
+// export const CloseIcon

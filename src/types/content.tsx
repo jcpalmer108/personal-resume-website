@@ -54,7 +54,7 @@ export type Quotes = {
   title: string
 }
 
-type Experience = {
+export type Experience = {
   title: string,
   employer: string,
   location: string,

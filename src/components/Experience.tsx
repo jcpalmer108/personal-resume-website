@@ -30,14 +30,26 @@ import { useState } from "react"
 
 export default function Experience({ content }: ExperienceProps) {
   const [ modalIsOpen, setModalIsOpen ] = useState(false);
+  const [ selectedContent, setSelectedContent ] = useState({});
 
-  const manageModal = () => {
+
+  const manageModal = (selectedIndex?: number) => {
+    if (selectedIndex) manageSelectedContent(selectedIndex)
     setModalIsOpen(!modalIsOpen)
+  }
+
+  const manageSelectedContent = (selectedIndex: number) => {
+    const newContent = (
+      content?.subSection && 
+      content.subSection.experience && 
+      content.subSection.experience[selectedIndex]
+      ) || {}
+    setSelectedContent(newContent)
   }
 
   return (
     <div id="experience">
-      {modalIsOpen && <Modal manageModal={() => manageModal() } />}
+      {modalIsOpen && <Modal content={selectedContent} manageModal={() => manageModal() } />}
       <Section center label={content?.label}>
         <Wrapper data-testid="Experience">
           <Upper>
@@ -61,7 +73,7 @@ export default function Experience({ content }: ExperienceProps) {
           <Lower>
             {
               content?.subSection?.experience && content?.subSection?.experience.map((job, index) => (
-                <Job key={`Job ${index + 1}`} onClick={() => manageModal()}>
+                <Job key={`Job ${index + 1}`} onClick={() => manageModal(index)}>
                   <Logo src={require("../assets/images/" + job.icon + ".svg")} alt={job.icon} />
                   <Content>
                     <JobTitle data-testid={`Title ${index + 1}`}>{job.title}</JobTitle>
@@ -71,7 +83,7 @@ export default function Experience({ content }: ExperienceProps) {
                   <JobDescription data-testid={`Details ${index + 1}`}>
                     <JobParagraph key={`Paragraph ${index + 1}`}>
                       {job.description[0]}
-                      <ModalTrigger onClick={manageModal}>... Read More</ModalTrigger>
+                      <ModalTrigger>... Read More</ModalTrigger>
                     </JobParagraph>
                   </JobDescription>
                 </Job>
