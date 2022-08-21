@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.e6c13ad2.css",
-    "main.js": "/static/js/main.6be9e1b4.js",
+    "main.js": "/static/js/main.3b73d9a2.js",
     "static/js/787.f87a86bf.chunk.js": "/static/js/787.f87a86bf.chunk.js",
     "static/media/pexels-ekaterina-bolovtsova-4049876.jpg": "/static/media/pexels-ekaterina-bolovtsova-4049876.a9eba608b55c1983bd47.jpg",
     "static/media/pexels-ekaterina-bolovtsova-4049791.jpg": "/static/media/pexels-ekaterina-bolovtsova-4049791.a4b1c144f02e2acc0a01.jpg",
@@ -31,27 +31,30 @@
     "static/media/slalom.svg": "/static/media/slalom.8af09b6ff771ffcf7d4a.svg",
     "static/media/Butler.woff2": "/static/media/Butler.99c7b1a6053c62da9427.woff2",
     "static/media/logo.png": "/static/media/logo.d0fc478c21ff456e32e1.png",
+    "static/media/alaska-white.svg": "/static/media/alaska-white.6c642024062525d8ba24.svg",
     "static/media/email.svg": "/static/media/email.4f885c90cc4197b047f8.svg",
     "static/media/leetcode.svg": "/static/media/leetcode.a7c8204b2910a692f514.svg",
     "static/media/github.svg": "/static/media/github.119d9db17695d539caaf.svg",
     "static/media/twitter.svg": "/static/media/twitter.3c6d17f9b9a2824731f9.svg",
     "static/media/call-me.svg": "/static/media/call-me.78e1f8ecf624c6703c2018b96ac7fdab.svg",
     "static/media/linkedin.svg": "/static/media/linkedin.764aa0e58ae92b6f5bac.svg",
+    "static/media/slalom-white.svg": "/static/media/slalom-white.3647b9a6f8f679d85406.svg",
     "static/media/scroll.svg": "/static/media/scroll.44622643a11b94b079795907fe71ea6d.svg",
     "static/media/email-me.svg": "/static/media/email-me.2f404db3942d627e3a4811bfa03ac0eb.svg",
     "index.html": "/index.html",
+    "static/media/nike-white.svg": "/static/media/nike-white.55a20d68af9ac449c81c.svg",
     "static/media/arrow-right-pink.svg": "/static/media/arrow-right-pink.149f5aa031241554a9f0139e7bef5cf7.svg",
     "static/media/arrow-left-pink.svg": "/static/media/arrow-left-pink.8d60d6ff90e675460f16418e2c70a75f.svg",
     "static/media/arrow-right.svg": "/static/media/arrow-right.14451155ff28d46082c6781024629771.svg",
-    "static/media/close.svg": "/static/media/close.f6ee2d6c773c51b4e05f.svg",
+    "static/media/close.svg": "/static/media/close.f6ee2d6c773c51b4e05f875f7e4a65b5.svg",
     "static/media/diagonal-line.svg": "/static/media/diagonal-line.67bf4117d46ed08789993cfd2b787465.svg",
     "static/media/label-line.svg": "/static/media/label-line.5c33572d6ec0db6067eba43cf78df291.svg",
     "main.e6c13ad2.css.map": "/static/css/main.e6c13ad2.css.map",
-    "main.6be9e1b4.js.map": "/static/js/main.6be9e1b4.js.map",
+    "main.3b73d9a2.js.map": "/static/js/main.3b73d9a2.js.map",
     "787.f87a86bf.chunk.js.map": "/static/js/787.f87a86bf.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.6be9e1b4.js"
+    "static/js/main.3b73d9a2.js"
   ]
 }

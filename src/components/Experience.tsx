@@ -30,26 +30,48 @@ import { useState } from "react"
 
 export default function Experience({ content }: ExperienceProps) {
   const [ modalIsOpen, setModalIsOpen ] = useState(false);
-  const [ selectedContent, setSelectedContent ] = useState({});
-
-
-  const manageModal = (selectedIndex?: number) => {
-    if (selectedIndex) manageSelectedContent(selectedIndex)
-    setModalIsOpen(!modalIsOpen)
+  const defaultModalContent = {
+    title: "",
+    employer: "",
+    location: "",
+    description: [""],
+    icon: "",
+    timeline: {
+      start: "",
+      end: ""
+    }
   }
 
+  const [ selectedContent, setSelectedContent ] = useState(
+    (content &&
+    content.subSection &&
+    content.subSection.experience && 
+    content.subSection.experience[0] )
+    ? content.subSection.experience[0] : defaultModalContent);
+
   const manageSelectedContent = (selectedIndex: number) => {
-    const newContent = (
-      content?.subSection && 
+    if(
+      content &&
+      content.subSection &&
       content.subSection.experience && 
       content.subSection.experience[selectedIndex]
-      ) || {}
-    setSelectedContent(newContent)
+    ) {
+      setSelectedContent(content.subSection.experience[selectedIndex])
+    } else if (
+      content &&
+      content.subSection &&
+      content.subSection.experience && 
+      content.subSection.experience[0]
+    ){
+      setSelectedContent(content.subSection.experience[0])
+    } else {
+      setSelectedContent(defaultModalContent)
+    }
   }
 
   return (
     <div id="experience">
-      {modalIsOpen && <Modal content={selectedContent} manageModal={() => manageModal() } />}
+      {modalIsOpen && <Modal content={selectedContent} closeModal={() => setModalIsOpen(!modalIsOpen) } />}
       <Section center label={content?.label}>
         <Wrapper data-testid="Experience">
           <Upper>
@@ -73,7 +95,10 @@ export default function Experience({ content }: ExperienceProps) {
           <Lower>
             {
               content?.subSection?.experience && content?.subSection?.experience.map((job, index) => (
-                <Job key={`Job ${index + 1}`} onClick={() => manageModal(index)}>
+                <Job key={`Job ${index + 1}`} onClick={() => {     
+                  manageSelectedContent(index)
+                  setModalIsOpen(!modalIsOpen)
+              }}>
                   <Logo src={require("../assets/images/" + job.icon + ".svg")} alt={job.icon} />
                   <Content>
                     <JobTitle data-testid={`Title ${index + 1}`}>{job.title}</JobTitle>
