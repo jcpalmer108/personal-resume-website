@@ -64,7 +64,7 @@ export const TopBottomBorders = styled.div`
 export const Content = styled.div`
   text-align: left;
   padding: 20px;
-  max-height: 100%;
+  max-height: calc(100% - 40px);
   overflow-y: scroll;
   
 `
@@ -94,8 +94,21 @@ export const Circle = styled.div`
   margin-bottom: 25px;
 `
 
-export const Logo = styled.img`
-  height: 28px;
+type LogoProps = {
+  icon?: string
+}
+
+export const Logo = styled.img<LogoProps>`
+  height: ${({ icon }) => {
+    switch(icon) {
+      case "nike":
+        return "28px";
+      case "slalom": 
+        return "50px";
+      default: 
+        return "70px";
+    }
+  }}};
 `
 
 export const Overview = styled.div`
@@ -119,16 +132,5 @@ font-size: 14px;
 `
 
 export const Body = styled.div`
-
-`
-
-export const BodyLabel = styled.div`
-  font-family: Gilroy-Bold;
-  font-size: 15px;
-`
-
-export const BodyInfo = styled.span`
-font-family: Gilroy-Regular;
-font-size: 15px;
 
 `

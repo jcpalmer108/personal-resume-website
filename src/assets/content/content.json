@@ -192,7 +192,7 @@
                 "description":[
                   "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 150"
                 ],
-                "icon": "key"
+                "icon": "security"
               },
               {
                 "industry": "Healthcare",
@@ -238,7 +238,7 @@
                 "description": [
                   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor purus."
                 ],
-                "icon": "mobile"
+                "icon": "agriculture"
               },
               {
                 "industry": "Agriculture",
@@ -246,7 +246,7 @@
                 "description":[
                   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor purus."
                 ],
-                "icon": "website"
+                "icon": "agriculture"
               },
               {
                 "industry": "Telecommunications",
@@ -254,7 +254,7 @@
                 "description": [
                   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor purus."
                 ],
-                "icon": "maps"
+                "icon": "telecom"
               },
               {
                 "industry": "Internal",
@@ -262,7 +262,7 @@
                 "description": [
                   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor purus."
                 ],
-                "icon": "terminal"
+                "icon": "internal"
               }
             ]
           }
