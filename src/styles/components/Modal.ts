@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { desktopBreakpoint, jet, off_black, silver_polish } from "../variables";
+import { desktopBreakpoint, jet, off_black, silver_polish, tabletBreakpoint } from "../variables";
 
 export const BackgroundOverlay = styled.div`
   position: fixed;
@@ -66,6 +66,13 @@ export const Content = styled.div`
   padding: 20px;
   max-height: calc(100% - 40px);
   overflow-y: scroll;  
+
+  @media(min-width: ${tabletBreakpoint}px) {
+    padding: 40px;
+    max-height: calc(100% - 80px);
+
+  }
+
 `
 
 export const Tile = styled.div`
@@ -79,6 +86,12 @@ export const Tile = styled.div`
   color: white;
   padding-bottom: 25px;
 
+  @media(min-width: ${tabletBreakpoint}px) {
+    max-width: 235px;
+    padding: 40px;
+    margin: auto;
+  }
+
 `
 
 export const Circle = styled.div`
@@ -91,6 +104,12 @@ export const Circle = styled.div`
   justify-content: center;
   margin-top: 35px;
   margin-bottom: 25px;
+
+  @media(min-width: ${tabletBreakpoint}px) {
+    height: 185px;
+    width: 185px;
+  }
+
 `
 
 type LogoProps = {
@@ -108,28 +127,60 @@ export const Logo = styled.img<LogoProps>`
         return "70px";
     }
   }}};
+
+  @media(min-width: ${tabletBreakpoint}px) {
+    height: ${({ icon }) => {
+      switch(icon) {
+        case "nike":
+          return "38px";
+        case "slalom": 
+          return "60px";
+        default: 
+          return "90px";
+      }
+    }}};  
+  }
+
 `
 
 export const Overview = styled.div`
   display: flex;
   flex-direction: column;
   row-gap: 20px;
-`
 
-export const TileDetails = styled.div`
+  @media(min-width: ${tabletBreakpoint}px) {
+    flex-direction: row;
+    column-gap: 20px;
+    padding-top: 75px;
+  }
+
 `
 
 export const TileLabel = styled.div`
   font-family: Gilroy-Bold;
   font-size: 14px;
+
+  @media(min-width: ${tabletBreakpoint}px) {
+    font-size: 17px;
+    padding-bottom: 15px;
+  }
+
 `
 
 export const TileInfo = styled.span`
 font-family: Gilroy-Regular;
 font-size: 14px;
 
+@media(min-width: ${tabletBreakpoint}px) {
+  font-size: 13px;
+}
 `
 
-export const Body = styled.div`
+export const OrgTeam = styled.div`
+  display: flex;
+  flex-direction: column;
 
+  @media(min-width: ${tabletBreakpoint}px) {
+    flex-direction: row;
+  }
 `

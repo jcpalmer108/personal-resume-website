@@ -13,7 +13,7 @@ import {
   Overview,
   TileLabel,
   TileInfo,
-  Body
+  OrgTeam
 } from "../styles/components/Modal";
 import closeIcon from "../assets/images/close.svg"
 import Details from "./Details"
@@ -31,8 +31,14 @@ export default function Modal({ closeModal, content }: ModalProps) {
     let response = [];
 
     if(content?.description) response.push(<Details label="Description" info={content.description}/>)
-    if(content?.organization) response.push(<Details label="Organization" info={[content.organization]}/>)
-    if(content?.team) response.push(<Details label="Team" info={[content.team]}/>)
+    if(content?.organization && content?.team) {
+      response.push(
+        <OrgTeam>
+          <Details label="Organization" info={[content.organization]} />
+          <Details label="Team" info={[content.team]} />
+        </OrgTeam>
+      )
+    }
     if(content?.location) response.push(<Details label="Location" info={[content.location]}/>)
     if(content?.timeline) response.push(<Details label="Timeline" info={[`${content.timeline.start} - ${content.timeline.end}`]} />)
     if(content?.projects) {
@@ -48,9 +54,9 @@ export default function Modal({ closeModal, content }: ModalProps) {
       <BackgroundOverlay onClick={() => closeModal()} />
       <Window>
         <CloseIcon src={closeIcon} alt="close" onClick={() => closeModal()}/>
-        <InnerWindow>
-          <LeftRightBorders>
-            <TopBottomBorders>
+        <InnerWindow data-testid="Inner">
+          <LeftRightBorders data-testid="LeftRight">
+            <TopBottomBorders data-testid="TopBottom">
               <Content>
                 <Tile>
                   <Circle>
@@ -67,9 +73,9 @@ export default function Modal({ closeModal, content }: ModalProps) {
                     </div>
                   </Overview>
                 </Tile>
-                <Body>
+                <div>
                   {generateDetails()}
-                </Body>
+                </div>
               </Content>
             </TopBottomBorders>
           </LeftRightBorders>
