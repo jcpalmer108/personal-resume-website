@@ -1,7 +1,11 @@
 import styled from "styled-components";
-import { tabletBreakpoint } from "../variables";
+import { desktopBreakpoint, tabletBreakpoint } from "../variables";
 
-export const Wrapper = styled.div`
+type WrapperProps = {
+  noBottom?: boolean | undefined;
+}
+
+export const Wrapper = styled.div<WrapperProps>`
   padding-top: 35px;
   display: flex;
   flex-direction: column;
@@ -11,6 +15,16 @@ export const Wrapper = styled.div`
     padding-top: 55px;
     width: 100%;
   }
+
+  @media(min-width: ${desktopBreakpoint}px) {
+    padding-top: 35px;
+    width: 100%;
+
+    &:last-child {
+      padding-bottom: ${props => props.noBottom ? "0px" : "35px"};
+    }
+  }
+
 `
 
 export const Label = styled.div`

@@ -21,6 +21,12 @@ export const Window = styled.div`
   opacity: 1;
   z-index: 999;
   text-align: right;
+
+  @media(min-width: ${desktopBreakpoint}px) {
+    max-height: 600px;
+    max-width: 1200px;
+    left: calc(50% - 600px);
+  }
 `
 export const CloseIcon = styled.img`
   width: 17px;
@@ -30,7 +36,7 @@ export const CloseIcon = styled.img`
 export const InnerWindow = styled.div`
   background: white;
   height: calc(100% - 30px);
-  width: 100%;
+  width: calc(100% - 30px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -103,8 +109,8 @@ export const Tile = styled.div`
 
   @media(min-width: ${desktopBreakpoint}px) {
     max-width: 385px;
-    height: calc(100% + 80px);
-    padding: 0px;
+    height: calc(100% + 40px);
+    padding: 20px;
   }
 
 `
@@ -186,16 +192,16 @@ export const TileLabel = styled.div`
 `
 
 export const TileInfo = styled.span`
-font-family: Gilroy-Regular;
-font-size: 14px;
+  font-family: Gilroy-Regular;
+  font-size: 14px;
 
-@media(min-width: ${tabletBreakpoint}px) {
-  font-size: 13px;
-}
+  @media(min-width: ${tabletBreakpoint}px) {
+    font-size: 13px;
+  }
 
-@media(min-width: ${desktopBreakpoint}px) {
-  font-size: 16px;
-}
+  @media(min-width: ${desktopBreakpoint}px) {
+    font-size: 16px;
+  }
 
 `
 
@@ -208,7 +214,7 @@ export const OrgTeam = styled.div`
   }
 `
 
-export const JobDetails = styled.div`
+export const JobDetails = styled.div`  
   @media(min-width: ${desktopBreakpoint}px) {
     overflow-y: scroll;
     padding-left: 50px;

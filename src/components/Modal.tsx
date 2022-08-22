@@ -36,7 +36,7 @@ export default function Modal({ closeModal, content }: ModalProps) {
       response.push(
         <OrgTeam>
           <Details label="Organization" info={[content.organization]} />
-          <Details label="Team" info={[content.team]} />
+          <Details label="Team" info={[content.team]} noBottom />
         </OrgTeam>
       )
     }
