@@ -13,7 +13,8 @@ import {
   Overview,
   TileLabel,
   TileInfo,
-  OrgTeam
+  OrgTeam,
+  JobDetails
 } from "../styles/components/Modal";
 import closeIcon from "../assets/images/close.svg"
 import Details from "./Details"
@@ -57,7 +58,7 @@ export default function Modal({ closeModal, content }: ModalProps) {
         <InnerWindow data-testid="Inner">
           <LeftRightBorders data-testid="LeftRight">
             <TopBottomBorders data-testid="TopBottom">
-              <Content>
+              <Content data-testid="Content">
                 <Tile>
                   <Circle>
                     <Logo src={require(`../assets/images/${content?.icon || "nike"}-white.svg`)} alt="logo" icon={content?.icon} />
@@ -73,9 +74,9 @@ export default function Modal({ closeModal, content }: ModalProps) {
                     </div>
                   </Overview>
                 </Tile>
-                <div>
+                <JobDetails>
                   {generateDetails()}
-                </div>
+                </JobDetails>
               </Content>
             </TopBottomBorders>
           </LeftRightBorders>

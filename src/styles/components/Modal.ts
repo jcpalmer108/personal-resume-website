@@ -62,6 +62,8 @@ export const TopBottomBorders = styled.div`
   `
 
 export const Content = styled.div`
+  display: flex;
+  flex-direction: column;
   text-align: left;
   padding: 20px;
   max-height: calc(100% - 40px);
@@ -70,9 +72,16 @@ export const Content = styled.div`
   @media(min-width: ${tabletBreakpoint}px) {
     padding: 40px;
     max-height: calc(100% - 80px);
-
   }
 
+  @media(min-width: ${desktopBreakpoint}px) {
+    flex-direction: row;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    max-height: 100%;
+    overflow-y: visible;
+    height: calc(100% - 80px);
+  }
 `
 
 export const Tile = styled.div`
@@ -90,6 +99,12 @@ export const Tile = styled.div`
     max-width: 235px;
     padding: 40px;
     margin: auto;
+  }
+
+  @media(min-width: ${desktopBreakpoint}px) {
+    max-width: 385px;
+    height: calc(100% + 80px);
+    padding: 0px;
   }
 
 `
@@ -165,6 +180,9 @@ export const TileLabel = styled.div`
     padding-bottom: 15px;
   }
 
+  @media(min-width: ${desktopBreakpoint}px) {
+    font-size: 22px;
+  }
 `
 
 export const TileInfo = styled.span`
@@ -174,6 +192,11 @@ font-size: 14px;
 @media(min-width: ${tabletBreakpoint}px) {
   font-size: 13px;
 }
+
+@media(min-width: ${desktopBreakpoint}px) {
+  font-size: 16px;
+}
+
 `
 
 export const OrgTeam = styled.div`
@@ -183,4 +206,13 @@ export const OrgTeam = styled.div`
   @media(min-width: ${tabletBreakpoint}px) {
     flex-direction: row;
   }
+`
+
+export const JobDetails = styled.div`
+  @media(min-width: ${desktopBreakpoint}px) {
+    overflow-y: scroll;
+    padding-left: 50px;
+    height: calc(100% + 80px);
+  }
+
 `
