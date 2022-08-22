@@ -29,7 +29,7 @@ export const CloseIcon = styled.img`
 
 export const InnerWindow = styled.div`
   background: white;
-  height: 100%;
+  height: calc(100% - 30px);
   width: 100%;
   display: flex;
   align-items: center;
@@ -65,8 +65,7 @@ export const Content = styled.div`
   text-align: left;
   padding: 20px;
   max-height: calc(100% - 40px);
-  overflow-y: scroll;
-  
+  overflow-y: scroll;  
 `
 
 export const Tile = styled.div`

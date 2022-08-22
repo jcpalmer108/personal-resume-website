@@ -7,7 +7,6 @@ export const Wrapper = styled.div`
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin-bottom: 50px;
 `
 
 export const Icon = styled.img`
