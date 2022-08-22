@@ -187,16 +187,16 @@
             },
             "projects": [
               {
-                "industry": "Software as a Service (SASS)",
-                "title": "Upgrade Application Servers to Ubuntu 16",
+                "industry": "Software as a Service Industry",
+                "title": "Server Upgrade & Data Migration",
                 "description":[
                   "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 150"
                 ],
                 "icon": "security"
               },
               {
-                "industry": "Healthcare",
-                "title": "Designed a security architecture model for an internal, Tableau-based reporting system that allowd the client to stop out-sourcing their needs to other companies",
+                "industry": "Healthcare Industry",
+                "title": "Security Architecture",
                 "description":[
                   "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 150"
                 ],
@@ -233,24 +233,24 @@
             },
             "projects": [
               {
-                "industry": "Agriculture",
-                "title": "Develop mobile application to help clients use pesticide in the appropriate weather",
+                "industry": "Agriculture Industry",
+                "title": "Mobile Application Development",
                 "description": [
                   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor purus."
                 ],
                 "icon": "agriculture"
               },
               {
-                "industry": "Agriculture",
-                "title": "Designed reusable components for use on the branded websites inside their AEM-based environment",
+                "industry": "Agriculture Industry",
+                "title": "Design System & Components",
                 "description":[
                   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor purus."
                 ],
                 "icon": "agriculture"
               },
               {
-                "industry": "Telecommunications",
-                "title": "Created dashboard to enable Executive Leadership to understand the current status of their hubs across the country",
+                "industry": "Telecommunications Industry",
+                "title": "Map-based Dashboard",
                 "description": [
                   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor purus."
                 ],
@@ -258,7 +258,7 @@
               },
               {
                 "industry": "Internal",
-                "title": "Participated in Slalom's personal Start Haus program",
+                "title": "Start Haus Program",
                 "description": [
                   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor purus."
                 ],

@@ -13,11 +13,11 @@ export const BackgroundOverlay = styled.div`
 
 export const Window = styled.div`
   position: fixed;
-  top: 7.5%;
-  left: 7.5%;
+  top: calc(15% / 2);
+  left: calc(15% / 2);
   height: 85%;
   width: 85%;
-  // background: teal;
+  overflow: hidden;
   opacity: 1;
   z-index: 999;
   text-align: right;

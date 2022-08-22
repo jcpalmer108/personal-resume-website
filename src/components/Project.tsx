@@ -1,6 +1,9 @@
 import { 
   Wrapper,
-  Icon
+  Icon,
+  Industry,
+  Title,
+  Description
 } from "../styles/components/Project"
 
 type ProjectProps = {
@@ -14,9 +17,11 @@ export default function Project({ icon, industry, title, description }: ProjectP
   return (
     <Wrapper>
       <Icon src={require("../assets/images/" + icon + ".svg")} />
-      <div>{industry}</div>
-      <div>{title}</div>
-      {description.map((paragraph) => <p>{paragraph}</p>)}
+      <Title>{title}</Title>
+      <Industry>{industry}</Industry>
+      <Description>
+        {description.map((paragraph) => <p>{paragraph}</p>)}
+      </Description>
     </Wrapper>
   )
 }
