@@ -25,8 +25,8 @@ import callMe from "../assets/images/call-me.svg"
 import emailMe from "../assets/images/email-me.svg"
 import diagonal from "../assets/images/diagonal-line.svg"
 import Section from "./Section"
-import Modal from "./Modal"
 import { useState } from "react"
+import ExperienceModal from "./ExperienceModal"
 
 export default function Experience({ content }: ExperienceProps) {
   const [ modalIsOpen, setModalIsOpen ] = useState(false);
@@ -71,7 +71,7 @@ export default function Experience({ content }: ExperienceProps) {
 
   return (
     <div id="experience">
-      {modalIsOpen && <Modal content={selectedContent} closeModal={() => setModalIsOpen(!modalIsOpen) } />}
+      {modalIsOpen && (<ExperienceModal closeModal={() => setModalIsOpen(!modalIsOpen) } content={selectedContent} />)}
       <Section center label={content?.label}>
         <Wrapper data-testid="Experience">
           <Upper>
