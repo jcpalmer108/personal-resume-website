@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Details renders if only required params are passed in 1`] = `
+<div
+  class="sc-bczRLJ fiXVzf"
+  data-testid="Details"
+>
+  <div
+    class="sc-gsnTZi eAOOHp"
+    data-testid="Label"
+  >
+    test label
+  </div>
+  <div
+    data-testid="Description"
+  >
+    <p
+      class="sc-dkzDqf VSogs"
+    >
+      1
+    </p>
+    <p
+      class="sc-dkzDqf VSogs"
+    >
+      2
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Details renders if optional and required params are passed in 1`] = `
+<div
+  class="sc-bczRLJ jTJYiF"
+  data-testid="Details"
+>
+  <div
+    class="sc-gsnTZi eAOOHp"
+    data-testid="Label"
+  >
+    test label
+  </div>
+  <div
+    data-testid="Description"
+  >
+    <p
+      class="sc-dkzDqf VSogs"
+    >
+      1
+    </p>
+    <p
+      class="sc-dkzDqf VSogs"
+    >
+      2
+    </p>
+  </div>
+</div>
+`;
