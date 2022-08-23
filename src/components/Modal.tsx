@@ -14,7 +14,8 @@ import {
   TileLabel,
   TileInfo,
   OrgTeam,
-  JobDetails
+  JobDetails,
+  Summary
 } from "../styles/components/Modal";
 import closeIcon from "../assets/images/close.svg"
 import Details from "./Details"
@@ -64,14 +65,14 @@ export default function Modal({ closeModal, content }: ModalProps) {
                     <Logo src={require(`../assets/images/${content?.icon || "nike"}-white.svg`)} alt="logo" icon={content?.icon} />
                   </Circle>
                   <Overview>
-                    <div>
+                    <Summary>
                       <TileLabel>Title</TileLabel>
                       <TileInfo>{content?.title}</TileInfo>
-                    </div>
-                    <div>
+                    </Summary>
+                    <Summary>
                       <TileLabel>Employer</TileLabel>
                       <TileInfo>{content?.employer}</TileInfo>
-                    </div>
+                    </Summary>
                   </Overview>
                 </Tile>
                 <JobDetails>

@@ -23,9 +23,7 @@ export const Window = styled.div`
   text-align: right;
 
   @media(min-width: ${desktopBreakpoint}px) {
-    max-height: 600px;
-    max-width: 1200px;
-    left: calc(50% - 600px);
+    max-height: 800px;
   }
 `
 export const CloseIcon = styled.img`
@@ -41,6 +39,10 @@ export const InnerWindow = styled.div`
   align-items: center;
   justify-content: center;
 
+  @media(min-width: ${desktopBreakpoint}px) {
+    max-height: 570px;
+  }
+
 `
 
 
@@ -53,6 +55,10 @@ export const LeftRightBorders = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  @media(min-width: ${desktopBreakpoint}px) {
+    max-width: 960px;
+  }
 `
 
 export const TopBottomBorders = styled.div`
@@ -63,6 +69,8 @@ export const TopBottomBorders = styled.div`
     border-top: solid 1px ${silver_polish};
     border-bottom: solid 1px ${silver_polish};
     height: 80%;
+    max-height: 460px;
+
   }
 
   `
@@ -108,9 +116,8 @@ export const Tile = styled.div`
   }
 
   @media(min-width: ${desktopBreakpoint}px) {
+    min-width: 320px;
     max-width: 385px;
-    height: calc(100% + 40px);
-    padding: 20px;
   }
 
 `
@@ -175,6 +182,14 @@ export const Overview = styled.div`
     padding-top: 75px;
   }
 
+  @media(min-width: ${desktopBreakpoint}px) {
+    // width: 100%;
+  }
+
+`
+
+export const Summary = styled.div`
+  // width: 100%;
 `
 
 export const TileLabel = styled.div`
@@ -219,6 +234,11 @@ export const JobDetails = styled.div`
     overflow-y: scroll;
     padding-left: 50px;
     height: calc(100% + 80px);
+    
+    &:last-child {
+      padding-bottom: 19px;
+      height: calc(100% + 61px);
+    }
   }
 
 `
