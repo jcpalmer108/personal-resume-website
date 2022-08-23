@@ -17,15 +17,15 @@ type ProjectProps = {
 
 export default function Project({ icon, industry, title, description }: ProjectProps) {
   return (
-    <Wrapper>
+    <Wrapper data-testid="Project">
       <Heading>
-        <Icon src={require("../assets/images/" + icon + ".svg")} />
+        <Icon data-testid="Icon" src={require("../assets/images/" + icon + ".svg")} />
         <TitleLine>
-          <Title>{title}</Title>
-          <Industry>{industry}</Industry>
+          <Title data-testid="Title">{title}</Title>
+          <Industry data-testid="Industry">{industry}</Industry>
         </TitleLine>
       </Heading>
-      <Description>
+      <Description data-testid="Description">
         {description.map((paragraph) => <p>{paragraph}</p>)}
       </Description>
     </Wrapper>

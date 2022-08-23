@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Project renders if optional and required params are passed in 1`] = `
+<div
+  class="sc-bczRLJ gXufTg"
+  data-testid="Project"
+>
+  <div
+    class="sc-jSMfEi ksSEIw"
+  >
+    <img
+      class="sc-gsnTZi lbzuKP"
+      data-testid="Icon"
+      src="[object Object]"
+    />
+    <div
+      class="sc-gKXOVf kRtupl"
+    >
+      <div
+        class="sc-dkzDqf dukhYI"
+        data-testid="Title"
+      >
+        test title
+      </div>
+      <div
+        class="sc-hKMtZM ivrWzx"
+        data-testid="Industry"
+      >
+        test industry
+      </div>
+    </div>
+  </div>
+  <div
+    class="sc-eCYdqJ poQEE"
+    data-testid="Description"
+  >
+    <p>
+      1
+    </p>
+    <p>
+      2
+    </p>
+  </div>
+</div>
+`;
