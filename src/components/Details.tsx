@@ -1,10 +1,5 @@
 import { Wrapper, Label, Info } from "../styles/components/Details";
-
-type DetailsProps = {
-  label: string,
-  info?: string[],
-  noBottom?: boolean
-}
+import { DetailsProps } from "../types/Details"; 
 
 export default function Details ({ label, info = [], noBottom }: DetailsProps) {
   return (

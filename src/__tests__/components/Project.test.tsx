@@ -1,8 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import Project from "../../components/Project"
 
-jest.mock('../../components/Button')
-
 describe('Project', () => {
   const params = {
     icon: 'nike',

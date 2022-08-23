@@ -109,12 +109,11 @@ exports[`Experience renders if only required params are passed in 1`] = `
           class="sc-hAZoDl jCdaMp"
         >
           test desc 1
-          <a
-            class="sc-fnykZs fjlCzu"
-            href="#"
+          <span
+            class="sc-fnykZs fbBBQB"
           >
             ... Read More
-          </a>
+          </span>
         </p>
       </div>
     </div>
@@ -159,12 +158,11 @@ exports[`Experience renders if only required params are passed in 1`] = `
           class="sc-hAZoDl jCdaMp"
         >
           test desc 2
-          <a
-            class="sc-fnykZs fjlCzu"
-            href="#"
+          <span
+            class="sc-fnykZs fbBBQB"
           >
             ... Read More
-          </a>
+          </span>
         </p>
       </div>
     </div>

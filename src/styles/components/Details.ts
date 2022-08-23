@@ -1,9 +1,6 @@
 import styled from "styled-components";
 import { desktopBreakpoint, tabletBreakpoint } from "../variables";
-
-type WrapperProps = {
-  noBottom?: boolean | undefined;
-}
+import { WrapperProps } from "../../types/Details";
 
 export const Wrapper = styled.div<WrapperProps>`
   padding-top: 35px;

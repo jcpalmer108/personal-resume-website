@@ -7,13 +7,7 @@ import {
   Heading,
   TitleLine
 } from "../styles/components/Project"
-
-type ProjectProps = {
-  icon: string,
-  industry: string,
-  title: string,
-  description: string[]
-}
+import { ProjectProps } from "../types/Project"
 
 export default function Project({ icon, industry, title, description }: ProjectProps) {
   return (
@@ -26,7 +20,7 @@ export default function Project({ icon, industry, title, description }: ProjectP
         </TitleLine>
       </Heading>
       <Description data-testid="Description">
-        {description.map((paragraph) => <p>{paragraph}</p>)}
+        {description.map((paragraph, index) => <p key={`Paragraph ${index + 1}`}>{paragraph}</p>)}
       </Description>
     </Wrapper>
   )
