@@ -20,6 +20,8 @@ import Section from "../components/Section"
 import { Skills as SkillsContent } from "../types/content"
 import Marquee from "react-fast-marquee";
 import Button from "./Button";
+import { useState } from "react";
+import SkillsModal from "./SkillsModal"
 
 function Tile({ info, table }: TileProps) {
   const { key, url, label } = info;
@@ -37,12 +39,12 @@ function Tile({ info, table }: TileProps) {
   )
 }
 
-function DescriptionAndAction({ description }: DescriptionAndActionProps) {
+function DescriptionAndAction({ openModal, description }: DescriptionAndActionProps) {
   return (
     <>
       <Description data-testid="Description">{description}</Description>
       <ButtonWrapper>
-        <Button url="#contact" label="Let's Talk"/>
+        <Button onClick={() => openModal()} label="Let's Talk"/>
       </ButtonWrapper>
     </>
   )
@@ -56,6 +58,7 @@ export default function Skills({ content }: SkillsProps) {
   const skillList = content?.subSection?.skills || [];
   const title = content?.title
   const description = (content?.description && content?.description[0]) || ''
+  const [ modalIsOpen, setModalIsOpen ] = useState(false);
 
   const generateTiles = (tiles: SkillsContent[] | undefined, table: boolean = true) => {
     const content = tiles ? tiles : []
@@ -68,13 +71,14 @@ export default function Skills({ content }: SkillsProps) {
 
   return (
     <div id="skills">
+      {modalIsOpen && (<SkillsModal closeModal={() => setModalIsOpen(!modalIsOpen)} content={content?.subSection?.skills} />)}
       <Section wide center label={content?.label}>
         <Mobile data-testid="Mobile">
           <TitleLine title={title || ''} />
           <Marquee loop={0}>
             {generateTiles(skillList, false)}
           </Marquee>
-          <DescriptionAndAction description={description || ''} />
+          <DescriptionAndAction description={description || ''} openModal={() => setModalIsOpen(true)}/>
         </Mobile>
         <NotMobile data-testid="NotMobile">
           <Mosaic>
@@ -92,14 +96,14 @@ export default function Skills({ content }: SkillsProps) {
                 {generateTiles(skillList.slice(7, 9))}
                 <Cell colSpan={3} last>
                   <Content desktop>
-                    <DescriptionAndAction description={description || ''} />
+                    <DescriptionAndAction description={description || ''} openModal={() => setModalIsOpen(true)}/>
                   </Content>
                 </Cell>
               </tr>
             </tbody>
           </Mosaic>
           <Content>
-            <DescriptionAndAction description={description || ''} />
+            <DescriptionAndAction description={description || ''} openModal={() => setModalIsOpen(true)}/>
           </Content>
         </NotMobile>
       </Section>

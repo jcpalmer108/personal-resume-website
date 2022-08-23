@@ -11,6 +11,7 @@ export type TileProps = {
 }
 
 export type DescriptionAndActionProps = {
+  openModal: Function,
   description: string
 }
 
