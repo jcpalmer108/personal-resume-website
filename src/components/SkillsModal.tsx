@@ -11,7 +11,9 @@ import {
   Subheader,
   Line,
   Icon,
-  Info
+  Info,
+  Subtitle,
+  SkillInfo
 } from "../styles/components/SkillsModal"
 import rocketIcon from "../assets/images/rocket.svg";
 
@@ -28,7 +30,7 @@ export default function SkillsModal({ closeModal, content, categories }: SkillsM
         {categories?.map((category, index) => (
           <Section key={`Section ${index + 1}`}>
             <Subheader>{category.label}</Subheader>
-            {content?.filter((skill: Skill) => skill.category === category.key).map((skill:Skill) => <LineItem key={skill.key} icon={skill.key} skill={skill.label}/>)}
+            {content?.filter((skill: Skill) => skill.category === category.key).map((skill:Skill) => <LineItem key={skill.key} icon={skill.key} skill={skill.label} subtitle={skill.subtitle}/>)}
           </Section>
         ))}
         <CallToAction>
@@ -45,13 +47,17 @@ export default function SkillsModal({ closeModal, content, categories }: SkillsM
 
 type LineItemProps = {
   icon: string,
-  skill: string
+  skill: string,
+  subtitle?: string
 }
-function LineItem ({ icon, skill }: LineItemProps) {
+function LineItem ({ icon, skill, subtitle }: LineItemProps) {
   return (
     <Line>
       <Icon src={require("../assets/images/skills/modal/" + icon + ".svg")}/>
-      <Info>{skill}</Info>
+      <SkillInfo>
+        <Info>{skill}</Info>
+        { subtitle && (<Subtitle>{subtitle}</Subtitle>) }
+      </SkillInfo>
     </Line>
   )
 }

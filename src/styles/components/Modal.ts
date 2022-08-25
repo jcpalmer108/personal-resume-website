@@ -64,13 +64,14 @@ export const LeftRightBorders = styled.div`
 export const TopBottomBorders = styled.div`
   height: 100%;
   width: 100%;
+  overflow-y: scroll;
 
   @media(min-width: ${desktopBreakpoint}px) {
     border-top: solid 1px ${silver_polish};
     border-bottom: solid 1px ${silver_polish};
     height: 80%;
     max-height: 572px;
-
+    overflow-y: visible;
   }
 
   `
