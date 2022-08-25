@@ -13,7 +13,7 @@ export default function Project({ icon, industry, title, description }: ProjectP
   return (
     <Wrapper data-testid="Project">
       <Heading>
-        <Icon data-testid="Icon" src={require("../assets/images/" + icon + ".svg")} />
+        <Icon data-testid="Icon" src={require("../assets/images/industries/" + icon + ".svg")} />
         <TitleLine>
           <Title data-testid="Title">{title}</Title>
           <Industry data-testid="Industry">{industry}</Industry>

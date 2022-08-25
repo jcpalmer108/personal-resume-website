@@ -6,7 +6,7 @@ import {
   Title, 
   Children
 } from "../styles/components/Section";
-import line from "../assets/images/label-line.svg";
+import line from "../assets/images/icons/label-line.svg";
 import { SectionProps } from "../types/Section"
 
 export default function Section({ 

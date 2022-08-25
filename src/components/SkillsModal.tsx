@@ -15,7 +15,7 @@ import {
   Subtitle,
   SkillInfo
 } from "../styles/components/SkillsModal"
-import rocketIcon from "../assets/images/rocket.svg";
+import rocketIcon from "../assets/images/icons/rocket.svg";
 
 type SkillsModalProps = {
   closeModal: Function,
@@ -26,9 +26,9 @@ type SkillsModalProps = {
 export default function SkillsModal({ closeModal, content, categories }: SkillsModalProps) {
   return (
     <Modal closeModal={closeModal}>
-      <Wrapper>
+      <Wrapper data-testid="SkillsModal">
         {categories?.map((category, index) => (
-          <Section key={`Section ${index + 1}`}>
+          <Section key={`Section ${index + 1}`} data-testid="Section">
             <Subheader>{category.label}</Subheader>
             {content?.filter((skill: Skill) => skill.category === category.key).map((skill:Skill) => <LineItem key={skill.key} icon={skill.key} skill={skill.label} subtitle={skill.subtitle}/>)}
           </Section>

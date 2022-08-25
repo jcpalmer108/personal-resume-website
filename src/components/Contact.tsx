@@ -92,7 +92,7 @@ export default function Contact({ content, contact }: ContactProps) {
               {
                 socials.links.map((item) => (
                 <Links data-testid="Links" key={item.key} href={item.url}>
-                  <Icon src={require("../assets/images/" + item.key + ".svg")} alt={item.label} />
+                  <Icon src={require("../assets/images/socials/" + item.key + ".svg")} alt={item.label} />
                 </Links>
                 ))
               }
@@ -150,7 +150,7 @@ export default function Contact({ content, contact }: ContactProps) {
               {
                 socials.links.map((item) => (
                 <Links key={item.key} href={item.url}>
-                  <Icon src={require("../assets/images/" + item.key + ".svg")} alt={item.label} />
+                  <Icon src={require("../assets/images/socials/" + item.key + ".svg")} alt={item.label} />
                 </Links>
                 ))
               }

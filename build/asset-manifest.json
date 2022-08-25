@@ -1,14 +1,12 @@
 {
   "files": {
     "main.css": "/static/css/main.e6c13ad2.css",
-    "main.js": "/static/js/main.3ec4c125.js",
+    "main.js": "/static/js/main.7afecc29.js",
     "static/js/787.f87a86bf.chunk.js": "/static/js/787.f87a86bf.chunk.js",
     "static/media/pexels-ekaterina-bolovtsova-4049876.jpg": "/static/media/pexels-ekaterina-bolovtsova-4049876.a9eba608b55c1983bd47.jpg",
     "static/media/pexels-ekaterina-bolovtsova-4049791.jpg": "/static/media/pexels-ekaterina-bolovtsova-4049791.a4b1c144f02e2acc0a01.jpg",
     "static/media/pexels-ekaterina-bolovtsova-4049870.jpg": "/static/media/pexels-ekaterina-bolovtsova-4049870.d86b22a2f8edf98916b1.jpg",
     "static/media/pexels-ekaterina-bolovtsova-4049789.jpg": "/static/media/pexels-ekaterina-bolovtsova-4049789.a36185dfcf6ea41d6da6.jpg",
-    "static/media/test-readme-pic.png": "/static/media/test-readme-pic.f3229ec9679954b7966f.png",
-    "static/media/landing.jpg": "/static/media/landing.d35348baf38872333811.jpg",
     "static/media/azure.svg": "/static/media/azure.0fe3400ae27f2ef1678e.svg",
     "static/media/typescript.svg": "/static/media/typescript.2a819bebeb8a6f80dd75.svg",
     "static/media/kubernetes.svg": "/static/media/kubernetes.73d6468d2ab2151a9c59.svg",
@@ -31,7 +29,6 @@
     "static/media/nike.svg": "/static/media/nike.e7a7cf04f67abba92fdc.svg",
     "static/media/slalom.svg": "/static/media/slalom.8af09b6ff771ffcf7d4a.svg",
     "static/media/Butler.woff2": "/static/media/Butler.99c7b1a6053c62da9427.woff2",
-    "static/media/logo.png": "/static/media/logo.d0fc478c21ff456e32e1.png",
     "static/media/alaska-white.svg": "/static/media/alaska-white.6c642024062525d8ba24.svg",
     "static/media/agriculture.svg": "/static/media/agriculture.3ebe8b023c493ebcf2a1.svg",
     "static/media/mocha.svg": "/static/media/mocha.01d0be2c3f5f88fa407a.svg",
@@ -71,11 +68,11 @@
     "static/media/diagonal-line.svg": "/static/media/diagonal-line.67bf4117d46ed08789993cfd2b787465.svg",
     "static/media/label-line.svg": "/static/media/label-line.5c33572d6ec0db6067eba43cf78df291.svg",
     "main.e6c13ad2.css.map": "/static/css/main.e6c13ad2.css.map",
-    "main.3ec4c125.js.map": "/static/js/main.3ec4c125.js.map",
+    "main.7afecc29.js.map": "/static/js/main.7afecc29.js.map",
     "787.f87a86bf.chunk.js.map": "/static/js/787.f87a86bf.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.3ec4c125.js"
+    "static/js/main.7afecc29.js"
   ]
 }

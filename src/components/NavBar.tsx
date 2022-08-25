@@ -13,7 +13,7 @@ import {
   Icon,
   Hamburger
 } from "../styles/components/Navbar";
-import logo from "../assets/images/jennapalmer-dark.svg";
+import logo from "../assets/images/logos/jennapalmer-dark.svg";
 import { redstone, tabletBreakpoint } from "../styles/variables";
 import socials from '../assets/content/socials.json';
 import { Link, NavbarProps } from '../types/Navbar';
@@ -82,7 +82,7 @@ export default function Navbar({ menu }: NavbarProps) {
           <SocialsWrapper data-testid="Socials">
             {socials.links.map((link: Link) => (
               <Socials href={link.url} key={link.key}>
-                <Icon src={require("../assets/images/" + link.key + ".svg")} alt={link.key} />
+                <Icon src={require("../assets/images/socials/" + link.key + ".svg")} alt={link.key} />
               </Socials>
             ))}
           </SocialsWrapper>

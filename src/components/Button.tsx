@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, ArrowRight } from "../styles/components/Button"
-import arrow from "../assets/images/arrow-right.svg";
+import arrow from "../assets/images/icons/arrow-right.svg";
 
 import { ButtonProps } from "../types/Button";
 

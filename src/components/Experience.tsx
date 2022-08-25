@@ -21,9 +21,9 @@ import {
   Summary,
   ModalTrigger
 } from "../styles/components/Experience"
-import callMe from "../assets/images/call-me.svg"
-import emailMe from "../assets/images/email-me.svg"
-import diagonal from "../assets/images/diagonal-line.svg"
+import callMe from "../assets/images/icons/call-me.svg"
+import emailMe from "../assets/images/icons/email-me.svg"
+import diagonal from "../assets/images/icons/diagonal-line.svg"
 import Section from "./Section"
 import { useState } from "react"
 import ExperienceModal from "./ExperienceModal"
@@ -99,7 +99,7 @@ export default function Experience({ content }: ExperienceProps) {
                   manageSelectedContent(index)
                   setModalIsOpen(!modalIsOpen)
               }}>
-                  <Logo src={require("../assets/images/" + job.icon + ".svg")} alt={job.icon} />
+                  <Logo src={require("../assets/images/company/" + job.icon + ".svg")} alt={job.icon} />
                   <Content>
                     <JobTitle data-testid={`Title ${index + 1}`}>{job.title}</JobTitle>
                     <Info data-testid={`Info ${index + 1}`}>{job.employer} / {job.timeline.start} - {job.timeline.end}</Info>

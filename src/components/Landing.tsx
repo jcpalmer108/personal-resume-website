@@ -12,7 +12,7 @@ import {
 import Section from "./Section";
 import Button from "./Button";
 import SeparatingLine from "./SeparatingLine"
-import scroll from "../assets/images/scroll.svg"
+import scroll from "../assets/images/icons/scroll.svg"
 
 export default function Landing({ content }: LandingProps) {
   const defaultImage = "pexels-ekaterina-bolovtsova-4049791.jpg"
@@ -23,7 +23,7 @@ export default function Landing({ content }: LandingProps) {
         <Content>
           <Title>{content?.title}</Title>
           <MobilePhoto 
-            src={require("../assets/images/" + (content?.image || defaultImage))}
+            src={require("../assets/images/gallery/" + (content?.image || defaultImage))}
             alt="landing mobile"
           />
           {content?.description && 
@@ -38,7 +38,7 @@ export default function Landing({ content }: LandingProps) {
           />
         </Content>
         <DesktopPhoto 
-          src={require("../assets/images/" + (content?.image || defaultImage))}
+          src={require("../assets/images/gallery/" + (content?.image || defaultImage))}
           alt="landing desktop"
         />
       </Main>

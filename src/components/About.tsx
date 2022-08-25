@@ -52,7 +52,7 @@ export default function About({ content }: AboutProps) {
             <Socials>
               {links && links.map(({key, label, url}: SocialLink) => 
                 <Link href={url} key={key}>
-                  <Icon src={require("../assets/images/" + key + ".svg")} />
+                  <Icon src={require("../assets/images/socials/" + key + ".svg")} />
                   <Label>{label}</Label>
                 </Link>
               )}

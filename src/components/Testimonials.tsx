@@ -14,8 +14,8 @@ import {
   Content
 } from "../styles/components/Testimonials"
 import Section from "./Section"
-import arrowLeft from "../assets/images/arrow-left-pink.svg"
-import arrowRight from "../assets/images/arrow-right-pink.svg"
+import arrowLeft from "../assets/images/icons/arrow-left-pink.svg"
+import arrowRight from "../assets/images/icons/arrow-right-pink.svg"
 import { useState } from "react"
 
 export default function Testimonials({ content }: TestimonialProps) {

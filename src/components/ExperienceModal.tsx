@@ -95,7 +95,7 @@ export default function ExperienceModal({ closeModal, content }: ExperienceModal
         <Content data-testid="Content">
           <Tile>
             <Circle>
-              <Logo data-testid="Logo" src={require(`../assets/images/${content?.icon || "nike"}-white.svg`)} alt="logo" icon={content?.icon} />
+              <Logo data-testid="Logo" src={require(`../assets/images/company/${content?.icon || "nike"}-white.svg`)} alt="logo" icon={content?.icon} />
             </Circle>
             <Overview>
               <Summary>

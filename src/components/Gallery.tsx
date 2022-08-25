@@ -1,7 +1,7 @@
 import Section from "./Section"
-import photo1 from "../assets/images/pexels-ekaterina-bolovtsova-4049791.jpg"
-import photo2 from "../assets/images/pexels-ekaterina-bolovtsova-4049870.jpg"
-import photo3 from "../assets/images/pexels-ekaterina-bolovtsova-4049876.jpg"
+import photo1 from "../assets/images/gallery/pexels-ekaterina-bolovtsova-4049791.jpg"
+import photo2 from "../assets/images/gallery/pexels-ekaterina-bolovtsova-4049870.jpg"
+import photo3 from "../assets/images/gallery/pexels-ekaterina-bolovtsova-4049876.jpg"
 import {
   Photo,
   Wrapper,

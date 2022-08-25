@@ -6,13 +6,9 @@ import {
   LeftRightBorders,
   TopBottomBorders,
 } from "../styles/components/Modal";
-import closeIcon from "../assets/images/close.svg"
-import { ReactNode } from "react";
+import closeIcon from "../assets/images/icons/close.svg"
+import { ModalProps } from "../types/Modal";
 
-type ModalProps = {
-  closeModal: Function,
-  children: ReactNode
-}
 
 export default function Modal({ closeModal, children }: ModalProps) {
 

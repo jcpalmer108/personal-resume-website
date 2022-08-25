@@ -7,7 +7,7 @@ import {
   Name
 } from '../styles/components/Footer';
 import Section from './Section';
-import logo from '../assets/images/jennapalmer-light.svg';
+import logo from '../assets/images/logos/jennapalmer-light.svg';
 import { FooterProps } from '../types/Footer';
 import { MenuItem } from '../types/global';
 import SeparatingLine from './SeparatingLine';
