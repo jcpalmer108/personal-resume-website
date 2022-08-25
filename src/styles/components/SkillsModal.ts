@@ -17,7 +17,6 @@ export const Wrapper = styled.div`
     overflow-y: hidden;
     padding-top: 0px;
   }
-
 `
 
 export const Section = styled.div`

@@ -1,5 +1,39 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`ExperienceModal renders if only required params are passed in 1`] = `
+<div
+  class="sc-hKMtZM dKMdxt"
+  data-testid="Inner"
+>
+  <div
+    class="sc-eCYdqJ cINLYK"
+    data-testid="LeftRight"
+  >
+    <div
+      class="sc-jSMfEi iXHsan"
+      data-testid="TopBottom"
+    />
+  </div>
+</div>
+`;
+
+exports[`ExperienceModal renders if optional and required params are passed in 1`] = `
+<div
+  class="sc-hKMtZM dKMdxt"
+  data-testid="Inner"
+>
+  <div
+    class="sc-eCYdqJ cINLYK"
+    data-testid="LeftRight"
+  >
+    <div
+      class="sc-jSMfEi iXHsan"
+      data-testid="TopBottom"
+    />
+  </div>
+</div>
+`;
+
 exports[`Modal renders if only required params are passed in 1`] = `
 <div
   class="sc-hKMtZM dKMdxt"

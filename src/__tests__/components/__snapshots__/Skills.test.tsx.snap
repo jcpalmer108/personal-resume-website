@@ -259,7 +259,7 @@ exports[`Skills renders if only required params are passed in 1`] = `
       <a
         class="c2"
         href="https://test.skill.one/"
-        id="github"
+        id="test"
       >
         <img
           alt="Test Skill 1"
@@ -270,7 +270,7 @@ exports[`Skills renders if only required params are passed in 1`] = `
       <a
         class="c2"
         href="https://test.skill.two/"
-        id="github"
+        id="test"
       >
         <img
           alt="Test Skill 2"
@@ -281,7 +281,7 @@ exports[`Skills renders if only required params are passed in 1`] = `
       <a
         class="c2"
         href="https://test.skill.three/"
-        id="github"
+        id="test"
       >
         <img
           alt="Test Skill 3"
@@ -292,7 +292,7 @@ exports[`Skills renders if only required params are passed in 1`] = `
       <a
         class="c2"
         href="https://test.skill.four/"
-        id="github"
+        id="test"
       >
         <img
           alt="Test Skill 4"
@@ -303,7 +303,7 @@ exports[`Skills renders if only required params are passed in 1`] = `
       <a
         class="c2"
         href="https://test.skill.five/"
-        id="github"
+        id="test"
       >
         <img
           alt="Test Skill 5"
@@ -314,7 +314,7 @@ exports[`Skills renders if only required params are passed in 1`] = `
       <a
         class="c2"
         href="https://test.skill.six/"
-        id="github"
+        id="test"
       >
         <img
           alt="Test Skill 6"
@@ -325,7 +325,7 @@ exports[`Skills renders if only required params are passed in 1`] = `
       <a
         class="c2"
         href="https://test.skill.seven/"
-        id="github"
+        id="test"
       >
         <img
           alt="Test Skill 7"
@@ -336,7 +336,7 @@ exports[`Skills renders if only required params are passed in 1`] = `
       <a
         class="c2"
         href="https://test.skill.eight/"
-        id="github"
+        id="test"
       >
         <img
           alt="Test Skill 8"
@@ -347,7 +347,7 @@ exports[`Skills renders if only required params are passed in 1`] = `
       <a
         class="c2"
         href="https://test.skill.nine/"
-        id="github"
+        id="test"
       >
         <img
           alt="Test Skill 9"
@@ -363,7 +363,7 @@ exports[`Skills renders if only required params are passed in 1`] = `
       <a
         class="c2"
         href="https://test.skill.one/"
-        id="github"
+        id="test"
       >
         <img
           alt="Test Skill 1"
@@ -374,7 +374,7 @@ exports[`Skills renders if only required params are passed in 1`] = `
       <a
         class="c2"
         href="https://test.skill.two/"
-        id="github"
+        id="test"
       >
         <img
           alt="Test Skill 2"
@@ -385,7 +385,7 @@ exports[`Skills renders if only required params are passed in 1`] = `
       <a
         class="c2"
         href="https://test.skill.three/"
-        id="github"
+        id="test"
       >
         <img
           alt="Test Skill 3"
@@ -396,7 +396,7 @@ exports[`Skills renders if only required params are passed in 1`] = `
       <a
         class="c2"
         href="https://test.skill.four/"
-        id="github"
+        id="test"
       >
         <img
           alt="Test Skill 4"
@@ -407,7 +407,7 @@ exports[`Skills renders if only required params are passed in 1`] = `
       <a
         class="c2"
         href="https://test.skill.five/"
-        id="github"
+        id="test"
       >
         <img
           alt="Test Skill 5"
@@ -418,7 +418,7 @@ exports[`Skills renders if only required params are passed in 1`] = `
       <a
         class="c2"
         href="https://test.skill.six/"
-        id="github"
+        id="test"
       >
         <img
           alt="Test Skill 6"
@@ -429,7 +429,7 @@ exports[`Skills renders if only required params are passed in 1`] = `
       <a
         class="c2"
         href="https://test.skill.seven/"
-        id="github"
+        id="test"
       >
         <img
           alt="Test Skill 7"
@@ -440,7 +440,7 @@ exports[`Skills renders if only required params are passed in 1`] = `
       <a
         class="c2"
         href="https://test.skill.eight/"
-        id="github"
+        id="test"
       >
         <img
           alt="Test Skill 8"
@@ -451,7 +451,7 @@ exports[`Skills renders if only required params are passed in 1`] = `
       <a
         class="c2"
         href="https://test.skill.nine/"
-        id="github"
+        id="test"
       >
         <img
           alt="Test Skill 9"
@@ -815,7 +815,7 @@ exports[`Skills renders if only required params are passed in 2`] = `
             class="c5"
             data-testid="Tile"
             href="https://test.skill.one/"
-            id="github"
+            id="test"
           >
             <img
               alt="Test Skill 1"
@@ -831,7 +831,7 @@ exports[`Skills renders if only required params are passed in 2`] = `
             class="c5"
             data-testid="Tile"
             href="https://test.skill.two/"
-            id="github"
+            id="test"
           >
             <img
               alt="Test Skill 2"
@@ -851,7 +851,7 @@ exports[`Skills renders if only required params are passed in 2`] = `
             class="c5"
             data-testid="Tile"
             href="https://test.skill.three/"
-            id="github"
+            id="test"
           >
             <img
               alt="Test Skill 3"
@@ -867,7 +867,7 @@ exports[`Skills renders if only required params are passed in 2`] = `
             class="c5"
             data-testid="Tile"
             href="https://test.skill.four/"
-            id="github"
+            id="test"
           >
             <img
               alt="Test Skill 4"
@@ -883,7 +883,7 @@ exports[`Skills renders if only required params are passed in 2`] = `
             class="c5"
             data-testid="Tile"
             href="https://test.skill.five/"
-            id="github"
+            id="test"
           >
             <img
               alt="Test Skill 5"
@@ -899,7 +899,7 @@ exports[`Skills renders if only required params are passed in 2`] = `
             class="c5"
             data-testid="Tile"
             href="https://test.skill.six/"
-            id="github"
+            id="test"
           >
             <img
               alt="Test Skill 6"
@@ -915,7 +915,7 @@ exports[`Skills renders if only required params are passed in 2`] = `
             class="c5"
             data-testid="Tile"
             href="https://test.skill.seven/"
-            id="github"
+            id="test"
           >
             <img
               alt="Test Skill 7"
@@ -935,7 +935,7 @@ exports[`Skills renders if only required params are passed in 2`] = `
             class="c5"
             data-testid="Tile"
             href="https://test.skill.eight/"
-            id="github"
+            id="test"
           >
             <img
               alt="Test Skill 8"
@@ -951,7 +951,7 @@ exports[`Skills renders if only required params are passed in 2`] = `
             class="c5"
             data-testid="Tile"
             href="https://test.skill.nine/"
-            id="github"
+            id="test"
           >
             <img
               alt="Test Skill 9"

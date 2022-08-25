@@ -29,8 +29,10 @@ export default function SkillsModal({ closeModal, content, categories }: SkillsM
       <Wrapper data-testid="SkillsModal">
         {categories?.map((category, index) => (
           <Section key={`Section ${index + 1}`} data-testid="Section">
-            <Subheader>{category.label}</Subheader>
-            {content?.filter((skill: Skill) => skill.category === category.key).map((skill:Skill) => <LineItem key={skill.key} icon={skill.key} skill={skill.label} subtitle={skill.subtitle}/>)}
+            <Subheader data-testid="Subheader">{category.label}</Subheader>
+            <div>
+              {content?.filter((skill: Skill) => skill.category === category.key).map((skill:Skill) => <LineItem key={skill.key} icon={skill.key} skill={skill.label} subtitle={skill.subtitle}/>)}
+            </div>
           </Section>
         ))}
         <CallToAction>

@@ -10,32 +10,35 @@ jest.mock("../../components/Modal", () => ({ closeModal, children }: ModalProps)
 });
 
 const params = {
-  completeContent: [
+  required: [
     {
-      key: "one",
+      key: "test",
       label: "One",
       category: "frontend",
-      url: "www.google.com",
-      subtitle: "this is a subtitle one"
     },
     {
-      key: "two",
+      key: "test",
+      label: "Three",
+      category: "frontend",
+    },
+    {
+      key: "test",
       label: "Two",
       category: "backend",
-      url: "www.amazon.com",
-      subtitle: "this is a subtitle two"
     }
   ],
-  incompleteContent: [
+  optional: [
     {
-      key: "one",
-      label: "One",
-      category: "frontend",
+      url: "www.amazon.com",
+      subtitle: "this is a subtitle two"
     },
     {
-      key: "two",
-      label: "Two",
-      category: "backend",
+      url: "www.google.com",
+      subtitle: "this is a subtitle three"
+    },
+    {
+      url: "www.google.com",
+      subtitle: "this is a subtitle one"
     }
   ],
   categories: [
@@ -48,29 +51,34 @@ const params = {
       label: "Backend"
     }
   ]
-
 }
-
-/*
-
-TODO: 
-- optional and required
-- only required
-
--write Experience Modal test
-
-- update all tests to include mocks of imported components
-
--extract all types to type file
-
-
-*/
 
 describe('SkillsModal', () => {
   test('renders if required and optional params are passed in', () => {
-    render(
-      <SkillsModal closeModal={jest.fn()} content={params.completeContent} categories={params.categories} />
-    )
-  
+    const completedContent = params.required.map((item, index) => ({ ...item, ...params.optional[index] }))
+    render(<SkillsModal closeModal={jest.fn()} content={completedContent} categories={params.categories} />)
+    expect(screen.getByTestId('SkillsModal')).toMatchSnapshot()
+    expect(screen.getByTestId('SkillsModal').childNodes).toHaveLength(params.required.length)
+    expect(screen.getAllByTestId('Subheader')).toHaveLength(params.categories.length)
+
+    for(let i = 0; i < (screen.getByTestId('SkillsModal').childElementCount - 1); i++) {
+      const section = screen.getByTestId('SkillsModal').childNodes[i]
+      expect(section.childNodes[0]).toHaveTextContent(params.categories[i].label)
+      expect(section.childNodes[1].childNodes.length).toBe(params.required.filter((skill) => skill.category === params.categories[i].key).length)
+    }
   })
+
+  test('renders if only required params are passed in', () => {
+    render(<SkillsModal closeModal={jest.fn()} content={params.required} categories={params.categories} />)
+    expect(screen.getByTestId('SkillsModal')).toMatchSnapshot()
+    expect(screen.getByTestId('SkillsModal').childNodes).toHaveLength(params.required.length)
+    expect(screen.getAllByTestId('Subheader')).toHaveLength(params.categories.length)
+
+    for(let i = 0; i < (screen.getByTestId('SkillsModal').childElementCount - 1); i++) {
+      const section = screen.getByTestId('SkillsModal').childNodes[i]
+      expect(section.childNodes[0]).toHaveTextContent(params.categories[i].label)
+      expect(section.childNodes[1].childNodes.length).toBe(params.required.filter((skill) => skill.category === params.categories[i].key).length)
+    }
+  })
+
 })

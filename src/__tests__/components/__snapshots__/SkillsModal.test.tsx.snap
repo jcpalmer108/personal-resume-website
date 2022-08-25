@@ -1,0 +1,621 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SkillsModal renders if only required params are passed in 1`] = `
+.c0 {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  text-align: left;
+  -webkit-box-pack: left;
+  -webkit-justify-content: left;
+  -ms-flex-pack: left;
+  justify-content: left;
+  padding: 30px 0px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.c1 {
+  width: 100%;
+}
+
+.c7 {
+  background: blue;
+  background: #e56b6f;
+  display: none;
+}
+
+.c8 {
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: #E7777A;
+}
+
+.c9 {
+  height: 25px;
+}
+
+.c10 {
+  color: white;
+  font-family: Gilroy-Regular;
+  font-size: 18px;
+  weight: 600;
+  padding-top: 15px;
+  padding-bottom: 30px;
+  max-width: 176px;
+  text-align: center;
+}
+
+.c11 {
+  background: white;
+  color: #e56b6f;
+  font-family: Gilroy-Medium;
+  font-size: 10px;
+  padding: 20px;
+  max-width: 176px;
+}
+
+.c2 {
+  font-family: Gilroy-Bold;
+  font-size: 22px;
+  padding: 20px 30px 15px 50px;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 15px;
+  column-gap: 15px;
+  padding: 7px 50px;
+}
+
+.c3:last-child {
+  padding-bottom: calc(35px - 7px);
+}
+
+.c4 {
+  height: 20px;
+}
+
+.c6 {
+  font-family: Gilroy-Regular;
+  font-size: 18px;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+@media (min-width:1024px) {
+  .c0 {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    overflow-y: hidden;
+    padding-top: 0px;
+  }
+}
+
+@media (min-width:720px) {
+  .c1 {
+    width: 50%;
+  }
+}
+
+@media (min-width:1024px) {
+  .c1 {
+    width: calc(33.3% - .5px);
+    height: 286px;
+    border-bottom: solid 1px #c6c6c6;
+    border-right: solid 1px #c6c6c6;
+    overflow-y: scroll;
+  }
+
+  .c1:nth-child(4),
+  .c1:nth-child(5),
+  .c1:nth-child(6) {
+    border-bottom: none;
+  }
+
+  .c1:nth-child(3),
+  .c1:nth-child(6) {
+    border-right: none;
+  }
+}
+
+@media (min-width:1024px) {
+  .c7 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+}
+
+@media (min-width:720px) {
+
+}
+
+@media (min-width:1024px) {
+  .c2 {
+    padding: 23px 30px 15px 50px;
+  }
+}
+
+@media (min-width:1024px) {
+  .c6 {
+    font-size: 16px;
+  }
+}
+
+<div
+  class="c0"
+  data-testid="SkillsModal"
+>
+  <div
+    class="c1"
+    data-testid="Section"
+  >
+    <div
+      class="c2"
+      data-testid="Subheader"
+    >
+      Frontend
+    </div>
+    <div>
+      <div
+        class="c3"
+      >
+        <img
+          class="c4"
+          src="[object Object]"
+        />
+        <div
+          class="c5"
+        >
+          <div
+            class="c6"
+          >
+            One
+          </div>
+        </div>
+      </div>
+      <div
+        class="c3"
+      >
+        <img
+          class="c4"
+          src="[object Object]"
+        />
+        <div
+          class="c5"
+        >
+          <div
+            class="c6"
+          >
+            Three
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="c1"
+    data-testid="Section"
+  >
+    <div
+      class="c2"
+      data-testid="Subheader"
+    >
+      Backend
+    </div>
+    <div>
+      <div
+        class="c3"
+      >
+        <img
+          class="c4"
+          src="[object Object]"
+        />
+        <div
+          class="c5"
+        >
+          <div
+            class="c6"
+          >
+            Two
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="c1 c7"
+  >
+    <div
+      class="c8"
+    >
+      <img
+        alt="rocket"
+        class="c9"
+        src="rocket.svg"
+      />
+    </div>
+    <div
+      class="c10"
+    >
+      There's more where that came from.
+    </div>
+    <div
+      class="c11"
+    >
+      DOWNLOAD MY RESUME
+    </div>
+  </div>
+</div>
+`;
+
+exports[`SkillsModal renders if required and optional params are passed in 1`] = `
+.c0 {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  text-align: left;
+  -webkit-box-pack: left;
+  -webkit-justify-content: left;
+  -ms-flex-pack: left;
+  justify-content: left;
+  padding: 30px 0px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.c1 {
+  width: 100%;
+}
+
+.c8 {
+  background: blue;
+  background: #e56b6f;
+  display: none;
+}
+
+.c9 {
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: #E7777A;
+}
+
+.c10 {
+  height: 25px;
+}
+
+.c11 {
+  color: white;
+  font-family: Gilroy-Regular;
+  font-size: 18px;
+  weight: 600;
+  padding-top: 15px;
+  padding-bottom: 30px;
+  max-width: 176px;
+  text-align: center;
+}
+
+.c12 {
+  background: white;
+  color: #e56b6f;
+  font-family: Gilroy-Medium;
+  font-size: 10px;
+  padding: 20px;
+  max-width: 176px;
+}
+
+.c2 {
+  font-family: Gilroy-Bold;
+  font-size: 22px;
+  padding: 20px 30px 15px 50px;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 15px;
+  column-gap: 15px;
+  padding: 7px 50px;
+}
+
+.c3:last-child {
+  padding-bottom: calc(35px - 7px);
+}
+
+.c4 {
+  height: 20px;
+}
+
+.c7 {
+  font-family: Gilroy-Regular;
+  font-size: 11px;
+  color: #c6c6c6;
+  padding-top: 3px;
+}
+
+.c6 {
+  font-family: Gilroy-Regular;
+  font-size: 18px;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+@media (min-width:1024px) {
+  .c0 {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    overflow-y: hidden;
+    padding-top: 0px;
+  }
+}
+
+@media (min-width:720px) {
+  .c1 {
+    width: 50%;
+  }
+}
+
+@media (min-width:1024px) {
+  .c1 {
+    width: calc(33.3% - .5px);
+    height: 286px;
+    border-bottom: solid 1px #c6c6c6;
+    border-right: solid 1px #c6c6c6;
+    overflow-y: scroll;
+  }
+
+  .c1:nth-child(4),
+  .c1:nth-child(5),
+  .c1:nth-child(6) {
+    border-bottom: none;
+  }
+
+  .c1:nth-child(3),
+  .c1:nth-child(6) {
+    border-right: none;
+  }
+}
+
+@media (min-width:1024px) {
+  .c8 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+}
+
+@media (min-width:720px) {
+
+}
+
+@media (min-width:1024px) {
+  .c2 {
+    padding: 23px 30px 15px 50px;
+  }
+}
+
+@media (min-width:1024px) {
+  .c6 {
+    font-size: 16px;
+  }
+}
+
+<div
+  class="c0"
+  data-testid="SkillsModal"
+>
+  <div
+    class="c1"
+    data-testid="Section"
+  >
+    <div
+      class="c2"
+      data-testid="Subheader"
+    >
+      Frontend
+    </div>
+    <div>
+      <div
+        class="c3"
+      >
+        <img
+          class="c4"
+          src="[object Object]"
+        />
+        <div
+          class="c5"
+        >
+          <div
+            class="c6"
+          >
+            One
+          </div>
+          <div
+            class="c7"
+          >
+            this is a subtitle two
+          </div>
+        </div>
+      </div>
+      <div
+        class="c3"
+      >
+        <img
+          class="c4"
+          src="[object Object]"
+        />
+        <div
+          class="c5"
+        >
+          <div
+            class="c6"
+          >
+            Three
+          </div>
+          <div
+            class="c7"
+          >
+            this is a subtitle three
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="c1"
+    data-testid="Section"
+  >
+    <div
+      class="c2"
+      data-testid="Subheader"
+    >
+      Backend
+    </div>
+    <div>
+      <div
+        class="c3"
+      >
+        <img
+          class="c4"
+          src="[object Object]"
+        />
+        <div
+          class="c5"
+        >
+          <div
+            class="c6"
+          >
+            Two
+          </div>
+          <div
+            class="c7"
+          >
+            this is a subtitle one
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="c1 c8"
+  >
+    <div
+      class="c9"
+    >
+      <img
+        alt="rocket"
+        class="c10"
+        src="rocket.svg"
+      />
+    </div>
+    <div
+      class="c11"
+    >
+      There's more where that came from.
+    </div>
+    <div
+      class="c12"
+    >
+      DOWNLOAD MY RESUME
+    </div>
+  </div>
+</div>
+`;

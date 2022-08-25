@@ -18,7 +18,7 @@ const params = {
         description: [
           "test desc 1"
         ],
-        icon: "call-me",
+        icon: "test",
         timeline: {
           start: "test start 1",
           end: "test end 1"
@@ -30,7 +30,7 @@ const params = {
             description: [
               "desc 1"
             ],
-            icon: "icon 1"
+            icon: "test"
           
           },
           {
@@ -39,7 +39,7 @@ const params = {
             description: [
               "desc 2"
             ],
-            icon: "icon 2"
+            icon: "test"
           
           }
         ]
@@ -53,7 +53,7 @@ const params = {
         description: [
           "test desc 2"
         ],
-        icon: "email-me",
+        icon: "test",
         timeline: {
           start: "test start 1",
           end: "test end 2"
@@ -87,7 +87,7 @@ describe("Experience", () => {
       expect(screen.getByTestId(`Title ${index + 1}`)).toHaveTextContent(job.title)
       expect(screen.getByTestId(`Info ${index + 1}`)).toHaveTextContent(job.employer + " / " + job.timeline.start + " - " + job.timeline.end)
       expect(screen.getByTestId(`Details ${index + 1}`)).toHaveTextContent(job.description[0] + "... Read More")
-      expect(screen.getByRole('img', { name: job.icon })).toBeTruthy()
+      expect(screen.getAllByRole('img', { name: job.icon })).toHaveLength(3)
     })
   })
 })

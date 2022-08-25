@@ -72,7 +72,7 @@ exports[`Experience renders if only required params are passed in 1`] = `
       class="sc-kDDrLX iTUKGk"
     >
       <img
-        alt="call-me"
+        alt="test"
         class="sc-iqcoie iaIySc"
         src="[object Object]"
       />
@@ -121,7 +121,7 @@ exports[`Experience renders if only required params are passed in 1`] = `
       class="sc-kDDrLX iTUKGk"
     >
       <img
-        alt="email-me"
+        alt="test"
         class="sc-iqcoie iaIySc"
         src="[object Object]"
       />

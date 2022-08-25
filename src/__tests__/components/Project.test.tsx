@@ -3,7 +3,7 @@ import Project from "../../components/Project"
 
 describe('Project', () => {
   const params = {
-    icon: 'nike',
+    icon: 'test',
     industry: 'test industry',
     title: 'test title',
     description: [ '1', '2' ]
