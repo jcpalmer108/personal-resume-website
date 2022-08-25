@@ -86,12 +86,12 @@ function Tile({ info, table }: TileProps) {
   return table === true ? (
     <Cell>
       <Link id={key} href={url} data-testid="Tile">
-        <Logo src={require("../assets/images/" + key + ".svg")} alt={label} />
+        <Logo src={require("../assets/images/skills/section/" + key + ".svg")} alt={label} />
       </Link>
     </Cell>
   ) : (
     <Link id={key} href={url}>
-      <Logo src={require("../assets/images/" + key + ".svg")} alt={label} />
+      <Logo src={require("../assets/images/skills/section/" + key + ".svg")} alt={label} />
     </Link>
   )
 }
