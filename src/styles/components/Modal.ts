@@ -40,7 +40,7 @@ export const InnerWindow = styled.div`
   justify-content: center;
 
   @media(min-width: ${desktopBreakpoint}px) {
-    max-height: 570px;
+    max-height: 715px;
   }
 
 `
@@ -69,7 +69,7 @@ export const TopBottomBorders = styled.div`
     border-top: solid 1px ${silver_polish};
     border-bottom: solid 1px ${silver_polish};
     height: 80%;
-    max-height: 460px;
+    max-height: 572px;
 
   }
 

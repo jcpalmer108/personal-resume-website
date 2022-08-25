@@ -9,6 +9,7 @@ export const seashell_peach = "#FFF7F2";
 export const romantic = "#ffd1b8";
 export const off_black = "#313030";
 export const jet = "#353434";
+export const lively_coral = "#E7777A";
 
 /*
 

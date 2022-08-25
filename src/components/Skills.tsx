@@ -23,37 +23,6 @@ import Button from "./Button";
 import { useState } from "react";
 import SkillsModal from "./SkillsModal"
 
-function Tile({ info, table }: TileProps) {
-  const { key, url, label } = info;
-
-  return table === true ? (
-    <Cell>
-      <Link id={key} href={url} data-testid="Tile">
-        <Logo src={require("../assets/images/" + key + ".svg")} alt={label} />
-      </Link>
-    </Cell>
-  ) : (
-    <Link id={key} href={url}>
-      <Logo src={require("../assets/images/" + key + ".svg")} alt={label} />
-    </Link>
-  )
-}
-
-function DescriptionAndAction({ openModal, description }: DescriptionAndActionProps) {
-  return (
-    <>
-      <Description data-testid="Description">{description}</Description>
-      <ButtonWrapper>
-        <Button onClick={() => openModal()} label="Let's Talk"/>
-      </ButtonWrapper>
-    </>
-  )
-}
-
-function TitleLine({ title }: TitleProps) {
-  return <Title data-testid="Title">{title}</Title>
-}
-
 export default function Skills({ content }: SkillsProps) {
   const skillList = content?.subSection?.skills?.data.filter(item => item.url && item.category !== 'soft-skills');
   const title = content?.title
@@ -71,7 +40,7 @@ export default function Skills({ content }: SkillsProps) {
 
   return (
     <div id="skills">
-      {modalIsOpen && (<SkillsModal closeModal={() => setModalIsOpen(!modalIsOpen)} content={content?.subSection?.skills?.data} />)}
+      {modalIsOpen && (<SkillsModal closeModal={() => setModalIsOpen(!modalIsOpen)} content={content?.subSection?.skills?.data} categories={content?.subSection?.skills?.categories}/>)}
       <Section wide center label={content?.label}>
         <Mobile data-testid="Mobile">
           <TitleLine title={title || ''} />
@@ -109,5 +78,35 @@ export default function Skills({ content }: SkillsProps) {
       </Section>
     </div>
   )
+}
 
+function Tile({ info, table }: TileProps) {
+  const { key, url, label } = info;
+
+  return table === true ? (
+    <Cell>
+      <Link id={key} href={url} data-testid="Tile">
+        <Logo src={require("../assets/images/" + key + ".svg")} alt={label} />
+      </Link>
+    </Cell>
+  ) : (
+    <Link id={key} href={url}>
+      <Logo src={require("../assets/images/" + key + ".svg")} alt={label} />
+    </Link>
+  )
+}
+
+function DescriptionAndAction({ openModal, description }: DescriptionAndActionProps) {
+  return (
+    <>
+      <Description data-testid="Description">{description}</Description>
+      <ButtonWrapper>
+        <Button onClick={() => openModal()} label="Let's Talk"/>
+      </ButtonWrapper>
+    </>
+  )
+}
+
+function TitleLine({ title }: TitleProps) {
+  return <Title data-testid="Title">{title}</Title>
 }

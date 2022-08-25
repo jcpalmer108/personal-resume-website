@@ -37,7 +37,7 @@ export type Education = {
   timeline: Timeline
 }
 
-type Category = {
+export type Category = {
   key: string,
   label: string
 }
