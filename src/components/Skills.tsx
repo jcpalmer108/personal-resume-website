@@ -17,7 +17,7 @@ import {
   ButtonWrapper
 } from "../styles/components/Skills";
 import Section from "../components/Section"
-import { Skills as SkillsContent } from "../types/content"
+import { Skill as SkillsContent } from "../types/content"
 import Marquee from "react-fast-marquee";
 import Button from "./Button";
 import { useState } from "react";
@@ -55,7 +55,13 @@ function TitleLine({ title }: TitleProps) {
 }
 
 export default function Skills({ content }: SkillsProps) {
-  const skillList = content?.subSection?.skills || [];
+  console.log('hi there', content?.subSection)
+
+
+  const skillList = content?.subSection?.skills?.data.filter(item => item.url && item.category !== 'soft-skills');
+
+
+
   const title = content?.title
   const description = (content?.description && content?.description[0]) || ''
   const [ modalIsOpen, setModalIsOpen ] = useState(false);
@@ -71,7 +77,7 @@ export default function Skills({ content }: SkillsProps) {
 
   return (
     <div id="skills">
-      {modalIsOpen && (<SkillsModal closeModal={() => setModalIsOpen(!modalIsOpen)} content={content?.subSection?.skills} />)}
+      {modalIsOpen && (<SkillsModal closeModal={() => setModalIsOpen(!modalIsOpen)} content={content?.subSection?.skills?.data} />)}
       <Section wide center label={content?.label}>
         <Mobile data-testid="Mobile">
           <TitleLine title={title || ''} />
@@ -87,13 +93,13 @@ export default function Skills({ content }: SkillsProps) {
                 <Cell colSpan={3} first>
                   <TitleLine title={content?.title || ''} />
                 </Cell>
-                {generateTiles(skillList.slice(0, 2))}
+                {generateTiles(skillList?.slice(0, 2))}
               </tr>
               <tr data-testid="Row 2">
-                {generateTiles(skillList.slice(2, 7))}
+                {generateTiles(skillList?.slice(2, 7))}
               </tr>
               <tr data-testid="Row 3">
-                {generateTiles(skillList.slice(7, 9))}
+                {generateTiles(skillList?.slice(7, 9))}
                 <Cell colSpan={3} last>
                   <Content desktop>
                     <DescriptionAndAction description={description || ''} openModal={() => setModalIsOpen(true)}/>

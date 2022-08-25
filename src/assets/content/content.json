@@ -50,53 +50,163 @@
       ],
       "inMenu": true,
       "subSection": {
-        "skills": [
-          {
-            "key": "docker",
-            "label": "Docker",
-            "url": "https://www.docker.com"
-          },
-          {
-            "key": "airflow",
-            "label": "Apache Airflow",
-            "url": "https://airflow.apache.org/"
-          },
-          {
-            "key": "aws",
-            "label": "Amazon Web Services",
-            "url": "https://aws.amazon.com/"
-          },
-          {
-            "key": "typescript",
-            "label": "Typescript",
-            "url": "https://www.typescriptlang.org/"
-          },
-          {
-            "key": "kubernetes",
-            "label": "Kubernetes",
-            "url": "https://kubernetes.io/"
-          },
-          {
-            "key": "mui",
-            "label": "Material UI",
-            "url": "https://mui.com/"
-          },
-          {
-            "key": "node",
-            "label": "Node.js",
-            "url": "https://nodejs.org/en/about/resources/"
-          },
-          {
-            "key": "react",
-            "label": "React.js",
-            "url": "https://reactjs.org/"
-          },
-          {
-            "key": "vue",
-            "label": "Vue.js",
-            "url": "https://vuejs.org/"
-          }
-        ]
+        "skills": {
+          "categories": [
+            {
+              "key": "soft-skills",
+              "label": "Soft Skills"
+            },
+            {
+              "key": "languages",
+              "label": "Languages"
+            },
+            {
+              "key": "frontend",
+              "label": "Frontend Engineering"
+            },
+            {
+              "key": "backend",
+              "label": "Backend Engineering"
+            },
+            {
+              "key": "testing",
+              "label": "Testing Frameworks"
+            }
+          ],
+          "data": [
+            {
+              "key": "docker",
+              "label": "Docker",
+              "url": "https://www.docker.com",
+              "category": "backend"
+            },
+            {
+              "key": "airflow",
+              "label": "Apache Airflow",
+              "url": "https://airflow.apache.org/",
+              "category": "backend"
+            },
+            {
+              "key": "aws",
+              "label": "Amazon Web Services",
+              "url": "https://aws.amazon.com/",
+              "category": "backend"
+            },
+            {
+              "key": "typescript",
+              "label": "Typescript",
+              "url": "https://www.typescriptlang.org/",
+              "category": "languages"
+            },
+            {
+              "key": "kubernetes",
+              "label": "Kubernetes",
+              "url": "https://kubernetes.io/",
+              "category": "backend"
+            },
+            {
+              "key": "mui",
+              "label": "Material UI",
+              "url": "https://mui.com/",
+              "category": "frontend"
+            },
+            {
+              "key": "node",
+              "label": "Node.js",
+              "url": "https://nodejs.org/en/about/resources/",
+              "category": "backend"
+            },
+            {
+              "key": "react",
+              "label": "React.js",
+              "url": "https://reactjs.org/",
+              "category": "frontend",
+              "subtitle": "(Native, Class-based, Functional)"
+            },
+            {
+              "key": "vue",
+              "label": "Vue.js",
+              "url": "https://vuejs.org/",
+              "category": "frontend"
+            },
+            {
+              "key": "communication",
+              "label": "Communication",
+              "category": "soft-skills"
+            },
+            {
+              "key": "leadership",
+              "label": "Leadership",
+              "category": "soft-skills"
+            },
+            {
+              "key": "decision-making",
+              "label": "Decision Making",
+              "category": "soft-skills"
+            },
+            {
+              "key": "mentorship",
+              "label": "Mentorship",
+              "category": "soft-skills"
+            },
+            {
+              "key": "javascript",
+              "label": "Javascript",
+              "category": "languages"
+            },
+            {
+              "key": "html",
+              "label": "HTML(5)",
+              "category": "languages"
+            },
+            {
+              "key": "css",
+              "label": "CSS(3)",
+              "category": "languages"
+            },
+            {
+              "key": "python",
+              "label": "Python",
+              "category": "languages"
+            },
+            {
+              "key": "state-management",
+              "label": "State Management",
+              "subtitle": "(Redux, Recoil, Atom, Vuex, etc.)",
+              "category": "frontend"
+            },
+            {
+              "key": "angular",
+              "label": "Angular",
+              "category": "frontend"
+            },
+            {
+              "key": "jest",
+              "label": "Jest",
+              "category": "testing"
+            },
+            {
+              "key": "react-testing-library",
+              "label": "React Testing Library",
+              "category": "testing"
+            },
+            {
+              "key": "mocha",
+              "label": "Mocha",
+              "category": "testing"
+            },
+            {
+              "key": "cypress",
+              "label": "Cypress",
+              "category": "testing"
+            },
+            {
+              "key": "selenium",
+              "label": "Selenium",
+              "category": "testing"
+            }
+          ]
+        }
       }
     },
     {

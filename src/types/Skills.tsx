@@ -1,12 +1,12 @@
 import { Sections } from "./content"
-import { Skills } from "../types/content"
+import { Skill } from "../types/content"
 
 export type SkillsProps = {
   content: Sections | undefined
 }
 
 export type TileProps = {
-  info: Skills,
+  info: Skill,
   table: boolean
 }
 

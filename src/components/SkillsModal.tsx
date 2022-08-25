@@ -1,9 +1,9 @@
-import { Skills } from "../types/content";
+import { Skill } from "../types/content";
 import Modal from "./Modal"
 
 type SkillsModalProps = {
   closeModal: Function
-  content?: Skills[];
+  content?: Skill[];
 }
 
 export default function SkillsModal({ closeModal, content }: SkillsModalProps) {

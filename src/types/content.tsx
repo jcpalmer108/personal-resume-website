@@ -25,7 +25,7 @@ export type Sections = {
 
 type SubSections = {
   education?: Education[],
-  skills?: Skills[],
+  skills?: Skills,
   quotes?: Quotes[],
   experience?: Experience[]
 }
@@ -37,10 +37,22 @@ export type Education = {
   timeline: Timeline
 }
 
+type Category = {
+  key: string,
+  label: string
+}
+
 export type Skills = {
+  categories: Category[],
+  data: Skill[]
+}
+
+export type Skill = {
   key: string,
   label: string,
-  url: string
+  category: string,
+  url?: string,
+  subtitle?: string
 }
 
 type Timeline = {
