@@ -55,13 +55,7 @@ function TitleLine({ title }: TitleProps) {
 }
 
 export default function Skills({ content }: SkillsProps) {
-  console.log('hi there', content?.subSection)
-
-
   const skillList = content?.subSection?.skills?.data.filter(item => item.url && item.category !== 'soft-skills');
-
-
-
   const title = content?.title
   const description = (content?.description && content?.description[0]) || ''
   const [ modalIsOpen, setModalIsOpen ] = useState(false);
@@ -91,7 +85,7 @@ export default function Skills({ content }: SkillsProps) {
             <tbody>
               <tr data-testid="Row 1">
                 <Cell colSpan={3} first>
-                  <TitleLine title={content?.title || ''} />
+                  <TitleLine title={title || ''} />
                 </Cell>
                 {generateTiles(skillList?.slice(0, 2))}
               </tr>
