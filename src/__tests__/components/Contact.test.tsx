@@ -1,13 +1,49 @@
-import { render, screen } from "@testing-library/react";
+import { render, screen, fireEvent } from "@testing-library/react";
 import Contact from "../../components/Contact"
-import userEvent from '@testing-library/user-event';
+import { InputProps } from "../../types/Input"
+// import socials from "../assets/content/socials.json";
 
-describe('Contact', () => {
-  const params = {
+// mock content
+jest.mock('../../assets/content/socials.json', ()=>({
+  links: [
+    {
+      key: "github",
+      label: "Github",
+      url: "https://www.github.com/jcpalmer108/"
+    },
+    {
+      key: "leetcode",
+      label: "Leetcode",
+      url: "https://leetcode.com/darthToaster/"
+    }
+  ]
+}), { virtual: true })
+
+// mock components & spies
+const mockSection = jest.fn();
+jest.mock("../../components/Section", () => ({ label, children, light, thin, wide, center, bottom, noTop, noBorder }: SectionProps) => {
+  mockSection(label, light, thin, wide, center, bottom, noTop, noBorder);
+  return <div>{children}</div>;
+});
+
+const mockInput = jest.fn();
+jest.mock("../../components/Input", () => ({ label, value, updateForm, area, noBorder }: InputProps) => {
+  mockInput(label, value, area, noBorder);
+  return <div />;
+});
+
+const spyWindowOpen = jest.spyOn(window, 'open');
+spyWindowOpen.mockImplementation(jest.fn());
+
+// params needed for component
+const params = {
+  required: {
     contact: {
       email: "jenna@jennapalmer.info",
       cell: "3142212451"    
-    },
+    }
+  },
+  optional: {
     content: {
       key: "contact",
       label: "test label",
@@ -17,107 +53,75 @@ describe('Contact', () => {
         "test description"
       ]  
     },
-    inputs: [
-      {
-        key: "Name",
-        value: "Jane Doe"
-      },
-      {
-        key: "Email",
-        value: "test@email.com"
-      },
-      {
-        key: "Phone",
-        value: "1112223333"
-      },
-      {
-        key: "Message",
-        value: "test one two three"
-
-      }
-    ]
+    formValues: {
+      name: 'Jane Doe',
+      phone: '1112223333',
+      email: 'test@test.com',
+      message: 'Hi there, I want to hire you!'
+    }
   }
-  
-  test('renders if only required params are passed in', () => {
-    render(<Contact content={params.content} contact={params.contact} />)
+}
+
+describe('Contact', () => {  
+  test('renders if content and contact are passed in', () => {
+    // given
+    const { required, optional } = params;
+    render(<Contact content={optional.content} contact={required.contact} />)
+
+    // then
     expect(screen.getByTestId("Mobile")).toMatchSnapshot()
+    expect(screen.getByTestId('Mobile')).toHaveTextContent(optional.content.title)
+    expect(screen.getByTestId('Mobile')).toHaveTextContent(optional.content.description[0])
+
     expect(screen.getByTestId("NotMobile")).toMatchSnapshot()
+    expect(screen.getByTestId('NotMobile')).toHaveTextContent(optional.content.title)
+    expect(screen.getByTestId('NotMobile')).toHaveTextContent(optional.content.description[0])
 
-    screen.getAllByTestId('Title').forEach((title) => {
-      expect(title).toHaveTextContent(params.content.title)
-    })
+    expect(screen.getByTestId("BlankSection")).toMatchSnapshot()
 
-    screen.getAllByTestId('Description').forEach((desc) => {
-      expect(desc).toHaveTextContent(params.content.description[0])
-    })
-
-    expect(screen.getAllByTestId('Input')).toHaveLength(8)
-    expect(screen.getAllByTestId('Links')).toHaveLength(5)
-
-    // Mobile Inputs
-    expect(screen.getAllByTestId('Input')[0]).toHaveTextContent("NAME")
-    expect(screen.getAllByTestId('Input')[1]).toHaveTextContent("PHONE")
-    expect(screen.getAllByTestId('Input')[2]).toHaveTextContent("EMAIL")
-    expect(screen.getAllByTestId('Input')[3]).toHaveTextContent("MESSAGE")
-
-    // NotMobile Inputs
-    expect(screen.getAllByTestId('Input')[4]).toHaveTextContent("NAME")
-    expect(screen.getAllByTestId('Input')[5]).toHaveTextContent("PHONE")
-    expect(screen.getAllByTestId('Input')[6]).toHaveTextContent("EMAIL")
-    expect(screen.getAllByTestId('Input')[7]).toHaveTextContent("MESSAGE")
+    expect(mockInput).toHaveBeenCalledTimes(8)
+    expect(mockInput).toHaveBeenNthCalledWith(1, "Name", "", undefined, undefined)
+    expect(mockInput).toHaveBeenNthCalledWith(2, "Phone", "", undefined, undefined)
+    expect(mockInput).toHaveBeenNthCalledWith(3, "Email", "", undefined, undefined)
+    expect(mockInput).toHaveBeenNthCalledWith(4, "Message", "", true, undefined)
+    expect(mockInput).toHaveBeenNthCalledWith(5, "Name", "", undefined, true)
+    expect(mockInput).toHaveBeenNthCalledWith(6, "Phone", "", undefined, true)
+    expect(mockInput).toHaveBeenNthCalledWith(7, "Email", "", undefined, true)
+    expect(mockInput).toHaveBeenNthCalledWith(8, "Message", "", true, true)
+  
+    expect(screen.getAllByTestId("Submit")[0]).toHaveProperty('disabled', true) 
   })
 
-  params.inputs.forEach((testCase, index) => {
-    test(`${testCase.key.toLowerCase()} input updates field with new data`, () => {
-      render(<Contact content={params.content} contact={params.contact} />)
-      const inputField = screen.getAllByTestId("Input")
-      const MobileInput = inputField[index].children[0]
-      const NotMobileInput = inputField[index + 4].children[0]
-  
-      userEvent.type(MobileInput, testCase.value);
-  
-      expect(MobileInput).toHaveValue(testCase.value)
-      expect(NotMobileInput).toHaveValue(testCase.value)  
-    })
+  test('does not render if only contact is passed in', () => {
+    // given 
+    const { required } = params;
+    render(<Contact content={undefined} contact={required.contact} />)
+
+    // then 
+    expect(screen.queryByTestId('Contact')).toBeFalsy()
   })
 
   test('submit button is disabled unless all values are completed', () => {
-    render(<Contact content={params.content} contact={params.contact} />)
-    const button = screen.getAllByTestId("Submit");
-    const inputField = screen.getAllByTestId("Input")
-
-    expect(button[0]).toHaveProperty('disabled', true) 
+    // given
+    const { required, optional } = params;
+    render(<Contact content={optional.content} contact={required.contact} formFieldValues={optional.formValues}/>)
     
-    userEvent.type(inputField[0].children[0], "test");
-    expect(button[0]).toHaveProperty('disabled', true) 
-
-    userEvent.type(inputField[1].children[0], "test");
-    expect(button[0]).toHaveProperty('disabled', true) 
-
-    userEvent.type(inputField[2].children[0], "test");
-    expect(button[0]).toHaveProperty('disabled', true) 
-
-    userEvent.type(inputField[3].children[0], "test");
-    expect(button[0]).toHaveProperty('disabled', false) 
+    // then
+    expect(screen.getAllByTestId("Submit")[0]).toHaveProperty('disabled', false) 
   })
 
   test('submit button opens a mailto link with form data filled out', () => {
-    const spyWindowOpen = jest.spyOn(window, 'open');
-    spyWindowOpen.mockImplementation(jest.fn());
+    // given
+    const { required, optional } = params;
+    render(<Contact content={optional.content} contact={required.contact} formFieldValues={optional.formValues}/>)
 
-    render(<Contact content={params.content} contact={params.contact} />)
-    const button = screen.getAllByTestId("Submit");
-    const inputField = screen.getAllByTestId("Input")
-    
-    userEvent.type(inputField[0].children[0], "test");
-    userEvent.type(inputField[1].children[0], "test");
-    userEvent.type(inputField[2].children[0], "test");
-    userEvent.type(inputField[3].children[0], "test");
-    userEvent.click(button[0])
+    // when
+    fireEvent.click(screen.getByRole("button", { name: 'SUBMIT'}))
 
+    // then
     expect(spyWindowOpen).toHaveBeenCalled()
     expect(spyWindowOpen).toHaveBeenCalledWith(
-      'mailto:jenna@jennapalmer.info?subject=NEW:%20Website%20Response&body=Phone:%20test%0AEmail:%20test%0A%0AMessage:%20test',
+      'mailto:jenna@jennapalmer.info?subject=NEW:%20Website%20Response&body=Phone:%201112223333%0AEmail:%20test@test.com%0A%0AMessage:%20Hi%20there,%20I%20want%20to%20hire%20you!',
       '_blank'
     )
   })

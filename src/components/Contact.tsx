@@ -1,40 +1,28 @@
-import { ContactProps } from "../types/Contact";
-import Section from "./Section";
-import { 
-  Mobile, 
-  FormWrapper,
-  Button,
-  NotMobile,
-  Left,
-  Right,
-  Title,
-  LeftWrapper,
-  InputWrapper,
-  BottomBar,
-  Socials,
-  Links,
-  BlankSection,
-  Icon
-} from "../styles/components/Contact"
-import Input from "./Input"
 import { useState } from "react";
+import { ContactProps, FormProps } from "../types/Contact";
+import { Mobile, FormWrapper, Button, NotMobile, Left, Right, Title, LeftWrapper, InputWrapper, BottomBar, Socials, Links, BlankSection, Icon } from "../styles/components/Contact"
+import Input from "./Input"
+import Section from "./Section";
 import socials from "../assets/content/socials.json"
 
-type FormProps = {
-  name?: String,
-  phone?: String,
-  email?: String,
-  message?: String
-}
-
-export default function Contact({ content, contact }: ContactProps) {
-  const [ isDisabled, setIsDisabled ] = useState<boolean>(true)
-  const [ formValues, setFormValues ] = useState<FormProps>({
+export default function Contact({ content, contact, formFieldValues }: ContactProps) {
+  const [ formValues, setFormValues ] = useState<FormProps>(formFieldValues || {
     name: '',
     phone: '',
     email: '',
     message: ''
   })
+  const [ isDisabled, setIsDisabled ] = useState<boolean>(
+    formValues.name === '' || 
+    formValues.phone === '' || 
+    formValues.email === '' || 
+    formValues.message === ''
+  )
+
+
+  if(!content || !contact) {
+    return null;
+  }
 
   const updateFormValues = (key: string, e: any) => {
     setFormValues({
@@ -77,12 +65,12 @@ export default function Contact({ content, contact }: ContactProps) {
   }
   
   return (
-    <div id="contact">
+    <div id="contact" data-testid="Contact">
       <Section wide>
         <Mobile data-testid="Mobile" onSubmit={openMailLink}>
           <Section label={content?.label} center>
-            <Title data-testid="Title">{content?.title}</Title>
-            <p data-testid="Description">{content?.description && content?.description[0]}</p>
+            <Title>{content?.title}</Title>
+            <p>{content?.description && content?.description[0]}</p>
             <Input label="Name" value={formValues.name} updateForm={(e: any) => updateFormValues("name", e)} />
             <Input label="Phone" value={formValues.phone} updateForm={(e: any) => updateFormValues("phone", e)} />
             <Input label="Email" value={formValues.email} updateForm={(e: any) => updateFormValues("email", e)} />
@@ -158,7 +146,7 @@ export default function Contact({ content, contact }: ContactProps) {
             <Button data-testid="Submit" disabled={isDisabled} type="submit" value="SUBMIT" />
           </BottomBar>
         </NotMobile>
-        <BlankSection />
+        <BlankSection data-testid="BlankSection"/>
       </Section>
     </div>
   )

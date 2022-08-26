@@ -1,10 +1,6 @@
 import { render, screen, fireEvent } from "@testing-library/react";
 import Button from "../../components/Button"
 
-// mock content
-
-// mock components
-
 // params needed for component
 const params = {
   required: {
