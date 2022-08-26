@@ -1,7 +1,8 @@
+import { SocialLink } from "@/types/socials";
 import { render, screen, fireEvent } from "@testing-library/react";
 import Contact from "../../components/Contact"
 import { InputProps } from "../../types/Input"
-// import socials from "../assets/content/socials.json";
+import socials from "../../assets/content/socials.json";
 
 // mock content
 jest.mock('../../assets/content/socials.json', ()=>({
@@ -90,6 +91,11 @@ describe('Contact', () => {
     expect(mockInput).toHaveBeenNthCalledWith(8, "Message", "", true, true)
   
     expect(screen.getAllByTestId("Submit")[0]).toHaveProperty('disabled', true) 
+
+    expect(screen.getByTestId("Socials").childNodes).toHaveLength(socials.links.length)
+    socials.links.forEach((link, index) => {
+      expect(screen.getByRole('link', { name: link.label })).toBeTruthy()
+    })
   })
 
   test('does not render if only contact is passed in', () => {

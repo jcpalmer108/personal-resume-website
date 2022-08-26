@@ -65,7 +65,7 @@ export default function Contact({ content, contact, formFieldValues }: ContactPr
   }
   
   return (
-    <div id="contact" data-testid="Contact">
+    <div id="contact">
       <Section wide>
         <Mobile data-testid="Mobile" onSubmit={openMailLink}>
           <Section label={content?.label} center>
