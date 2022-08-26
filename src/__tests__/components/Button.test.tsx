@@ -17,7 +17,7 @@ const params = {
 }
 
 describe('Button', () => {
-  test('renders if required and optional params are passed in', () => {
+  test('renders if required and all optional params are passed in', () => {
     // given
     const { required, optional } = params;
     const upperCaseLabel = required.label.toUpperCase();
@@ -30,17 +30,39 @@ describe('Button', () => {
     expect(screen.getByRole('img', { name: 'arrow' })).toHaveAttribute('src', 'arrow-right.svg')
   })
 
-  test('renders if only required params are passed in', () => {
+  test('renders if label and url params are passed in', () => {
     // given
-    const { required } = params;
+    const { required, optional } = params;
     const upperCaseLabel = required.label.toUpperCase();
-    render(<Button label={required.label} />)
+    render(<Button label={required.label} url={optional.url}/>)
+
+    // then
+    expect(screen.getByTestId("Button")).toMatchSnapshot()
+    expect(screen.getByRole('link', { name: `${upperCaseLabel} arrow` })).toHaveAttribute('href', optional.url)
+    expect(screen.getByTestId("Button")).toHaveTextContent(upperCaseLabel)
+    expect(screen.getByRole('img', { name: 'arrow' })).toHaveAttribute('src', 'arrow-right.svg')
+  })
+
+  test('renders if label and onClick params are passed in', () => {
+    // given
+    const { required, optional } = params;
+    const upperCaseLabel = required.label.toUpperCase();
+    render(<Button label={required.label} onClick={optional.onClick}/>)
 
     // then
     expect(screen.getByTestId("Button")).toMatchSnapshot()
     expect(screen.queryByRole('link', { name: `${upperCaseLabel} arrow` })).toBeFalsy()
     expect(screen.getByTestId("Button")).toHaveTextContent(upperCaseLabel)
     expect(screen.getByRole('img', { name: 'arrow' })).toHaveAttribute('src', 'arrow-right.svg')
+  })
+
+  test('does not render if only label is passed in', () => {
+    // given
+    const { required } = params;
+    render(<Button label={required.label} />)
+
+    // then
+    expect(screen.queryByTestId("Button")).toBeFalsy()
   })
 
   test('executes onClick function when component is clicked', () => {
