@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`About renders if only required params are passed in 1`] = `
-.c0 {
+.c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -11,20 +11,24 @@ exports[`About renders if only required params are passed in 1`] = `
   flex-direction: column;
 }
 
-.c1 {
+.c2 {
   padding-bottom: 40px;
 }
 
-.c2 {
+.c0 {
+  padding-bottom: 20px;
+}
+
+.c3 {
   margin: 0px;
   padding-bottom: 20px;
 }
 
-.c2:last-child {
+.c3:last-child {
   padding-bottom: 0px;
 }
 
-.c3 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -35,7 +39,7 @@ exports[`About renders if only required params are passed in 1`] = `
   padding-bottom: 15px;
 }
 
-.c4 {
+.c5 {
   padding-top: 25px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -54,68 +58,143 @@ exports[`About renders if only required params are passed in 1`] = `
   justify-content: center;
 }
 
-.c5 {
+.c6 {
   padding-top: 12px;
 }
 
-@media (min-width:1155px) {
-
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 0px 15px;
 }
 
-@media (min-width:1155px) {
-
+.c8 {
+  -webkit-box-flex: 2;
+  -webkit-flex-grow: 2;
+  -ms-flex-positive: 2;
+  flex-grow: 2;
+  background-color: #FFF7F2;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100px;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 25px 15px;
 }
 
-@media (min-width:1155px) {
-
+.c9 {
+  font-size: 20px;
+  font-family: Butler-Regular;
+  padding-bottom: 26px;
 }
 
-@media (min-width:1155px) {
+.c10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  row-gap: 23px;
+}
 
+.c11 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: black;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  font-size: 16px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: left;
+  -webkit-justify-content: left;
+  -ms-flex-pack: left;
+  justify-content: left;
+  -webkit-column-gap: 10px;
+  column-gap: 10px;
+  width: 33%;
+  font-family: Gilroy-Medium;
+}
+
+.c12 {
+  height: 16px;
+  width: 16px;
+}
+
+.c13 {
+  font-size: 14px;
+}
+
+.c14 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: white;
+  height: 60px;
+  background: #e56b6f;
+  padding: 20px;
+  text-align: center;
+}
+
+.c15 {
+  font-size: 16px;
+  font-family: Butler-Medium;
+}
+
+.c16 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-size: 12px;
+  font-family: Gilroy-Medium;
+  padding-top: 23px;
+  padding-bottom: 7px;
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+.c17 {
+  height: 0px;
 }
 
 @media (min-width:720px) {
-
-}
-
-@media (min-width:1024px) {
-
-}
-
-@media (min-width:720px) {
-
-}
-
-@media (min-width:1024px) {
-
-}
-
-@media (min-width:720px) {
-
-}
-
-@media (min-width:1024px) {
-
-}
-
-@media (min-width:720px) {
-
-}
-
-@media (min-width:1024px) {
-
-}
-
-@media (min-width:720px) {
-
-}
-
-@media (min-width:1024px) {
-
-}
-
-@media (min-width:720px) {
-  .c0 {
+  .c1 {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
@@ -123,13 +202,13 @@ exports[`About renders if only required params are passed in 1`] = `
 }
 
 @media (min-width:720px) {
-  .c1 {
+  .c2 {
     padding-bottom: 0px;
   }
 }
 
 @media (min-width:720px) {
-  .c3 {
+  .c4 {
     min-width: -webkit-fit-content;
     min-width: -moz-fit-content;
     min-width: fit-content;
@@ -139,152 +218,295 @@ exports[`About renders if only required params are passed in 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c3 {
+  .c4 {
     min-width: 290px;
     padding-left: 125px;
   }
 }
 
 @media (min-width:720px) {
-  .c4 {
+  .c5 {
     padding-top: 35px;
   }
 }
 
 @media (min-width:720px) {
-  .c5 {
+  .c6 {
     font-size: 14px;
   }
 }
 
 @media (min-width:1024px) {
-  .c5 {
+  .c6 {
     font-size: 16px;
     padding-top: 10px;
   }
 }
 
 @media (min-width:720px) {
-
+  .c7 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding: 0px;
+  }
 }
 
 @media (min-width:720px) {
-
+  .c8 {
+    height: 70px;
+    padding: 40px;
+  }
 }
 
 @media (min-width:1024px) {
-
+  .c8 {
+    height: 75px;
+    padding: 50px;
+  }
 }
 
 @media (min-width:720px) {
-
+  .c9 {
+    font-size: 30px;
+    padding-bottom: 20px;
+  }
 }
 
 @media (min-width:720px) {
-
+  .c10 {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    height: 20px;
+  }
 }
 
 @media (min-width:720px) {
-
+  .c11 {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
 }
 
 @media (min-width:1024px) {
-
+  .c11 {
+    width: 20%;
+    -webkit-box-pack: left;
+    -webkit-justify-content: left;
+    -ms-flex-pack: left;
+    justify-content: left;
+  }
 }
 
 @media (min-width:720px) {
-
+  .c12 {
+    height: 19px;
+    width: 19px;
+  }
 }
 
 @media (min-width:720px) {
-
+  .c12 {
+    height: 22px;
+    width: 22px;
+  }
 }
 
 @media (min-width:720px) {
-
+  .c13 {
+    font-size: 16px;
+    padding-top: 4px;
+  }
 }
 
 @media (min-width:1024px) {
-
+  .c13 {
+    font-size: 19px;
+    padding-top: 4px;
+  }
 }
 
 @media (min-width:720px) {
-
+  .c14 {
+    width: 130px;
+    height: 90px;
+    padding: 30px;
+  }
 }
 
 @media (min-width:1024px) {
-
+  .c14 {
+    width: 148px;
+    height: 90px;
+    padding: 43px;
+  }
 }
 
 @media (min-width:720px) {
-
+  .c15 {
+    font-size: 18px;
+  }
 }
 
 @media (min-width:1024px) {
-
+  .c17 {
+    height: 80px;
+  }
 }
 
 <div
-  class="c0"
   data-testid="About"
+  id="about"
 >
-  <div
-    class="c1"
-  >
-    <p
-      class="c2"
-      data-testid="Description 1"
+  <div>
+    <h2
+      class="c0"
+      data-testid="Title"
     >
-      test contents 1
-    </p>
-    <p
-      class="c2"
-      data-testid="Description 2"
+      test title
+    </h2>
+    <div
+      class="c1"
+      data-testid="Content"
     >
-      test contents 2
-    </p>
+      <div
+        class="c2"
+      >
+        <p
+          class="c3"
+          data-testid="Description 1"
+        >
+          test contents 1
+        </p>
+        <p
+          class="c3"
+          data-testid="Description 2"
+        >
+          test contents 2
+        </p>
+      </div>
+      <div
+        class="c4"
+        data-testid="Schooling"
+      >
+        <h3>
+          Education
+        </h3>
+        <div
+          class="c5"
+          data-testid="School 1"
+        >
+          <h4>
+            Webster University
+          </h4>
+          <span
+            class="c6"
+          >
+            Bachelors of Science in Computer Science
+             - 
+            2014
+            -
+            2017
+          </span>
+        </div>
+        <div
+          class="c5"
+          data-testid="School 2"
+        >
+          <h4>
+            Harvard University
+          </h4>
+          <span
+            class="c6"
+          >
+            Bachelors of Smartiness in Computer Science
+             - 
+            2027
+            -
+            2030
+          </span>
+        </div>
+      </div>
+    </div>
   </div>
-  <div
-    class="c3"
-    data-testid="Schooling"
-  >
-    <h3>
-      Education
-    </h3>
+  <div>
     <div
-      class="c4"
-      data-testid="School 1"
+      class="c7"
     >
-      <h4>
-        Webster University
-      </h4>
-      <span
-        class="c5"
+      <div
+        class="c8"
+        data-testid="Connect"
       >
-        Bachelors of Science in Computer Science
-         - 
-        2014
-        -
-        2017
-      </span>
+        <span
+          class="c9"
+        >
+          Connect with Me
+        </span>
+        <div
+          class="c10"
+        >
+          <a
+            class="c11"
+            href="https://www.github.com/jcpalmer108/"
+          >
+            <img
+              class="c12"
+              src="[object Object]"
+            />
+            <span
+              class="c13"
+            >
+              Github
+            </span>
+          </a>
+          <a
+            class="c11"
+            href="https://leetcode.com/darthToaster/"
+          >
+            <img
+              class="c12"
+              src="[object Object]"
+            />
+            <span
+              class="c13"
+            >
+              Leetcode
+            </span>
+          </a>
+        </div>
+      </div>
+      <div
+        class="c14"
+      >
+        <span
+          class="c15"
+        >
+          What are you waiting for?
+        </span>
+        <a
+          class="c16"
+          data-testid="Start a Project"
+          href="#contact"
+        >
+          START A PROJECT
+        </a>
+      </div>
     </div>
+  </div>
+  <div>
     <div
-      class="c4"
-      data-testid="School 2"
-    >
-      <h4>
-        Harvard University
-      </h4>
-      <span
-        class="c5"
-      >
-        Bachelors of Smartiness in Computer Science
-         - 
-        2027
-        -
-        2030
-      </span>
-    </div>
+      class="c17"
+    />
   </div>
 </div>
 `;
@@ -365,62 +587,6 @@ exports[`About renders if only required params are passed in 2`] = `
 
 .c5 {
   font-size: 14px;
-}
-
-@media (min-width:1155px) {
-
-}
-
-@media (min-width:1155px) {
-
-}
-
-@media (min-width:1155px) {
-
-}
-
-@media (min-width:1155px) {
-
-}
-
-@media (min-width:720px) {
-
-}
-
-@media (min-width:1024px) {
-
-}
-
-@media (min-width:720px) {
-
-}
-
-@media (min-width:1024px) {
-
-}
-
-@media (min-width:720px) {
-
-}
-
-@media (min-width:1024px) {
-
-}
-
-@media (min-width:720px) {
-
-}
-
-@media (min-width:1024px) {
-
-}
-
-@media (min-width:720px) {
-
-}
-
-@media (min-width:1024px) {
-
 }
 
 @media (min-width:720px) {
@@ -595,48 +761,6 @@ exports[`About renders if only required params are passed in 2`] = `
         Leetcode
       </span>
     </a>
-    <a
-      class="c3"
-      href="https://www.linkedin.com/in/jenna-palmer/"
-    >
-      <img
-        class="c4"
-        src="[object Object]"
-      />
-      <span
-        class="c5"
-      >
-        LinkedIn
-      </span>
-    </a>
-    <a
-      class="c3"
-      href="https://twitter.com/jpalmerproject/"
-    >
-      <img
-        class="c4"
-        src="[object Object]"
-      />
-      <span
-        class="c5"
-      >
-        Twitter
-      </span>
-    </a>
-    <a
-      class="c3"
-      href="mailto:jenna@jennapalmer.info"
-    >
-      <img
-        class="c4"
-        src="[object Object]"
-      />
-      <span
-        class="c5"
-      >
-        Email
-      </span>
-    </a>
   </div>
 </div>
 `;
@@ -651,62 +775,6 @@ exports[`About renders if only required params are passed in 3`] = `
   padding-bottom: 7px;
   color: white;
   border-bottom: 1px solid white;
-}
-
-@media (min-width:1155px) {
-
-}
-
-@media (min-width:1155px) {
-
-}
-
-@media (min-width:1155px) {
-
-}
-
-@media (min-width:1155px) {
-
-}
-
-@media (min-width:720px) {
-
-}
-
-@media (min-width:1024px) {
-
-}
-
-@media (min-width:720px) {
-
-}
-
-@media (min-width:1024px) {
-
-}
-
-@media (min-width:720px) {
-
-}
-
-@media (min-width:1024px) {
-
-}
-
-@media (min-width:720px) {
-
-}
-
-@media (min-width:1024px) {
-
-}
-
-@media (min-width:720px) {
-
-}
-
-@media (min-width:1024px) {
-
 }
 
 @media (min-width:720px) {

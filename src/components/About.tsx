@@ -26,11 +26,16 @@ import socials from "../assets/content/socials.json"
 
 export default function About({ content }: AboutProps) {
   const { links } = socials;
+
+  if(content === undefined) {
+    return null;
+  }
+
   return (
-    <div id="about">
+    <div id="about" data-testid="About">
       <Section label={content?.label} >
         <Title data-testid="Title">{content?.title}</Title>
-        <AboutWrapper data-testid="About">
+        <AboutWrapper data-testid="Content">
           <Content>
             {content?.description && content.description.map((paragraph, index) => <Description data-testid={`Description ${index + 1}`} key={`Description ${index + 1}`}>{paragraph}</Description>)}
           </Content>

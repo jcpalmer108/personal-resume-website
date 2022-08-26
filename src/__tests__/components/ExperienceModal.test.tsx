@@ -3,6 +3,7 @@ import Modal from "../../components/Modal"
 import { DetailsProps } from "../../types/Details";
 import { ProjectProps } from "../../types/Project";
 import { ModalProps } from "../../types/Modal";
+import ExperienceModal from "../../components/ExperienceModal";
 
 const mockDetails = jest.fn();
 jest.mock("../../components/Details", () => ({ label, info }: DetailsProps) => {
@@ -59,8 +60,10 @@ describe('ExperienceModal', () => {
   }
 
   test('renders if optional and required params are passed in', () => {
-    render(<Modal closeModal={closeModal} content={{ ...params.required, ...params.optional }} />)
-    expect(screen.getByTestId("Inner")).toMatchSnapshot()
+    const completeContent = { ...params.required, ...params.optional }
+    render(<ExperienceModal closeModal={params.closeModal}/>)
+    // render(<Modal closeModal={closeModal} content={completeContent} />)
+    expect(screen.getByTestId('ExperienceModal')).toMatchSnapshot()
     expect(screen.getByTestId("Title")).toHaveTextContent(params.required.title)
     expect(screen.getByTestId("Employer")).toHaveTextContent(params.required.employer)
     
@@ -82,7 +85,7 @@ describe('ExperienceModal', () => {
 
   test('renders if only required params are passed in', () => {
     render(<Modal closeModal={closeModal} content={{ ...params.required }} />)
-    expect(screen.getByTestId("Inner")).toMatchSnapshot()
+    expect(screen.getByTestId('ExperienceModal')).toMatchSnapshot()
     expect(screen.getByTestId("Title")).toHaveTextContent(params.required.title)
     expect(screen.getByTestId("Employer")).toHaveTextContent(params.required.employer)
     

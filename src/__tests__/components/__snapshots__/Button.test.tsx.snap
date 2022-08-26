@@ -1,18 +1,40 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Button renders if only required params are passed in 1`] = `
-<a
-  class="sc-bczRLJ iNjNxX"
+<div
   data-testid="Button"
-  href="https://www.google.com"
 >
-  <span>
-    TEST
-  </span>
-  <img
-    alt="arrow"
-    class="sc-gsnTZi gbyMYH"
-    src="arrow-right.svg"
-  />
-</a>
+  <a
+    class="sc-bczRLJ iNjNxX"
+  >
+    <span>
+      TEST
+    </span>
+    <img
+      alt="arrow"
+      class="sc-gsnTZi gbyMYH"
+      src="arrow-right.svg"
+    />
+  </a>
+</div>
+`;
+
+exports[`Button renders if required and optional params are passed in 1`] = `
+<div
+  data-testid="Button"
+>
+  <a
+    class="sc-bczRLJ iNjNxX"
+    href="www.google.com"
+  >
+    <span>
+      TEST
+    </span>
+    <img
+      alt="arrow"
+      class="sc-gsnTZi gbyMYH"
+      src="arrow-right.svg"
+    />
+  </a>
+</div>
 `;
