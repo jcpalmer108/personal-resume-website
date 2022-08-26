@@ -70,6 +70,8 @@ describe('Contact', () => {
     render(<Contact content={optional.content} contact={required.contact} />)
 
     // then
+    expect(screen.getByTestId('Contact')).toHaveAttribute('id', 'contact')
+
     expect(screen.getByTestId("Mobile")).toMatchSnapshot()
     expect(screen.getByTestId('Mobile')).toHaveTextContent(optional.content.title)
     expect(screen.getByTestId('Mobile')).toHaveTextContent(optional.content.description[0])

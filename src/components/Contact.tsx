@@ -19,7 +19,6 @@ export default function Contact({ content, contact, formFieldValues }: ContactPr
     formValues.message === ''
   )
 
-
   if(!content || !contact) {
     return null;
   }
@@ -65,7 +64,7 @@ export default function Contact({ content, contact, formFieldValues }: ContactPr
   }
   
   return (
-    <div id="contact">
+    <div id="contact" data-testid="Contact">
       <Section wide>
         <Mobile data-testid="Mobile" onSubmit={openMailLink}>
           <Section label={content?.label} center>

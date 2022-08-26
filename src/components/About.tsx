@@ -1,25 +1,6 @@
 import Section from "./Section"
 import { AboutProps } from "../types/About"
-import { 
-  AboutWrapper, 
-  Action, 
-  Content, 
-  Schooling, 
-  School, 
-  Link, 
-  Icon, 
-  Label,
-  Connect,
-  Prompt,
-  Degree, 
-  Socials,
-  SocialLabel,
-  StartProject,
-  Question,
-  Description,
-  Title,
-  BottomSpacing
-} from "../styles/components/About"
+import { AboutWrapper, Action, Content, Schooling, School, Link, Icon, Label, Connect, Prompt, Degree, Socials, SocialLabel, StartProject, Question, Description, Title, BottomSpacing} from "../styles/components/About"
 import { Education } from "../types/content"
 import { SocialLink } from "../types/socials"
 import socials from "../assets/content/socials.json"
