@@ -34,7 +34,7 @@ exports[`Experience renders if only required params are passed in 1`] = `
       <a
         class="sc-iBkjds cAGbc"
         data-testid="Call"
-        href="tel:3142212451"
+        href="tel:1112223333"
       >
         <img
           alt="call me"
@@ -50,7 +50,7 @@ exports[`Experience renders if only required params are passed in 1`] = `
       <a
         class="sc-iBkjds cAGbc"
         data-testid="Email"
-        href="mailto:jenna@jennapalmer.info"
+        href="mailto:test@email.com"
       >
         <img
           alt="email me"
@@ -171,7 +171,7 @@ exports[`Experience renders if only required params are passed in 1`] = `
     >
       <a
         class="sc-iBkjds cAGbc"
-        href="tel:3142212451"
+        href="tel:1112223333"
       >
         <img
           alt="call me"
@@ -186,7 +186,7 @@ exports[`Experience renders if only required params are passed in 1`] = `
       </a>
       <a
         class="sc-iBkjds cAGbc"
-        href="mailto:jenna@jennapalmer.info"
+        href="mailto:test@email.com"
       >
         <img
           alt="email me"

@@ -36,7 +36,7 @@ export default function App() {
         <About content={about} />
         <Skills content={skills}/>
         <Testimonials content={testimonials} />
-        <Experience content={experience} />
+        <Experience content={experience} contact={contactInfo} />
         <Gallery />
         <Contact content={contact} contact={contactInfo} />
         <FooterWrapper>

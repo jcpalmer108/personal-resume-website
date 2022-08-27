@@ -73,10 +73,12 @@ describe('About', () => {
     // then
     expect(screen.getByTestId('About')).toMatchSnapshot()
     expect(screen.getByTestId('About')).toHaveAttribute('id', 'about')
+    
     expect(mockSection).toHaveBeenCalledTimes(3)
     expect(mockSection).toHaveBeenNthCalledWith(1, required.label, undefined, undefined, undefined, undefined, undefined, undefined, undefined)
     expect(mockSection).toHaveBeenNthCalledWith(2, undefined, undefined, undefined, true, undefined, undefined, undefined, undefined)
     expect(mockSection).toHaveBeenNthCalledWith(3, undefined, undefined, undefined, true, undefined, true, undefined, undefined)
+
     expect(screen.getByTestId('Title')).toHaveTextContent(required.title)
     required.description.forEach((item, index) => { expect(screen.getByTestId(`Description ${index + 1}`)).toHaveTextContent(item) })
     expect(screen.getByTestId('Schooling').childNodes).toHaveLength(required.subSection.education.length + 1)

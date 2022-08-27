@@ -1,24 +1,37 @@
 import { render, screen } from "@testing-library/react";
 import Details from "../../components/Details"
 
-describe('Details', () => {
-  const params = {
+// params needed for component
+const params = {
+  required: {
     label: 'test label',
+  },
+  optional: {
     info: [ '1', '2' ],
-    noBottom: true,
+    noBottom: true
   }
+}
 
+describe('Details', () => {
   test('renders if optional and required params are passed in', () => {
-    render(<Details label={params.label} info={params.info} noBottom />)
+    // given
+    const { required, optional } = params;
+    render(<Details label={required.label} info={optional.info} noBottom={optional.noBottom} />)
+    
+    // then
     expect(screen.getByTestId("Details")).toMatchSnapshot()
-    expect(screen.getByTestId("Label")).toHaveTextContent(params.label)
-    expect(screen.getByTestId("Description")).toHaveTextContent(params.info.join(""))
+    expect(screen.getByTestId("Details")).toHaveTextContent(required.label)
+    optional.info.forEach(item => {
+      expect(screen.getByTestId("Details")).toHaveTextContent(item)
+    })
   })
 
-  test('renders if only required params are passed in', () => {
-    render(<Details label={params.label} info={params.info} />)
-    expect(screen.getByTestId("Details")).toMatchSnapshot()
-    expect(screen.getByTestId("Label")).toHaveTextContent(params.label)
-    expect(screen.getByTestId("Description")).toHaveTextContent(params.info.join(""))
+  test('does not render if no info is passed in', () => {
+    // given
+    const { required } = params;
+    render(<Details label={required.label} info={undefined} />)
+
+    // then
+    expect(screen.queryByTestId("Details")).toBeFalsy()
   })
 })

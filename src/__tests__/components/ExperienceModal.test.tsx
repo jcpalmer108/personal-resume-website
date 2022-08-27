@@ -5,6 +5,7 @@ import { ProjectProps } from "../../types/Project";
 import { ModalProps } from "../../types/Modal";
 import ExperienceModal from "../../components/ExperienceModal";
 
+// mock components
 const mockDetails = jest.fn();
 jest.mock("../../components/Details", () => ({ label, info }: DetailsProps) => {
   mockDetails(label, info);
@@ -23,12 +24,11 @@ jest.mock("../../components/Modal", () => ({ closeModal, children }: ModalProps)
   return <div>{children}</div>;
 });
 
-
-describe('ExperienceModal', () => {
-  const closeModal = jest.fn()
-  const params = {
+// params needed for component
+const params = {
+  required: {
     closeModal: jest.fn(),
-    required: {
+    content: {
       title: 'test title',
       employer: 'test employer',
       location: 'test location',
@@ -37,9 +37,11 @@ describe('ExperienceModal', () => {
       timeline: {
         start: 'start date',
         end: 'end date'
-      }
-    },
-    optional: {
+      }  
+    }
+  },
+  optional: {
+    content: {
       team: 'test team',
       organization: 'test org',
       projects: [
@@ -55,44 +57,53 @@ describe('ExperienceModal', () => {
           description: [ 'project 2 desc 1', 'project 2 desc 2' ],
           title: 'project title 2'
         }
-      ]
+      ]  
     }
   }
+}
 
+describe('ExperienceModal', () => {
   test('renders if optional and required params are passed in', () => {
-    const completeContent = { ...params.required, ...params.optional }
-    render(<ExperienceModal closeModal={params.closeModal}/>)
-    // render(<Modal closeModal={closeModal} content={completeContent} />)
+    // given
+    const { required, optional } = params;
+    const completeContent = { ...required.content, ...optional.content }
+    render(<ExperienceModal closeModal={required.closeModal} content={completeContent} />)
+
+    // then
     expect(screen.getByTestId('ExperienceModal')).toMatchSnapshot()
-    expect(screen.getByTestId("Title")).toHaveTextContent(params.required.title)
-    expect(screen.getByTestId("Employer")).toHaveTextContent(params.required.employer)
+    expect(screen.getByTestId("Title")).toHaveTextContent(required.content.title)
+    expect(screen.getByTestId("Employer")).toHaveTextContent(required.content.employer)
     
     expect(mockDetails).toHaveBeenCalledTimes(6)
-    expect(mockDetails).toHaveBeenNthCalledWith(1, "Description", params.required.description)
-    expect(mockDetails).toHaveBeenNthCalledWith(2, "Organization", [params.optional.organization])
-    expect(mockDetails).toHaveBeenNthCalledWith(3, "Team", [params.optional.team])
+    expect(mockDetails).toHaveBeenNthCalledWith(1, "Description", required.content.description)
+    expect(mockDetails).toHaveBeenNthCalledWith(2, "Organization", [optional.content.organization])
+    expect(mockDetails).toHaveBeenNthCalledWith(3, "Team", [optional.content.team])
     
     expect(mockProject).toHaveBeenCalledTimes(2)
     new Array(2).forEach((index) => {
       expect(mockProject).toHaveBeenNthCalledWith(index + 1, 
-        params.optional.projects[index].icon,
-        params.optional.projects[index].industry,
-        params.optional.projects[index].description,
-        params.optional.projects[index].title
+        optional.content.projects[index].icon,
+        optional.content.projects[index].industry,
+        optional.content.projects[index].description,
+        optional.content.projects[index].title
       )
     })
   })
 
   test('renders if only required params are passed in', () => {
-    render(<Modal closeModal={closeModal} content={{ ...params.required }} />)
+    // given
+    const { required } = params;
+    render(<ExperienceModal closeModal={required.closeModal} content={required.content}/>)
+
+    // then
     expect(screen.getByTestId('ExperienceModal')).toMatchSnapshot()
-    expect(screen.getByTestId("Title")).toHaveTextContent(params.required.title)
-    expect(screen.getByTestId("Employer")).toHaveTextContent(params.required.employer)
+    expect(screen.getByTestId("Title")).toHaveTextContent(required.content.title)
+    expect(screen.getByTestId("Employer")).toHaveTextContent(required.content.employer)
     
     expect(mockDetails).toHaveBeenCalledTimes(3)
-    expect(mockDetails).toHaveBeenNthCalledWith(1, "Description", params.required.description)
-    expect(mockDetails).toHaveBeenNthCalledWith(2, "Location", [params.required.location])
-    expect(mockDetails).toHaveBeenNthCalledWith(3, "Timeline", [ `${params.required.timeline.start} - ${params.required.timeline.end}` ])
+    expect(mockDetails).toHaveBeenNthCalledWith(1, "Description", required.content.description)
+    expect(mockDetails).toHaveBeenNthCalledWith(2, "Location", [required.content.location])
+    expect(mockDetails).toHaveBeenNthCalledWith(3, "Timeline", [ `${required.content.timeline.start} - ${required.content.timeline.end}` ])
 
     expect(mockProject).toHaveBeenCalledTimes(0)
   })

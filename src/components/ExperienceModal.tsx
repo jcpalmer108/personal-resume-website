@@ -1,4 +1,3 @@
-import { Experience } from "../types/content"
 import { 
   Content,
   Circle,
@@ -14,11 +13,7 @@ import {
 import Details from "./Details"
 import Project from "./Project"
 import Modal from "./Modal"
-
-type ExperienceModalProps = {
-  closeModal: Function
-  content?: Experience;
-}
+import { ExperienceModalProps } from "../types/ExperienceModal";
 
 export default function ExperienceModal({ closeModal, content }: ExperienceModalProps) {
   const generateDetails = () => {

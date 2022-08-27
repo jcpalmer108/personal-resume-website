@@ -1,53 +1,31 @@
+import { useEffect, useState } from "react"
 import { ExperienceProps } from "../types/Experience"
-import { Wrapper } from "../styles/components/Experience"
-import {
-  Upper,
-  Title,
-  Description,
-  Paragraph,
-  Tile,
-  Icon,
-  Label,
-  Lower,
-  Job,
-  Logo,
-  Content,
-  JobTitle,
-  Info,
-  DiagonalLine,
-  JobDescription,
-  JobParagraph,
-  Mosaic,
-  Summary,
-  ModalTrigger
-} from "../styles/components/Experience"
+import { Wrapper, Upper, Title, Description, Paragraph, Tile, Icon, Label, Lower, Job, Logo, Content, JobTitle, Info, DiagonalLine, JobDescription, JobParagraph, Mosaic, Summary, ModalTrigger } from "../styles/components/Experience"
+import Section from "./Section"
+import ExperienceModal from "./ExperienceModal"
 import callMe from "../assets/images/icons/call-me.svg"
 import emailMe from "../assets/images/icons/email-me.svg"
 import diagonal from "../assets/images/icons/diagonal-line.svg"
-import Section from "./Section"
-import { useState } from "react"
-import ExperienceModal from "./ExperienceModal"
 
-export default function Experience({ content }: ExperienceProps) {
-  const [ modalIsOpen, setModalIsOpen ] = useState(false);
-  const defaultModalContent = {
-    title: "",
-    employer: "",
-    location: "",
-    description: [""],
-    icon: "",
-    timeline: {
-      start: "",
-      end: ""
-    }
+const defaultModalContent = {
+  title: "",
+  employer: "",
+  location: "",
+  description: [""],
+  icon: "",
+  timeline: {
+    start: "",
+    end: ""
   }
+}
 
+export default function Experience({ content, contact }: ExperienceProps) {
+  const [ modalIsOpen, setModalIsOpen ] = useState(false);
   const [ selectedContent, setSelectedContent ] = useState(
-    (content &&
-    content.subSection &&
-    content.subSection.experience && 
-    content.subSection.experience[0] )
-    ? content.subSection.experience[0] : defaultModalContent);
+    content?.subSection?.experience ?
+    content?.subSection?.experience[0] : 
+    defaultModalContent
+  );
 
   const manageSelectedContent = (selectedIndex: number) => {
     if(
@@ -69,6 +47,10 @@ export default function Experience({ content }: ExperienceProps) {
     }
   }
 
+  if(!content || !contact) {
+    return null;
+  }
+
   return (
     <div id="experience">
       {modalIsOpen && (<ExperienceModal closeModal={() => setModalIsOpen(!modalIsOpen) } content={selectedContent} />)}
@@ -82,11 +64,11 @@ export default function Experience({ content }: ExperienceProps) {
               </Description>
             </Summary>
             <Mosaic desktop>
-              <Tile href="tel:3142212451" data-testid="Call">
+              <Tile href={`tel:${contact?.cell}`} data-testid="Call">
                 <Icon src={callMe} alt="call me" />
                 <Label>CALL ME</Label>
               </Tile>
-              <Tile href="mailto:jenna@jennapalmer.info" data-testid="Email">
+              <Tile href={`mailto:${contact?.email}`} data-testid="Email">
                 <Icon src={emailMe} alt="email me"/>
                 <Label>EMAIL ME</Label>
               </Tile>
@@ -115,11 +97,11 @@ export default function Experience({ content }: ExperienceProps) {
               ))
             }
             <Mosaic>
-              <Tile href="tel:3142212451">
+              <Tile href={`tel:${contact?.cell}`}>
                 <Icon src={callMe} alt="call me" />
                 <Label>Call Me</Label>
               </Tile>
-              <Tile href="mailto:jenna@jennapalmer.info">
+              <Tile href={`mailto:${contact?.email}`}>
                 <Icon src={emailMe} alt="email me"/>
                 <Label>Email Me</Label>
               </Tile>

@@ -2,68 +2,157 @@
 
 exports[`ExperienceModal renders if only required params are passed in 1`] = `
 <div
-  class="sc-hKMtZM dKMdxt"
-  data-testid="Inner"
+  class="sc-gKXOVf eWOBtc"
+  data-testid="ExperienceModal"
 >
   <div
-    class="sc-eCYdqJ cINLYK"
-    data-testid="LeftRight"
+    class="sc-iBkjds kEnPaL"
   >
     <div
-      class="sc-jSMfEi iXHsan"
-      data-testid="TopBottom"
-    />
+      class="sc-ftvSup hZHVdZ"
+    >
+      <img
+        alt="logo"
+        class="sc-papXJ ijcNsj"
+        data-testid="Logo"
+        src="[object Object]"
+      />
+    </div>
+    <div
+      class="sc-jqUVSM kDvCkA"
+    >
+      <div
+        class="sc-kDDrLX erjzcT"
+      >
+        <div
+          class="sc-iqcoie gbUtb"
+        >
+          Title
+        </div>
+        <span
+          class="sc-crXcEl grLoBO"
+          data-testid="Title"
+        >
+          test title
+        </span>
+      </div>
+      <div
+        class="sc-kDDrLX erjzcT"
+      >
+        <div
+          class="sc-iqcoie gbUtb"
+        >
+          Employer
+        </div>
+        <span
+          class="sc-crXcEl grLoBO"
+          data-testid="Employer"
+        >
+          test employer
+        </span>
+      </div>
+    </div>
+  </div>
+  <div
+    class="sc-breuTD ijGDlU"
+  >
+    <div>
+      <div />
+    </div>
+    <div>
+      <div />
+    </div>
+    <div>
+      <div />
+    </div>
   </div>
 </div>
 `;
 
 exports[`ExperienceModal renders if optional and required params are passed in 1`] = `
 <div
-  class="sc-hKMtZM dKMdxt"
-  data-testid="Inner"
+  class="sc-gKXOVf eWOBtc"
+  data-testid="ExperienceModal"
 >
   <div
-    class="sc-eCYdqJ cINLYK"
-    data-testid="LeftRight"
+    class="sc-iBkjds kEnPaL"
   >
     <div
-      class="sc-jSMfEi iXHsan"
-      data-testid="TopBottom"
-    />
+      class="sc-ftvSup hZHVdZ"
+    >
+      <img
+        alt="logo"
+        class="sc-papXJ ijcNsj"
+        data-testid="Logo"
+        src="[object Object]"
+      />
+    </div>
+    <div
+      class="sc-jqUVSM kDvCkA"
+    >
+      <div
+        class="sc-kDDrLX erjzcT"
+      >
+        <div
+          class="sc-iqcoie gbUtb"
+        >
+          Title
+        </div>
+        <span
+          class="sc-crXcEl grLoBO"
+          data-testid="Title"
+        >
+          test title
+        </span>
+      </div>
+      <div
+        class="sc-kDDrLX erjzcT"
+      >
+        <div
+          class="sc-iqcoie gbUtb"
+        >
+          Employer
+        </div>
+        <span
+          class="sc-crXcEl grLoBO"
+          data-testid="Employer"
+        >
+          test employer
+        </span>
+      </div>
+    </div>
   </div>
-</div>
-`;
-
-exports[`Modal renders if only required params are passed in 1`] = `
-<div
-  class="sc-hKMtZM dKMdxt"
-  data-testid="Inner"
->
   <div
-    class="sc-eCYdqJ cINLYK"
-    data-testid="LeftRight"
+    class="sc-breuTD ijGDlU"
   >
-    <div
-      class="sc-jSMfEi iXHsan"
-      data-testid="TopBottom"
-    />
-  </div>
-</div>
-`;
-
-exports[`Modal renders if optional and required params are passed in 1`] = `
-<div
-  class="sc-hKMtZM dKMdxt"
-  data-testid="Inner"
->
-  <div
-    class="sc-eCYdqJ cINLYK"
-    data-testid="LeftRight"
-  >
-    <div
-      class="sc-jSMfEi iXHsan"
-      data-testid="TopBottom"
-    />
+    <div>
+      <div />
+    </div>
+    <div>
+      <div
+        class="sc-evZas dsLoZa"
+      >
+        <div />
+        <div />
+      </div>
+    </div>
+    <div>
+      <div />
+    </div>
+    <div>
+      <div />
+    </div>
+    <div>
+      <div />
+    </div>
+    <div>
+      <div
+        data-testid="ProjectLineItems"
+      >
+        <div />
+        <div />
+      </div>
+    </div>
   </div>
 </div>
 `;
