@@ -1,18 +1,18 @@
 import React from 'react';
-import { Wrapper, LandingWrapper, FooterWrapper } from './styles/App';
-import Footer from './components/Footer';
-import GlobalStyle from './styles/global';
-import content from './assets/content/content.json'
-import generateMenu from './utils/generateMenu';
-import SeparatingLine from './components/SeparatingLine';
-import Navbar from './components/Navbar';
-import Landing from './components/Landing';
+import content from './assets/content/content.json';
 import About from './components/About';
-import Testimonials from './components/Testimonials';
-import Experience from './components/Experience';
-import Skills from './components/Skills';
-import Gallery from './components/Gallery';
 import Contact from './components/Contact';
+import Experience from './components/Experience';
+import Footer from './components/Footer';
+import Gallery from './components/Gallery';
+import Landing from './components/Landing';
+import Navbar from './components/Navbar';
+import SeparatingLine from './components/SeparatingLine';
+import Skills from './components/Skills';
+import Testimonials from './components/Testimonials';
+import { FooterWrapper, LandingWrapper, Wrapper } from './styles/App';
+import GlobalStyle from './styles/global';
+import generateMenu from './utils/generateMenu';
 
 export default function App() {
   const menu = generateMenu(content.sections)

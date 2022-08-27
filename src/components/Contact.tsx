@@ -1,23 +1,13 @@
 import { useState } from "react";
+import socials from "../assets/content/socials.json";
+import { BlankSection, BottomBar, Button, FormWrapper, Icon, InputWrapper, Left, LeftWrapper, Links, Mobile, NotMobile, Right, Socials, Title } from "../styles/components/Contact";
 import { ContactProps, FormProps } from "../types/Contact";
-import { Mobile, FormWrapper, Button, NotMobile, Left, Right, Title, LeftWrapper, InputWrapper, BottomBar, Socials, Links, BlankSection, Icon } from "../styles/components/Contact"
-import Input from "./Input"
+import Input from "./Input";
 import Section from "./Section";
-import socials from "../assets/content/socials.json"
 
 export default function Contact({ content, contact, formFieldValues }: ContactProps) {
-  const [ formValues, setFormValues ] = useState<FormProps>(formFieldValues || {
-    name: '',
-    phone: '',
-    email: '',
-    message: ''
-  })
-  const [ isDisabled, setIsDisabled ] = useState<boolean>(
-    formValues.name === '' || 
-    formValues.phone === '' || 
-    formValues.email === '' || 
-    formValues.message === ''
-  )
+  const [ formValues, setFormValues ] = useState<FormProps>(formFieldValues || { name: '', phone: '', email: '', message: '' })
+  const [ isDisabled, setIsDisabled ] = useState<boolean>( formValues.name === '' ||  formValues.phone === '' ||  formValues.email === '' ||  formValues.message === '' )
 
   if(!content || !contact) {
     return null;

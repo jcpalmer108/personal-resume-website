@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import Footer from "../../components/Footer";
-import { SeparatingLineProps } from '../../types/SeparatingLine'
+import { SeparatingLineProps } from '../../types/SeparatingLine';
 
 // mock components
 const mockSeparatingLine = jest.fn();

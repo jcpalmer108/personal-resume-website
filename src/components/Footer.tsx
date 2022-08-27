@@ -1,15 +1,8 @@
-import { 
-  Logo, 
-  Wrapper, 
-  FooterMenu, 
-  FooterPages, 
-  Copyright, 
-  Name
-} from '../styles/components/Footer';
-import Section from './Section';
 import logo from '../assets/images/logos/jennapalmer-light.svg';
+import { Copyright, FooterMenu, FooterPages, Logo, Name, Wrapper } from '../styles/components/Footer';
 import { FooterProps } from '../types/Footer';
 import { MenuItem } from '../types/global';
+import Section from './Section';
 import SeparatingLine from './SeparatingLine';
 
 export default function Footer({ menu }: FooterProps) {

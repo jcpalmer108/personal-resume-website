@@ -1,25 +1,8 @@
-import { 
-  Wrapper, 
-  Header, 
-  Line, 
-  Label, 
-  Title, 
-  Children
-} from "../styles/components/Section";
 import line from "../assets/images/icons/label-line.svg";
-import { SectionProps } from "../types/Section"
+import { Children, Header, Label, Line, Title, Wrapper } from "../styles/components/Section";
+import { SectionProps } from "../types/Section";
 
-export default function Section({ 
-  label,
-  children,
-  light,
-  thin,
-  wide,
-  center,
-  bottom,
-  noTop,
-  noBorder
-}: SectionProps) {
+export default function Section({ label, children, light, thin, wide, center, bottom, noTop, noBorder }: SectionProps) {
   return (
     <Wrapper noBorder={noBorder} light={light} thin={thin} bottom={bottom} data-testid="Wrapper">
       {label && (

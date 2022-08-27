@@ -1,6 +1,6 @@
-import { Link, ArrowRight } from "../styles/components/Button"
-import { ButtonProps } from "../types/Button";
 import arrow from "../assets/images/icons/arrow-right.svg";
+import { ArrowRight, Link } from "../styles/components/Button";
+import { ButtonProps } from "../types/Button";
 
 export default function Button({ label, url, onClick }: ButtonProps ) {
   if(!url && !onClick) {

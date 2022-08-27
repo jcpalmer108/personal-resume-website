@@ -1,17 +1,8 @@
-import { 
-  Window, 
-  BackgroundOverlay, 
-  InnerWindow, 
-  CloseIcon,
-  LeftRightBorders,
-  TopBottomBorders,
-} from "../styles/components/Modal";
-import closeIcon from "../assets/images/icons/close.svg"
+import closeIcon from "../assets/images/icons/close.svg";
+import { BackgroundOverlay, CloseIcon, InnerWindow, LeftRightBorders, TopBottomBorders, Window } from "../styles/components/Modal";
 import { ModalProps } from "../types/Modal";
 
-
 export default function Modal({ closeModal, children }: ModalProps) {
-
   return (
     <>
       <BackgroundOverlay data-testid="Overlay" onClick={() => closeModal()} />

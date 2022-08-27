@@ -1,8 +1,8 @@
 import { render, screen } from "@testing-library/react";
-import { DetailsProps } from "../../types/Details";
-import { ProjectProps } from "../../types/Project";
-import { ModalProps } from "../../types/Modal";
 import ExperienceModal from "../../components/ExperienceModal";
+import { DetailsProps } from "../../types/Details";
+import { ModalProps } from "../../types/Modal";
+import { ProjectProps } from "../../types/Project";
 
 // mock components
 const mockDetails = jest.fn();

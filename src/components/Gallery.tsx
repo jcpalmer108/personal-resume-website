@@ -1,6 +1,6 @@
-import Section from "./Section"
-import { Photo, Wrapper, Inner } from "../styles/components/Gallery"
-import { GalleryProps } from "../types/Gallery"
+import { Inner, Photo, Wrapper } from "../styles/components/Gallery";
+import { GalleryProps } from "../types/Gallery";
+import Section from "./Section";
 
 export default function Gallery({ photos }: GalleryProps) {
   if(photos && (photos?.length < 3)) {

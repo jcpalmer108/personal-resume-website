@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import Details from "../../components/Details"
+import Details from "../../components/Details";
 
 // params needed for component
 const params = {

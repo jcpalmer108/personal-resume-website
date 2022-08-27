@@ -1,31 +1,18 @@
-import React, { useEffect, useState } from "react";
-import Section from "./Section";
-import { 
-  Logo, 
-  UpperMenu, 
-  SocialsWrapper,
-  DesktopPages,
-  DesktopMenu,
-  LowerMenu,
-  MobilePages,
-  MobileMenu,
-  Socials,
-  Icon,
-  Hamburger
-} from "../styles/components/Navbar";
-import logo from "../assets/images/logos/jennapalmer-dark.svg";
-import { redstone, tabletBreakpoint } from "../styles/variables";
-import socials from '../assets/content/socials.json';
-import { Link, NavbarProps } from '../types/Navbar';
-import { animated, useSpring } from "react-spring";
 import { Turn } from 'hamburger-react';
+import React, { useEffect, useState } from "react";
+import { animated, useSpring } from "react-spring";
+import socials from '../assets/content/socials.json';
+import logo from "../assets/images/logos/jennapalmer-dark.svg";
+import { DesktopMenu, DesktopPages, Hamburger, Icon, Logo, LowerMenu, MobileMenu, MobilePages, Socials, SocialsWrapper, UpperMenu } from "../styles/components/Navbar";
+import { redstone, tabletBreakpoint } from "../styles/variables";
 import { MenuItem } from "../types/global";
+import { Link, NavbarProps } from '../types/Navbar';
+import Section from "./Section";
 
 export default function Navbar({ menu }: NavbarProps) {
   const [isOpen, setIsOpen] = useState(false)
   const [isDesktopView, setIsDesktop] = useState(window.innerWidth >= tabletBreakpoint)
   
-
   const updateMedia = () => {
     const widerThanMenuBreakpoint = window.innerWidth >= tabletBreakpoint;
     if(isDesktopView !== widerThanMenuBreakpoint) setIsDesktop(widerThanMenuBreakpoint)

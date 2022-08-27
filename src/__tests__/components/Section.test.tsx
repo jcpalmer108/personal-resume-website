@@ -1,6 +1,6 @@
-import Section from '../../components/Section';
 import { render, screen } from '@testing-library/react';
-import 'jest-styled-components'
+import 'jest-styled-components';
+import Section from '../../components/Section';
 
 const params = {
   label: "testing",

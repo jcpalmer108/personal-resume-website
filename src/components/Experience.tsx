@@ -1,11 +1,11 @@
 import { useState } from "react"
-import { ExperienceProps } from "../types/Experience"
-import { Wrapper, Upper, Title, Description, Paragraph, Tile, Icon, Label, Lower, Job, Logo, Content, JobTitle, Info, DiagonalLine, JobDescription, JobParagraph, Mosaic, Summary, ModalTrigger } from "../styles/components/Experience"
-import Section from "./Section"
-import ExperienceModal from "./ExperienceModal"
 import callMe from "../assets/images/icons/call-me.svg"
-import emailMe from "../assets/images/icons/email-me.svg"
 import diagonal from "../assets/images/icons/diagonal-line.svg"
+import emailMe from "../assets/images/icons/email-me.svg"
+import { Content, Description, DiagonalLine, Icon, Info, Job, JobDescription, JobParagraph, JobTitle, Label, Logo, Lower, ModalTrigger, Mosaic, Paragraph, Summary, Tile, Title, Upper, Wrapper } from "../styles/components/Experience"
+import { ExperienceProps } from "../types/Experience"
+import ExperienceModal from "./ExperienceModal"
+import Section from "./Section"
 
 const defaultModalContent = {
   title: "",

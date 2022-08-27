@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import SeparatingLine from "../../components/SeparatingLine"
+import SeparatingLine from "../../components/SeparatingLine";
 
 describe('SeparatingLine', () => {
   test('renders if optional params are passed in', () => {

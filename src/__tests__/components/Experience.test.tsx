@@ -1,6 +1,6 @@
-import { render, screen } from "@testing-library/react"
+import { render, screen } from "@testing-library/react";
+import Experience from "../../components/Experience";
 import { ExperienceModalProps } from "../../types/ExperienceModal";
-import Experience from "../../components/Experience"
 
 // mock components
 const mockSection = jest.fn();

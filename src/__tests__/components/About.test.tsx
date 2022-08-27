@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react';
-import 'jest-styled-components'
+import 'jest-styled-components';
+import socials from "../../assets/content/socials.json";
 import About from '../../components/About';
-import socials from "../../assets/content/socials.json"
 import { SectionProps } from "../../types/Section";
 
 // mock content

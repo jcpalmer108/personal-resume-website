@@ -1,18 +1,10 @@
 import React from "react";
+import scroll from "../assets/images/icons/scroll.svg";
+import { Content, Description, DesktopPhoto, DiscoverMore, Main, MobilePhoto, Title } from "../styles/components/Landing";
 import { LandingProps } from "../types/Landing";
-import { 
-  Title, 
-  Content, 
-  Description, 
-  MobilePhoto, 
-  DesktopPhoto, 
-  DiscoverMore, 
-  Main, 
-} from "../styles/components/Landing";
-import Section from "./Section";
 import Button from "./Button";
-import SeparatingLine from "./SeparatingLine"
-import scroll from "../assets/images/icons/scroll.svg"
+import Section from "./Section";
+import SeparatingLine from "./SeparatingLine";
 
 export default function Landing({ content }: LandingProps) {
   const defaultImage = "pexels-ekaterina-bolovtsova-4049791.jpg"

@@ -1,22 +1,9 @@
-import { TestimonialProps } from "../types/Testimonials"
-import { 
-  Wrapper, 
-  Quote, 
-  Person, 
-  Title, 
-  Dots, 
-  ArrowLeft, 
-  ArrowRight, 
-  Arrows, 
-  Circle,
-  Option,
-  Dot,
-  Content
-} from "../styles/components/Testimonials"
-import Section from "./Section"
+import { useState } from "react"
 import arrowLeft from "../assets/images/icons/arrow-left-pink.svg"
 import arrowRight from "../assets/images/icons/arrow-right-pink.svg"
-import { useState } from "react"
+import { ArrowLeft, ArrowRight, Arrows, Circle, Content, Dot, Dots, Option, Person, Quote, Title, Wrapper } from "../styles/components/Testimonials"
+import { TestimonialProps } from "../types/Testimonials"
+import Section from "./Section"
 
 export default function Testimonials({ content }: TestimonialProps) {
   let [ selectedIndex, setSelectedIndex ] = useState(0)

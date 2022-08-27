@@ -1,12 +1,4 @@
-import { 
-  Wrapper,
-  Icon,
-  Industry,
-  Title,
-  Description,
-  Heading,
-  TitleLine
-} from "../styles/components/Project"
+import { Description, Heading, Icon, Industry, Title, TitleLine, Wrapper } from "../styles/components/Project"
 import { ProjectProps } from "../types/Project"
 
 export default function Project({ icon, industry, title, description }: ProjectProps) {

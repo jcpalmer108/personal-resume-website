@@ -1,15 +1,4 @@
-import { 
-  Content,
-  Circle,
-  Logo,
-  Tile,
-  Overview,
-  TileLabel,
-  TileInfo,
-  OrgTeam,
-  JobDetails,
-  Summary
-} from "../styles/components/Modal";
+import { Content, Circle, Logo, Tile, Overview, TileLabel, TileInfo, OrgTeam, JobDetails, Summary } from "../styles/components/Modal";
 import Details from "./Details"
 import Project from "./Project"
 import Modal from "./Modal"
@@ -85,29 +74,27 @@ export default function ExperienceModal({ closeModal, content }: ExperienceModal
   }
 
   return (
-    <>
-      <Modal closeModal={closeModal}>
-        <Content data-testid="ExperienceModal">
-          <Tile>
-            <Circle>
-              <Logo data-testid="Logo" src={require(`../assets/images/company/${content?.icon || "nike"}-white.svg`)} alt="logo" icon={content?.icon} />
-            </Circle>
-            <Overview>
-              <Summary>
-                <TileLabel>Title</TileLabel>
-                <TileInfo data-testid="Title">{content?.title}</TileInfo>
-              </Summary>
-              <Summary>
-                <TileLabel>Employer</TileLabel>
-                <TileInfo data-testid="Employer">{content?.employer}</TileInfo>
-              </Summary>
-            </Overview>
-          </Tile>
-          <JobDetails>
-            {generateDetails().map((item, index) => <div key={`Detail ${index + 1}`}>{item}</div>)}
-          </JobDetails>
-        </Content>
-      </Modal>
-    </>
+    <Modal closeModal={closeModal}>
+    <Content data-testid="ExperienceModal">
+      <Tile>
+        <Circle>
+          <Logo data-testid="Logo" src={require(`../assets/images/company/${content?.icon || "nike"}-white.svg`)} alt="logo" icon={content?.icon} />
+        </Circle>
+        <Overview>
+          <Summary>
+            <TileLabel>Title</TileLabel>
+            <TileInfo data-testid="Title">{content?.title}</TileInfo>
+          </Summary>
+          <Summary>
+            <TileLabel>Employer</TileLabel>
+            <TileInfo data-testid="Employer">{content?.employer}</TileInfo>
+          </Summary>
+        </Overview>
+      </Tile>
+      <JobDetails>
+        {generateDetails().map((item, index) => <div key={`Detail ${index + 1}`}>{item}</div>)}
+      </JobDetails>
+    </Content>
+  </Modal>
   )
 }

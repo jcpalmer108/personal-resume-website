@@ -1,8 +1,7 @@
-import { SocialLink } from "@/types/socials";
-import { render, screen, fireEvent } from "@testing-library/react";
-import Contact from "../../components/Contact"
-import { InputProps } from "../../types/Input"
+import { fireEvent, render, screen } from "@testing-library/react";
 import socials from "../../assets/content/socials.json";
+import Contact from "../../components/Contact";
+import { InputProps } from "../../types/Input";
 
 // mock content
 jest.mock('../../assets/content/socials.json', ()=>({

@@ -1,18 +1,27 @@
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import Input from "../../components/Input"
+import Input from "../../components/Input";
 
 // params for component
-describe('Input', () => {
-  const params = {
-    label: 'test label',
-    value: 'test value',
+const params = {
+  required: {
+    label: 'test-label',
     updateForm: jest.fn(),
+  },
+  optional: {
+    value: 'test-value',
+    area: true,
+    noBorder: true,
   }
+}
+
+describe('Input', () => {
   test('renders if optional and required params are passed in', () => {
-    render(<Input label={params.label} value={params.value} updateForm={params.updateForm} area noBorder/>)
+    // given
+    const { required, optional } = params;
+    render(<Input label={required.label} value={optional.value} updateForm={required.updateForm} area={optional.area} noBorder={optional.noBorder}/>)
     expect(screen.getByTestId("Input")).toMatchSnapshot()
-    expect(screen.getByTestId("Input").firstChild.nodeName).toBe('TEXTAREA')
+    expect(screen.getByTestId("Input").childNodes[0].nodeName).toBe('TEXTAREA')
     expect(screen.getByTestId("Input").lastChild.nodeName).toBe('LABEL')
     expect(screen.getByTestId("Input").lastChild).toHaveTextContent(params.label.toUpperCase())
   })

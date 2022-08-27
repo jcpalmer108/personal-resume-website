@@ -1,21 +1,7 @@
-import { Skill, Category } from "../types/content";
-import Modal from "./Modal"
-import { 
-  Section, 
-  Wrapper, 
-  CallToAction,
-  RocketIcon,
-  Circle,
-  Action,
-  Details,
-  Subheader,
-  Line,
-  Icon,
-  Info,
-  Subtitle,
-  SkillInfo
-} from "../styles/components/SkillsModal"
 import rocketIcon from "../assets/images/icons/rocket.svg";
+import { Action, CallToAction, Circle, Details, Icon, Info, Line, RocketIcon, Section, SkillInfo, Subheader, Subtitle, Wrapper } from "../styles/components/SkillsModal";
+import { Category, Skill } from "../types/content";
+import Modal from "./Modal";
 
 type SkillsModalProps = {
   closeModal: Function,

@@ -1,27 +1,11 @@
-import { 
-  SkillsProps, 
-  TileProps,
-  DescriptionAndActionProps,
-  TitleProps
-} from "../types/Skills";
-import { 
-  Mobile,
-  NotMobile,
-  Title,
-  Link,
-  Logo,
-  Description,
-  Mosaic,
-  Cell,
-  Content,
-  ButtonWrapper
-} from "../styles/components/Skills";
-import Section from "../components/Section"
-import { Skill as SkillsContent } from "../types/content"
-import Marquee from "react-fast-marquee";
-import Button from "./Button";
 import { useState } from "react";
-import SkillsModal from "./SkillsModal"
+import Marquee from "react-fast-marquee";
+import Section from "../components/Section";
+import { ButtonWrapper, Cell, Content, Description, Link, Logo, Mobile, Mosaic, NotMobile, Title } from "../styles/components/Skills";
+import { Skill as SkillsContent } from "../types/content";
+import { DescriptionAndActionProps, SkillsProps, TileProps, TitleProps } from "../types/Skills";
+import Button from "./Button";
+import SkillsModal from "./SkillsModal";
 
 export default function Skills({ content }: SkillsProps) {
   const skillList = content?.subSection?.skills?.data.filter(item => item.url && item.category !== 'soft-skills');

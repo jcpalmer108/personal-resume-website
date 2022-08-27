@@ -1,9 +1,9 @@
-import Section from "./Section"
+import socials from "../assets/content/socials.json"
+import { AboutWrapper, Action, BottomSpacing, Connect, Content, Degree, Description, Icon, Label, Link, Prompt, Question, School, Schooling, SocialLabel, Socials, StartProject, Title } from "../styles/components/About"
 import { AboutProps } from "../types/About"
-import { AboutWrapper, Action, Content, Schooling, School, Link, Icon, Label, Connect, Prompt, Degree, Socials, SocialLabel, StartProject, Question, Description, Title, BottomSpacing} from "../styles/components/About"
 import { Education } from "../types/content"
 import { SocialLink } from "../types/socials"
-import socials from "../assets/content/socials.json"
+import Section from "./Section"
 
 export default function About({ content }: AboutProps) {
   const { links } = socials;

@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react';
-import 'jest-styled-components'
-import Skills from '../../components/Skills';
+import 'jest-styled-components';
 import Button from "../../components/Button";
+import Skills from '../../components/Skills';
 
 jest.mock('../../components/Button')
 

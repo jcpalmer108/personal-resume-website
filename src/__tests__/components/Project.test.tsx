@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import Project from "../../components/Project"
+import Project from "../../components/Project";
 
 describe('Project', () => {
   const params = {
@@ -16,6 +16,5 @@ describe('Project', () => {
     expect(screen.getByTestId("Title")).toHaveTextContent(params.title)
     expect(screen.getByTestId("Industry")).toHaveTextContent(params.industry)
     expect(screen.getByTestId("Description")).toHaveTextContent(params.description.join(""))
-
   })
 })
