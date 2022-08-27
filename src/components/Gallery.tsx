@@ -3,7 +3,7 @@ import { GalleryProps } from "../types/Gallery";
 import Section from "./Section";
 
 export default function Gallery({ photos }: GalleryProps) {
-  if(photos && (photos?.length < 3)) {
+  if (photos && photos?.length < 3) {
     return null;
   }
 
@@ -11,11 +11,15 @@ export default function Gallery({ photos }: GalleryProps) {
     <Section wide>
       <Wrapper>
         <Inner data-testid="Gallery">
-          {photos?.slice(0,3).map((photo, index) => (
-            <Photo key={`Photo ${index + 1}`} src={require("../assets/images/gallery/" + photo + ".jpg")} alt={`Photo ${index + 1}`} />
+          {photos?.slice(0, 3).map((photo, index) => (
+            <Photo
+              key={`Photo ${index + 1}`}
+              src={require("../assets/images/gallery/" + photo + ".jpg")}
+              alt={`Photo ${index + 1}`}
+            />
           ))}
         </Inner>
       </Wrapper>
     </Section>
-  )
+  );
 }

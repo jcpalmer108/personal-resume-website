@@ -1,5 +1,10 @@
-import styled from "styled-components"
-import { desktopBreakpoint, redstone, silver_polish, tabletBreakpoint } from "../variables"
+import styled from "styled-components";
+import {
+  desktopBreakpoint,
+  redstone,
+  silver_polish,
+  tabletBreakpoint,
+} from "../variables";
 
 export const Wrapper = styled.div`
   text-align: center;
@@ -7,10 +12,9 @@ export const Wrapper = styled.div`
   @media (min-width: ${tabletBreakpoint}px) {
     text-align: left;
   }
-`
+`;
 
 export const Upper = styled.div`
-
   @media (min-width: ${tabletBreakpoint}px) {
     display: flex;
     flex-direction: row;
@@ -21,17 +25,14 @@ export const Upper = styled.div`
   @media (min-width: ${desktopBreakpoint}px) {
     padding-bottom: 45px;
   }
-
-`
+`;
 
 export const Summary = styled.div`
   @media (min-width: ${tabletBreakpoint}px) {
     width: 60%;
     padding-right: 30px;
   }
-
-
-`
+`;
 
 export const Title = styled.h2`
   padding-bottom: 30px;
@@ -43,13 +44,11 @@ export const Title = styled.h2`
     margin: 0px;
     padding-bottom: 20px;
   }
-
-`
+`;
 
 export const Description = styled.div`
   font-family: Gilroy-Regular;
-
-`
+`;
 
 export const Paragraph = styled.p`
   font-size: 16px;
@@ -68,14 +67,14 @@ export const Paragraph = styled.p`
   @media (min-width: ${desktopBreakpoint}px) {
     font-size: 16px;
   }
-`
+`;
 
 type MosaicProps = {
-  desktop?: boolean | undefined
-}
+  desktop?: boolean | undefined;
+};
 
 export const Mosaic = styled.div<MosaicProps>`
-  display: ${ props => props.desktop ? 'none' : 'flex'};
+  display: ${(props) => (props.desktop ? "none" : "flex")};
   align-items: center;
   justify-content: center;
   column-gap: 25px;
@@ -83,12 +82,11 @@ export const Mosaic = styled.div<MosaicProps>`
   padding-top: 45px;
 
   @media (min-width: ${tabletBreakpoint}px) {
-    display: ${ props => props.desktop ? 'flex' : 'none'};
+    display: ${(props) => (props.desktop ? "flex" : "none")};
     padding-top: 0px;
     align-self: flex-end;
   }
-
-`
+`;
 export const Tile = styled.a`
   display: flex;
   flex-direction: column;
@@ -104,7 +102,7 @@ export const Tile = styled.a`
 
   @media (min-width: ${tabletBreakpoint}px) {
     min-height: 140px;
-    min-width: 140px
+    min-width: 140px;
   }
 
   @media (min-width: ${desktopBreakpoint}px) {
@@ -112,9 +110,7 @@ export const Tile = styled.a`
     min-width: 212px;
     // row-gap: 20px;
   }
-
-
-`
+`;
 
 export const Icon = styled.img`
   height: 45px;
@@ -124,7 +120,7 @@ export const Icon = styled.img`
     height: 54px;
     width: 54px;
   }
-`
+`;
 
 export const Label = styled.span`
   font-family: Gilroy-Medium;
@@ -138,13 +134,9 @@ export const Label = styled.span`
   @media (min-width: ${desktopBreakpoint}px) {
     font-size: 16px;
   }
+`;
 
-
-`
-
-export const Lower = styled.div`
-
-`
+export const Lower = styled.div``;
 
 export const Job = styled.div`
   display: flex;
@@ -169,11 +161,8 @@ export const Job = styled.div`
     &:first-child {
       padding-top: 25px;
     }
-
   }
-
-
-`
+`;
 
 export const Logo = styled.img`
   padding: 20px;
@@ -191,13 +180,12 @@ export const Logo = styled.img`
     height: 104px;
     margin-right: 35px;
   }
-`
+`;
 
 export const Content = styled.div`
   display: flex;
   flex-direction: column;
-
-`
+`;
 
 export const JobTitle = styled.div`
   font-family: Butler-Regular;
@@ -213,9 +201,7 @@ export const JobTitle = styled.div`
     min-width: 312px;
     font-size: 30px;
   }
-
-
-`
+`;
 
 export const Info = styled.span`
   font-family: Gilroy-Regular;
@@ -232,9 +218,7 @@ export const Info = styled.span`
     padding-top: 10px;
     font-size: 16px;
   }
-
-
-`
+`;
 
 export const JobDescription = styled.div`
   font-family: Gilroy-Regular;
@@ -242,9 +226,7 @@ export const JobDescription = styled.div`
   @media (min-width: ${tabletBreakpoint}px) {
     margin-left: 20px;
   }
-
-
-`
+`;
 
 export const JobParagraph = styled.p`
   font-size: 16px;
@@ -266,9 +248,7 @@ export const JobParagraph = styled.p`
   @media (min-width: ${desktopBreakpoint}px) {
     font-size: 16px;
   }
-
-
-`
+`;
 
 export const ModalTrigger = styled.span`
   text-decoration: none;
@@ -279,8 +259,7 @@ export const ModalTrigger = styled.span`
     padding-left: 5px;
     padding-top: 0px;
   }
-
-`
+`;
 
 export const DiagonalLine = styled.img`
   display: none;
@@ -289,5 +268,4 @@ export const DiagonalLine = styled.img`
     display: block;
     height: 72px;
   }
-
-`
+`;

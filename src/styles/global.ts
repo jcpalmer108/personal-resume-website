@@ -1,12 +1,12 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 import GilroyBold from "./fonts/Gilroy-Bold.ttf";
 import GilroyMedium from "./fonts/Gilroy-Medium.ttf";
 import GilroyRegular from "./fonts/Gilroy-Regular.ttf";
 import GilroyRegularItalic from "./fonts/Gilroy-RegularItalic.ttf";
 import Butler from "./fonts/Butler.woff2";
 import ButlerMedium from "./fonts/Butler-Medium.woff";
-import { desktopBreakpoint, tabletBreakpoint } from './variables';
- 
+import { desktopBreakpoint, tabletBreakpoint } from "./variables";
+
 const GlobalStyle = createGlobalStyle`
   @font-face {
     font-family: 'Gilroy-Bold';
@@ -121,6 +121,6 @@ const GlobalStyle = createGlobalStyle`
   }
 
 
-  `
- 
+  `;
+
 export default GlobalStyle;

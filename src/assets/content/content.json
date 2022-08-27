@@ -24,7 +24,7 @@
       "title": "Who am I?",
       "inMenu": true,
       "description": [
-        "Magna voluptate Lorem adipisicing esse culpa Lorem elit occaecat officia exercitation dolor excepteur esse aliquip. Anim velit nisi laboris in reprehenderit excepteur officia Lorem dolore. Labore aliqua aliquip amet laboris dolor adipisicing ea tempor minim magna est.", 
+        "Magna voluptate Lorem adipisicing esse culpa Lorem elit occaecat officia exercitation dolor excepteur esse aliquip. Anim velit nisi laboris in reprehenderit excepteur officia Lorem dolore. Labore aliqua aliquip amet laboris dolor adipisicing ea tempor minim magna est.",
         "Magna voluptate Lorem adipisicing esse culpa Lorem elit occaecat officia exercitation dolor excepteur esse aliquip. Anim velit nisi laboris in reprehenderit excepteur officia Lorem dolore."
       ],
       "subSection": {
@@ -299,7 +299,7 @@
               {
                 "industry": "Software as a Service Industry",
                 "title": "Server Upgrade & Data Migration",
-                "description":[
+                "description": [
                   "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 150"
                 ],
                 "icon": "security"
@@ -307,7 +307,7 @@
               {
                 "industry": "Healthcare Industry",
                 "title": "Security Architecture",
-                "description":[
+                "description": [
                   "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 150"
                 ],
                 "icon": "healthcare"
@@ -353,7 +353,7 @@
               {
                 "industry": "Agriculture Industry",
                 "title": "Design System & Components",
-                "description":[
+                "description": [
                   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor purus."
                 ],
                 "icon": "agriculture"

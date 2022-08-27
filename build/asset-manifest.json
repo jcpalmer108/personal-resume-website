@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.e6c13ad2.css",
-    "main.js": "/static/js/main.a7e7a824.js",
+    "main.js": "/static/js/main.c854df20.js",
     "static/js/787.f87a86bf.chunk.js": "/static/js/787.f87a86bf.chunk.js",
     "static/media/pexels-ekaterina-bolovtsova-4049876.jpg": "/static/media/pexels-ekaterina-bolovtsova-4049876.a9eba608b55c1983bd47.jpg",
     "static/media/pexels-ekaterina-bolovtsova-4049791.jpg": "/static/media/pexels-ekaterina-bolovtsova-4049791.a4b1c144f02e2acc0a01.jpg",
@@ -69,11 +69,11 @@
     "static/media/label-line.svg": "/static/media/label-line.5c33572d6ec0db6067eba43cf78df291.svg",
     "static/media/test.svg": "/static/media/test.31d6cfe0d16ae931b73c.svg",
     "main.e6c13ad2.css.map": "/static/css/main.e6c13ad2.css.map",
-    "main.a7e7a824.js.map": "/static/js/main.a7e7a824.js.map",
+    "main.c854df20.js.map": "/static/js/main.c854df20.js.map",
     "787.f87a86bf.chunk.js.map": "/static/js/787.f87a86bf.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.a7e7a824.js"
+    "static/js/main.c854df20.js"
   ]
 }

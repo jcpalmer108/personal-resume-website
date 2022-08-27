@@ -1,5 +1,10 @@
 import styled from "styled-components";
-import { tabletBreakpoint, redstone, silver_polish, desktopBreakpoint } from "../variables";
+import {
+  tabletBreakpoint,
+  redstone,
+  silver_polish,
+  desktopBreakpoint,
+} from "../variables";
 
 export const Logo = styled.img`
   height: 40px;
@@ -7,8 +12,7 @@ export const Logo = styled.img`
   @media (min-width: ${desktopBreakpoint}px) {
     height: 55px;
   }
-
-`
+`;
 
 export const Hamburger = styled.div`
   border: 1px solid ${redstone};
@@ -24,8 +28,7 @@ export const Hamburger = styled.div`
   @media (min-width: ${tabletBreakpoint}px) {
     display: none;
   }
-
-`
+`;
 
 export const UpperMenu = styled.div`
   display: flex;
@@ -43,15 +46,14 @@ export const UpperMenu = styled.div`
     padding: 0px 60px;
     height: 105px;
   }
-
-`
+`;
 
 export const LowerMenu = styled.div`
   min-height: 320px;
   height: calc(100vh - 95px);
   display: flex;
   flex-direction: column;
-`
+`;
 
 export const MobileMenu = styled.div`
   flex-grow: 1;
@@ -60,8 +62,7 @@ export const MobileMenu = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
-`
+`;
 
 export const MobilePages = styled.a`
   height: 100%;
@@ -69,14 +70,14 @@ export const MobilePages = styled.a`
   align-items: center;
   text-decoration: none;
   color: black;
-`
+`;
 
 export const SocialsWrapper = styled.div`
   background: white;
   justify-content: space-around;
   display: flex;
   height: 60px;
-`
+`;
 
 export const Socials = styled.a`
   border-left: 1px solid ${silver_polish};
@@ -89,13 +90,13 @@ export const Socials = styled.a`
   &:first-child {
     border-left: none;
   }
-`
+`;
 
 export const Icon = styled.img`
   height: 26px;
-`
+`;
 
-export const DesktopMenu = styled.div`  
+export const DesktopMenu = styled.div`
   display: none;
   line-spacing: 3px;
 
@@ -104,8 +105,7 @@ export const DesktopMenu = styled.div`
     justify-content: space-between;
     align-items: right;
   }
-
-`
+`;
 
 export const DesktopPages = styled.a`
   text-decoration: none;
@@ -122,5 +122,4 @@ export const DesktopPages = styled.a`
     font-size: 14px;
     padding-left: 40px;
   }
-
-`
+`;

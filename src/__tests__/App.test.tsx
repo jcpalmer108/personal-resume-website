@@ -1,8 +1,8 @@
-import React from 'react';
-import { render, screen } from '@testing-library/react';
-import App from '../App';
+import React from "react";
+import { render, screen } from "@testing-library/react";
+import App from "../App";
 
-test('matches snapshot', () => {
+test("matches snapshot", () => {
   render(<App />);
-  expect(screen.queryByTestId('app')).toMatchSnapshot();
+  expect(screen.queryByTestId("app")).toMatchSnapshot();
 });

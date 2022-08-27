@@ -1,5 +1,5 @@
-import styled from "styled-components"
-import { desktopBreakpoint, tabletBreakpoint } from "../variables"
+import styled from "styled-components";
+import { desktopBreakpoint, tabletBreakpoint } from "../variables";
 
 export const Photo = styled.img`
   width: 45%;
@@ -14,8 +14,7 @@ export const Photo = styled.img`
     padding-right: 0px;
   }
 
-
-  @media(min-width: ${tabletBreakpoint}px) {
+  @media (min-width: ${tabletBreakpoint}px) {
     height: 465px;
     width: 340px;
     padding: 10px;
@@ -23,19 +22,17 @@ export const Photo = styled.img`
     &:first-child {
       padding-left: 0px;
     }
-  
+
     &:last-child {
       padding-right: 0px;
     }
-  
   }
 
-  @media(min-width: ${desktopBreakpoint}px) {
+  @media (min-width: ${desktopBreakpoint}px) {
     height: 494px;
     width: 370px;
   }
-
-`
+`;
 
 export const Wrapper = styled.div`
   width: 100%;
@@ -50,9 +47,9 @@ export const Wrapper = styled.div`
   @media (min-width: ${desktopBreakpoint}px) {
     padding-bottom: 85px;
   }
-  `
+`;
 
-  export const Inner = styled.div`
+export const Inner = styled.div`
   position: relative;
   display: flex;
   flex-direction: row;
@@ -60,8 +57,7 @@ export const Wrapper = styled.div`
   align-items: center;
   justify-content: center;
 
-  @media(min-width: ${desktopBreakpoint}px) {
+  @media (min-width: ${desktopBreakpoint}px) {
     justify-content: space-between;
   }
-
-`
+`;

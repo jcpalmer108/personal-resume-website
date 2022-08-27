@@ -1,5 +1,5 @@
-import { MenuItem } from './global'
+import { MenuItem } from "./global";
 
 export type FooterProps = {
-  menu: MenuItem[]
-}
+  menu: MenuItem[];
+};

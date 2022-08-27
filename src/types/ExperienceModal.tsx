@@ -1,6 +1,6 @@
-import { Experience } from "../types/content"
+import { Experience } from "../types/content";
 
 export type ExperienceModalProps = {
-  closeModal: Function
+  closeModal: Function;
   content?: Experience;
-}
+};

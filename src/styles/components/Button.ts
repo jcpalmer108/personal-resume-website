@@ -1,5 +1,5 @@
-import styled from "styled-components"
-import { desktopBreakpoint, redstone, tabletBreakpoint } from "../variables"
+import styled from "styled-components";
+import { desktopBreakpoint, redstone, tabletBreakpoint } from "../variables";
 
 export const Link = styled.a`
   width: 186px;
@@ -25,8 +25,8 @@ export const Link = styled.a`
     width: 218px;
     height: 64px;
   }
-`
+`;
 
 export const ArrowRight = styled.img`
   width: 22px;
-`
+`;

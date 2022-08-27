@@ -1,5 +1,5 @@
-import { Sections } from "./content"
+import { Sections } from "./content";
 
 export type LandingProps = {
-  content: Sections | undefined
-}
+  content: Sections | undefined;
+};

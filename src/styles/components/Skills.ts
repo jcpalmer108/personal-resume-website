@@ -1,6 +1,11 @@
 import styled from "styled-components";
-import { contentWidth, desktopBreakpoint, silver_polish, tabletBreakpoint } from "../variables";
-import { CellProps } from "../../types/Skills"
+import {
+  contentWidth,
+  desktopBreakpoint,
+  silver_polish,
+  tabletBreakpoint,
+} from "../variables";
+import { CellProps } from "../../types/Skills";
 
 export const Mobile = styled.div`
   display: flex;
@@ -13,7 +18,7 @@ export const Mobile = styled.div`
   @media (min-width: ${tabletBreakpoint}px) {
     display: none;
   }
-  `
+`;
 
 export const Title = styled.h2`
   padding: 15px 15px 30px 15px;
@@ -34,7 +39,7 @@ export const Title = styled.h2`
     padding-left: 60px;
     width: 600px;
   }
-  `
+`;
 
 export const Logo = styled.img`
   height: 50px;
@@ -50,7 +55,7 @@ export const Logo = styled.img`
     height: 100px;
     width: 100px;
   }
-  `
+`;
 
 export const Link = styled.a`
   display: flex;
@@ -66,7 +71,7 @@ export const Link = styled.a`
     border: none;
     margin-right: 0px;
     padding-bottom: 0px;
-    
+
     max-width: 230px;
     align-items: center;
     justify-content: center;
@@ -75,14 +80,14 @@ export const Link = styled.a`
     max-height: 200px;
   }
 
-  @media(min-width: ${desktopBreakpoint}px) {
+  @media (min-width: ${desktopBreakpoint}px) {
     padding-top: 8%;
   }
 
   @media (min-width: ${contentWidth}px) {
     padding-top: 90px;
   }
-  `
+`;
 
 export const Description = styled.p`
   font-family: Gilroy-Regular;
@@ -96,28 +101,27 @@ export const Description = styled.p`
   @media (min-width: ${contentWidth}px) {
     padding: 55px 60px 30px 60px;
   }
-  `
+`;
 
 export const NotMobile = styled.div`
   display: none;
-  
+
   @media (min-width: ${tabletBreakpoint}px) {
     display: flex;
     flex-direction: column;
   }
-  `
+`;
 
 export const Mosaic = styled.table`
-
-  @media(min-width: ${tabletBreakpoint}px) {
+  @media (min-width: ${tabletBreakpoint}px) {
     width: 100%;
     border-collapse: collapse;
   }
-  `
+`;
 
 type ContentProps = {
-  desktop?: boolean | undefined
-}
+  desktop?: boolean | undefined;
+};
 
 export const Content = styled.div<ContentProps>`
   height: 0px;
@@ -126,7 +130,7 @@ export const Content = styled.div<ContentProps>`
   display: block;
 
   @media (min-width: ${tabletBreakpoint}px) {
-    display: ${ props => props.desktop ? "none" : "block"};
+    display: ${(props) => (props.desktop ? "none" : "block")};
     padding: 25px;
     height: 100%;
     max-width: none;
@@ -134,22 +138,21 @@ export const Content = styled.div<ContentProps>`
   }
 
   @media (min-width: ${contentWidth}px) {
-    display: ${ props => props.desktop ? "block" : "none"};
+    display: ${(props) => (props.desktop ? "block" : "none")};
     position: relative;
     height: 0px;
     padding: 0px;
     width: 100%;
   }
-  `
+`;
 
 export const Cell = styled.td<CellProps>`
-
-  @media(min-width: ${tabletBreakpoint}px) {
+  @media (min-width: ${tabletBreakpoint}px) {
     border-width: 1px;
-    border-left: ${props => props.first ? 'none' : 'solid'};
-    border-top: ${props => props.first ? 'none' : 'solid'};
-    border-bottom: ${props => props.last ? 'none' : 'solid'};
-    border-right: ${props => props.last ? 'none' : 'solid'};
+    border-left: ${(props) => (props.first ? "none" : "solid")};
+    border-top: ${(props) => (props.first ? "none" : "solid")};
+    border-bottom: ${(props) => (props.last ? "none" : "solid")};
+    border-right: ${(props) => (props.last ? "none" : "solid")};
     border-color: ${silver_polish};
 
     width: 20%;
@@ -157,7 +160,7 @@ export const Cell = styled.td<CellProps>`
     padding-bottom: 20%;
   }
 
-  @media(min-width: ${contentWidth}px) {
+  @media (min-width: ${contentWidth}px) {
     &:first-child {
       border-left: none;
     }
@@ -166,7 +169,7 @@ export const Cell = styled.td<CellProps>`
       border-right: none;
     }
   }
-  `
+`;
 
 export const ButtonWrapper = styled.div`
   padding: 0px;
@@ -174,4 +177,4 @@ export const ButtonWrapper = styled.div`
   @media (min-width: ${contentWidth}px) {
     padding: 0px 60px;
   }
-`
+`;

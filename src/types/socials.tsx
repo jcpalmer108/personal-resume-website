@@ -1,9 +1,9 @@
 export type Socials = {
-  link: SocialLink[]
-}
+  link: SocialLink[];
+};
 
 export type SocialLink = {
-  key: string,
-  label: string,
-  url: string,
-}
+  key: string;
+  label: string;
+  url: string;
+};

@@ -1,5 +1,11 @@
-import styled from "styled-components"
-import { desktopBreakpoint, jet, off_black, silver_polish, tabletBreakpoint } from "../variables";
+import styled from "styled-components";
+import {
+  desktopBreakpoint,
+  jet,
+  off_black,
+  silver_polish,
+  tabletBreakpoint,
+} from "../variables";
 
 export const BackgroundOverlay = styled.div`
   position: fixed;
@@ -9,7 +15,7 @@ export const BackgroundOverlay = styled.div`
   width: 100%;
   z-index: 998;
   opacity: 0.8;
-`
+`;
 
 export const Window = styled.div`
   position: fixed;
@@ -22,14 +28,14 @@ export const Window = styled.div`
   z-index: 999;
   text-align: right;
 
-  @media(min-width: ${desktopBreakpoint}px) {
+  @media (min-width: ${desktopBreakpoint}px) {
     max-height: 800px;
   }
-`
+`;
 export const CloseIcon = styled.img`
   width: 17px;
   padding-bottom: 5px;
-`
+`;
 
 export const InnerWindow = styled.div`
   background: white;
@@ -39,12 +45,10 @@ export const InnerWindow = styled.div`
   align-items: center;
   justify-content: center;
 
-  @media(min-width: ${desktopBreakpoint}px) {
+  @media (min-width: ${desktopBreakpoint}px) {
     max-height: 715px;
   }
-
-`
-
+`;
 
 export const LeftRightBorders = styled.div`
   width: 87%;
@@ -56,25 +60,24 @@ export const LeftRightBorders = styled.div`
   align-items: center;
   justify-content: center;
 
-  @media(min-width: ${desktopBreakpoint}px) {
+  @media (min-width: ${desktopBreakpoint}px) {
     max-width: 960px;
   }
-`
+`;
 
 export const TopBottomBorders = styled.div`
   height: 100%;
   width: 100%;
   overflow-y: scroll;
 
-  @media(min-width: ${desktopBreakpoint}px) {
+  @media (min-width: ${desktopBreakpoint}px) {
     border-top: solid 1px ${silver_polish};
     border-bottom: solid 1px ${silver_polish};
     height: 80%;
     max-height: 572px;
     overflow-y: visible;
   }
-
-  `
+`;
 
 export const Content = styled.div`
   display: flex;
@@ -82,14 +85,14 @@ export const Content = styled.div`
   text-align: left;
   padding: 20px;
   max-height: calc(100% - 40px);
-  overflow-y: scroll;  
+  overflow-y: scroll;
 
-  @media(min-width: ${tabletBreakpoint}px) {
+  @media (min-width: ${tabletBreakpoint}px) {
     padding: 40px;
     max-height: calc(100% - 80px);
   }
 
-  @media(min-width: ${desktopBreakpoint}px) {
+  @media (min-width: ${desktopBreakpoint}px) {
     flex-direction: row;
     padding-top: 0px;
     padding-bottom: 0px;
@@ -97,7 +100,7 @@ export const Content = styled.div`
     overflow-y: visible;
     height: calc(100% - 80px);
   }
-`
+`;
 
 export const Tile = styled.div`
   width: 100%;
@@ -110,18 +113,17 @@ export const Tile = styled.div`
   color: white;
   padding-bottom: 25px;
 
-  @media(min-width: ${tabletBreakpoint}px) {
+  @media (min-width: ${tabletBreakpoint}px) {
     max-width: 235px;
     padding: 40px;
     margin: auto;
   }
 
-  @media(min-width: ${desktopBreakpoint}px) {
+  @media (min-width: ${desktopBreakpoint}px) {
     min-width: 320px;
     max-width: 385px;
   }
-
-`
+`;
 
 export const Circle = styled.div`
   border-radius: 50%;
@@ -134,112 +136,108 @@ export const Circle = styled.div`
   margin-top: 35px;
   margin-bottom: 25px;
 
-  @media(min-width: ${tabletBreakpoint}px) {
+  @media (min-width: ${tabletBreakpoint}px) {
     height: 185px;
     width: 185px;
   }
-
-`
+`;
 
 type LogoProps = {
-  icon?: string
-}
+  icon?: string;
+};
 
 export const Logo = styled.img<LogoProps>`
   height: ${({ icon }) => {
-    switch(icon) {
+    switch (icon) {
       case "nike":
         return "28px";
-      case "slalom": 
+      case "slalom":
         return "50px";
-      default: 
+      default:
         return "70px";
     }
   }}};
 
   @media(min-width: ${tabletBreakpoint}px) {
     height: ${({ icon }) => {
-      switch(icon) {
+      switch (icon) {
         case "nike":
           return "38px";
-        case "slalom": 
+        case "slalom":
           return "60px";
-        default: 
+        default:
           return "90px";
       }
     }}};  
   }
 
-`
+`;
 
 export const Overview = styled.div`
   display: flex;
   flex-direction: column;
   row-gap: 20px;
 
-  @media(min-width: ${tabletBreakpoint}px) {
+  @media (min-width: ${tabletBreakpoint}px) {
     flex-direction: row;
     column-gap: 20px;
     padding-top: 75px;
   }
 
-  @media(min-width: ${desktopBreakpoint}px) {
+  @media (min-width: ${desktopBreakpoint}px) {
     // width: 100%;
   }
-
-`
+`;
 
 export const Summary = styled.div`
   // width: 100%;
-`
+`;
 
 export const TileLabel = styled.div`
   font-family: Gilroy-Bold;
   font-size: 14px;
 
-  @media(min-width: ${tabletBreakpoint}px) {
+  @media (min-width: ${tabletBreakpoint}px) {
     font-size: 17px;
     padding-bottom: 15px;
   }
 
-  @media(min-width: ${desktopBreakpoint}px) {
+  @media (min-width: ${desktopBreakpoint}px) {
     font-size: 22px;
   }
-`
+`;
 
 export const TileInfo = styled.span`
   font-family: Gilroy-Regular;
   font-size: 14px;
 
-  @media(min-width: ${tabletBreakpoint}px) {
+  @media (min-width: ${tabletBreakpoint}px) {
     font-size: 13px;
   }
 
-  @media(min-width: ${desktopBreakpoint}px) {
+  @media (min-width: ${desktopBreakpoint}px) {
     font-size: 16px;
   }
-
-`
+`;
 
 export const OrgTeam = styled.div`
   display: flex;
   flex-direction: column;
 
-  @media(min-width: ${tabletBreakpoint}px) {
+  @media (min-width: ${tabletBreakpoint}px) {
     flex-direction: row;
   }
-`
+`;
 
-export const JobDetails = styled.div`  
-  @media(min-width: ${desktopBreakpoint}px) {
+export const JobDetails = styled.div`
+  @media (min-width: ${desktopBreakpoint}px) {
     overflow-y: scroll;
     padding-left: 50px;
     height: calc(100% + 80px);
-    
+
     &:last-child {
       padding-bottom: 19px;
       height: calc(100% + 61px);
     }
   }
-
-`
+`;

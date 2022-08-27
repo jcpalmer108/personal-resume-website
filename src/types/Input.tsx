@@ -1,15 +1,15 @@
 export type InputProps = {
-  label: String,
-  value?: any,
-  updateForm: Function,
-  area?: boolean,
-  noBorder?: boolean,
-}
+  label: String;
+  value?: any;
+  updateForm: Function;
+  area?: boolean;
+  noBorder?: boolean;
+};
 
 export type NoBorderProps = {
-  noBorder?: boolean 
-}
+  noBorder?: boolean;
+};
 
 export type LabelProps = {
-  paddedLabel?: boolean 
-}
+  paddedLabel?: boolean;
+};

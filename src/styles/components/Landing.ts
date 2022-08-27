@@ -1,9 +1,9 @@
-import styled from "styled-components"
-import { desktopBreakpoint, tabletBreakpoint } from "../variables"
+import styled from "styled-components";
+import { desktopBreakpoint, tabletBreakpoint } from "../variables";
 
 export const Main = styled.div`
   display: flex;
-  `
+`;
 
 export const Title = styled.h1`
   margin: 20px;
@@ -13,8 +13,7 @@ export const Title = styled.h1`
     width: 100%;
     margin: 0px;
   }
-
-`
+`;
 
 export const Content = styled.div`
   display: flex;
@@ -24,19 +23,16 @@ export const Content = styled.div`
   text-align: center;
   padding: 0px;
 
-  
-  
   @media (min-width: ${tabletBreakpoint}px) {
     text-align: left;
     padding: 25px;
     align-items: flex-start;
   }
 
-
   @media (min-width: ${desktopBreakpoint}px) {
     padding: 20px 60px;
   }
-`
+`;
 
 export const Description = styled.p`
   margin: 30px 20px;
@@ -46,8 +42,7 @@ export const Description = styled.p`
     margin: 15px 0px 40px 0px;
     line-height: 27px;
   }
-
-`
+`;
 
 export const MobilePhoto = styled.img`
   height: 415px;
@@ -59,7 +54,7 @@ export const MobilePhoto = styled.img`
   @media (min-width: ${tabletBreakpoint}px) {
     display: none;
   }
-`
+`;
 
 export const DesktopPhoto = styled.img`
   height: 563px;
@@ -76,8 +71,7 @@ export const DesktopPhoto = styled.img`
   @media (min-width: ${desktopBreakpoint}px) {
     padding-right: 60px;
   }
-
-`
+`;
 
 export const DiscoverMore = styled.div`
   height: 40px;
@@ -95,6 +89,4 @@ export const DiscoverMore = styled.div`
     height: 100px;
     visibility: visible;
   }
-
-`
-
+`;

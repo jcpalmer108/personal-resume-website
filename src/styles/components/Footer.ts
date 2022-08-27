@@ -1,5 +1,10 @@
 import styled from "styled-components";
-import { desktopBreakpoint, redstone, silver_polish, tabletBreakpoint } from "../variables";
+import {
+  desktopBreakpoint,
+  redstone,
+  silver_polish,
+  tabletBreakpoint,
+} from "../variables";
 
 export const Wrapper = styled.div`
   padding: 40px;
@@ -8,7 +13,7 @@ export const Wrapper = styled.div`
   @media (min-width: ${desktopBreakpoint}px) {
     padding: 70px;
   }
-`
+`;
 
 export const Logo = styled.img`
   height: 55px;
@@ -23,7 +28,7 @@ export const Logo = styled.img`
     height: 90px;
     padding-bottom: 35px;
   }
-`
+`;
 
 export const FooterMenu = styled.div`
   display: flex;
@@ -40,8 +45,7 @@ export const FooterMenu = styled.div`
     flex-direction: row;
     height: 14px;
   }
-
-`
+`;
 
 export const FooterPages = styled.a`
   text-decoration: none;
@@ -50,14 +54,13 @@ export const FooterPages = styled.a`
   &:hover {
     color: ${redstone};
   }
-
-`
+`;
 
 export const Copyright = styled.p`
   color: ${silver_polish};
   text-align: center;
-`
+`;
 
 export const Name = styled.span`
   color: ${redstone};
-`
+`;

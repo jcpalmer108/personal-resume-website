@@ -1,6 +1,6 @@
 export type ProjectProps = {
-  icon: string,
-  industry: string,
-  title: string,
-  description: string[]
-}
+  icon: string;
+  industry: string;
+  title: string;
+  description: string[];
+};

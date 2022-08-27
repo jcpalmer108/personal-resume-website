@@ -4,3 +4,4 @@
 npm run build
 git add .
 # npm test -- --watchAll=false
+npm run prettify

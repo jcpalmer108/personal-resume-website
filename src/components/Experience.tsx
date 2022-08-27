@@ -1,11 +1,32 @@
-import { useState } from "react"
-import callMe from "../assets/images/icons/call-me.svg"
-import diagonal from "../assets/images/icons/diagonal-line.svg"
-import emailMe from "../assets/images/icons/email-me.svg"
-import { Content, Description, DiagonalLine, Icon, Info, Job, JobDescription, JobParagraph, JobTitle, Label, Logo, Lower, ModalTrigger, Mosaic, Paragraph, Summary, Tile, Title, Upper, Wrapper } from "../styles/components/Experience"
-import { ExperienceProps } from "../types/Experience"
-import ExperienceModal from "./ExperienceModal"
-import Section from "./Section"
+import { useState } from "react";
+import callMe from "../assets/images/icons/call-me.svg";
+import diagonal from "../assets/images/icons/diagonal-line.svg";
+import emailMe from "../assets/images/icons/email-me.svg";
+import {
+  Content,
+  Description,
+  DiagonalLine,
+  Icon,
+  Info,
+  Job,
+  JobDescription,
+  JobParagraph,
+  JobTitle,
+  Label,
+  Logo,
+  Lower,
+  ModalTrigger,
+  Mosaic,
+  Paragraph,
+  Summary,
+  Tile,
+  Title,
+  Upper,
+  Wrapper,
+} from "../styles/components/Experience";
+import { ExperienceProps } from "../types/Experience";
+import ExperienceModal from "./ExperienceModal";
+import Section from "./Section";
 
 const defaultModalContent = {
   title: "",
@@ -15,52 +36,62 @@ const defaultModalContent = {
   icon: "",
   timeline: {
     start: "",
-    end: ""
-  }
-}
+    end: "",
+  },
+};
 
 export default function Experience({ content, contact }: ExperienceProps) {
-  const [ modalIsOpen, setModalIsOpen ] = useState(false);
-  const [ selectedContent, setSelectedContent ] = useState(
-    content?.subSection?.experience ?
-    content?.subSection?.experience[0] : 
-    defaultModalContent
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [selectedContent, setSelectedContent] = useState(
+    content?.subSection?.experience
+      ? content?.subSection?.experience[0]
+      : defaultModalContent
   );
 
   const manageSelectedContent = (selectedIndex: number) => {
-    if(
+    if (
       content &&
       content.subSection &&
-      content.subSection.experience && 
+      content.subSection.experience &&
       content.subSection.experience[selectedIndex]
     ) {
-      setSelectedContent(content.subSection.experience[selectedIndex])
+      setSelectedContent(content.subSection.experience[selectedIndex]);
     } else if (
       content &&
       content.subSection &&
-      content.subSection.experience && 
+      content.subSection.experience &&
       content.subSection.experience[0]
-    ){
-      setSelectedContent(content.subSection.experience[0])
+    ) {
+      setSelectedContent(content.subSection.experience[0]);
     } else {
-      setSelectedContent(defaultModalContent)
+      setSelectedContent(defaultModalContent);
     }
-  }
+  };
 
-  if(!content || !contact) {
+  if (!content || !contact) {
     return null;
   }
 
   return (
     <div id="experience">
-      {modalIsOpen && (<ExperienceModal closeModal={() => setModalIsOpen(!modalIsOpen) } content={selectedContent} />)}
+      {modalIsOpen && (
+        <ExperienceModal
+          closeModal={() => setModalIsOpen(!modalIsOpen)}
+          content={selectedContent}
+        />
+      )}
       <Section center label={content?.label}>
         <Wrapper data-testid="Experience">
           <Upper>
             <Summary>
               <Title data-testid="Title">{content?.title}</Title>
               <Description data-testid="Description">
-                { content?.description && content?.description.map((paragraph, index) => <Paragraph key={`Paragraph ${index + 1}`}>{paragraph}</Paragraph>)}
+                {content?.description &&
+                  content?.description.map((paragraph, index) => (
+                    <Paragraph key={`Paragraph ${index + 1}`}>
+                      {paragraph}
+                    </Paragraph>
+                  ))}
               </Description>
             </Summary>
             <Mosaic desktop>
@@ -69,22 +100,34 @@ export default function Experience({ content, contact }: ExperienceProps) {
                 <Label>CALL ME</Label>
               </Tile>
               <Tile href={`mailto:${contact?.email}`} data-testid="Email">
-                <Icon src={emailMe} alt="email me"/>
+                <Icon src={emailMe} alt="email me" />
                 <Label>EMAIL ME</Label>
               </Tile>
             </Mosaic>
           </Upper>
           <Lower>
-            {
-              content?.subSection?.experience && content?.subSection?.experience.map((job, index) => (
-                <Job key={`Job ${index + 1}`} onClick={() => {     
-                  manageSelectedContent(index)
-                  setModalIsOpen(!modalIsOpen)
-              }}>
-                  <Logo src={require("../assets/images/company/" + job.icon + ".svg")} alt={job.icon} />
+            {content?.subSection?.experience &&
+              content?.subSection?.experience.map((job, index) => (
+                <Job
+                  key={`Job ${index + 1}`}
+                  onClick={() => {
+                    manageSelectedContent(index);
+                    setModalIsOpen(!modalIsOpen);
+                  }}
+                >
+                  <Logo
+                    src={require("../assets/images/company/" +
+                      job.icon +
+                      ".svg")}
+                    alt={job.icon}
+                  />
                   <Content>
-                    <JobTitle data-testid={`Title ${index + 1}`}>{job.title}</JobTitle>
-                    <Info data-testid={`Info ${index + 1}`}>{job.employer} / {job.timeline.start} - {job.timeline.end}</Info>
+                    <JobTitle data-testid={`Title ${index + 1}`}>
+                      {job.title}
+                    </JobTitle>
+                    <Info data-testid={`Info ${index + 1}`}>
+                      {job.employer} / {job.timeline.start} - {job.timeline.end}
+                    </Info>
                   </Content>
                   <DiagonalLine src={diagonal} alt="forward slash" />
                   <JobDescription data-testid={`Details ${index + 1}`}>
@@ -94,15 +137,14 @@ export default function Experience({ content, contact }: ExperienceProps) {
                     </JobParagraph>
                   </JobDescription>
                 </Job>
-              ))
-            }
+              ))}
             <Mosaic>
               <Tile href={`tel:${contact?.cell}`}>
                 <Icon src={callMe} alt="call me" />
                 <Label>Call Me</Label>
               </Tile>
               <Tile href={`mailto:${contact?.email}`}>
-                <Icon src={emailMe} alt="email me"/>
+                <Icon src={emailMe} alt="email me" />
                 <Label>Email Me</Label>
               </Tile>
             </Mosaic>
@@ -110,5 +152,5 @@ export default function Experience({ content, contact }: ExperienceProps) {
         </Wrapper>
       </Section>
     </div>
-  )
+  );
 }

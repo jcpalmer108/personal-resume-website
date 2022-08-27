@@ -1,6 +1,12 @@
-import styled from "styled-components"
-import { desktopBreakpoint, off_black, redstone, silver_polish, tabletBreakpoint } from "../variables"
-import { DotProps, ArrowProps } from "../../types/Testimonials"
+import styled from "styled-components";
+import {
+  desktopBreakpoint,
+  off_black,
+  redstone,
+  silver_polish,
+  tabletBreakpoint,
+} from "../variables";
+import { DotProps, ArrowProps } from "../../types/Testimonials";
 
 export const Wrapper = styled.div`
   display: flex;
@@ -11,13 +17,11 @@ export const Wrapper = styled.div`
   @media (min-width: ${tabletBreakpoint}px) {
     flex-direction: row;
     justify-content: space-between;
-
   }
 
   @media (min-width: ${desktopBreakpoint}px) {
-
   }
-`
+`;
 
 export const Content = styled.div`
   display: flex;
@@ -34,7 +38,7 @@ export const Content = styled.div`
     max-width: 624px;
     padding-top: 30px;
   }
-`
+`;
 
 export const Quote = styled.p`
   margin: 0px;
@@ -45,7 +49,6 @@ export const Quote = styled.p`
   align-items: center;
   justify-content: center;
   line-height: 26px;
-
 
   @media (min-width: ${tabletBreakpoint}px) {
     font-size: 20px;
@@ -58,7 +61,7 @@ export const Quote = styled.p`
     line-height: 44px;
     height: 300px;
   }
-`
+`;
 
 export const Person = styled.div`
   font-size: 16;
@@ -74,7 +77,7 @@ export const Person = styled.div`
     font-size: 25px;
     margin-bottom: 11px;
   }
-`
+`;
 
 export const Title = styled.div`
   font-size: 12px;
@@ -90,19 +93,19 @@ export const Title = styled.div`
     font-size: 25px;
     margin-bottom: 55px;
   }
-`
+`;
 
 export const Dots = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-`
+`;
 
 export const Dot = styled.div<DotProps>`
   height: 7px;
   width: 7px;
   margin: 0px 7.5px;
-  background: ${props => props.selected ? off_black : silver_polish};
+  background: ${(props) => (props.selected ? off_black : silver_polish)};
   border-radius: 50%;
 
   @media (min-width: ${tabletBreakpoint}px) {
@@ -110,9 +113,7 @@ export const Dot = styled.div<DotProps>`
     width: 10px;
     margin: 0px 9px;
   }
-
-`
-
+`;
 
 export const Arrows = styled.div`
   display: flex;
@@ -122,29 +123,33 @@ export const Arrows = styled.div`
   margin-top: 30px;
 
   @media (min-width: ${tabletBreakpoint}px) {
-    display: none; 
+    display: none;
   }
-`
+`;
 
 export const ArrowLeft = styled.img<ArrowProps>`
-  display: ${ props => props.desktop && props.desktop === true ? 'none' : 'block'}; 
+  display: ${(props) =>
+    props.desktop && props.desktop === true ? "none" : "block"};
   width: 19px;
 
   @media (min-width: ${tabletBreakpoint}px) {
-    display: ${ props => props.desktop && props.desktop === true ? 'block' : 'none'}; 
+    display: ${(props) =>
+      props.desktop && props.desktop === true ? "block" : "none"};
     width: 40px;
   }
-`
+`;
 
 export const ArrowRight = styled.img<ArrowProps>`
-  display: ${ props => props.desktop && props.desktop === true ? 'none' : 'block'}; 
+  display: ${(props) =>
+    props.desktop && props.desktop === true ? "none" : "block"};
   width: 19px;
 
   @media (min-width: ${tabletBreakpoint}px) {
-    display: ${ props => props.desktop && props.desktop === true ? 'block' : 'none'}; 
+    display: ${(props) =>
+      props.desktop && props.desktop === true ? "block" : "none"};
     width: 40px;
   }
-`
+`;
 
 export const Circle = styled.div`
   background: ${redstone};
@@ -154,11 +159,11 @@ export const Circle = styled.div`
   border-radius: 50%;
   z-index: -1;
   position: absolute;
-`
+`;
 export const Option = styled.div`
   height: 40px;
   width: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
-`
+`;

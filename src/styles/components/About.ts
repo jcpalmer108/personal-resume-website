@@ -1,5 +1,10 @@
-import styled from "styled-components"
-import { desktopBreakpoint, redstone, seashell_peach, tabletBreakpoint } from "../variables"
+import styled from "styled-components";
+import {
+  desktopBreakpoint,
+  redstone,
+  seashell_peach,
+  tabletBreakpoint,
+} from "../variables";
 
 export const AboutWrapper = styled.div`
   display: flex;
@@ -8,20 +13,19 @@ export const AboutWrapper = styled.div`
   @media (min-width: ${tabletBreakpoint}px) {
     flex-direction: row;
   }
-`
+`;
 
 export const Content = styled.div`
   padding-bottom: 40px;
-  
+
   @media (min-width: ${tabletBreakpoint}px) {
     padding-bottom: 0px;
   }
-
-`
+`;
 
 export const Title = styled.h2`
   padding-bottom: 20px;
-`
+`;
 
 export const Description = styled.p`
   margin: 0px;
@@ -30,38 +34,36 @@ export const Description = styled.p`
   &:last-child {
     padding-bottom: 0px;
   }
-
-`
+`;
 
 export const Schooling = styled.div`
   display: flex;
   flex-direction: column;
   padding-bottom: 15px;
 
-  @media(min-width: ${tabletBreakpoint}px) {
+  @media (min-width: ${tabletBreakpoint}px) {
     min-width: fit-content;
     padding-left: 70px;
     padding-bottom: 0px;
   }
 
-  @media(min-width: ${desktopBreakpoint}px) {
+  @media (min-width: ${desktopBreakpoint}px) {
     min-width: 290px;
     padding-left: 125px;
   }
-
-`
+`;
 
 export const School = styled.div`
   padding-top: 25px;
   display: flex;
   flex-direction: column;
-  align-items: left; 
+  align-items: left;
   justify-content: center;
 
-  @media(min-width: ${tabletBreakpoint}px) {
+  @media (min-width: ${tabletBreakpoint}px) {
     padding-top: 35px;
   }
-`
+`;
 
 export const Degree = styled.span`
   padding-top: 12px;
@@ -74,9 +76,7 @@ export const Degree = styled.span`
     font-size: 16px;
     padding-top: 10px;
   }
-
-
-`
+`;
 
 export const Action = styled.div`
   display: flex;
@@ -87,7 +87,7 @@ export const Action = styled.div`
     flex-direction: row;
     padding: 0px;
   }
-`
+`;
 
 export const Connect = styled.div`
   flex-grow: 2;
@@ -106,8 +106,7 @@ export const Connect = styled.div`
     height: 75px;
     padding: 50px;
   }
-
-`
+`;
 
 export const SocialLabel = styled.span`
   font-size: 20px;
@@ -118,7 +117,7 @@ export const SocialLabel = styled.span`
     font-size: 30px;
     padding-bottom: 20px;
   }
-`
+`;
 
 export const Socials = styled.div`
   display: flex;
@@ -132,7 +131,7 @@ export const Socials = styled.div`
     justify-content: space-between;
     height: 20px;
   }
-`
+`;
 
 export const Link = styled.a`
   text-decoration: none;
@@ -156,7 +155,7 @@ export const Link = styled.a`
     width: 20%;
     justify-content: left;
   }
-`
+`;
 
 export const Icon = styled.img`
   height: 16px;
@@ -171,8 +170,7 @@ export const Icon = styled.img`
     height: 22px;
     width: 22px;
   }
-
-`
+`;
 
 export const Label = styled.span`
   font-size: 14px;
@@ -186,7 +184,7 @@ export const Label = styled.span`
     font-size: 19px;
     padding-top: 4px;
   }
-`
+`;
 
 export const Prompt = styled.div`
   display: flex;
@@ -210,8 +208,7 @@ export const Prompt = styled.div`
     height: 90px;
     padding: 43px;
   }
-
-`
+`;
 
 export const Question = styled.span`
   font-size: 16px;
@@ -220,8 +217,7 @@ export const Question = styled.span`
   @media (min-width: ${tabletBreakpoint}px) {
     font-size: 18px;
   }
-
-`
+`;
 
 export const StartProject = styled.a`
   text-decoration: none;
@@ -231,14 +227,12 @@ export const StartProject = styled.a`
   padding-bottom: 7px;
   color: white;
   border-bottom: 1px solid white;
-
-`
+`;
 
 export const BottomSpacing = styled.div`
   height: 0px;
 
-  @media(min-width: ${desktopBreakpoint}px) {
+  @media (min-width: ${desktopBreakpoint}px) {
     height: 80px;
   }
-
-`
+`;
