@@ -21,7 +21,7 @@ export default function Footer({ menu }: FooterProps) {
           <FooterMenu data-testid="Footer Menu">
             {menu.map((link: MenuItem) => (
               <FooterPages href={`#${link.key}`} key={link.key}>
-                {link.label.toUpperCase()}
+                {link.label?.toUpperCase()}
               </FooterPages>
             ))}
           </FooterMenu>

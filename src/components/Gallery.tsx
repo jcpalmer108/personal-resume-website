@@ -1,21 +1,19 @@
 import Section from "./Section"
-import photo1 from "../assets/images/gallery/pexels-ekaterina-bolovtsova-4049791.jpg"
-import photo2 from "../assets/images/gallery/pexels-ekaterina-bolovtsova-4049870.jpg"
-import photo3 from "../assets/images/gallery/pexels-ekaterina-bolovtsova-4049876.jpg"
-import {
-  Photo,
-  Wrapper,
-  Inner
-} from "../styles/components/Gallery"
+import { Photo, Wrapper, Inner } from "../styles/components/Gallery"
+import { GalleryProps } from "../types/Gallery"
 
-export default function Gallery() {
+export default function Gallery({ photos }: GalleryProps) {
+  if(photos && (photos?.length < 3)) {
+    return null;
+  }
+
   return (
     <Section wide>
       <Wrapper>
-        <Inner>
-          <Photo src={photo1} alt="Jenna 1" />
-          <Photo src={photo2} alt="Jenna 2" />
-          <Photo src={photo3} alt="Jenna 3" />
+        <Inner data-testid="Gallery">
+          {photos?.slice(0,3).map((photo, index) => (
+            <Photo key={`Photo ${index + 1}`} src={require("../assets/images/gallery/" + photo + ".jpg")} alt={`Photo ${index + 1}`} />
+          ))}
         </Inner>
       </Wrapper>
     </Section>

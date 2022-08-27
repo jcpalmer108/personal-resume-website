@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import { ExperienceProps } from "../types/Experience"
 import { Wrapper, Upper, Title, Description, Paragraph, Tile, Icon, Label, Lower, Job, Logo, Content, JobTitle, Info, DiagonalLine, JobDescription, JobParagraph, Mosaic, Summary, ModalTrigger } from "../styles/components/Experience"
 import Section from "./Section"

@@ -2,6 +2,7 @@ import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import Input from "../../components/Input"
 
+// params for component
 describe('Input', () => {
   const params = {
     label: 'test label',

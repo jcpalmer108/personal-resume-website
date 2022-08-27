@@ -59,7 +59,7 @@ export default function Navbar({ menu }: NavbarProps) {
           <DesktopMenu data-testid="Desktop Menu">
             {menu.map((link: MenuItem) => (
               <DesktopPages href={`#${link.key}`} key={link.key}>
-                {link.label.toUpperCase()}
+                {link.label?.toUpperCase()}
               </DesktopPages>
             ))}
           </DesktopMenu>
@@ -76,7 +76,7 @@ export default function Navbar({ menu }: NavbarProps) {
         <LowerMenu>
           <MobileMenu data-testid="Mobile Menu">
             {menu.map((link) => (
-              <MobilePages href={`#${link.key}`} key={link.key}>{link.label.toUpperCase()}</MobilePages>
+              <MobilePages href={`#${link.key}`} key={link.key}>{link.label?.toUpperCase()}</MobilePages>
             ))}
           </MobileMenu>
           <SocialsWrapper data-testid="Socials">

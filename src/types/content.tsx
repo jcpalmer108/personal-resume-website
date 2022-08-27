@@ -14,9 +14,9 @@ export type Action = {
 
 export type Sections = {
   key: string,
-  label: string,
+  label?: string,
   inMenu: boolean,
-  title: string,
+  title?: string,
   image?: string,
   action?: Action,
   description?: string[],
@@ -27,7 +27,8 @@ type SubSections = {
   education?: Education[],
   skills?: Skills,
   quotes?: Quotes[],
-  experience?: Experience[]
+  experience?: Experience[],
+  gallery?: String[]
 }
 
 export type Education = {
