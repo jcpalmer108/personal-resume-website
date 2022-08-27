@@ -1,5 +1,4 @@
 import { render, screen } from "@testing-library/react";
-import Modal from "../../components/Modal"
 import { DetailsProps } from "../../types/Details";
 import { ProjectProps } from "../../types/Project";
 import { ModalProps } from "../../types/Modal";
