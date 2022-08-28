@@ -7,7 +7,7 @@ exports[`Contact renders if content and contact are passed in 1`] = `
 >
   <div>
     <h2
-      class="sc-jSMfEi XHSTF"
+      class="sc-jSMfEi hlwoBT"
     >
       test title
     </h2>
@@ -15,38 +15,35 @@ exports[`Contact renders if content and contact are passed in 1`] = `
       test description
     </p>
     <div />
-    <div />
-    <div />
-    <div />
     <input
-      class="sc-ftvSup fuNJOj"
+      class="sc-ftvSup byvgcr"
       data-testid="Submit"
       disabled=""
       type="submit"
       value="SUBMIT"
     />
     <div
-      class="sc-jqUVSM ROQMX"
+      class="sc-jqUVSM jdMkJN"
     >
       <a
-        class="sc-kDDrLX bhBXK"
+        class="sc-kDDrLX bMvUqc"
         data-testid="Links"
         href="https://www.github.com/jcpalmer108/"
       >
         <img
           alt="Github"
-          class="sc-crXcEl bmFqsm"
+          class="sc-crXcEl lbtbww"
           src="[object Object]"
         />
       </a>
       <a
-        class="sc-kDDrLX bhBXK"
+        class="sc-kDDrLX bMvUqc"
         data-testid="Links"
         href="https://leetcode.com/darthToaster/"
       >
         <img
           alt="Leetcode"
-          class="sc-crXcEl bmFqsm"
+          class="sc-crXcEl lbtbww"
           src="[object Object]"
         />
       </a>
@@ -57,21 +54,21 @@ exports[`Contact renders if content and contact are passed in 1`] = `
 
 exports[`Contact renders if content and contact are passed in 2`] = `
 <form
-  class="sc-gsnTZi hAmbIH"
+  class="sc-gsnTZi kdzYlD"
   data-testid="NotMobile"
 >
   <div
-    class="sc-dkzDqf cAPcZf"
+    class="sc-dkzDqf dGOnnx"
   >
     <div
-      class="sc-gKXOVf kWgHqt"
+      class="sc-gKXOVf cuiuTf"
     >
       <div>
         <div
           class="sc-eCYdqJ UUQIc"
         >
           <h2
-            class="sc-jSMfEi XHSTF"
+            class="sc-jSMfEi hlwoBT"
             data-testid="Title"
           >
             test title
@@ -85,60 +82,45 @@ exports[`Contact renders if content and contact are passed in 2`] = `
       </div>
     </div>
     <div
-      class="sc-iBkjds gLdVKR"
+      class="sc-iBkjds hGgFJv"
     >
       <div
-        class="sc-hKMtZM hBpfjV"
-      >
-        <div />
-      </div>
-      <div
-        class="sc-hKMtZM hBpfjV"
-      >
-        <div />
-      </div>
-      <div
-        class="sc-hKMtZM hBpfjV"
-      >
-        <div />
-      </div>
-      <div
-        class="sc-hKMtZM hBpfjV"
+        class="sc-hKMtZM jFrahT"
       >
         <div />
       </div>
     </div>
   </div>
   <div
-    class="sc-papXJ diNUrR"
+    class="sc-papXJ qFTLl"
   >
     <div
-      class="sc-jqUVSM ROQMX"
+      class="sc-jqUVSM jdMkJN"
       data-testid="Socials"
     >
       <a
-        class="sc-kDDrLX bhBXK"
+        class="sc-kDDrLX bMvUqc"
         href="https://www.github.com/jcpalmer108/"
       >
         <img
           alt="Github"
-          class="sc-crXcEl bmFqsm"
+          class="sc-crXcEl lbtbww"
           src="[object Object]"
         />
       </a>
       <a
-        class="sc-kDDrLX bhBXK"
+        class="sc-kDDrLX bMvUqc"
         href="https://leetcode.com/darthToaster/"
       >
         <img
           alt="Leetcode"
-          class="sc-crXcEl bmFqsm"
+          class="sc-crXcEl lbtbww"
           src="[object Object]"
         />
       </a>
     </div>
     <input
-      class="sc-ftvSup fuNJOj"
+      class="sc-ftvSup byvgcr"
       data-testid="Submit"
       disabled=""
       type="submit"
@@ -150,7 +132,7 @@ exports[`Contact renders if content and contact are passed in 2`] = `
 
 exports[`Contact renders if content and contact are passed in 3`] = `
 <div
-  class="sc-iqcoie dCxMoX"
+  class="sc-iqcoie jyPsbp"
   data-testid="BlankSection"
 />
 `;

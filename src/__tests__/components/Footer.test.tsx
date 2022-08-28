@@ -52,25 +52,22 @@ const params = {
 describe("Footer", () => {
   test("renders if only required params are passed in", () => {
     // given
-    const { required } = params;
-    render(<Footer menu={required.menu} />);
+    const { menu } = params.required;
+    render(<Footer menu={menu} />);
 
     // then
     expect(screen.getByTestId("Footer")).toMatchSnapshot();
     expect(screen.getByTestId("Copyright")).toBeTruthy();
-
     expect(screen.getByTestId("Footer Menu").childNodes).toHaveLength(
-      required.menu.length
+      menu.length
     );
-    required.menu.forEach((link, index) => {
+    menu.forEach((link, index) => {
       expect(
         screen.getByTestId("Footer Menu").childNodes[index]
       ).toHaveTextContent(link.label.toUpperCase());
     });
-
     expect(mockSeparatingLine).toHaveBeenCalled();
     expect(mockSeparatingLine).toHaveBeenCalledWith(undefined, true, true);
-
     expect(mockSection).toHaveBeenCalledTimes(2);
     expect(mockSection).toHaveBeenNthCalledWith(
       1,

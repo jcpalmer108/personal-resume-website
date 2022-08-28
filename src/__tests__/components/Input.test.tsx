@@ -1,3 +1,4 @@
+/* eslint-disable testing-library/no-node-access */
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import Input from "../../components/Input";
@@ -28,40 +29,60 @@ describe("Input", () => {
         noBorder={optional.noBorder}
       />
     );
+
+    // then
     expect(screen.getByTestId("Input")).toMatchSnapshot();
     expect(screen.getByTestId("Input").childNodes[0].nodeName).toBe("TEXTAREA");
-    expect(screen.getByTestId("Input").lastChild.nodeName).toBe("LABEL");
-    expect(screen.getByTestId("Input").lastChild).toHaveTextContent(
-      params.label.toUpperCase()
+    expect(screen.getByTestId("Input").childNodes[1].nodeName).toBe("LABEL");
+    expect(screen.getByTestId("Input").childNodes[1]).toHaveTextContent(
+      required.label.toUpperCase()
     );
   });
 
-  test("renders if only required params are passed in", () => {
+  test("renders if required params and value are passed in", () => {
+    // given
+    const { required, optional } = params;
     render(
       <Input
-        label={params.label}
-        value={params.value}
-        updateForm={params.updateForm}
+        label={required.label}
+        value={optional.value}
+        updateForm={required.updateForm}
       />
     );
+
+    // then
     expect(screen.getByTestId("Input")).toMatchSnapshot();
-    expect(screen.getByTestId("Input").firstChild.nodeName).toBe("INPUT");
-    expect(screen.getByTestId("Input").lastChild.nodeName).toBe("LABEL");
-    expect(screen.getByTestId("Input").lastChild).toHaveTextContent(
-      params.label.toUpperCase()
+    expect(screen.getByTestId("Input").childNodes[0].nodeName).toBe("INPUT");
+    expect(screen.getByTestId("Input").childNodes[1].nodeName).toBe("LABEL");
+    expect(screen.getByTestId("Input").childNodes[1]).toHaveTextContent(
+      required.label.toUpperCase()
     );
+  });
+
+  test("does not render if value is not passed in", () => {
+    // given
+    const { required } = params;
+    render(<Input label={required.label} updateForm={required.updateForm} />);
+
+    // then
+    expect(screen.queryByTestId("Input")).toBeFalsy();
   });
 
   test("updateForm should be called on input update", () => {
+    // given
+    const { required, optional } = params;
     render(
       <Input
-        label={params.label}
-        value={params.value}
-        updateForm={params.updateForm}
+        label={required.label}
+        value={optional.value}
+        updateForm={required.updateForm}
       />
     );
-    const inputField = screen.getByTestId("Input");
-    userEvent.type(inputField.children[0], "test");
-    expect(params.updateForm).toHaveBeenCalledTimes(4); // one call for each letter input
+
+    // when
+    userEvent.type(screen.getByTestId("Input").children[0], "test");
+
+    // then
+    expect(required.updateForm).toHaveBeenCalledTimes(4); // one call for each letter input
   });
 });

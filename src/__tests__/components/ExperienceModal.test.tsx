@@ -89,7 +89,6 @@ describe("ExperienceModal", () => {
     expect(screen.getByTestId("Employer")).toHaveTextContent(
       required.content.employer
     );
-
     expect(mockDetails).toHaveBeenCalledTimes(6);
     expect(mockDetails).toHaveBeenNthCalledWith(
       1,
@@ -133,7 +132,6 @@ describe("ExperienceModal", () => {
     expect(screen.getByTestId("Employer")).toHaveTextContent(
       required.content.employer
     );
-
     expect(mockDetails).toHaveBeenCalledTimes(3);
     expect(mockDetails).toHaveBeenNthCalledWith(
       1,
@@ -146,7 +144,6 @@ describe("ExperienceModal", () => {
     expect(mockDetails).toHaveBeenNthCalledWith(3, "Timeline", [
       `${required.content.timeline.start} - ${required.content.timeline.end}`,
     ]);
-
     expect(mockProject).toHaveBeenCalledTimes(0);
   });
 });

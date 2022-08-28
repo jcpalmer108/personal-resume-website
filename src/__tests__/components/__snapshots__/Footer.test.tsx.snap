@@ -10,17 +10,17 @@ exports[`Footer renders if only required params are passed in 1`] = `
     src="jennapalmer-light.svg"
   />
   <div
-    class="sc-dkzDqf diyymw"
+    class="sc-dkzDqf kYJdoe"
     data-testid="Footer Menu"
   >
     <a
-      class="sc-hKMtZM ghNRUo"
+      class="sc-hKMtZM LOdZq"
       href="#one"
     >
       ONE
     </a>
     <a
-      class="sc-hKMtZM ghNRUo"
+      class="sc-hKMtZM LOdZq"
       href="#two"
     >
       TWO

@@ -17,8 +17,8 @@ import {
   Title,
 } from "../styles/components/Contact";
 import { ContactProps, FormProps } from "../types/Contact";
-import Input from "./Input";
 import Section from "./Section";
+import ContactForm from "./ContactForm";
 
 export default function Contact({
   content,
@@ -90,26 +90,9 @@ export default function Contact({
           <Section label={content?.label} center>
             <Title>{content?.title}</Title>
             <p>{content?.description && content?.description[0]}</p>
-            <Input
-              label="Name"
-              value={formValues.name}
-              updateForm={(e: any) => updateFormValues("name", e)}
-            />
-            <Input
-              label="Phone"
-              value={formValues.phone}
-              updateForm={(e: any) => updateFormValues("phone", e)}
-            />
-            <Input
-              label="Email"
-              value={formValues.email}
-              updateForm={(e: any) => updateFormValues("email", e)}
-            />
-            <Input
-              area
-              label="Message"
-              value={formValues.message}
-              updateForm={(e: any) => updateFormValues("message", e)}
+            <ContactForm
+              formValues={formValues}
+              updateForm={updateFormValues}
             />
             <Button
               data-testid="Submit"
@@ -145,36 +128,9 @@ export default function Contact({
             </Left>
             <Right>
               <InputWrapper>
-                <Input
-                  noBorder
-                  label="Name"
-                  value={formValues.name}
-                  updateForm={(e: any) => updateFormValues("name", e)}
-                />
-              </InputWrapper>
-              <InputWrapper>
-                <Input
-                  noBorder
-                  label="Phone"
-                  value={formValues.phone}
-                  updateForm={(e: any) => updateFormValues("phone", e)}
-                />
-              </InputWrapper>
-              <InputWrapper>
-                <Input
-                  noBorder
-                  label="Email"
-                  value={formValues.email}
-                  updateForm={(e: any) => updateFormValues("email", e)}
-                />
-              </InputWrapper>
-              <InputWrapper>
-                <Input
-                  noBorder
-                  area
-                  label="Message"
-                  value={formValues.message}
-                  updateForm={(e: any) => updateFormValues("message", e)}
+                <ContactForm
+                  formValues={formValues}
+                  updateForm={updateFormValues}
                 />
               </InputWrapper>
             </Right>

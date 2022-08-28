@@ -2,14 +2,14 @@
 
 exports[`ExperienceModal renders if only required params are passed in 1`] = `
 <div
-  class="sc-gKXOVf eWOBtc"
+  class="sc-gKXOVf cNOAyo"
   data-testid="ExperienceModal"
 >
   <div
-    class="sc-iBkjds kEnPaL"
+    class="sc-iBkjds lgAXJZ"
   >
     <div
-      class="sc-ftvSup hZHVdZ"
+      class="sc-ftvSup jPzHnb"
     >
       <img
         alt="logo"
@@ -19,18 +19,18 @@ exports[`ExperienceModal renders if only required params are passed in 1`] = `
       />
     </div>
     <div
-      class="sc-jqUVSM kDvCkA"
+      class="sc-jqUVSM eukuru"
     >
       <div
         class="sc-kDDrLX erjzcT"
       >
         <div
-          class="sc-iqcoie gbUtb"
+          class="sc-iqcoie hZaRyn"
         >
           Title
         </div>
         <span
-          class="sc-crXcEl grLoBO"
+          class="sc-crXcEl YkJlI"
           data-testid="Title"
         >
           test title
@@ -40,12 +40,12 @@ exports[`ExperienceModal renders if only required params are passed in 1`] = `
         class="sc-kDDrLX erjzcT"
       >
         <div
-          class="sc-iqcoie gbUtb"
+          class="sc-iqcoie hZaRyn"
         >
           Employer
         </div>
         <span
-          class="sc-crXcEl grLoBO"
+          class="sc-crXcEl YkJlI"
           data-testid="Employer"
         >
           test employer
@@ -54,7 +54,7 @@ exports[`ExperienceModal renders if only required params are passed in 1`] = `
     </div>
   </div>
   <div
-    class="sc-breuTD ijGDlU"
+    class="sc-breuTD eUvivm"
   >
     <div>
       <div />
@@ -71,14 +71,14 @@ exports[`ExperienceModal renders if only required params are passed in 1`] = `
 
 exports[`ExperienceModal renders if optional and required params are passed in 1`] = `
 <div
-  class="sc-gKXOVf eWOBtc"
+  class="sc-gKXOVf cNOAyo"
   data-testid="ExperienceModal"
 >
   <div
-    class="sc-iBkjds kEnPaL"
+    class="sc-iBkjds lgAXJZ"
   >
     <div
-      class="sc-ftvSup hZHVdZ"
+      class="sc-ftvSup jPzHnb"
     >
       <img
         alt="logo"
@@ -88,18 +88,18 @@ exports[`ExperienceModal renders if optional and required params are passed in 1
       />
     </div>
     <div
-      class="sc-jqUVSM kDvCkA"
+      class="sc-jqUVSM eukuru"
     >
       <div
         class="sc-kDDrLX erjzcT"
       >
         <div
-          class="sc-iqcoie gbUtb"
+          class="sc-iqcoie hZaRyn"
         >
           Title
         </div>
         <span
-          class="sc-crXcEl grLoBO"
+          class="sc-crXcEl YkJlI"
           data-testid="Title"
         >
           test title
@@ -109,12 +109,12 @@ exports[`ExperienceModal renders if optional and required params are passed in 1
         class="sc-kDDrLX erjzcT"
       >
         <div
-          class="sc-iqcoie gbUtb"
+          class="sc-iqcoie hZaRyn"
         >
           Employer
         </div>
         <span
-          class="sc-crXcEl grLoBO"
+          class="sc-crXcEl YkJlI"
           data-testid="Employer"
         >
           test employer
@@ -123,14 +123,14 @@ exports[`ExperienceModal renders if optional and required params are passed in 1
     </div>
   </div>
   <div
-    class="sc-breuTD ijGDlU"
+    class="sc-breuTD eUvivm"
   >
     <div>
       <div />
     </div>
     <div>
       <div
-        class="sc-evZas dsLoZa"
+        class="sc-evZas jyOmOC"
       >
         <div />
         <div />

@@ -14,6 +14,10 @@ export default function Input({
   area,
   noBorder,
 }: InputProps) {
+  if (!value) {
+    return null;
+  }
+
   return (
     <Wrapper data-testid="Input">
       {area ? (

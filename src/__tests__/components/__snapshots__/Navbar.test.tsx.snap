@@ -6,32 +6,32 @@ exports[`Navbar renders if only required params are passed in 1`] = `
   style="opacity: 0; max-height: 105px; overflow: hidden;"
 >
   <div
-    class="sc-ftvSup fqXeAh"
+    class="sc-dkzDqf jRhnTD"
   >
     <img
       alt="logo"
-      class="sc-gKXOVf bgZQNE"
+      class="sc-bczRLJ gjPwgS"
       src="jennapalmer-dark.svg"
     />
     <div
-      class="sc-breuTD bQjhPd"
+      class="sc-papXJ dtccfk"
       data-testid="Desktop Menu"
     >
       <a
-        class="sc-ksZaOG hPOIwE"
+        class="sc-jqUVSM klaAtv"
         href="#one"
       >
         ONE
       </a>
       <a
-        class="sc-ksZaOG hPOIwE"
+        class="sc-jqUVSM klaAtv"
         href="#two"
       >
         TWO
       </a>
     </div>
     <div
-      class="sc-iBkjds cMkmwA"
+      class="sc-gsnTZi iHtEjK"
       data-testid="Hamburger"
     >
       <div
@@ -54,76 +54,46 @@ exports[`Navbar renders if only required params are passed in 1`] = `
     </div>
   </div>
   <div
-    class="sc-papXJ jmtnqI"
+    class="sc-hKMtZM cZmFZG"
   >
     <div
-      class="sc-jqUVSM emVZew"
+      class="sc-eCYdqJ iBpHZo"
       data-testid="Mobile Menu"
     >
       <a
-        class="sc-kDDrLX doDXhI"
+        class="sc-jSMfEi dpeGWT"
         href="#one"
       >
         ONE
       </a>
       <a
-        class="sc-kDDrLX doDXhI"
+        class="sc-jSMfEi dpeGWT"
         href="#two"
       >
         TWO
       </a>
     </div>
     <div
-      class="sc-iqcoie lihoFq"
+      class="sc-gKXOVf ftsEjB"
       data-testid="Socials"
     >
       <a
-        class="sc-crXcEl gmDjrd"
+        class="sc-iBkjds tezBT"
         href="https://www.github.com/jcpalmer108/"
       >
         <img
           alt="github"
-          class="sc-evZas leZbCs"
+          class="sc-ftvSup kFuEXh"
           src="[object Object]"
         />
       </a>
       <a
-        class="sc-crXcEl gmDjrd"
+        class="sc-iBkjds tezBT"
         href="https://leetcode.com/darthToaster/"
       >
         <img
           alt="leetcode"
-          class="sc-evZas leZbCs"
-          src="[object Object]"
-        />
-      </a>
-      <a
-        class="sc-crXcEl gmDjrd"
-        href="https://www.linkedin.com/in/jenna-palmer/"
-      >
-        <img
-          alt="linkedin"
-          class="sc-evZas leZbCs"
-          src="[object Object]"
-        />
-      </a>
-      <a
-        class="sc-crXcEl gmDjrd"
-        href="https://twitter.com/jpalmerproject/"
-      >
-        <img
-          alt="twitter"
-          class="sc-evZas leZbCs"
-          src="[object Object]"
-        />
-      </a>
-      <a
-        class="sc-crXcEl gmDjrd"
-        href="mailto:jenna@jennapalmer.info"
-      >
-        <img
-          alt="email"
-          class="sc-evZas leZbCs"
+          class="sc-ftvSup kFuEXh"
           src="[object Object]"
         />
       </a>

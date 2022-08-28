@@ -22,6 +22,10 @@ export default function Testimonials({ content }: TestimonialProps) {
   let [selectedIndex, setSelectedIndex] = useState(0);
   const quotes = content?.subSection?.quotes;
 
+  if (!content) {
+    return null;
+  }
+
   function updateIndex(moveForward: boolean) {
     if (moveForward) {
       return quotes && selectedIndex >= quotes.length - 1

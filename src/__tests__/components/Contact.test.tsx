@@ -1,7 +1,8 @@
 import { fireEvent, render, screen } from "@testing-library/react";
 import socials from "../../assets/content/socials.json";
 import Contact from "../../components/Contact";
-import { InputProps } from "../../types/Input";
+import { ContactFormProps } from "../../types/ContactForm";
+import { SectionProps } from "../../types/Section";
 
 // mock content
 jest.mock(
@@ -44,12 +45,12 @@ jest.mock(
     }
 );
 
-const mockInput = jest.fn();
+const mockContactForm = jest.fn();
 jest.mock(
-  "../../components/Input",
+  "../../components/ContactForm",
   () =>
-    ({ label, value, updateForm, area, noBorder }: InputProps) => {
-      mockInput(label, value, area, noBorder);
+    ({ formValues, updateForm }: ContactFormProps) => {
+      mockContactForm(formValues, updateForm ? true : false);
       return <div />;
     }
 );
@@ -90,7 +91,6 @@ describe("Contact", () => {
 
     // then
     expect(screen.getByTestId("Contact")).toHaveAttribute("id", "contact");
-
     expect(screen.getByTestId("Mobile")).toMatchSnapshot();
     expect(screen.getByTestId("Mobile")).toHaveTextContent(
       optional.content.title
@@ -98,7 +98,6 @@ describe("Contact", () => {
     expect(screen.getByTestId("Mobile")).toHaveTextContent(
       optional.content.description[0]
     );
-
     expect(screen.getByTestId("NotMobile")).toMatchSnapshot();
     expect(screen.getByTestId("NotMobile")).toHaveTextContent(
       optional.content.title
@@ -106,45 +105,31 @@ describe("Contact", () => {
     expect(screen.getByTestId("NotMobile")).toHaveTextContent(
       optional.content.description[0]
     );
-
     expect(screen.getByTestId("BlankSection")).toMatchSnapshot();
 
-    expect(mockInput).toHaveBeenCalledTimes(8);
-    expect(mockInput).toHaveBeenNthCalledWith(
+    expect(mockContactForm).toHaveBeenCalledTimes(2);
+    expect(mockContactForm).toHaveBeenNthCalledWith(
       1,
-      "Name",
-      "",
-      undefined,
-      undefined
+      {
+        email: "",
+        message: "",
+        name: "",
+        phone: "",
+      },
+      true
     );
-    expect(mockInput).toHaveBeenNthCalledWith(
+    expect(mockContactForm).toHaveBeenNthCalledWith(
       2,
-      "Phone",
-      "",
-      undefined,
-      undefined
+      {
+        email: "",
+        message: "",
+        name: "",
+        phone: "",
+      },
+      true
     );
-    expect(mockInput).toHaveBeenNthCalledWith(
-      3,
-      "Email",
-      "",
-      undefined,
-      undefined
-    );
-    expect(mockInput).toHaveBeenNthCalledWith(
-      4,
-      "Message",
-      "",
-      true,
-      undefined
-    );
-    expect(mockInput).toHaveBeenNthCalledWith(5, "Name", "", undefined, true);
-    expect(mockInput).toHaveBeenNthCalledWith(6, "Phone", "", undefined, true);
-    expect(mockInput).toHaveBeenNthCalledWith(7, "Email", "", undefined, true);
-    expect(mockInput).toHaveBeenNthCalledWith(8, "Message", "", true, true);
 
     expect(screen.getAllByTestId("Submit")[0]).toHaveProperty("disabled", true);
-
     expect(screen.getByTestId("Socials").childNodes).toHaveLength(
       socials.links.length
     );

@@ -54,6 +54,46 @@ exports[`Skills renders if only required params are passed in 1`] = `
   padding: 0px;
 }
 
+@media (min-width:1155px) {
+
+}
+
+@media (min-width:1155px) {
+
+}
+
+@media (min-width:720px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:720px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:720px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:720px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
 @media (min-width:720px) {
   .c0 {
     display: none;
@@ -194,46 +234,6 @@ exports[`Skills renders if only required params are passed in 1`] = `
   }
 }
 
-@media (min-width:1155px) {
-
-}
-
-@media (min-width:1155px) {
-
-}
-
-@media (min-width:720px) {
-
-}
-
-@media (min-width:1024px) {
-
-}
-
-@media (min-width:720px) {
-
-}
-
-@media (min-width:1024px) {
-
-}
-
-@media (min-width:720px) {
-
-}
-
-@media (min-width:1024px) {
-
-}
-
-@media (min-width:720px) {
-
-}
-
-@media (min-width:1024px) {
-
-}
-
 <div
   class="c0"
   data-testid="Mobile"
@@ -269,6 +269,17 @@ exports[`Skills renders if only required params are passed in 1`] = `
       </a>
       <a
         class="c2"
+        href="https://test.skill.five/"
+        id="test"
+      >
+        <img
+          alt="Test Skill 5"
+          class="c3"
+          src="[object Object]"
+        />
+      </a>
+      <a
+        class="c2"
         href="https://test.skill.two/"
         id="test"
       >
@@ -296,17 +307,6 @@ exports[`Skills renders if only required params are passed in 1`] = `
       >
         <img
           alt="Test Skill 4"
-          class="c3"
-          src="[object Object]"
-        />
-      </a>
-      <a
-        class="c2"
-        href="https://test.skill.five/"
-        id="test"
-      >
-        <img
-          alt="Test Skill 5"
           class="c3"
           src="[object Object]"
         />
@@ -373,6 +373,17 @@ exports[`Skills renders if only required params are passed in 1`] = `
       </a>
       <a
         class="c2"
+        href="https://test.skill.five/"
+        id="test"
+      >
+        <img
+          alt="Test Skill 5"
+          class="c3"
+          src="[object Object]"
+        />
+      </a>
+      <a
+        class="c2"
         href="https://test.skill.two/"
         id="test"
       >
@@ -400,17 +411,6 @@ exports[`Skills renders if only required params are passed in 1`] = `
       >
         <img
           alt="Test Skill 4"
-          class="c3"
-          src="[object Object]"
-        />
-      </a>
-      <a
-        class="c2"
-        href="https://test.skill.five/"
-        id="test"
-      >
-        <img
-          alt="Test Skill 5"
           class="c3"
           src="[object Object]"
         />
@@ -469,7 +469,9 @@ exports[`Skills renders if only required params are passed in 1`] = `
   </p>
   <div
     class="c5"
-  />
+  >
+    <div />
+  </div>
 </div>
 `;
 
@@ -523,6 +525,46 @@ exports[`Skills renders if only required params are passed in 2`] = `
 
 .c10 {
   padding: 0px;
+}
+
+@media (min-width:1155px) {
+
+}
+
+@media (min-width:1155px) {
+
+}
+
+@media (min-width:720px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:720px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:720px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:720px) {
+
+}
+
+@media (min-width:1024px) {
+
 }
 
 @media (min-width:720px) {
@@ -746,46 +788,6 @@ exports[`Skills renders if only required params are passed in 2`] = `
   }
 }
 
-@media (min-width:1155px) {
-
-}
-
-@media (min-width:1155px) {
-
-}
-
-@media (min-width:720px) {
-
-}
-
-@media (min-width:1024px) {
-
-}
-
-@media (min-width:720px) {
-
-}
-
-@media (min-width:1024px) {
-
-}
-
-@media (min-width:720px) {
-
-}
-
-@media (min-width:1024px) {
-
-}
-
-@media (min-width:720px) {
-
-}
-
-@media (min-width:1024px) {
-
-}
-
 <div
   class="c0"
   data-testid="NotMobile"
@@ -830,6 +832,26 @@ exports[`Skills renders if only required params are passed in 2`] = `
           <a
             class="c5"
             data-testid="Tile"
+            href="https://test.skill.five/"
+            id="test"
+          >
+            <img
+              alt="Test Skill 5"
+              class="c6"
+              src="[object Object]"
+            />
+          </a>
+        </td>
+      </tr>
+      <tr
+        data-testid="Row 2"
+      >
+        <td
+          class="c4"
+        >
+          <a
+            class="c5"
+            data-testid="Tile"
             href="https://test.skill.two/"
             id="test"
           >
@@ -840,10 +862,6 @@ exports[`Skills renders if only required params are passed in 2`] = `
             />
           </a>
         </td>
-      </tr>
-      <tr
-        data-testid="Row 2"
-      >
         <td
           class="c4"
         >
@@ -871,22 +889,6 @@ exports[`Skills renders if only required params are passed in 2`] = `
           >
             <img
               alt="Test Skill 4"
-              class="c6"
-              src="[object Object]"
-            />
-          </a>
-        </td>
-        <td
-          class="c4"
-        >
-          <a
-            class="c5"
-            data-testid="Tile"
-            href="https://test.skill.five/"
-            id="test"
-          >
-            <img
-              alt="Test Skill 5"
               class="c6"
               src="[object Object]"
             />
@@ -975,7 +977,9 @@ exports[`Skills renders if only required params are passed in 2`] = `
             </p>
             <div
               class="c10"
-            />
+            >
+              <div />
+            </div>
           </div>
         </td>
       </tr>
@@ -992,7 +996,9 @@ exports[`Skills renders if only required params are passed in 2`] = `
     </p>
     <div
       class="c10"
-    />
+    >
+      <div />
+    </div>
   </div>
 </div>
 `;

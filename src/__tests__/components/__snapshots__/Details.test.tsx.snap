@@ -2,22 +2,22 @@
 
 exports[`Details renders if optional and required params are passed in 1`] = `
 <div
-  class="sc-bczRLJ jTJYiF"
+  class="sc-bczRLJ fABziL"
   data-testid="Details"
 >
   <div
-    class="sc-gsnTZi eAOOHp"
+    class="sc-gsnTZi jqxNpn"
   >
     test label
   </div>
   <div>
     <p
-      class="sc-dkzDqf VSogs"
+      class="sc-dkzDqf dVromW"
     >
       1
     </p>
     <p
-      class="sc-dkzDqf VSogs"
+      class="sc-dkzDqf dVromW"
     >
       2
     </p>

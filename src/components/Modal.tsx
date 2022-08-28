@@ -13,16 +13,16 @@ export default function Modal({ closeModal, children }: ModalProps) {
   return (
     <>
       <BackgroundOverlay data-testid="Overlay" onClick={() => closeModal()} />
-      <Window>
+      <Window data-testid="Modal">
         <CloseIcon
           src={closeIcon}
           alt="close"
           data-testid="CloseIcon"
           onClick={() => closeModal()}
         />
-        <InnerWindow data-testid="Inner">
-          <LeftRightBorders data-testid="LeftRight">
-            <TopBottomBorders data-testid="TopBottom">
+        <InnerWindow>
+          <LeftRightBorders>
+            <TopBottomBorders data-testid="ChildrenWrapper">
               {children}
             </TopBottomBorders>
           </LeftRightBorders>

@@ -1,8 +1,14 @@
-import { render, screen } from "@testing-library/react";
+import { LineItemProps } from "@/types/LineItem";
+import { fireEvent, render, screen } from "@testing-library/react";
 import "jest-styled-components";
 import SkillsModal from "../../components/SkillsModal";
 import { ModalProps } from "../../types/Modal";
 
+// mock helpers
+const mockDownloadResume = jest.fn();
+jest.mock("../../utils/downloadResume", () => () => mockDownloadResume());
+
+// mock components
 const mockModal = jest.fn();
 jest.mock(
   "../../components/Modal",
@@ -13,118 +19,141 @@ jest.mock(
     }
 );
 
+const mockLineItems = jest.fn();
+jest.mock(
+  "../../components/LineItem",
+  () =>
+    ({ icon, skill, subtitle }: LineItemProps) => {
+      mockLineItems(icon, skill, subtitle);
+      return <div />;
+    }
+);
+
+// params for component
 const params = {
-  required: [
-    {
-      key: "test",
-      label: "One",
-      category: "frontend",
-    },
-    {
-      key: "test",
-      label: "Three",
-      category: "frontend",
-    },
-    {
-      key: "test",
-      label: "Two",
-      category: "backend",
-    },
-  ],
-  optional: [
-    {
-      url: "www.amazon.com",
-      subtitle: "this is a subtitle two",
-    },
-    {
-      url: "www.google.com",
-      subtitle: "this is a subtitle three",
-    },
-    {
-      url: "www.google.com",
-      subtitle: "this is a subtitle one",
-    },
-  ],
-  categories: [
-    {
-      key: "frontend",
-      label: "Frontend",
-    },
-    {
-      key: "backend",
-      label: "Backend",
-    },
-  ],
+  required: {
+    closeModal: jest.fn(),
+  },
+  optional: {
+    content: [
+      {
+        key: "test",
+        label: "One",
+        category: "frontend",
+      },
+      {
+        key: "test",
+        label: "Three",
+        category: "frontend",
+      },
+      {
+        key: "test",
+        label: "Two",
+        category: "backend",
+      },
+    ],
+    categories: [
+      {
+        key: "frontend",
+        label: "Frontend",
+      },
+      {
+        key: "backend",
+        label: "Backend",
+      },
+    ],
+  },
 };
 
 describe("SkillsModal", () => {
   test("renders if required and optional params are passed in", () => {
-    const completedContent = params.required.map((item, index) => ({
-      ...item,
-      ...params.optional[index],
-    }));
+    // given
+    const { required, optional } = params;
     render(
       <SkillsModal
-        closeModal={jest.fn()}
-        content={completedContent}
-        categories={params.categories}
+        closeModal={required.closeModal}
+        content={optional.content}
+        categories={optional.categories}
       />
     );
+
+    // then
     expect(screen.getByTestId("SkillsModal")).toMatchSnapshot();
     expect(screen.getByTestId("SkillsModal").childNodes).toHaveLength(
-      params.required.length
+      optional.content.length
     );
     expect(screen.getAllByTestId("Subheader")).toHaveLength(
-      params.categories.length
+      optional.categories.length
     );
-
-    for (
-      let i = 0;
-      i < screen.getByTestId("SkillsModal").childElementCount - 1;
-      i++
-    ) {
-      const section = screen.getByTestId("SkillsModal").childNodes[i];
-      expect(section.childNodes[0]).toHaveTextContent(
-        params.categories[i].label
+    optional.categories.forEach((category, index) => {
+      const categoryNode = screen.getByTestId("SkillsModal").childNodes[index];
+      expect(categoryNode.childNodes[0]).toHaveTextContent(category.label);
+      expect(categoryNode.childNodes[1].childNodes).toHaveLength(
+        optional.content.filter((skills) => skills.category === category.key)
+          .length
       );
-      expect(section.childNodes[1].childNodes.length).toBe(
-        params.required.filter(
-          (skill) => skill.category === params.categories[i].key
-        ).length
-      );
-    }
+    });
+    expect(screen.getByTestId("CallToAction")).toBeTruthy();
+    expect(screen.getByTestId("CallToAction")).toHaveTextContent(
+      "There's more where that came from."
+    );
+    expect(screen.getByTestId("ActionButton")).toHaveTextContent(
+      "Download my resume".toUpperCase()
+    );
   });
 
-  test("renders if only required params are passed in", () => {
+  test("does not render if content and categories are not passed in", () => {
+    // given
+    const { required } = params;
+    render(<SkillsModal closeModal={required.closeModal} />);
+
+    // then
+    expect(screen.queryByTestId("SkillsModal")).toBeFalsy();
+  });
+
+  test("does not render if categories is not passed in", () => {
+    // given
+    const { required, optional } = params;
     render(
       <SkillsModal
-        closeModal={jest.fn()}
-        content={params.required}
-        categories={params.categories}
+        closeModal={required.closeModal}
+        content={optional.content}
       />
     );
-    expect(screen.getByTestId("SkillsModal")).toMatchSnapshot();
-    expect(screen.getByTestId("SkillsModal").childNodes).toHaveLength(
-      params.required.length
-    );
-    expect(screen.getAllByTestId("Subheader")).toHaveLength(
-      params.categories.length
+
+    // then
+    expect(screen.queryByTestId("SkillsModal")).toBeFalsy();
+  });
+
+  test("does not render if content is not passed in", () => {
+    // given
+    const { required, optional } = params;
+    render(
+      <SkillsModal
+        closeModal={required.closeModal}
+        categories={optional.categories}
+      />
     );
 
-    for (
-      let i = 0;
-      i < screen.getByTestId("SkillsModal").childElementCount - 1;
-      i++
-    ) {
-      const section = screen.getByTestId("SkillsModal").childNodes[i];
-      expect(section.childNodes[0]).toHaveTextContent(
-        params.categories[i].label
-      );
-      expect(section.childNodes[1].childNodes.length).toBe(
-        params.required.filter(
-          (skill) => skill.category === params.categories[i].key
-        ).length
-      );
-    }
+    // then
+    expect(screen.queryByTestId("SkillsModal")).toBeFalsy();
+  });
+
+  test("executes form download on ActionButton click", () => {
+    // given
+    const { required, optional } = params;
+    render(
+      <SkillsModal
+        closeModal={required.closeModal}
+        content={optional.content}
+        categories={optional.categories}
+      />
+    );
+
+    // when
+    fireEvent.click(screen.getByTestId("ActionButton"));
+
+    // then
+    expect(mockDownloadResume).toHaveBeenCalled();
   });
 });

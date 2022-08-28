@@ -2,12 +2,12 @@
 
 exports[`Testimonials renders if only required params are passed in 1`] = `
 <div
-  class="sc-bczRLJ cJVwly"
+  class="sc-bczRLJ gMOOza"
   data-testid="Testimonials"
 >
   <img
     alt="arrow left"
-    class="sc-ftvSup iGaBgC"
+    class="sc-ftvSup bIKhme"
     data-testid="arrow left"
     src="arrow-left-pink.svg"
   />
@@ -18,7 +18,7 @@ exports[`Testimonials renders if only required params are passed in 1`] = `
       Testimonials
     </h2>
     <p
-      class="sc-dkzDqf hOKucT"
+      class="sc-dkzDqf fysNox"
       data-testid="Quote"
     >
       this is a test quote
@@ -40,21 +40,21 @@ exports[`Testimonials renders if only required params are passed in 1`] = `
       data-testid="Dots"
     >
       <div
-        class="sc-gKXOVf kCMRve"
+        class="sc-gKXOVf ehpXSY"
       />
       <div
-        class="sc-gKXOVf kJlTwh"
+        class="sc-gKXOVf bjLeFz"
       />
     </div>
   </div>
   <img
     alt="arrow right"
-    class="sc-papXJ cxbqPr"
+    class="sc-papXJ QsnDr"
     data-testid="arrow right"
     src="arrow-right-pink.svg"
   />
   <div
-    class="sc-iBkjds dvtkjr"
+    class="sc-iBkjds hsMbSL"
   >
     <div
       class="sc-kDDrLX hksPpZ"
@@ -64,7 +64,7 @@ exports[`Testimonials renders if only required params are passed in 1`] = `
       />
       <img
         alt="arrow left"
-        class="sc-ftvSup hzntBy"
+        class="sc-ftvSup hdhNBy"
         data-testid="arrow left"
         src="arrow-left-pink.svg"
       />
@@ -77,7 +77,7 @@ exports[`Testimonials renders if only required params are passed in 1`] = `
       />
       <img
         alt="arrow right"
-        class="sc-papXJ iMvUOL"
+        class="sc-papXJ bnbZLX"
         data-testid="arrow right"
         src="arrow-right-pink.svg"
       />

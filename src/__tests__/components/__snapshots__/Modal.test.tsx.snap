@@ -1,35 +1,153 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Modal renders if only required params are passed in 1`] = `
+.c0 {
+  position: fixed;
+  top: calc(15% / 2);
+  left: calc(15% / 2);
+  height: 85%;
+  width: 85%;
+  overflow: hidden;
+  opacity: 1;
+  z-index: 999;
+  text-align: right;
+}
+
+.c1 {
+  width: 17px;
+  padding-bottom: 5px;
+}
+
+.c2 {
+  background: white;
+  height: calc(100% - 30px);
+  width: calc(100% - 30px);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c3 {
+  width: 87%;
+  border-left: solid 1px #c6c6c6;
+  border-right: solid 1px #c6c6c6;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c4 {
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+@media (min-width:1024px) {
+  .c0 {
+    max-height: 800px;
+  }
+}
+
+@media (min-width:1024px) {
+  .c2 {
+    max-height: 715px;
+  }
+}
+
+@media (min-width:1024px) {
+  .c3 {
+    max-width: 960px;
+  }
+}
+
+@media (min-width:1024px) {
+  .c4 {
+    border-top: solid 1px #c6c6c6;
+    border-bottom: solid 1px #c6c6c6;
+    height: 80%;
+    max-height: 572px;
+    overflow-y: visible;
+  }
+}
+
 <div
-  class="sc-hKMtZM dKMdxt"
-  data-testid="Inner"
+  class="c0"
+  data-testid="Modal"
 >
+  <img
+    alt="close"
+    class="c1"
+    data-testid="CloseIcon"
+    src="close.svg"
+  />
   <div
-    class="sc-eCYdqJ cINLYK"
-    data-testid="LeftRight"
+    class="c2"
   >
     <div
-      class="sc-jSMfEi iXHsan"
-      data-testid="TopBottom"
-    />
+      class="c3"
+    >
+      <div
+        class="c4"
+        data-testid="ChildrenWrapper"
+      >
+        hello world
+      </div>
+    </div>
   </div>
 </div>
 `;
 
-exports[`Modal renders if optional and required params are passed in 1`] = `
+exports[`Modal renders if only required params are passed in 2`] = `
+.c0 {
+  position: fixed;
+  top: 0px;
+  background: black;
+  height: 100%;
+  width: 100%;
+  z-index: 998;
+  opacity: 0.8;
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
 <div
-  class="sc-hKMtZM dKMdxt"
-  data-testid="Inner"
->
-  <div
-    class="sc-eCYdqJ cINLYK"
-    data-testid="LeftRight"
-  >
-    <div
-      class="sc-jSMfEi iXHsan"
-      data-testid="TopBottom"
-    />
-  </div>
-</div>
+  class="c0"
+  data-testid="Overlay"
+/>
 `;

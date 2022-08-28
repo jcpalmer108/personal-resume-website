@@ -4,30 +4,26 @@ import {
   CallToAction,
   Circle,
   Details,
-  Icon,
-  Info,
-  Line,
   RocketIcon,
   Section,
-  SkillInfo,
   Subheader,
-  Subtitle,
   Wrapper,
 } from "../styles/components/SkillsModal";
-import { Category, Skill } from "../types/content";
+import { Skill } from "../types/content";
+import { SkillsModalProps } from "../types/SkillsModal";
 import Modal from "./Modal";
-
-type SkillsModalProps = {
-  closeModal: Function;
-  content?: Skill[];
-  categories?: Category[];
-};
+import LineItem from "./LineItem";
+import downloadResume from "../utils/downloadResume";
 
 export default function SkillsModal({
   closeModal,
   content,
   categories,
 }: SkillsModalProps) {
+  if (!content || !categories) {
+    return null;
+  }
+
   return (
     <Modal closeModal={closeModal}>
       <Wrapper data-testid="SkillsModal">
@@ -48,33 +44,16 @@ export default function SkillsModal({
             </div>
           </Section>
         ))}
-        <CallToAction>
+        <CallToAction data-testid="CallToAction">
           <Circle>
             <RocketIcon src={rocketIcon} alt="rocket" />
           </Circle>
           <Details>There's more where that came from.</Details>
-          <Action onClick={() => console.log("hi there")}>
+          <Action data-testid="ActionButton" onClick={() => downloadResume()}>
             {"Download my resume".toUpperCase()}
           </Action>
         </CallToAction>
       </Wrapper>
     </Modal>
-  );
-}
-
-type LineItemProps = {
-  icon: string;
-  skill: string;
-  subtitle?: string;
-};
-function LineItem({ icon, skill, subtitle }: LineItemProps) {
-  return (
-    <Line>
-      <Icon src={require("../assets/images/skills/modal/" + icon + ".svg")} />
-      <SkillInfo>
-        <Info>{skill}</Info>
-        {subtitle && <Subtitle>{subtitle}</Subtitle>}
-      </SkillInfo>
-    </Line>
   );
 }

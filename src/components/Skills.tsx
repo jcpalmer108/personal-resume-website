@@ -24,12 +24,12 @@ import Button from "./Button";
 import SkillsModal from "./SkillsModal";
 
 export default function Skills({ content }: SkillsProps) {
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+  const title = content?.title;
+  const description = (content?.description && content?.description[0]) || "";
   const skillList = content?.subSection?.skills?.data.filter(
     (item) => item.url && item.category !== "soft-skills"
   );
-  const title = content?.title;
-  const description = (content?.description && content?.description[0]) || "";
-  const [modalIsOpen, setModalIsOpen] = useState(false);
 
   const generateTiles = (
     tiles: SkillsContent[] | undefined,

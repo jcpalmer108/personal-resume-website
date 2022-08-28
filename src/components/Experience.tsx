@@ -73,7 +73,7 @@ export default function Experience({ content, contact }: ExperienceProps) {
   }
 
   return (
-    <div id="experience">
+    <div data-testid="Experience" id="experience">
       {modalIsOpen && (
         <ExperienceModal
           closeModal={() => setModalIsOpen(!modalIsOpen)}
@@ -81,7 +81,7 @@ export default function Experience({ content, contact }: ExperienceProps) {
         />
       )}
       <Section center label={content?.label}>
-        <Wrapper data-testid="Experience">
+        <Wrapper>
           <Upper>
             <Summary>
               <Title data-testid="Title">{content?.title}</Title>

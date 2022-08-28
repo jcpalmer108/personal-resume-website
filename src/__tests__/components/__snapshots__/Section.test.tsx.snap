@@ -47,9 +47,7 @@ exports[`Section renders if only required params are passed in 1`] = `
     class="c1"
     data-testid="Children"
   >
-    <p>
-      Child 1
-    </p>
+    hello world
   </div>
 </div>
 `;
@@ -98,14 +96,13 @@ exports[`Section renders if required and optional params are passed in 1`] = `
 
 @media (min-width:1155px) {
   .c0 {
-    border-color: white;
-    border-width: 0.2px;
+    border: none;
   }
 }
 
 @media (min-width:1155px) {
   .c0 {
-    border-bottom: none;
+    border-bottom: 1px solid #c6c6c6;
   }
 }
 
@@ -113,7 +110,7 @@ exports[`Section renders if required and optional params are passed in 1`] = `
   .c1 {
     margin: 0px;
     padding-left: 25px;
-    padding-top: 80px;
+    padding-top: 25px;
   }
 }
 
@@ -185,7 +182,7 @@ exports[`Section renders if required and optional params are passed in 1`] = `
       <span
         class="c4"
       >
-        TESTING
+        TEST LABEL
       </span>
     </div>
   </div>
@@ -193,9 +190,7 @@ exports[`Section renders if required and optional params are passed in 1`] = `
     class="c5"
     data-testid="Children"
   >
-    <p>
-      Child 1
-    </p>
+    hello world
   </div>
 </div>
 `;

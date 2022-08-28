@@ -1,5 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import Gallery from "../../components/Gallery";
+import { SectionProps } from "../../types/Section";
 
 // mock components
 const mockSection = jest.fn();

@@ -2,14 +2,14 @@
 
 exports[`Project renders if optional and required params are passed in 1`] = `
 <div
-  class="sc-bczRLJ gXufTg"
+  class="sc-bczRLJ famsFe"
   data-testid="Project"
 >
   <div
-    class="sc-jSMfEi ksSEIw"
+    class="sc-jSMfEi gYvijQ"
   >
     <img
-      class="sc-gsnTZi lbzuKP"
+      class="sc-gsnTZi hnpEqt"
       data-testid="Icon"
       src="[object Object]"
     />
@@ -17,13 +17,13 @@ exports[`Project renders if optional and required params are passed in 1`] = `
       class="sc-gKXOVf kRtupl"
     >
       <div
-        class="sc-dkzDqf dukhYI"
+        class="sc-dkzDqf dzHdzS"
         data-testid="Title"
       >
         test title
       </div>
       <div
-        class="sc-hKMtZM ivrWzx"
+        class="sc-hKMtZM eaKBEz"
         data-testid="Industry"
       >
         test industry
@@ -31,7 +31,7 @@ exports[`Project renders if optional and required params are passed in 1`] = `
     </div>
   </div>
   <div
-    class="sc-eCYdqJ poQEE"
+    class="sc-eCYdqJ ljVfNa"
     data-testid="Description"
   >
     <p>

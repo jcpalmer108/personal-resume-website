@@ -2,203 +2,209 @@
 
 exports[`Experience renders if only required params are passed in 1`] = `
 <div
-  class="sc-bczRLJ cBafEA"
   data-testid="Experience"
+  id="experience"
 >
-  <div
-    class="sc-gsnTZi dYlhdR"
-  >
+  <div>
     <div
-      class="sc-dkzDqf fPmbV"
+      class="sc-bczRLJ cBafEA"
     >
-      <h2
-        class="sc-hKMtZM ciuSSV"
-        data-testid="Title"
-      >
-        Test title
-      </h2>
       <div
-        class="sc-eCYdqJ fTslMH"
-        data-testid="Description"
-      >
-        <p
-          class="sc-jSMfEi bCXkKM"
-        >
-          test description
-        </p>
-      </div>
-    </div>
-    <div
-      class="sc-gKXOVf cNTLIG"
-    >
-      <a
-        class="sc-iBkjds cAGbc"
-        data-testid="Call"
-        href="tel:1112223333"
-      >
-        <img
-          alt="call me"
-          class="sc-ftvSup jmuxGn"
-          src="call-me.svg"
-        />
-        <span
-          class="sc-papXJ dIMLQG"
-        >
-          CALL ME
-        </span>
-      </a>
-      <a
-        class="sc-iBkjds cAGbc"
-        data-testid="Email"
-        href="mailto:test@email.com"
-      >
-        <img
-          alt="email me"
-          class="sc-ftvSup jmuxGn"
-          src="email-me.svg"
-        />
-        <span
-          class="sc-papXJ dIMLQG"
-        >
-          EMAIL ME
-        </span>
-      </a>
-    </div>
-  </div>
-  <div
-    class="sc-jqUVSM iENHCD"
-  >
-    <div
-      class="sc-kDDrLX iTUKGk"
-    >
-      <img
-        alt="test"
-        class="sc-iqcoie iaIySc"
-        src="[object Object]"
-      />
-      <div
-        class="sc-crXcEl laFxNa"
+        class="sc-gsnTZi kXvfBR"
       >
         <div
-          class="sc-evZas btHgAb"
-          data-testid="Title 1"
+          class="sc-dkzDqf bSZmJh"
         >
-          test title 1
-        </div>
-        <span
-          class="sc-breuTD hNnxCO"
-          data-testid="Info 1"
-        >
-          test Company 1
-           / 
-          test start 1
-           - 
-          test end 1
-        </span>
-      </div>
-      <img
-        alt="forward slash"
-        class="sc-fEOsli iUfFNB"
-        src="diagonal-line.svg"
-      />
-      <div
-        class="sc-ksZaOG xxxIv"
-        data-testid="Details 1"
-      >
-        <p
-          class="sc-hAZoDl jCdaMp"
-        >
-          test desc 1
-          <span
-            class="sc-fnykZs fbBBQB"
+          <h2
+            class="sc-hKMtZM bpteWv"
+            data-testid="Title"
           >
-            ... Read More
-          </span>
-        </p>
+            Test title
+          </h2>
+          <div
+            class="sc-eCYdqJ fmEXNN"
+            data-testid="Description"
+          >
+            <p
+              class="sc-jSMfEi bCXkKM"
+            >
+              test description
+            </p>
+          </div>
+        </div>
+        <div
+          class="sc-gKXOVf fOEKDU"
+        >
+          <a
+            class="sc-iBkjds kyamSD"
+            data-testid="Call"
+            href="tel:1112223333"
+          >
+            <img
+              alt="call me"
+              class="sc-ftvSup jmuxGn"
+              src="call-me.svg"
+            />
+            <span
+              class="sc-papXJ eAMGEG"
+            >
+              CALL ME
+            </span>
+          </a>
+          <a
+            class="sc-iBkjds kyamSD"
+            data-testid="Email"
+            href="mailto:test@email.com"
+          >
+            <img
+              alt="email me"
+              class="sc-ftvSup jmuxGn"
+              src="email-me.svg"
+            />
+            <span
+              class="sc-papXJ eAMGEG"
+            >
+              EMAIL ME
+            </span>
+          </a>
+        </div>
       </div>
-    </div>
-    <div
-      class="sc-kDDrLX iTUKGk"
-    >
-      <img
-        alt="test"
-        class="sc-iqcoie iaIySc"
-        src="[object Object]"
-      />
       <div
-        class="sc-crXcEl laFxNa"
+        class="sc-jqUVSM"
       >
         <div
-          class="sc-evZas btHgAb"
-          data-testid="Title 2"
+          class="sc-kDDrLX eFrgfC"
         >
-          test title 2
-        </div>
-        <span
-          class="sc-breuTD hNnxCO"
-          data-testid="Info 2"
-        >
-          test company 2
-           / 
-          test start 1
-           - 
-          test end 2
-        </span>
-      </div>
-      <img
-        alt="forward slash"
-        class="sc-fEOsli iUfFNB"
-        src="diagonal-line.svg"
-      />
-      <div
-        class="sc-ksZaOG xxxIv"
-        data-testid="Details 2"
-      >
-        <p
-          class="sc-hAZoDl jCdaMp"
-        >
-          test desc 2
-          <span
-            class="sc-fnykZs fbBBQB"
+          <img
+            alt="test"
+            class="sc-iqcoie iaIySc"
+            src="[object Object]"
+          />
+          <div
+            class="sc-crXcEl fEhkOw"
           >
-            ... Read More
-          </span>
-        </p>
+            <div
+              class="sc-evZas kEEaIb"
+              data-testid="Title 1"
+            >
+              test title 1
+            </div>
+            <span
+              class="sc-breuTD hpKqQa"
+              data-testid="Info 1"
+            >
+              test Company 1
+               / 
+              test start 1
+               - 
+              test end 1
+            </span>
+          </div>
+          <img
+            alt="forward slash"
+            class="sc-fEOsli jgFhpH"
+            src="diagonal-line.svg"
+          />
+          <div
+            class="sc-ksZaOG UlYvj"
+            data-testid="Details 1"
+          >
+            <p
+              class="sc-hAZoDl hxfvXd"
+            >
+              test desc 1
+              <span
+                class="sc-fnykZs ykQEb"
+              >
+                ... Read More
+              </span>
+            </p>
+          </div>
+        </div>
+        <div
+          class="sc-kDDrLX eFrgfC"
+        >
+          <img
+            alt="test"
+            class="sc-iqcoie iaIySc"
+            src="[object Object]"
+          />
+          <div
+            class="sc-crXcEl fEhkOw"
+          >
+            <div
+              class="sc-evZas kEEaIb"
+              data-testid="Title 2"
+            >
+              test title 2
+            </div>
+            <span
+              class="sc-breuTD hpKqQa"
+              data-testid="Info 2"
+            >
+              test company 2
+               / 
+              test start 1
+               - 
+              test end 2
+            </span>
+          </div>
+          <img
+            alt="forward slash"
+            class="sc-fEOsli jgFhpH"
+            src="diagonal-line.svg"
+          />
+          <div
+            class="sc-ksZaOG UlYvj"
+            data-testid="Details 2"
+          >
+            <p
+              class="sc-hAZoDl hxfvXd"
+            >
+              test desc 2
+              <span
+                class="sc-fnykZs ykQEb"
+              >
+                ... Read More
+              </span>
+            </p>
+          </div>
+        </div>
+        <div
+          class="sc-gKXOVf cMYwWY"
+        >
+          <a
+            class="sc-iBkjds kyamSD"
+            href="tel:1112223333"
+          >
+            <img
+              alt="call me"
+              class="sc-ftvSup jmuxGn"
+              src="call-me.svg"
+            />
+            <span
+              class="sc-papXJ eAMGEG"
+            >
+              Call Me
+            </span>
+          </a>
+          <a
+            class="sc-iBkjds kyamSD"
+            href="mailto:test@email.com"
+          >
+            <img
+              alt="email me"
+              class="sc-ftvSup jmuxGn"
+              src="email-me.svg"
+            />
+            <span
+              class="sc-papXJ eAMGEG"
+            >
+              Email Me
+            </span>
+          </a>
+        </div>
       </div>
-    </div>
-    <div
-      class="sc-gKXOVf eviley"
-    >
-      <a
-        class="sc-iBkjds cAGbc"
-        href="tel:1112223333"
-      >
-        <img
-          alt="call me"
-          class="sc-ftvSup jmuxGn"
-          src="call-me.svg"
-        />
-        <span
-          class="sc-papXJ dIMLQG"
-        >
-          Call Me
-        </span>
-      </a>
-      <a
-        class="sc-iBkjds cAGbc"
-        href="mailto:test@email.com"
-      >
-        <img
-          alt="email me"
-          class="sc-ftvSup jmuxGn"
-          src="email-me.svg"
-        />
-        <span
-          class="sc-papXJ dIMLQG"
-        >
-          Email Me
-        </span>
-      </a>
     </div>
   </div>
 </div>

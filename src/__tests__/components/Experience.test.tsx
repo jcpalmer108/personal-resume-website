@@ -1,3 +1,4 @@
+import { SectionProps } from "../../types/Section";
 import { render, screen } from "@testing-library/react";
 import Experience from "../../components/Experience";
 import { ExperienceModalProps } from "../../types/ExperienceModal";
@@ -100,6 +101,10 @@ describe("Experience", () => {
 
     //then
     expect(screen.getByTestId("Experience")).toMatchSnapshot();
+    expect(screen.getByTestId("Experience")).toHaveAttribute(
+      "id",
+      "experience"
+    );
     expect(screen.getByTestId("Title")).toHaveTextContent(content.title);
     content.description.forEach((paragraph, index) => {
       expect(

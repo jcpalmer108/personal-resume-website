@@ -1,38 +1,38 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Input renders if only required params are passed in 1`] = `
+exports[`Input renders if optional and required params are passed in 1`] = `
 <div
-  class="sc-bczRLJ gJeuFr"
+  class="sc-bczRLJ hOHvzZ"
   data-testid="Input"
 >
-  <input
-    class="sc-dkzDqf iEcuyD"
+  <textarea
+    class="sc-gsnTZi plSnX"
     placeholder=" "
-    value="test value"
-  />
-  <label
-    class="sc-hKMtZM hCQHSZ"
   >
-    TEST LABEL
+    test-value
+  </textarea>
+  <label
+    class="sc-hKMtZM cWKlol"
+  >
+    TEST-LABEL
   </label>
 </div>
 `;
 
-exports[`Input renders if optional and required params are passed in 1`] = `
+exports[`Input renders if required params and value are passed in 1`] = `
 <div
-  class="sc-bczRLJ gJeuFr"
+  class="sc-bczRLJ hOHvzZ"
   data-testid="Input"
 >
-  <textarea
-    class="sc-gsnTZi bUZEuL"
+  <input
+    class="sc-dkzDqf fCaQkv"
     placeholder=" "
-  >
-    test value
-  </textarea>
+    value="test-value"
+  />
   <label
-    class="sc-hKMtZM hCQHSZ"
+    class="sc-hKMtZM cWKlol"
   >
-    TEST LABEL
+    TEST-LABEL
   </label>
 </div>
 `;
