@@ -119,9 +119,7 @@ export default function ExperienceModal({
             </Summary>
           </Overview>
         </Tile>
-        <JobDetails>
-          {generateDetails()}
-        </JobDetails>
+        <JobDetails>{generateDetails()}</JobDetails>
       </Content>
     </Modal>
   );

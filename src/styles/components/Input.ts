@@ -24,7 +24,7 @@ export const TextArea = styled.textarea`
   resize: none;
   width: calc(100% - 30px);
 
-  @media(min-width: ${tabletBreakpoint}px) {
+  @media (min-width: ${tabletBreakpoint}px) {
     border: 0px;
   }
 `;
@@ -38,7 +38,7 @@ export const TextField = styled.input`
   background: transparent;
   font-family: Gilroy-Regular;
 
-  @media(min-width: ${tabletBreakpoint}px) {
+  @media (min-width: ${tabletBreakpoint}px) {
     border: 0px;
   }
 `;

@@ -7,12 +7,7 @@ import {
 } from "../styles/components/Input";
 import { InputProps } from "../types/Input";
 
-export default function Input({
-  label,
-  value,
-  updateForm,
-  area,
-}: InputProps) {
+export default function Input({ label, value, updateForm, area }: InputProps) {
   if (value === undefined) {
     return null;
   }

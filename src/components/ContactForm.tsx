@@ -1,6 +1,6 @@
 import { ContactFormProps } from "../types/ContactForm";
 import Input from "./Input";
-import {Wrapper} from "../styles/components/ContactForm"
+import { Wrapper } from "../styles/components/ContactForm";
 
 export default function ContactForm({
   formValues,
