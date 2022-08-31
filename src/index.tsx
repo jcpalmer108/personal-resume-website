@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App";
+import Routes from "./Routes";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter as Router } from "react-router-dom";
@@ -11,7 +11,7 @@ const root = ReactDOM.createRoot(
 
 root.render(
   <Router basename={process.env.PUBLIC_URL}>
-    <App />
+    <Routes />
   </Router>
 );
 
