@@ -120,9 +120,7 @@ export default function ExperienceModal({
           </Overview>
         </Tile>
         <JobDetails>
-          {generateDetails().map((item, index) => (
-            <div key={`Detail ${index + 1}`}>{item}</div>
-          ))}
+          {generateDetails()}
         </JobDetails>
       </Content>
     </Modal>

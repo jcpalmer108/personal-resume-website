@@ -12,9 +12,8 @@ export default function Input({
   value,
   updateForm,
   area,
-  noBorder,
 }: InputProps) {
-  if (!value) {
+  if (value === undefined) {
     return null;
   }
 
@@ -22,14 +21,12 @@ export default function Input({
     <Wrapper data-testid="Input">
       {area ? (
         <TextArea
-          noBorder={noBorder}
           placeholder=" "
           value={value}
           onChange={(e: ChangeEvent) => updateForm(e)}
         />
       ) : (
         <TextField
-          noBorder={noBorder}
           placeholder=" "
           value={value}
           onChange={(e: ChangeEvent) => updateForm(e)}

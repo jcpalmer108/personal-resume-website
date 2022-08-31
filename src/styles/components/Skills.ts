@@ -13,10 +13,14 @@ export const Mobile = styled.div`
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding-bottom: 40px;
+  padding-bottom: 35px;
 
   @media (min-width: ${tabletBreakpoint}px) {
     display: none;
+  }
+
+  @media (min-width: ${desktopBreakpoint}px) {
+    padding-bottom: 40px;
   }
 `;
 

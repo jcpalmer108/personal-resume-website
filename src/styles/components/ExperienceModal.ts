@@ -231,11 +231,10 @@ export const JobDetails = styled.div`
   @media (min-width: ${desktopBreakpoint}px) {
     overflow-y: scroll;
     padding-left: 50px;
-    height: calc(100% + 80px);
+    height: calc(100%);
 
     &:last-child {
-      padding-bottom: 19px;
-      height: calc(100% + 61px);
+      height: calc(100%);
     }
   }
 `;

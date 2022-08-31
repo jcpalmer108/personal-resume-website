@@ -8,17 +8,25 @@ export const Wrapper = styled.div<WrapperProps>`
   flex-direction: column;
   row-gap: 10px;
 
+  &:first-child {
+    padding-top: 45px;
+  }
+
   @media (min-width: ${tabletBreakpoint}px) {
-    padding-top: 55px;
+    padding-top: 45px;
     width: 100%;
+
+    &:first-child {
+      padding-top: 55px;
+    }
   }
 
   @media (min-width: ${desktopBreakpoint}px) {
-    padding-top: 35px;
+    padding-top: 45px;
     width: 100%;
 
     &:last-child {
-      padding-bottom: ${(props) => (props.noBottom ? "0px" : "35px")};
+      padding-bottom: ${(props) => (props.noBottom ? "0px" : "55px")};
     }
   }
 `;

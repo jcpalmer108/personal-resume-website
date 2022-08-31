@@ -90,10 +90,7 @@ export default function Contact({
           <Section label={content?.label} center>
             <Title>{content?.title}</Title>
             <p>{content?.description && content?.description[0]}</p>
-            <ContactForm
-              formValues={formValues}
-              updateForm={updateFormValues}
-            />
+            <ContactForm formValues={formValues} updateForm={updateFormValues} />
             <Button
               data-testid="Submit"
               disabled={isDisabled}

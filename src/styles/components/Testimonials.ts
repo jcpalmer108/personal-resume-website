@@ -36,7 +36,8 @@ export const Content = styled.div`
 
   @media (min-width: ${desktopBreakpoint}px) {
     max-width: 624px;
-    padding-top: 30px;
+    padding-top: 50px;
+    padding-bottom: 40px;
   }
 `;
 
