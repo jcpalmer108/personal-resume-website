@@ -49,7 +49,7 @@ export default function SkillsModal({
             <RocketIcon src={rocketIcon} alt="rocket" />
           </Circle>
           <Details>There's more where that came from.</Details>
-          <Action data-testid="ActionButton" onClick={() => downloadResume()}>
+          <Action data-testid="ActionButton" onClick={(e) => downloadResume(e)}>
             {"Download my resume".toUpperCase()}
           </Action>
         </CallToAction>

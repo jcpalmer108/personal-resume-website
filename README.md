@@ -8,6 +8,8 @@
   </p>
 </div>
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/7470b2e5-1575-4f15-b0d1-4686d7da4830/deploy-status)](https://app.netlify.com/sites/jenna-palmer/deploys)
+
 <br>
 <a name="table-of-contents"></a>
 
