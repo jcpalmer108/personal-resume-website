@@ -98,12 +98,12 @@ export const Connect = styled.div`
   padding: 25px 15px;
 
   @media (min-width: ${tabletBreakpoint}px) {
-    height: 70px;
+    height: 90px;
     padding: 40px;
   }
 
   @media (min-width: ${desktopBreakpoint}px) {
-    height: 75px;
+    height: 95px;
     padding: 50px;
   }
 `;
@@ -121,7 +121,6 @@ export const SocialLabel = styled.span`
 
 export const Socials = styled.div`
   display: flex;
-  height: 100%;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
@@ -129,7 +128,7 @@ export const Socials = styled.div`
 
   @media (min-width: ${tabletBreakpoint}px) {
     justify-content: space-between;
-    height: 20px;
+    height: 100%;
   }
 `;
 
@@ -144,11 +143,25 @@ export const Link = styled.a`
   column-gap: 10px;
   width: 33%;
   font-family: Gilroy-Medium;
+  height: 100%;
 
   @media (min-width: ${tabletBreakpoint}px) {
-    width: fit-content;
+    width: 20%;
     height: fit-content;
     justify-content: center;
+    transition: all 500ms ease;
+
+    &:hover {
+      img {
+        height: 23px;
+        width: 23px;
+        transition: all 500ms ease;
+      }
+      span {
+        font-size: 18px;
+        transition: all 500ms ease;
+      }
+    }
   }
 
   @media (min-width: ${desktopBreakpoint}px) {
@@ -198,14 +211,14 @@ export const Prompt = styled.div`
   text-align: center;
 
   @media (min-width: ${tabletBreakpoint}px) {
-    width: 130px;
-    height: 90px;
+    width: 180px;
+    height: 110px;
     padding: 30px;
   }
 
   @media (min-width: ${desktopBreakpoint}px) {
     width: 148px;
-    height: 90px;
+    height: 110px;
     padding: 43px;
   }
 `;
@@ -227,6 +240,13 @@ export const StartProject = styled.a`
   padding-bottom: 7px;
   color: white;
   border-bottom: 1px solid white;
+  transition: 500ms all ease;
+  height: 14px;
+
+  &:hover {
+    font-size: 14px;
+    transition: 500ms all ease;
+  }
 `;
 
 export const BottomSpacing = styled.div`
