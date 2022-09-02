@@ -33,6 +33,7 @@ type SubSections = {
 
 export type Education = {
   key: string;
+  location: string;
   school: string;
   degree: string;
   timeline: Timeline;
@@ -72,6 +73,7 @@ export type Experience = {
   employer: string;
   location: string;
   description: string[];
+  bullets: string[];
   icon: string;
   timeline: Timeline;
   team?: string;
