@@ -29,7 +29,7 @@ export const Window = styled.div`
   text-align: right;
 
   @media (min-width: ${desktopBreakpoint}px) {
-    max-height: 800px;
+    height: fit-content;
   }
 `;
 export const CloseIcon = styled.img`
@@ -46,7 +46,7 @@ export const InnerWindow = styled.div`
   justify-content: center;
 
   @media (min-width: ${desktopBreakpoint}px) {
-    max-height: 715px;
+    height: 715px;
   }
 `;
 
