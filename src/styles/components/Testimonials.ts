@@ -45,21 +45,22 @@ export const Quote = styled.p`
   margin: 0px;
   font-size: 15px;
   font-family: Gilroy-Regular;
-  height: 120px;
+  height: fit-content;
+  padding: 30px 0px;
   display: flex;
   align-items: center;
   justify-content: center;
   line-height: 26px;
 
   @media (min-width: ${tabletBreakpoint}px) {
-    font-size: 20px;
-    line-height: 34px;
+    font-size: 14px;
+    line-height: 30px;
     height: 200px;
   }
 
   @media (min-width: ${desktopBreakpoint}px) {
-    font-size: 25px;
-    line-height: 44px;
+    font-size: 20px;
+    line-height: 35px;
     height: 300px;
   }
 `;

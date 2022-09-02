@@ -130,7 +130,7 @@ function DescriptionAndAction({
     <>
       <Description data-testid="Description">{description}</Description>
       <ButtonWrapper>
-        <Button onClick={() => openModal()} label="Let's Talk" />
+        <Button onClick={() => openModal()} label="Learn More" />
       </ButtonWrapper>
     </>
   );

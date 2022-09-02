@@ -236,8 +236,9 @@ export const JobDetails = styled.div`
     height: calc(100% + 80px);
 
     &:last-child {
-      padding-bottom: 19px;
-      height: calc(100% + 61px);
+      padding-bottom: 10px;
+      padding-top: 10px;
+      height: calc(100% + 60px);
     }
   }
 `;
