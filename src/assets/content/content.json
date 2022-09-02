@@ -8,14 +8,14 @@
       "key": "landing",
       "label": "Landing",
       "inMenu": false,
-      "title": "Great skill in JavaScript Developer",
+      "title": "Hi, I'm Jenna Palmer",
       "action": {
         "text": "Check my work",
         "link": "#experience"
       },
       "image": "pexels-ekaterina-bolovtsova-4049791.jpg",
       "description": [
-        "Magna voluptate Lorem adipisicing esse culpa Lorem elit occaecat officia exercitation dolor excepteur esse aliquip. Anim velit nisi laboris in reprehenderit excepteur officia Lorem dolore."
+        "I am many things in this life: a writer, speaker, mentor, artist, but most importantly - a Senior Software Engineer with full-stack specialty in creating wholistic and modern Web Applications for my clients."
       ]
     },
     {
@@ -24,8 +24,8 @@
       "title": "Who am I?",
       "inMenu": true,
       "description": [
-        "Magna voluptate Lorem adipisicing esse culpa Lorem elit occaecat officia exercitation dolor excepteur esse aliquip. Anim velit nisi laboris in reprehenderit excepteur officia Lorem dolore. Labore aliqua aliquip amet laboris dolor adipisicing ea tempor minim magna est.",
-        "Magna voluptate Lorem adipisicing esse culpa Lorem elit occaecat officia exercitation dolor excepteur esse aliquip. Anim velit nisi laboris in reprehenderit excepteur officia Lorem dolore."
+        "My career began as an Analyst for a National Consulting company, providing insights and well-written code to many high-profile clients such as Bayer (Monsanto), Charter, and more. As my career evolved, I was privileged enough to be brought into Nike's digital ecosystem dealing with technologies that recieve over 1k user transactions a second and enabled Nike to present customized user experienced via their login with their Nike account.",
+        "Nowadays, I continue to work on high-traffic, high-impact product and thrive in fast-paced and collaborative environments. On any given day, you'll likely find me desk-dancing to my favorite tunes while churning out code that makes engineers and people's lives easier. Accessibility, and resuability are my two passions - and combined with my fire for mentorship, I often find myself collaborating with junior engineers and senior engineers alike to create complete and well-rounded applications."
       ],
       "subSection": {
         "education": [
@@ -47,7 +47,7 @@
       "label": "Skills",
       "title": "Here are my skills & frameworks",
       "description": [
-        "Magna voluptate Lorem adipisicing esse culpa Lorem elit occaecat officia exercitation dolor excepteur esse aliquip. Anim velit nisi laboris in reprehenderit excepteur officia Lorem dolore."
+        "I like to consider myself a jack-of-all-trades. While I have specialties with a variety of frontend languages, there's no challenge too big for me to tackle."
       ],
       "inMenu": true,
       "subSection": {
@@ -221,24 +221,24 @@
       "subSection": {
         "quotes": [
           {
-            "quote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dolor sit amet consectetur adipiscing elit ut aliquam purus.",
-            "person": "ONE",
-            "title": "Manager at Slalom Consulting LLC"
+            "quote": "Jenna is precisely the kind of person I welcome on a project. She is respectful of other peoples ideas and unafraid to offer her own suggestions and insights. While she is quick to take on responsibility, she is also quick to ask for help when roadblocks arise. I know I can count on her to be truthful, honest and open during retrospectives. Any team is made brighter by Jenna's participation.",
+            "person": "Richard D.",
+            "title": "Co-worker at Slalom Consulting LLC (St. Louis)"
           },
           {
-            "quote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas sed sed risus pretium quam vulputate dignissim suspendisse in. Et ligula ullamcorper malesuada proin libero nunc.",
-            "person": "TWO",
-            "title": "Co-worker at Nike World Headquarters"
+            "quote": "Jenna loves programming. She is passionate about her career and does what she loves every day. You see this in her work. She has never been overly confident but is truly fearless while attempting anything you set in front of her. I have never seen her give up on a problem she has faced.\n\nJenna most excels when she is challenged. She is willing to ask for help when she needs it but never expects anyone to solve her problems for her. She has shown to enjoy learning new skills and has made a point to learn to do things the correct way.",
+            "person": "Nick D.",
+            "title": "Mentor at Slalom Consulting LLC (St. Louis)"
           },
           {
-            "quote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dolor sit amet consectetur adipiscing elit ut aliquam purus.",
-            "person": "THREE",
-            "title": "Manager at Slalom Consulting LLC"
+            "quote": "You were able to jump into a project mid-flight, grasp the task at hand, and helped us deliver a quality product to our client on time, meeting the client's initial expectation which had become out of scope due to budget cuts. She is a great teammate and brings her true self to work, making coming to work that much more of a pleasure.",
+            "person": "Curtis M.",
+            "title": "Co-worker at Slalom Consulting LLC (St. Louis)"
           },
           {
-            "quote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas sed sed risus pretium quam vulputate dignissim suspendisse in. Et ligula ullamcorper malesuada proin libero nunc.",
-            "person": "FOUR",
-            "title": "Co-worker at Nike World Headquarters"
+            "quote": "[Jenna receives] feedback openly and without defensiveness. … She demonstrates a creator mindset, focused on the outcome she wants to achieve. … I have a lot of confidence in [her] ability to achieve [her] development goals and have a successful career in consulting based on the behaviors I have seen.",
+            "person": "Kristin R.",
+            "title": "Co-worker at Slalom Consulting LLC (Portland)"
           }
         ]
       }
@@ -249,7 +249,7 @@
       "inMenu": true,
       "title": "Checkout my work experience",
       "description": [
-        "Magna voluptate Lorem adipisicing esse culpa Lorem elit occaecat officia exercitation dolor excepteur esse aliquip. Anim velit nisi laboris in reprehenderit excepteur officia Lorem dolore."
+        "Working on high-impact, high-traffic products is my specialty, and I'm ready to take your current user experience to the next level. Check out my experience at each of these companies and see how my skillset can best benefit your current environment."
       ],
       "subSection": {
         "experience": [
@@ -260,8 +260,9 @@
             "organization": "E-Commerce",
             "location": "Portland, OR",
             "description": [
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Malesuada fames ac turpis egestas integer eget.",
-              "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 150"
+              "I currently work on this company's most revenue impacting team - the Booking Team. We manage the entire user experience post clicking the 'checkout' button.",
+              "This means we're responsible for everything including: booking the flight, enabling them to select seats, accepting user payment, viewing ticket restrictions and limitations, and lastly providing customers with their confirmation number and additional information so they're confident their flight was booked.",
+              "While on this team, I also contributed significantly to this project's re-write. Previously written in a mono-lithic C# applicaiton, Alaska's modernization investment has lead them to pursue a micro-site format going forward in order to enable faster and more well-rounded user experiences."
             ],
             "bullets": [
               "Worked on the product responsible for booking and accepting payment for all flights going through Alaska Airlines ",
@@ -282,7 +283,9 @@
             "organization": "Engineered Platforms",
             "location": "Beaverton, OR",
             "description": [
-              "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 150"
+              "Working in Nike's Engineered Platform space, I enabled Data Scientists to securely launch and utilize Apache Airlfow clusters in a monitored and secure AWS EKS environment.",
+              "Known as the Managed Airflow Platform (MAP), this team was responsible fo ensuring all internal clusters created were operational and active. This meant I was constantly in support discussions with customers, assisting them in the creation of their Docker images and utilization of our EKS deployment pipeline.",
+              "On this team, I was also the Subject Matter Expert regarding their EKS Service's frontend application. In this role, I utilized my React Expertise and leadership skills to assist the Product Owner in determining new feature capabilities, upgrading our frontend bug tracking methods, and also personally spearheaded an operation to onboard 30+ offshore engineers in order to assist in our support needs."
             ],
             "bullets": [
               "Maintained the product responsible for assisting Data Scientists in creating and maintaing data pipelines via the Apache Airflow product; known as the Managed Airflow Platform.",
@@ -301,7 +304,8 @@
             "employer": "Slalom Consulting",
             "location": "Portland OR, OR",
             "description": [
-              "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 150"
+              "At Slalom Portland I worked on a variety of projects including: establishing a client's new Security Architecture, Data Migration, and more.",
+              "Check out each of the projects I worked on below for more information."
             ],
             "bullets": [
               "Assisted clients in planning their COVID-19 strategy for technical growth during the pandemic. Notated key pressure points clients were facing as they worked through their newly remote workforce. Also brainstormed solutions to their business problems.",
@@ -318,7 +322,8 @@
                 "industry": "Software as a Service Industry",
                 "title": "Server Upgrade & Data Migration",
                 "description": [
-                  "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 150"
+                  "Worked for a client who's security platform is one of the most popular SSO tools in the world. I facilitated the manual upgrade of each of their client applications from running on Ubuntu 14 servers, to Ubuntu 16 services via the use of Cloudformation scripts.",
+                  "Ensured that customer outages while in migration were communicated as expected, and ensured that all data was properly transferred and copied post-migration. Also debugged failed migration tasks, and worked to restore services before the end of the Outage window came."
                 ],
                 "icon": "security"
               },
@@ -326,7 +331,8 @@
                 "industry": "Healthcare Industry",
                 "title": "Security Architecture",
                 "description": [
-                  "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 150"
+                  "Worked with our client on their upcoming project to cease use of a vendor's dashboarding tools in order to replace it with their own custom Tableau-based dashboard tooling.",
+                  "Ensured all data passed into this new Tableau platform had all the proper security architecutre in place it needed in order to legally protect all Personal Health Information being stored."
                 ],
                 "icon": "healthcare"
               }
@@ -337,7 +343,9 @@
             "employer": "Nike",
             "location": "Beaverton, OR",
             "description": [
-              "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 150"
+              "Worked on Nike's Login & Registration Team and maintained their public Web SDK which enabled internal and external users alike to add 'Sign in with Nike' capabilities to their web pages.",
+              "Maintained their existing Vanilla Javascript Web SDK, and contributed to the project re-write written in primarily React.js with NGINX working to map API calls to the right backend services.",
+              "Also provided on-site support for major shoe launches in order to ensure all bot traffic was properly mitigated, and login rates remained steady."
             ],
             "bullets": [
               "Maintained Nike's public Web SDK responsible for enabling 'login with Nike' capabilities to both internal and affiliated websites.",
@@ -360,7 +368,8 @@
             "employer": "Slalom Consulting",
             "location": "St. Louis, MO",
             "description": [
-              "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 150"
+              "Worked on a number of high-profile clients, providing them with top-tier software engineering solutions to their existing business problems.",
+              "Check out each of the projects I worked on below for more information."
             ],
             "bullets": [
               "Developed mobile application in React Native to provide the client's customers with more detailed, weather-based recommendations regarding the application of a federally regulated pesticide. App is RXXtend Spray by Bayer AG and is available on the Google and App Store.",
@@ -378,7 +387,8 @@
                 "industry": "Agriculture Industry",
                 "title": "Mobile Application Development",
                 "description": [
-                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor purus."
+                  "Developed mobile application in React Native to provide the client's customers with more detailed, weather-based recommendations regarding the application of a federally regulated pesticide. App is RXXtend Spray by Bayer AG and is available on the Google and App Store.",
+                  "Specifically created the 'new user onboarding' flow experienced when downloading the app for the first time. Also added new features to the map-based weather program, and ensured tests were written and functioning for all app capabilities."
                 ],
                 "icon": "agriculture"
               },
@@ -386,7 +396,8 @@
                 "industry": "Agriculture Industry",
                 "title": "Design System & Components",
                 "description": [
-                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor purus."
+                  "Designed and created custom Vue components utilized in an AEM-environment. Also, hosted an educational session on the best practices of Git Management and Git Flow to ensure new design system was maintained properly.",
+                  "Also ensured that each of these Vue components had dynamic styling, enabling them to be used on each of the client's 50+ websites that had their own style and branding."
                 ],
                 "icon": "agriculture"
               },
@@ -394,7 +405,9 @@
                 "industry": "Telecommunications Industry",
                 "title": "Map-based Dashboard",
                 "description": [
-                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor purus."
+                  "Utilized Google Maps API and microservices to display the national status of the client's telecommunication hubs across the US in an easy-to-use, map-based dashboard written in Angular 2.0. Implemented logic on real-time data as it appeared on the map, to visually show when outages increased or decreased.",
+                  "Personally presented this new application to this telecom giant's executive leadership board, and we all witnessed together as a hurricane hit Florida (circa 2018) and saw our app properly indicate a live increase in outages in that area.",
+                  "Before this application, executive leadership had no previous way to view all active status of each of the hubs they owned across america; this tool was the first of its kind, and is proudly displayed 24/7 on a monitor in the Executive Leadership's Headquarters."
                 ],
                 "icon": "telecom"
               },
@@ -402,7 +415,9 @@
                 "industry": "Internal",
                 "title": "Start Haus Program",
                 "description": [
-                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor purus."
+                  "Participated in Slalom's flagship 'Start Hau's program, a mini boot-camp built in order to give recent graduates (of bootcamps and universities alike) the skills they need in order to become billable on client sites within 6 months time.",
+                  "Worked alongside fellow Star Haus students in getting up to speed on Agile basics, how to lead meetings, testing strategies, must-know algorithms, data structures, and more.",
+                  "Graduated Start Haus and became billable on client sites at 4 months post-hire."
                 ],
                 "icon": "internal"
               }
@@ -414,10 +429,10 @@
     {
       "key": "contact",
       "label": "Contact Me",
-      "title": "Stay in contact with me",
+      "title": "Need to get in touch?",
       "inMenu": true,
       "description": [
-        "Magna voluptate Lorem adipisicing esse culpa Lorem elit occaecat officia exercitation dolor excepteur esse aliquip. Anim velit nisi laboris in reprehenderit excepteur officia Lorem dolore."
+        "I would love to hear from you and see how you believe my skillset might benefit the current environment you're cultivating at your company. My contact information is listed below, so let's get in touch and bring your app into the 21st century."
       ]
     },
     {
