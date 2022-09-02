@@ -13,7 +13,7 @@ import { Skill } from "../types/content";
 import { SkillsModalProps } from "../types/SkillsModal";
 import Modal from "./Modal";
 import LineItem from "./LineItem";
-import downloadResume from "../utils/downloadResume";
+import { downloadResume } from "../utils/downloadResume";
 
 export default function SkillsModal({
   closeModal,
@@ -49,7 +49,7 @@ export default function SkillsModal({
             <RocketIcon src={rocketIcon} alt="rocket" />
           </Circle>
           <Details>There's more where that came from.</Details>
-          <Action data-testid="ActionButton" onClick={() => downloadResume()}>
+          <Action data-testid="ActionButton" onClick={(e) => downloadResume(e)}>
             {"Download my resume".toUpperCase()}
           </Action>
         </CallToAction>

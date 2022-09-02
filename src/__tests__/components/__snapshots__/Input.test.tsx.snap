@@ -6,7 +6,7 @@ exports[`Input renders if optional and required params are passed in 1`] = `
   data-testid="Input"
 >
   <textarea
-    class="sc-gsnTZi plSnX"
+    class="sc-gsnTZi kdzWPC"
     placeholder=" "
   >
     test-value
@@ -25,7 +25,7 @@ exports[`Input renders if required params and value are passed in 1`] = `
   data-testid="Input"
 >
   <input
-    class="sc-dkzDqf fCaQkv"
+    class="sc-dkzDqf Wkyrw"
     placeholder=" "
     value="test-value"
   />

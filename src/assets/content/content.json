@@ -8,7 +8,7 @@
       "key": "landing",
       "label": "Landing",
       "inMenu": false,
-      "title": "Great skill in Javascript Developer",
+      "title": "Great skill in JavaScript Developer",
       "action": {
         "text": "Check my work",
         "link": "#experience"
@@ -31,6 +31,7 @@
         "education": [
           {
             "key": "webster",
+            "location": "St. Louis, MO",
             "school": "Webster University",
             "degree": "B.S. in Computer Science",
             "timeline": {
@@ -151,7 +152,7 @@
             },
             {
               "key": "javascript",
-              "label": "Javascript",
+              "label": "JavaScript",
               "category": "languages"
             },
             {
@@ -262,6 +263,12 @@
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Malesuada fames ac turpis egestas integer eget.",
               "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 150"
             ],
+            "bullets": [
+              "Worked on the product responsible for booking and accepting payment for all flights going through Alaska Airlines ",
+              "Participated in the project's re-write and moved functionality from a C# monolithic application to a micro-site format.",
+              "Utilized Next.js and React in a Test-Driven Development environment, and pair regularly",
+              "Worked with onboarding engineers, and mentored the junior engineers on the team."
+            ],
             "icon": "alaska",
             "timeline": {
               "start": "Feb 2022",
@@ -277,6 +284,12 @@
             "description": [
               "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 150"
             ],
+            "bullets": [
+              "Maintained the product responsible for assisting Data Scientists in creating and maintaing data pipelines via the Apache Airflow product; known as the Managed Airflow Platform.",
+              "Supported internal Nike engineers in resolving their faulty Airflow Cluster configurations and MAP-product related bugs; Includes meeting with customers and stakeholders often to work on platform stability related work.",
+              "Created new features, components, and tests in the React.js application used by the Data Engineers to monitor their Airflow Cluster stats.",
+              "Implemented new features onto the MAP Product such as: allowing customers to create clusters on China AWS Servers; allow default fields upon cluster creation; streamlined UI with bug fixes and new component additions, designed and launched slack-based app that allowed the team to track support threads via emojis."
+            ],
             "icon": "nike",
             "timeline": {
               "start": "Feb 2022",
@@ -289,6 +302,11 @@
             "location": "Portland OR, OR",
             "description": [
               "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 150"
+            ],
+            "bullets": [
+              "Assisted clients in planning their COVID-19 strategy for technical growth during the pandemic. Notated key pressure points clients were facing as they worked through their newly remote workforce. Also brainstormed solutions to their business problems.",
+              "Designed a security architecture model for an internal, Tableau-based reporting system that allowed the client to stop outsourcing their reporting needs to other companies",
+              "Migrated client applications and data from Ubuntu 14 servers to Ubuntu 16 servers utilizing AWS and CloudFormation scripts."
             ],
             "icon": "slalom",
             "timeline": {
@@ -321,6 +339,14 @@
             "description": [
               "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 150"
             ],
+            "bullets": [
+              "Maintained Nike's public Web SDK responsible for enabling 'login with Nike' capabilities to both internal and affiliated websites.",
+              "Developed new product features in JavaScript and deployed to AWS-based production environment, utilizing Nike's Jenkins Pipeline solution (BMX), and monitored those deployments using New Relic analytics.",
+              "Contributed to the project re-write as they transition from a vanilla JavaScript application to React.js; wrote End-to-End (E2E), Unit, and Integration tests for all contributed code.",
+              "Personally encouraged accessible solutions in the re-write, and contributed to the addition of an accessibility library and testing suite into the new project's codebase.",
+              "Worked with Apple-Affiliated engineers to integrate 'Sign in with Apple' UI into mobile versions of the SDK.",
+              "Provided live, on-site support for large shoe launches on Nike.com to ensure bot traffic was appropriately mitigated and the login success rates remained steady."
+            ],
             "team": "Login & Registration",
             "icon": "nike",
             "organization": "Nike Digital",
@@ -335,6 +361,12 @@
             "location": "St. Louis, MO",
             "description": [
               "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 150"
+            ],
+            "bullets": [
+              "Developed mobile application in React Native to provide the client's customers with more detailed, weather-based recommendations regarding the application of a federally regulated pesticide. App is RXXtend Spray by Bayer AG and is available on the Google and App Store.",
+              "Designed and created custom Vue components utilized in an AEM-environment. Also, hosted an educational session on the best practices of Git Management and Git Flow to ensure new design system was maintained properly.",
+              "Utilized Google Maps API and microservices to display the national status of the client's telecommunication hubs across the US in an easy-to-use, map-based dashboard written in Angular 2.0. Implemented logic on real-time data as it appeared on the map, to visually show when outages increased or decreased.",
+              "Participated and hosted Agile ceremonies with my teammates and demonstrated my work to the client's Product Owners on a weekly basis."
             ],
             "icon": "slalom",
             "timeline": {
@@ -398,6 +430,24 @@
           "pexels-ekaterina-bolovtsova-4049876"
         ]
       }
+    },
+    {
+      "key": "resume-description",
+      "inMenu": false,
+      "description": [
+        "I am a Senior Full-stack Software Engineer with experience from a variety of enterprise level work environments. My strengths lie in Application Development, specifically Web Application Development, however I'm also well versed in tools that require significant backend knowledge.",
+        "I thrive in environments that have a focus on collaboration, test-driven development, and forward thinking. Agile and SCRUM Environments are quite familiar to me, and I'm comfortable leading regular agile ceremonies should the need arise. My career growth plans include becoming a stronger leader within my team, being a Subject Matter Expert in the product I serve, and mentoring the next generation of engineers."
+      ]
+    },
+    {
+      "key": "resume-extras",
+      "inMenu": false,
+      "description": [
+        "Participated in, and won, Alaska Airline's Summer Hackathon 2022 with an idea that would increase user accessibility during their airport boarding process.",
+        "Volunteer regularly with DevelopThis via helping them with their product building, attending regular meetups, and mentoring junior engineers 1:1.",
+        "Was given 6 internal accolades during my time on Nike's MAP Team; Efforts stemmed from my leadership in onboarding 30+ members collectively from our newly adopted offshore team. Met with project management regularly to ensure their onboarding was going smoothly, and within 2 months they were able to relieve a significant portion of support inquiries from the MAP team engineers.",
+        "Minored in Spanish and Data Analytics."
+      ]
     }
   ]
 }

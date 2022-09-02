@@ -33,6 +33,7 @@ const defaultModalContent = {
   employer: "",
   location: "",
   description: [""],
+  bullets: [""],
   icon: "",
   timeline: {
     start: "",
