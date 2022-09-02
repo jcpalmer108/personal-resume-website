@@ -62,9 +62,7 @@ const customStyles = {
   },
 };
 
-export default function downloadResume(
-  e: React.MouseEvent<HTMLDivElement, MouseEvent>
-) {
+function downloadResume(e: any) {
   e.preventDefault();
 
   let doc = new Document({
@@ -85,16 +83,15 @@ export default function downloadResume(
   saveDocumentToFile(doc, `JennaPalmer_${new Date().getFullYear()}.docx`);
 }
 
-export function saveDocumentToFile(doc: Document, fileName: string) {
+async function saveDocumentToFile(doc: Document, fileName: string) {
   const mimeType =
     "application/vnd.openxmlformats-officedocument.wordprocessingml.document";
-  Packer.toBlob(doc).then((blob) => {
-    const docblob = blob.slice(0, blob.size, mimeType);
-    saveAs(docblob, fileName);
-  });
+  const blob = await Packer.toBlob(doc);
+  const docblob = blob.slice(0, blob.size, mimeType);
+  saveAs(docblob, fileName);
 }
 
-export function generateHeader() {
+function generateHeader() {
   const resumeDescription = content.sections.find(
     (section) => section.key === "resume-description"
   );
@@ -132,7 +129,7 @@ export function generateHeader() {
   return response;
 }
 
-export function generateEducation() {
+function generateEducation() {
   let response: any = [];
   const about = content.sections.find((section) => section.key === "about");
 
@@ -182,7 +179,7 @@ export function generateEducation() {
   return response;
 }
 
-export function generateWorkExperience() {
+function generateWorkExperience() {
   let response: any = [];
   const experience = content.sections.find(
     (section) => section.key === "experience"
@@ -250,7 +247,7 @@ export function generateWorkExperience() {
   return response;
 }
 
-export function generateSkills() {
+function generateSkills() {
   let response: any = [];
   const skills = content.sections.find((section) => section.key === "skills");
 
@@ -401,7 +398,7 @@ export function generateSkills() {
   return response;
 }
 
-export function generateExtras() {
+function generateExtras() {
   const extras = content.sections.find(
     (section) => section.key === "resume-extras"
   );
@@ -431,3 +428,14 @@ export function generateExtras() {
 
   return response;
 }
+
+export {
+  downloadResume,
+  saveDocumentToFile,
+  generateEducation,
+  generateHeader,
+  generateWorkExperience,
+  generateSkills,
+  generateExtras,
+  customStyles,
+};

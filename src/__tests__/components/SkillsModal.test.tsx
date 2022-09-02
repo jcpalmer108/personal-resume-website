@@ -6,7 +6,9 @@ import { ModalProps } from "../../types/Modal";
 
 // mock helpers
 const mockDownloadResume = jest.fn();
-jest.mock("../../utils/downloadResume", () => () => mockDownloadResume());
+jest.mock("../../utils/downloadResume", () => ({
+  downloadResume: () => mockDownloadResume(),
+}));
 
 // mock components
 const mockModal = jest.fn();

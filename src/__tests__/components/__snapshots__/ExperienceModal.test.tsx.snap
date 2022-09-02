@@ -56,15 +56,9 @@ exports[`ExperienceModal renders if only required params are passed in 1`] = `
   <div
     class="sc-breuTD eUvivm"
   >
-    <div>
-      <div />
-    </div>
-    <div>
-      <div />
-    </div>
-    <div>
-      <div />
-    </div>
+    <div />
+    <div />
+    <div />
   </div>
 </div>
 `;
@@ -125,33 +119,21 @@ exports[`ExperienceModal renders if optional and required params are passed in 1
   <div
     class="sc-breuTD eUvivm"
   >
-    <div>
+    <div />
+    <div
+      class="sc-evZas jyOmOC"
+    >
+      <div />
       <div />
     </div>
-    <div>
-      <div
-        class="sc-evZas jyOmOC"
-      >
-        <div />
-        <div />
-      </div>
-    </div>
-    <div>
+    <div />
+    <div />
+    <div />
+    <div
+      data-testid="ProjectLineItems"
+    >
       <div />
-    </div>
-    <div>
       <div />
-    </div>
-    <div>
-      <div />
-    </div>
-    <div>
-      <div
-        data-testid="ProjectLineItems"
-      >
-        <div />
-        <div />
-      </div>
     </div>
   </div>
 </div>

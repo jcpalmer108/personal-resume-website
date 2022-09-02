@@ -13,7 +13,7 @@ import { Skill } from "../types/content";
 import { SkillsModalProps } from "../types/SkillsModal";
 import Modal from "./Modal";
 import LineItem from "./LineItem";
-import downloadResume from "../utils/downloadResume";
+import { downloadResume } from "../utils/downloadResume";
 
 export default function SkillsModal({
   closeModal,
