@@ -113,13 +113,28 @@ export const DesktopPages = styled.a`
   padding-left: 24px;
   font-family: Gilroy-Medium;
   font-size: 12px;
+  transition: all 500ms ease;
 
   &:first-child {
     padding-left: none;
   }
 
+  @media (min-width: ${tabletBreakpoint}px) {
+    &:hover {
+      font-size: 14px;
+      color: ${redstone};
+      transition: all 500ms ease;
+    }
+  }
+
   @media (min-width: ${desktopBreakpoint}px) {
     font-size: 14px;
     padding-left: 40px;
+
+    &:hover {
+      font-size: 16px;
+      color: ${redstone};
+      transition: all 500ms ease;
+    }
   }
 `;
