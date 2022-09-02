@@ -38,6 +38,10 @@ const GlobalStyle = createGlobalStyle`
     src: url(${ButlerMedium}) format('woff');
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     margin: 0;
     padding: 0;  
