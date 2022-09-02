@@ -260,9 +260,9 @@
             "organization": "E-Commerce",
             "location": "Portland, OR",
             "description": [
-              "I currently work on this company's most revenue impacting team - the Booking Team. We manage the entire user experience post clicking the 'checkout' button.",
+              "I currently work on Alaska Airlines's most revenue impacting team - the Booking Team. We manage the entire user experience post clicking the 'checkout' button.",
               "This means we're responsible for everything including: booking the flight, enabling them to select seats, accepting user payment, viewing ticket restrictions and limitations, and lastly providing customers with their confirmation number and additional information so they're confident their flight was booked.",
-              "While on this team, I also contributed significantly to this project's re-write. Previously written in a mono-lithic C# applicaiton, Alaska's modernization investment has lead them to pursue a micro-site format going forward in order to enable faster and more well-rounded user experiences."
+              "While on this team, I also contributed significantly to this project's re-write. Previously written in a monolithic C# MVC applicaiton, Alaska's modernization investment has lead them to pursue a micro-site format going forward in order to enable faster and more well-rounded user experiences."
             ],
             "bullets": [
               "Worked on the product responsible for booking and accepting payment for all flights going through Alaska Airlines ",
