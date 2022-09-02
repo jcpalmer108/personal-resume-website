@@ -167,6 +167,18 @@ export const Link = styled.a`
   @media (min-width: ${desktopBreakpoint}px) {
     width: 20%;
     justify-content: left;
+
+    &:hover {
+      img {
+        height: 27px;
+        width: 28px;
+        transition: all 500ms ease;
+      }
+      span {
+        font-size: 22px;
+        transition: all 500ms ease;
+      }
+    }
   }
 `;
 
