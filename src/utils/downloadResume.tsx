@@ -123,6 +123,8 @@ function generateHeader() {
           style: "font-formatting",
         })
       );
+
+      response.push(new Paragraph({}));
     });
   }
 
@@ -155,7 +157,10 @@ function generateEducation() {
           style: "font-formatting",
           children: [
             new TextRun({ text: edu.degree, bold: true }),
-            new TextRun(`\t${edu.timeline.start} - ${edu.timeline.end}`),
+            new TextRun({
+              text: `\t${edu.timeline.start} - ${edu.timeline.end}`,
+              bold: true,
+            }),
           ],
           tabStops: [
             {
@@ -173,6 +178,8 @@ function generateEducation() {
           text: `${edu.school} - ${edu.location}`,
         })
       );
+
+      response.push(new Paragraph({}));
     });
   }
 
@@ -207,7 +214,10 @@ function generateWorkExperience() {
           style: "font-formatting",
           children: [
             new TextRun({ text: job.title, bold: true }),
-            new TextRun(`\t${job.timeline.start} - ${job.timeline.end}`),
+            new TextRun({
+              text: `\t${job.timeline.start} - ${job.timeline.end}`,
+              bold: true,
+            }),
           ],
           tabStops: [
             {
