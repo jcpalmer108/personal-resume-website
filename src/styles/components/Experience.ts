@@ -303,3 +303,11 @@ export const DiagonalLine = styled.img`
     height: 72px;
   }
 `;
+
+export const BottomSpacing = styled.div`
+  height: 0px;
+
+  @media (min-width: ${desktopBreakpoint}px) {
+    height: 80px;
+  }
+`;

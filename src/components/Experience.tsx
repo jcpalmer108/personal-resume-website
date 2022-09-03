@@ -23,6 +23,7 @@ import {
   Title,
   Upper,
   Wrapper,
+  BottomSpacing,
 } from "../styles/components/Experience";
 import { ExperienceProps } from "../types/Experience";
 import ExperienceModal from "./ExperienceModal";
@@ -151,6 +152,10 @@ export default function Experience({ content, contact }: ExperienceProps) {
             </Mosaic>
           </Lower>
         </Wrapper>
+      </Section>
+      {/* TODO: REMOVE THIS ONCE GALLERY IS PUT BACK */}
+      <Section wide>
+        <BottomSpacing />
       </Section>
     </div>
   );
