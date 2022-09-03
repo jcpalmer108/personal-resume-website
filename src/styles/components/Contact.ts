@@ -125,6 +125,7 @@ export const Links = styled.a`
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 500ms ease-in-out;
 
   &:last-child {
     border-right: 1px solid ${silver_polish};
@@ -135,6 +136,23 @@ export const Links = styled.a`
 
     &:last-child {
       border-right: none;
+    }
+
+    &:hover {
+      #icon {
+        height: 28px;
+        transition: all 500ms ease-in-out;
+      }
+    }
+  }
+
+  @media (min-width: ${desktopBreakpoint}px) {
+    &:hover {
+      #icon {
+        height: 32px;
+        transition: all 500ms ease-in-out;
+        fill: blue;
+      }
     }
   }
 `;

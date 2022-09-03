@@ -124,10 +124,10 @@ export default function Experience({ content, contact }: ExperienceProps) {
                     alt={job.icon}
                   />
                   <Content>
-                    <JobTitle data-testid={`Title ${index + 1}`}>
+                    <JobTitle data-testid={`Title ${index + 1}`} id="job-title">
                       {job.title}
                     </JobTitle>
-                    <Info data-testid={`Info ${index + 1}`}>
+                    <Info data-testid={`Info ${index + 1}`} id="job-info">
                       {job.employer} / {job.timeline.start} - {job.timeline.end}
                     </Info>
                   </Content>

@@ -170,12 +170,12 @@ export const Link = styled.a`
 
     &:hover {
       img {
-        height: 27px;
-        width: 28px;
+        height: 25px;
+        width: 25px;
         transition: all 500ms ease;
       }
       span {
-        font-size: 22px;
+        font-size: 20px;
         transition: all 500ms ease;
       }
     }

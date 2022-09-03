@@ -104,16 +104,17 @@ function Tile({ info, table }: TileProps) {
   const { key, url, label } = info;
 
   return table === true ? (
-    <Cell>
+    <Cell data-testid="Cell">
       <Link id={key} href={url} data-testid="Tile">
         <Logo
+          id="logo"
           src={require("../assets/images/skills/section/" + key + ".svg")}
           alt={label}
         />
       </Link>
     </Cell>
   ) : (
-    <Link id={key} href={url}>
+    <Link id={key} href={url} data-testid="Link">
       <Logo
         src={require("../assets/images/skills/section/" + key + ".svg")}
         alt={label}

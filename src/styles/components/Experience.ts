@@ -122,6 +122,7 @@ export const Tile = styled.a`
   @media (min-width: ${desktopBreakpoint}px) {
     min-height: 180px;
     min-width: 212px;
+    transition: all 500ms ease;
 
     &:hover {
       img {
@@ -131,7 +132,7 @@ export const Tile = styled.a`
       }
 
       span {
-        font-size: 20px;
+        font-size: 16px;
         transition: all 500ms ease;
       }
     }
@@ -168,8 +169,8 @@ export const Job = styled.div`
   display: flex;
   flex-direction: column;
   padding-top: 20px;
-  font-weight: 500;
-  transition: all 1s ease;
+  font-weight: normal;
+  transition: all 500ms ease-in-out;
 
   @media (min-width: ${tabletBreakpoint}px) {
     flex-direction: row;
@@ -177,20 +178,26 @@ export const Job = styled.div`
     justify-content: center;
     height: fit-content;
     padding-top: 25px;
-    transition: all 500ms ease;
+    transition: all 500ms ease-in-out;
 
     &:first-child {
       padding-top: 45px;
     }
 
     &:hover {
-      font-weight: 700;
-      transition: all 500ms ease;
+      #job-title {
+        color: ${redstone};
+        font-weight: bold;
+      }
+      #job-info {
+        font-weight: bold;
+      }
     }
   }
 
   @media (min-width: ${desktopBreakpoint}px) {
     padding-top: 55px;
+    transition: all 500ms ease;
 
     &:first-child {
       padding-top: 25px;

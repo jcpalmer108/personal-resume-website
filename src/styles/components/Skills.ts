@@ -75,17 +75,33 @@ export const Link = styled.a`
     border: none;
     margin-right: 0px;
     padding-bottom: 0px;
-
+    transition: all 500ms ease-in-out;
     max-width: 230px;
     align-items: center;
     justify-content: center;
     width: 20%;
     padding-top: 7%;
     max-height: 200px;
+
+    &:hover {
+      #logo {
+        height: 75px;
+        width: 75px;
+        transition: all 500ms ease-in-out;
+      }
+    }
   }
 
   @media (min-width: ${desktopBreakpoint}px) {
     padding-top: 8%;
+
+    &:hover {
+      #logo {
+        height: 110px;
+        width: 110px;
+        transition: all 500ms ease-in-out;
+      }
+    }
   }
 
   @media (min-width: ${contentWidth}px) {

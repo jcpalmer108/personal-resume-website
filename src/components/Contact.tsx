@@ -140,6 +140,7 @@ export default function Contact({
               {socials.links.map((item) => (
                 <Links key={item.key} href={item.url}>
                   <Icon
+                    id="icon"
                     src={require("../assets/images/socials/" +
                       item.key +
                       ".svg")}

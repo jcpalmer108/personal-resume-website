@@ -17,6 +17,7 @@ import {
 } from "../styles/components/Testimonials";
 import { TestimonialProps } from "../types/Testimonials";
 import Section from "./Section";
+import $ from "jquery";
 
 export default function Testimonials({ content }: TestimonialProps) {
   let [selectedIndex, setSelectedIndex] = useState(0);
@@ -27,14 +28,23 @@ export default function Testimonials({ content }: TestimonialProps) {
   }
 
   function updateIndex(moveForward: boolean) {
-    if (moveForward) {
-      return quotes && selectedIndex >= quotes.length - 1
-        ? setSelectedIndex(0)
-        : setSelectedIndex(selectedIndex + 1);
-    } else {
-      return quotes && selectedIndex <= 0
-        ? setSelectedIndex(quotes.length - 1)
-        : setSelectedIndex(selectedIndex - 1);
+    if ($("#quote")) {
+      $("#quote").fadeOut();
+      $("#quote")
+        .promise()
+        .done(() => {
+          if (moveForward) {
+            quotes && selectedIndex >= quotes.length - 1
+              ? setSelectedIndex(0)
+              : setSelectedIndex(selectedIndex + 1);
+          } else {
+            quotes && selectedIndex <= 0
+              ? setSelectedIndex(quotes.length - 1)
+              : setSelectedIndex(selectedIndex - 1);
+          }
+
+          $("#quote").fadeIn();
+        });
     }
   }
 
@@ -53,7 +63,7 @@ export default function Testimonials({ content }: TestimonialProps) {
           />
           <Content>
             <h2>Testimonials</h2>
-            <Quote data-testid="Quote">
+            <Quote data-testid="Quote" id="quote">
               {quotes && quotes[selectedIndex].quote}
             </Quote>
             <Person data-testid="Person">
