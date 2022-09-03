@@ -103,12 +103,38 @@ export const Tile = styled.a`
   @media (min-width: ${tabletBreakpoint}px) {
     min-height: 140px;
     min-width: 140px;
+    transition: all 500ms ease;
+
+    &:hover {
+      img {
+        height: 50px;
+        width: 50px;
+        transition: all 500ms ease;
+      }
+
+      span {
+        font-size: 16px;
+        transition: all 500ms ease;
+      }
+    }
   }
 
   @media (min-width: ${desktopBreakpoint}px) {
     min-height: 180px;
     min-width: 212px;
-    // row-gap: 20px;
+
+    &:hover {
+      img {
+        height: 60px;
+        width: 60px;
+        transition: all 500ms ease;
+      }
+
+      span {
+        font-size: 20px;
+        transition: all 500ms ease;
+      }
+    }
   }
 `;
 
@@ -142,6 +168,8 @@ export const Job = styled.div`
   display: flex;
   flex-direction: column;
   padding-top: 20px;
+  font-weight: 500;
+  transition: all 1s ease;
 
   @media (min-width: ${tabletBreakpoint}px) {
     flex-direction: row;
@@ -149,9 +177,15 @@ export const Job = styled.div`
     justify-content: center;
     height: fit-content;
     padding-top: 25px;
+    transition: all 500ms ease;
 
     &:first-child {
       padding-top: 45px;
+    }
+
+    &:hover {
+      font-weight: 700;
+      transition: all 500ms ease;
     }
   }
 
