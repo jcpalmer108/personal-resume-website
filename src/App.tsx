@@ -4,7 +4,7 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Experience from "./components/Experience";
 import Footer from "./components/Footer";
-import Gallery from "./components/Gallery";
+// import Gallery from "./components/Gallery";
 import Landing from "./components/Landing";
 import Navbar from "./components/Navbar";
 import SeparatingLine from "./components/SeparatingLine";
@@ -25,7 +25,7 @@ export default function App() {
     (section) => section.key === "experience"
   );
   const skills = content.sections.find((section) => section.key === "skills");
-  const gallery = content.sections.find((section) => section.key === "gallery");
+  // const gallery = content.sections.find((section) => section.key === "gallery");
   const contact = content.sections.find((section) => section.key === "contact");
   const contactInfo = content.contact;
 
@@ -42,7 +42,7 @@ export default function App() {
         <Skills content={skills} />
         <Testimonials content={testimonials} />
         <Experience content={experience} contact={contactInfo} />
-        <Gallery photos={gallery?.subSection?.gallery} />
+        {/* <Gallery photos={gallery?.subSection?.gallery} /> */}
         <Contact content={contact} contact={contactInfo} />
         <FooterWrapper>
           <Footer menu={menu} />
