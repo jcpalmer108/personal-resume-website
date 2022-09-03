@@ -48,7 +48,6 @@ export const MobilePhoto = styled.img`
   height: 415px;
   width: 100%;
   object-fit: cover;
-  object-position: 0px 92%;
   display: block;
 
   @media (min-width: ${tabletBreakpoint}px) {

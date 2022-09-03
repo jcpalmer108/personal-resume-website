@@ -18,8 +18,9 @@ exports[`Testimonials renders if only required params are passed in 1`] = `
       Testimonials
     </h2>
     <p
-      class="sc-dkzDqf fysNox"
+      class="sc-dkzDqf bAObGc"
       data-testid="Quote"
+      id="quote"
     >
       this is a test quote
     </p>

@@ -129,13 +129,13 @@ describe("Skills", () => {
     expect(mockButton).toHaveBeenCalled();
     expect(mockButton).toHaveBeenNthCalledWith(
       1,
-      "Let's Talk",
+      "Learn More",
       undefined,
       true
     );
     expect(mockButton).toHaveBeenNthCalledWith(
       2,
-      "Let's Talk",
+      "Learn More",
       undefined,
       true
     );

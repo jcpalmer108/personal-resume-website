@@ -1,5 +1,5 @@
 <p align="center">
-  <img align="center" height="100" src="./src/assets/images/jennapalmer-dark.svg">
+  <img align="center" height="100" src="./src/assets/images/logos/jennapalmer-dark.svg">
 </p>
 <div align="center">
   <h2>Resume Website</h2>
@@ -79,7 +79,7 @@ This project features the following features:
 
 Renders as a hamburger menu on mobile, and when expanded wide enough, removes the hamburger and displays a list of available menu pages.
 
-![Test Pic](./src/assets/images/test-readme-pic.png?raw=true "Test Pic")
+![Desktop & Mobile Friendly Navbar](./src/assets/images/readme/navbar-example.png)
 
 <a name="calls-to-action"></a>
 
@@ -87,7 +87,7 @@ Renders as a hamburger menu on mobile, and when expanded wide enough, removes th
 
 There are several buttons throughout the website that link to the 'Contact' section in order to streamline getting the user in contact with the author.
 
-![Test Pic](./src/assets/images/test-readme-pic.png?raw=true "Test Pic")
+![Multiple Calls to Action](./src/assets/images/readme/calls-to-action.png)
 
 <a name="marquee"></a>
 
@@ -95,15 +95,15 @@ There are several buttons throughout the website that link to the 'Contact' sect
 
 The mobile version of the Skills Section shows several of the skills tiles rotating on a marquee. The desktop version completely removes this marquee, and instead renders a mosaic of tiles that stay squares when resizing the page width.
 
-![Test Pic](./src/assets/images/test-readme-pic.png?raw=true "Test Pic")
+![Marquee to Mosaic](./src/assets/images/readme/marquee-to-mosaic.gif)
 
 <a name="carosel"></a>
 
-## Rotating Testimonial Carosel
+## Rotating Testimonial Carousel
 
 The Testimonial page has a carosel of testimonials that automatically scrolls through each of the available quotes every 10 seconds.
 
-![Test Pic](./src/assets/images/test-readme-pic.png?raw=true "Test Pic")
+![Testimonials Carousel](./src/assets/images/readme/testimonials-carousel.gif)
 
 <a name="dynamically-created-components"></a>
 
@@ -113,7 +113,7 @@ Several sections illustrate the utilization of dynamically rendered components, 
 
 This means, that the modals created for each Job are also dynamically rendered.
 
-![Test Pic](./src/assets/images/test-readme-pic.png?raw=true "Test Pic")
+![Dynamically Created Components](./src/assets/images/readme/dynamic-components.png)
 
 <a name="modal"></a>
 
@@ -121,15 +121,15 @@ This means, that the modals created for each Job are also dynamically rendered.
 
 Users who want more information on a specific piece of job history, can click on the trigger "READ MORE" and see a modal filled with extended information surrounding the author's participation in that role.
 
-![Test Pic](./src/assets/images/test-readme-pic.png?raw=true "Test Pic")
+![Modal for Further Information](./src/assets/images/readme/modals-example.gif)
 
 <a name="email-on-submit"></a>
 
-## Email Sends on Form Submit
+## Email Opens Drafted Email
 
 In the Contact section there is a form, and this form actively sends the author an email with the added information.
 
-![Test Pic](./src/assets/images/test-readme-pic.png?raw=true "Test Pic")
+<!-- ![Test Pic](./src/assets/images/test-readme-pic.png?raw=true "Test Pic") -->
 
 <p align=right><a href="#table-of-contents">...Back to Top</a></p>
 
@@ -204,15 +204,23 @@ fasdf
 
 # Application Screenshots
 
-![Test Pic](./src/assets/images/test-readme-pic.png?raw=true "Test Pic")
+![Landing](./src/assets/images/readme/landing.png)
 
-![Test Pic](./src/assets/images/test-readme-pic.png?raw=true "Test Pic")
+![About](./src/assets/images/readme/about.png)
 
-![Test Pic](./src/assets/images/test-readme-pic.png?raw=true "Test Pic")
+![Skills](./src/assets/images/readme/skills.png)
 
-![Test Pic](./src/assets/images/test-readme-pic.png?raw=true "Test Pic")
+![Skills Modal](./src/assets/images/readme/skills-modal.png)
 
-![Test Pic](./src/assets/images/test-readme-pic.png?raw=true "Test Pic")
+![Testimonials](./src/assets/images/readme/testimonials.png)
+
+![Experience](./src/assets/images/readme/experience.png)
+
+![Experience Modal](./src/assets/images/readme/experience-modal.png)
+
+![Contact](./src/assets/images/readme/contact.png)
+
+![Footer](./src/assets/images/readme/footer.png)
 
 <p align=right><a href="#table-of-contents">...Back to Top</a></p>
 
@@ -238,7 +246,6 @@ I'd like to credit my designer [hardikgonyada](https://www.fiverr.com/hardikgond
 
 I would also like to credit the following open-source projects I am utilizing in this application:
 
-- [Material UI](https://mui.com/)
 - [React Fast Marquee](https://www.npmjs.com/package/react-fast-marquee)
 - [React Spring](https://react-spring.dev/)
 

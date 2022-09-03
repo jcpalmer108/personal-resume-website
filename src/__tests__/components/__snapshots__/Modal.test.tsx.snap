@@ -66,13 +66,15 @@ exports[`Modal renders if only required params are passed in 1`] = `
 
 @media (min-width:1024px) {
   .c0 {
-    max-height: 800px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
 }
 
 @media (min-width:1024px) {
   .c2 {
-    max-height: 715px;
+    height: 715px;
   }
 }
 

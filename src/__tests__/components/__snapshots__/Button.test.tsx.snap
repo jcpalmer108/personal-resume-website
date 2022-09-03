@@ -5,14 +5,14 @@ exports[`Button renders if label and onClick params are passed in 1`] = `
   data-testid="Button"
 >
   <a
-    class="sc-bczRLJ iNjNxX"
+    class="sc-bczRLJ jnuacn"
   >
     <span>
       TEST
     </span>
     <img
       alt="arrow"
-      class="sc-gsnTZi gbyMYH"
+      class="sc-gsnTZi evuGak"
       src="arrow-right.svg"
     />
   </a>
@@ -24,7 +24,7 @@ exports[`Button renders if label and url params are passed in 1`] = `
   data-testid="Button"
 >
   <a
-    class="sc-bczRLJ iNjNxX"
+    class="sc-bczRLJ jnuacn"
     href="www.google.com"
   >
     <span>
@@ -32,7 +32,7 @@ exports[`Button renders if label and url params are passed in 1`] = `
     </span>
     <img
       alt="arrow"
-      class="sc-gsnTZi gbyMYH"
+      class="sc-gsnTZi evuGak"
       src="arrow-right.svg"
     />
   </a>
@@ -44,7 +44,7 @@ exports[`Button renders if required and all optional params are passed in 1`] = 
   data-testid="Button"
 >
   <a
-    class="sc-bczRLJ iNjNxX"
+    class="sc-bczRLJ jnuacn"
     href="www.google.com"
   >
     <span>
@@ -52,7 +52,7 @@ exports[`Button renders if required and all optional params are passed in 1`] = 
     </span>
     <img
       alt="arrow"
-      class="sc-gsnTZi gbyMYH"
+      class="sc-gsnTZi evuGak"
       src="arrow-right.svg"
     />
   </a>

@@ -42,7 +42,6 @@ exports[`Landing renders if only required params are passed in 1`] = `
   height: 415px;
   width: 100%;
   object-fit: cover;
-  object-position: 0px 92%;
   display: block;
 }
 

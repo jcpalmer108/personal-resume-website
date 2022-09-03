@@ -54,7 +54,7 @@ exports[`ExperienceModal renders if only required params are passed in 1`] = `
     </div>
   </div>
   <div
-    class="sc-breuTD eUvivm"
+    class="sc-breuTD kEDdlb"
   >
     <div />
     <div />
@@ -117,7 +117,7 @@ exports[`ExperienceModal renders if optional and required params are passed in 1
     </div>
   </div>
   <div
-    class="sc-breuTD eUvivm"
+    class="sc-breuTD kEDdlb"
   >
     <div />
     <div

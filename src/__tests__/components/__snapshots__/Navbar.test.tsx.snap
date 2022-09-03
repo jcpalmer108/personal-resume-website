@@ -18,13 +18,13 @@ exports[`Navbar renders if only required params are passed in 1`] = `
       data-testid="Desktop Menu"
     >
       <a
-        class="sc-jqUVSM klaAtv"
+        class="sc-jqUVSM eVKNfp"
         href="#one"
       >
         ONE
       </a>
       <a
-        class="sc-jqUVSM klaAtv"
+        class="sc-jqUVSM eVKNfp"
         href="#two"
       >
         TWO

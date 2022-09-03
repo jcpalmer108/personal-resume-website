@@ -147,6 +147,8 @@ exports[`Skills renders if only required params are passed in 1`] = `
     border: none;
     margin-right: 0px;
     padding-bottom: 0px;
+    -webkit-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
     max-width: 230px;
     -webkit-align-items: center;
     -webkit-box-align: center;
@@ -160,11 +162,25 @@ exports[`Skills renders if only required params are passed in 1`] = `
     padding-top: 7%;
     max-height: 200px;
   }
+
+  .c2:hover #logo {
+    height: 75px;
+    width: 75px;
+    -webkit-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+  }
 }
 
 @media (min-width:1024px) {
   .c2 {
     padding-top: 8%;
+  }
+
+  .c2:hover #logo {
+    height: 110px;
+    width: 110px;
+    -webkit-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
   }
 }
 
@@ -264,6 +280,7 @@ exports[`Skills renders if only required params are passed in 1`] = `
     >
       <a
         class="c2"
+        data-testid="Link"
         href="https://test.skill.one/"
         id="test"
       >
@@ -275,6 +292,7 @@ exports[`Skills renders if only required params are passed in 1`] = `
       </a>
       <a
         class="c2"
+        data-testid="Link"
         href="https://test.skill.five/"
         id="test"
       >
@@ -286,6 +304,7 @@ exports[`Skills renders if only required params are passed in 1`] = `
       </a>
       <a
         class="c2"
+        data-testid="Link"
         href="https://test.skill.two/"
         id="test"
       >
@@ -297,6 +316,7 @@ exports[`Skills renders if only required params are passed in 1`] = `
       </a>
       <a
         class="c2"
+        data-testid="Link"
         href="https://test.skill.three/"
         id="test"
       >
@@ -308,6 +328,7 @@ exports[`Skills renders if only required params are passed in 1`] = `
       </a>
       <a
         class="c2"
+        data-testid="Link"
         href="https://test.skill.four/"
         id="test"
       >
@@ -319,6 +340,7 @@ exports[`Skills renders if only required params are passed in 1`] = `
       </a>
       <a
         class="c2"
+        data-testid="Link"
         href="https://test.skill.six/"
         id="test"
       >
@@ -330,6 +352,7 @@ exports[`Skills renders if only required params are passed in 1`] = `
       </a>
       <a
         class="c2"
+        data-testid="Link"
         href="https://test.skill.seven/"
         id="test"
       >
@@ -341,6 +364,7 @@ exports[`Skills renders if only required params are passed in 1`] = `
       </a>
       <a
         class="c2"
+        data-testid="Link"
         href="https://test.skill.eight/"
         id="test"
       >
@@ -352,6 +376,7 @@ exports[`Skills renders if only required params are passed in 1`] = `
       </a>
       <a
         class="c2"
+        data-testid="Link"
         href="https://test.skill.nine/"
         id="test"
       >
@@ -368,6 +393,7 @@ exports[`Skills renders if only required params are passed in 1`] = `
     >
       <a
         class="c2"
+        data-testid="Link"
         href="https://test.skill.one/"
         id="test"
       >
@@ -379,6 +405,7 @@ exports[`Skills renders if only required params are passed in 1`] = `
       </a>
       <a
         class="c2"
+        data-testid="Link"
         href="https://test.skill.five/"
         id="test"
       >
@@ -390,6 +417,7 @@ exports[`Skills renders if only required params are passed in 1`] = `
       </a>
       <a
         class="c2"
+        data-testid="Link"
         href="https://test.skill.two/"
         id="test"
       >
@@ -401,6 +429,7 @@ exports[`Skills renders if only required params are passed in 1`] = `
       </a>
       <a
         class="c2"
+        data-testid="Link"
         href="https://test.skill.three/"
         id="test"
       >
@@ -412,6 +441,7 @@ exports[`Skills renders if only required params are passed in 1`] = `
       </a>
       <a
         class="c2"
+        data-testid="Link"
         href="https://test.skill.four/"
         id="test"
       >
@@ -423,6 +453,7 @@ exports[`Skills renders if only required params are passed in 1`] = `
       </a>
       <a
         class="c2"
+        data-testid="Link"
         href="https://test.skill.six/"
         id="test"
       >
@@ -434,6 +465,7 @@ exports[`Skills renders if only required params are passed in 1`] = `
       </a>
       <a
         class="c2"
+        data-testid="Link"
         href="https://test.skill.seven/"
         id="test"
       >
@@ -445,6 +477,7 @@ exports[`Skills renders if only required params are passed in 1`] = `
       </a>
       <a
         class="c2"
+        data-testid="Link"
         href="https://test.skill.eight/"
         id="test"
       >
@@ -456,6 +489,7 @@ exports[`Skills renders if only required params are passed in 1`] = `
       </a>
       <a
         class="c2"
+        data-testid="Link"
         href="https://test.skill.nine/"
         id="test"
       >
@@ -622,6 +656,8 @@ exports[`Skills renders if only required params are passed in 2`] = `
     border: none;
     margin-right: 0px;
     padding-bottom: 0px;
+    -webkit-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
     max-width: 230px;
     -webkit-align-items: center;
     -webkit-box-align: center;
@@ -635,11 +671,25 @@ exports[`Skills renders if only required params are passed in 2`] = `
     padding-top: 7%;
     max-height: 200px;
   }
+
+  .c5:hover #logo {
+    height: 75px;
+    width: 75px;
+    -webkit-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+  }
 }
 
 @media (min-width:1024px) {
   .c5 {
     padding-top: 8%;
+  }
+
+  .c5:hover #logo {
+    height: 110px;
+    width: 110px;
+    -webkit-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
   }
 }
 
@@ -822,6 +872,7 @@ exports[`Skills renders if only required params are passed in 2`] = `
         </td>
         <td
           class="c4"
+          data-testid="Cell"
         >
           <a
             class="c5"
@@ -832,12 +883,14 @@ exports[`Skills renders if only required params are passed in 2`] = `
             <img
               alt="Test Skill 1"
               class="c6"
+              id="logo"
               src="[object Object]"
             />
           </a>
         </td>
         <td
           class="c4"
+          data-testid="Cell"
         >
           <a
             class="c5"
@@ -848,6 +901,7 @@ exports[`Skills renders if only required params are passed in 2`] = `
             <img
               alt="Test Skill 5"
               class="c6"
+              id="logo"
               src="[object Object]"
             />
           </a>
@@ -858,6 +912,7 @@ exports[`Skills renders if only required params are passed in 2`] = `
       >
         <td
           class="c4"
+          data-testid="Cell"
         >
           <a
             class="c5"
@@ -868,12 +923,14 @@ exports[`Skills renders if only required params are passed in 2`] = `
             <img
               alt="Test Skill 2"
               class="c6"
+              id="logo"
               src="[object Object]"
             />
           </a>
         </td>
         <td
           class="c4"
+          data-testid="Cell"
         >
           <a
             class="c5"
@@ -884,12 +941,14 @@ exports[`Skills renders if only required params are passed in 2`] = `
             <img
               alt="Test Skill 3"
               class="c6"
+              id="logo"
               src="[object Object]"
             />
           </a>
         </td>
         <td
           class="c4"
+          data-testid="Cell"
         >
           <a
             class="c5"
@@ -900,12 +959,14 @@ exports[`Skills renders if only required params are passed in 2`] = `
             <img
               alt="Test Skill 4"
               class="c6"
+              id="logo"
               src="[object Object]"
             />
           </a>
         </td>
         <td
           class="c4"
+          data-testid="Cell"
         >
           <a
             class="c5"
@@ -916,12 +977,14 @@ exports[`Skills renders if only required params are passed in 2`] = `
             <img
               alt="Test Skill 6"
               class="c6"
+              id="logo"
               src="[object Object]"
             />
           </a>
         </td>
         <td
           class="c4"
+          data-testid="Cell"
         >
           <a
             class="c5"
@@ -932,6 +995,7 @@ exports[`Skills renders if only required params are passed in 2`] = `
             <img
               alt="Test Skill 7"
               class="c6"
+              id="logo"
               src="[object Object]"
             />
           </a>
@@ -942,6 +1006,7 @@ exports[`Skills renders if only required params are passed in 2`] = `
       >
         <td
           class="c4"
+          data-testid="Cell"
         >
           <a
             class="c5"
@@ -952,12 +1017,14 @@ exports[`Skills renders if only required params are passed in 2`] = `
             <img
               alt="Test Skill 8"
               class="c6"
+              id="logo"
               src="[object Object]"
             />
           </a>
         </td>
         <td
           class="c4"
+          data-testid="Cell"
         >
           <a
             class="c5"
@@ -968,6 +1035,7 @@ exports[`Skills renders if only required params are passed in 2`] = `
             <img
               alt="Test Skill 9"
               class="c6"
+              id="logo"
               src="[object Object]"
             />
           </a>

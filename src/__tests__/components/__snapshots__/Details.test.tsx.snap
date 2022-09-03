@@ -2,7 +2,7 @@
 
 exports[`Details renders if optional and required params are passed in 1`] = `
 <div
-  class="sc-bczRLJ eVwvdg"
+  class="sc-bczRLJ iLKDUq"
   data-testid="Details"
 >
   <div
@@ -12,12 +12,12 @@ exports[`Details renders if optional and required params are passed in 1`] = `
   </div>
   <div>
     <p
-      class="sc-dkzDqf dVromW"
+      class="sc-dkzDqf eyEFa-D"
     >
       1
     </p>
     <p
-      class="sc-dkzDqf dVromW"
+      class="sc-dkzDqf eyEFa-D"
     >
       2
     </p>

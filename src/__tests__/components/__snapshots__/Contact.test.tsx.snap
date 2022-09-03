@@ -26,7 +26,7 @@ exports[`Contact renders if content and contact are passed in 1`] = `
       class="sc-jqUVSM jdMkJN"
     >
       <a
-        class="sc-kDDrLX bMvUqc"
+        class="sc-kDDrLX jlPwAQ"
         data-testid="Links"
         href="https://www.github.com/jcpalmer108/"
       >
@@ -37,7 +37,7 @@ exports[`Contact renders if content and contact are passed in 1`] = `
         />
       </a>
       <a
-        class="sc-kDDrLX bMvUqc"
+        class="sc-kDDrLX jlPwAQ"
         data-testid="Links"
         href="https://leetcode.com/darthToaster/"
       >
@@ -99,22 +99,24 @@ exports[`Contact renders if content and contact are passed in 2`] = `
       data-testid="Socials"
     >
       <a
-        class="sc-kDDrLX bMvUqc"
+        class="sc-kDDrLX jlPwAQ"
         href="https://www.github.com/jcpalmer108/"
       >
         <img
           alt="Github"
           class="sc-crXcEl lbtbww"
+          id="icon"
           src="[object Object]"
         />
       </a>
       <a
-        class="sc-kDDrLX bMvUqc"
+        class="sc-kDDrLX jlPwAQ"
         href="https://leetcode.com/darthToaster/"
       >
         <img
           alt="Leetcode"
           class="sc-crXcEl lbtbww"
+          id="icon"
           src="[object Object]"
         />
       </a>

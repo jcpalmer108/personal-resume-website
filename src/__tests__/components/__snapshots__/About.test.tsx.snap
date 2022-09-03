@@ -101,7 +101,6 @@ exports[`About renders if only required params are passed in 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 100%;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -139,6 +138,7 @@ exports[`About renders if only required params are passed in 1`] = `
   column-gap: 10px;
   width: 33%;
   font-family: Gilroy-Medium;
+  height: 100%;
 }
 
 .c12 {
@@ -187,6 +187,15 @@ exports[`About renders if only required params are passed in 1`] = `
   padding-bottom: 7px;
   color: white;
   border-bottom: 1px solid white;
+  -webkit-transition: 500ms all ease;
+  transition: 500ms all ease;
+  height: 14px;
+}
+
+.c16:hover {
+  font-size: 14px;
+  -webkit-transition: 500ms all ease;
+  transition: 500ms all ease;
 }
 
 .c17 {
@@ -254,14 +263,14 @@ exports[`About renders if only required params are passed in 1`] = `
 
 @media (min-width:720px) {
   .c8 {
-    height: 70px;
+    height: 90px;
     padding: 40px;
   }
 }
 
 @media (min-width:1024px) {
   .c8 {
-    height: 75px;
+    height: 95px;
     padding: 50px;
   }
 }
@@ -279,15 +288,13 @@ exports[`About renders if only required params are passed in 1`] = `
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    height: 20px;
+    height: 100%;
   }
 }
 
 @media (min-width:720px) {
   .c11 {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
+    width: 20%;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
@@ -295,6 +302,21 @@ exports[`About renders if only required params are passed in 1`] = `
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+  }
+
+  .c11:hover img {
+    height: 23px;
+    width: 23px;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+  }
+
+  .c11:hover span {
+    font-size: 18px;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
   }
 }
 
@@ -305,6 +327,19 @@ exports[`About renders if only required params are passed in 1`] = `
     -webkit-justify-content: left;
     -ms-flex-pack: left;
     justify-content: left;
+  }
+
+  .c11:hover img {
+    height: 25px;
+    width: 25px;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+  }
+
+  .c11:hover span {
+    font-size: 20px;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
   }
 }
 
@@ -338,8 +373,8 @@ exports[`About renders if only required params are passed in 1`] = `
 
 @media (min-width:720px) {
   .c14 {
-    width: 130px;
-    height: 90px;
+    width: 180px;
+    height: 110px;
     padding: 30px;
   }
 }
@@ -347,7 +382,7 @@ exports[`About renders if only required params are passed in 1`] = `
 @media (min-width:1024px) {
   .c14 {
     width: 148px;
-    height: 90px;
+    height: 110px;
     padding: 43px;
   }
 }
@@ -540,7 +575,6 @@ exports[`About renders if only required params are passed in 2`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 100%;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -578,6 +612,7 @@ exports[`About renders if only required params are passed in 2`] = `
   column-gap: 10px;
   width: 33%;
   font-family: Gilroy-Medium;
+  height: 100%;
 }
 
 .c4 {
@@ -623,14 +658,14 @@ exports[`About renders if only required params are passed in 2`] = `
 
 @media (min-width:720px) {
   .c0 {
-    height: 70px;
+    height: 90px;
     padding: 40px;
   }
 }
 
 @media (min-width:1024px) {
   .c0 {
-    height: 75px;
+    height: 95px;
     padding: 50px;
   }
 }
@@ -648,15 +683,13 @@ exports[`About renders if only required params are passed in 2`] = `
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    height: 20px;
+    height: 100%;
   }
 }
 
 @media (min-width:720px) {
   .c3 {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
+    width: 20%;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
@@ -664,6 +697,21 @@ exports[`About renders if only required params are passed in 2`] = `
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+  }
+
+  .c3:hover img {
+    height: 23px;
+    width: 23px;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+  }
+
+  .c3:hover span {
+    font-size: 18px;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
   }
 }
 
@@ -674,6 +722,19 @@ exports[`About renders if only required params are passed in 2`] = `
     -webkit-justify-content: left;
     -ms-flex-pack: left;
     justify-content: left;
+  }
+
+  .c3:hover img {
+    height: 25px;
+    width: 25px;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+  }
+
+  .c3:hover span {
+    font-size: 20px;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
   }
 }
 
@@ -775,6 +836,15 @@ exports[`About renders if only required params are passed in 3`] = `
   padding-bottom: 7px;
   color: white;
   border-bottom: 1px solid white;
+  -webkit-transition: 500ms all ease;
+  transition: 500ms all ease;
+  height: 14px;
+}
+
+.c0:hover {
+  font-size: 14px;
+  -webkit-transition: 500ms all ease;
+  transition: 500ms all ease;
 }
 
 @media (min-width:720px) {
