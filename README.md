@@ -175,8 +175,6 @@ Ensure you have the latest version of `npm` and `node` installed onto your machi
 2. Install dependencies: `npm i`
 3. Launch application: `npm start`
 
-![Test Pic](./src/assets/images/test-readme-pic.png?raw=true "Test Pic")
-
 <a name="test-the-app"></a>
 
 ## Steps to run tests
@@ -186,17 +184,11 @@ Ensure you have your project properly installed and able to be run before runnin
 - Unit and Integration Tests: `npm test`
 - End-to-End Tests: `npm run test:e2e`
 
-![Test Pic](./src/assets/images/test-readme-pic.png?raw=true "Test Pic")
-
 <a name="deploying-the-app"></a>
 
 ## Steps to Deploy
 
-COMING SOON
-
-fasdf
-
-![Test Pic](./src/assets/images/test-readme-pic.png?raw=true "Test Pic")
+To deploy to Netlify, you simply have to merge your new branch into main. Any new commits in the Github will result in a new deployment on Netlify. Because of this, be sure to create feature branches rather than pushing straight to main.
 
 <p align=right><a href="#table-of-contents">...Back to Top</a></p>
 
@@ -248,5 +240,7 @@ I would also like to credit the following open-source projects I am utilizing in
 
 - [React Fast Marquee](https://www.npmjs.com/package/react-fast-marquee)
 - [React Spring](https://react-spring.dev/)
+- [Docx](https://https://docx.js.org/#/)
+
 
 <p align=right><a href="#table-of-contents">...Back to Top</a></p>
