@@ -6,8 +6,8 @@ exports[`Section renders if only required params are passed in 1`] = `
   margin: auto;
   border-left: solid;
   border-right: solid;
-  border-color: transparent;
-  border-width: 0px;
+  border-color: #c6c6c6;
+  border-width: 1px;
 }
 
 .c1 {
@@ -58,8 +58,8 @@ exports[`Section renders if required and optional params are passed in 1`] = `
   margin: auto;
   border-left: solid;
   border-right: solid;
-  border-color: transparent;
-  border-width: 0px;
+  border-color: #c6c6c6;
+  border-width: 1px;
 }
 
 .c1 {
