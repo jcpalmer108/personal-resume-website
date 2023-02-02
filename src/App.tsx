@@ -28,6 +28,7 @@ export default function App() {
   // const gallery = content.sections.find((section) => section.key === "gallery");
   const contact = content.sections.find((section) => section.key === "contact");
   const contactInfo = content.contact;
+  const openToOpportunities = content.openToOpportunities;
 
   return (
     <>
@@ -41,7 +42,7 @@ export default function App() {
         <About content={about} />
         <Skills content={skills} />
         <Testimonials content={testimonials} />
-        <Experience content={experience} contact={contactInfo} />
+        <Experience content={experience} contact={contactInfo} openToOpportunities={openToOpportunities}/>
         {/* <Gallery photos={gallery?.subSection?.gallery} /> */}
         <Contact content={contact} contact={contactInfo} />
         <FooterWrapper>

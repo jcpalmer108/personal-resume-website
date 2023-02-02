@@ -185,11 +185,15 @@ export const Job = styled.div`
     }
 
     &:hover {
+      cursor: pointer;
+
       #job-title {
-        color: ${redstone};
         font-weight: bold;
       }
       #job-info {
+        font-weight: bold;
+      }
+      #job-details {
         font-weight: bold;
       }
     }
@@ -318,3 +322,15 @@ export const BottomSpacing = styled.div`
     height: 80px;
   }
 `;
+
+export const OpenToWork = styled.div`
+  padding: 50px 0px 30px 0px;
+  width: 80%;
+  text-align: center;
+  margin: auto;
+
+  @media (min-width: ${desktopBreakpoint}px) {
+    padding: 30px 0px 10px 0px;
+  }
+
+`

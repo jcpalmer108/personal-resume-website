@@ -15,6 +15,7 @@ import {
 } from "docx";
 import { saveAs } from "file-saver";
 import content from "../assets/content/content.json";
+import pdfFile from "../assets/content/JPalmer_2023.pdf";
 
 const customStyles = {
   paragraphStyles: [
@@ -65,22 +66,26 @@ const customStyles = {
 function downloadResume(e: any) {
   e.preventDefault();
 
-  let doc = new Document({
-    styles: customStyles,
-    sections: [
-      {
-        children: [
-          ...generateHeader(),
-          ...generateEducation(),
-          ...generateWorkExperience(),
-          ...generateSkills(),
-          ...generateExtras(),
-        ],
-      },
-    ],
-  });
+  // pdf download
+  window.open(pdfFile, '_blank');
+  
+  // dynamically generated PDF
+  // let doc = new Document({
+  //   styles: customStyles,
+  //   sections: [
+  //     {
+  //       children: [
+  //         ...generateHeader(),
+  //         ...generateEducation(),
+  //         ...generateWorkExperience(),
+  //         ...generateSkills(),
+  //         ...generateExtras(),
+  //       ],
+  //     },
+  //   ],
+  // });
 
-  saveDocumentToFile(doc, `JennaPalmer_${new Date().getFullYear()}.docx`);
+  // saveDocumentToFile(doc, `JennaPalmer_${new Date().getFullYear()}.docx`);
 }
 
 async function saveDocumentToFile(doc: Document, fileName: string) {

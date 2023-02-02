@@ -24,6 +24,7 @@ import {
   Upper,
   Wrapper,
   BottomSpacing,
+  OpenToWork
 } from "../styles/components/Experience";
 import { ExperienceProps } from "../types/Experience";
 import ExperienceModal from "./ExperienceModal";
@@ -42,7 +43,7 @@ const defaultModalContent = {
   },
 };
 
-export default function Experience({ content, contact }: ExperienceProps) {
+export default function Experience({ content, contact, openToOpportunities }: ExperienceProps) {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [selectedContent, setSelectedContent] = useState(
     content?.subSection?.experience
@@ -108,6 +109,13 @@ export default function Experience({ content, contact }: ExperienceProps) {
             </Mosaic>
           </Upper>
           <Lower>
+            {openToOpportunities && (
+              <OpenToWork>
+                <h3>
+                  I am currently open to work, and would love to hear about any opportunities you're aware of. Contact me today!
+                </h3>
+              </OpenToWork>
+            )}
             {content?.subSection?.experience &&
               content?.subSection?.experience.map((job, index) => (
                 <Job
@@ -132,7 +140,7 @@ export default function Experience({ content, contact }: ExperienceProps) {
                     </Info>
                   </Content>
                   <DiagonalLine src={diagonal} alt="forward slash" />
-                  <JobDescription data-testid={`Details ${index + 1}`}>
+                  <JobDescription data-testid={`Details ${index + 1}`} id="job-details">
                     <JobParagraph key={`Paragraph ${index + 1}`}>
                       {job.description[0]}
                       <ModalTrigger>... Read More</ModalTrigger>

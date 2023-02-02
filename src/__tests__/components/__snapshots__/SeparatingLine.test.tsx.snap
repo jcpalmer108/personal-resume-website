@@ -2,14 +2,14 @@
 
 exports[`SeparatingLine renders if optional params are not passed in 1`] = `
 <hr
-  class="sc-bczRLJ jIrxWd"
+  class="sc-bczRLJ YiLbe"
   data-testid="Line"
 />
 `;
 
 exports[`SeparatingLine renders if optional params are passed in 1`] = `
 <hr
-  class="sc-bczRLJ jScuPp"
+  class="sc-bczRLJ evnIXe"
   data-testid="Line"
 />
 `;

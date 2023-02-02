@@ -12,8 +12,8 @@ export const Wrapper = styled.div<WrapperProps>`
   margin: auto;
   border-left: solid;
   border-right: solid;
-  border-color: transparent;
-  border-width: 0px;
+  border-color: ${silver_polish};
+  border-width: 1px;
 
   @media (min-width: ${contentWidth}px) {
     ${(props) =>

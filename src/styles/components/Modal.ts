@@ -65,10 +65,14 @@ export const LeftRightBorders = styled.div`
   }
 `;
 
-export const TopBottomBorders = styled.div`
+type TopBottomBordersProps = {
+  scrollable?: boolean;
+};
+
+export const TopBottomBorders = styled.div<TopBottomBordersProps>`
   height: 100%;
   width: 100%;
-  overflow-y: scroll;
+  overflow-y: ${(props) => props.scrollable ? 'scroll' : 'hidden'};
 
   @media (min-width: ${desktopBreakpoint}px) {
     border-top: solid 1px ${silver_polish};

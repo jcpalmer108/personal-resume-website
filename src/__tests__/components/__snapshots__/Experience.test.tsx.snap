@@ -73,7 +73,7 @@ exports[`Experience renders if only required params are passed in 1`] = `
         class="sc-jqUVSM"
       >
         <div
-          class="sc-kDDrLX gNdeiG"
+          class="sc-kDDrLX eHEgUx"
         >
           <img
             alt="test"
@@ -110,6 +110,7 @@ exports[`Experience renders if only required params are passed in 1`] = `
           <div
             class="sc-ksZaOG UlYvj"
             data-testid="Details 1"
+            id="job-details"
           >
             <p
               class="sc-hAZoDl hxfvXd"
@@ -124,7 +125,7 @@ exports[`Experience renders if only required params are passed in 1`] = `
           </div>
         </div>
         <div
-          class="sc-kDDrLX gNdeiG"
+          class="sc-kDDrLX eHEgUx"
         >
           <img
             alt="test"
@@ -161,6 +162,7 @@ exports[`Experience renders if only required params are passed in 1`] = `
           <div
             class="sc-ksZaOG UlYvj"
             data-testid="Details 2"
+            id="job-details"
           >
             <p
               class="sc-hAZoDl hxfvXd"
