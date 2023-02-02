@@ -185,11 +185,15 @@ export const Job = styled.div`
     }
 
     &:hover {
+      cursor: pointer;
+
       #job-title {
-        color: ${redstone};
         font-weight: bold;
       }
       #job-info {
+        font-weight: bold;
+      }
+      #job-details {
         font-weight: bold;
       }
     }

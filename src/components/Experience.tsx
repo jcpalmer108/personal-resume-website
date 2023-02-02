@@ -140,7 +140,7 @@ export default function Experience({ content, contact, openToOpportunities }: Ex
                     </Info>
                   </Content>
                   <DiagonalLine src={diagonal} alt="forward slash" />
-                  <JobDescription data-testid={`Details ${index + 1}`}>
+                  <JobDescription data-testid={`Details ${index + 1}`} id="job-details">
                     <JobParagraph key={`Paragraph ${index + 1}`}>
                       {job.description[0]}
                       <ModalTrigger>... Read More</ModalTrigger>
