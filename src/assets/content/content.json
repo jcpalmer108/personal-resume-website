@@ -261,7 +261,7 @@
             "organization": "E-Commerce",
             "location": "Portland, OR",
             "description": [
-              "I currently work on Alaska Airlines's most revenue impacting team - the Booking Team. We manage the entire user experience post clicking the 'checkout' button.",
+              "I worked on Alaska Airlines's most revenue impacting team - the Booking Team. We manage the entire user experience post clicking the 'checkout' button.",
               "This means we're responsible for everything including: booking the flight, enabling them to select seats, accepting user payment, viewing ticket restrictions and limitations, and lastly providing customers with their confirmation number and additional information so they're confident their flight was booked.",
               "While on this team, I also contributed significantly to this project's re-write. Previously written in a monolithic C# MVC applicaiton, Alaska's modernization investment has lead them to pursue a micro-site format going forward in order to enable faster and more well-rounded user experiences."
             ],
@@ -269,6 +269,7 @@
               "Worked on the product responsible for booking and accepting payment for all flights going through Alaska Airlines ",
               "Participated in the project's re-write and moved functionality from a C# monolithic application to a micro-site format.",
               "Utilized Next.js and React in a Test-Driven Development environment, and pair regularly",
+              "Contributed to, and maintained, the Next.js app's Back end for Frontend architecture model where we aliased Alaska Airlines server calls via a built-in API created in Next.js's node server. This prevented the client application from directly calling Alaska Airline's resources and enabled us to filter out unnecessary data from our API calls to the front end.",
               "Worked with onboarding engineers, and mentored the junior engineers on the team."
             ],
             "icon": "alaska",
