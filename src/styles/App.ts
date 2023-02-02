@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { mobileBreakpoint, off_black } from "./variables";
 
 export const Wrapper = styled.section`
-  width: 100%;
+  width: calc(100% - 1px);
   font-family: Gilroy-Regular;
   min-width: ${mobileBreakpoint}px;
 `;

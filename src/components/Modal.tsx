@@ -9,7 +9,7 @@ import {
 } from "../styles/components/Modal";
 import { ModalProps } from "../types/Modal";
 
-export default function Modal({ closeModal, children }: ModalProps) {
+export default function Modal({ closeModal, children, scrollable }: ModalProps) {
   return (
     <>
       <BackgroundOverlay data-testid="Overlay" onClick={() => closeModal()} />
@@ -22,7 +22,7 @@ export default function Modal({ closeModal, children }: ModalProps) {
         />
         <InnerWindow>
           <LeftRightBorders>
-            <TopBottomBorders data-testid="ChildrenWrapper">
+            <TopBottomBorders data-testid="ChildrenWrapper" scrollable={scrollable}>
               {children}
             </TopBottomBorders>
           </LeftRightBorders>

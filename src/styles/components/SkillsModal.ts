@@ -11,6 +11,7 @@ export const Wrapper = styled.div`
   width: 100%;
   height: 100%;
   display: flex;
+  overflow-y: hidden;
   flex-wrap: wrap;
   text-align: left;
   justify-content: left;

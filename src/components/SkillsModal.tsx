@@ -25,7 +25,7 @@ export default function SkillsModal({
   }
 
   return (
-    <Modal closeModal={closeModal}>
+    <Modal closeModal={closeModal} scrollable>
       <Wrapper data-testid="SkillsModal">
         {categories?.map((category, index) => (
           <Section key={`Section ${index + 1}`} data-testid="Section">
