@@ -3,7 +3,7 @@ import { desktopBreakpoint, silver_polish } from "../variables";
 import { SeparatingLineProps as LineProps } from "../../types/SeparatingLine";
 
 export const Line = styled.hr<LineProps>`
-  width: 100%;
+  width: calc(100% - 2px);
   border-color: ${(props) => {
     if (props.always && props.light) {
       return "white";
